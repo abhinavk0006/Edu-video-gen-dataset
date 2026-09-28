@@ -1,0 +1,149 @@
+{
+  "id": "chemistry_medium_chem_11_002",
+  "name": "Effect of Concentration on an Equilibrium",
+  "subject": "chemistry",
+  "class_level": 11,
+  "difficulty": "medium",
+  "chapter": "Equilibrium",
+  "ncert_reference": "NCERT textbook portal; Class 11 equilibrium activity page to verify",
+  "source_file": "https://ncert.nic.in/textbook.php",
+  "educational_goal": "Observe a reversible color change and relate it qualitatively to a change in reactant concentration.",
+  "prerequisites": [
+    "dynamic equilibrium",
+    "Le Chatelier principle",
+    "concentration"
+  ],
+  "estimated_video_duration_seconds": 12,
+  "tags": [
+    "equilibrium",
+    "le-chatelier",
+    "class-11"
+  ],
+  "materials": [
+    "dilute cobalt chloride solution",
+    "hydrochloric acid solution",
+    "water",
+    "test tubes",
+    "dropper"
+  ],
+  "safety_notes": [
+    "Use teacher-prepared dilute solutions and goggles.",
+    "Do not perform with concentrated reagents."
+  ],
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_name": "Setup and Preparation",
+      "new_scene": true,
+      "description": "Several labeled test tubes containing a colored equilibrium mixture are compared after controlled additions of solution.",
+      "image_url": "PLACEHOLDER: add a license-reviewed equilibrium color-change photo",
+      "image_local": "images/chemistry/effect_of_concentration_on_an_equilibrium_setup.jpg",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_1_step_1",
+          "step_number": 1,
+          "description": "Place equal portions of the equilibrium mixture into labeled test tubes.",
+          "observation": "Each tube begins with a comparable color.",
+          "duration_seconds": 3.0,
+          "motion_type": "colour_change",
+          "moving_objects": [
+            "dilute cobalt chloride solution",
+            "hydrochloric acid solution",
+            "water"
+          ],
+          "key_visual": "Each tube begins with a comparable color.",
+          "prompt_template": "colour_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_2",
+      "scene_name": "Main Procedure",
+      "new_scene": true,
+      "description": "Several labeled test tubes containing a colored equilibrium mixture are compared after controlled additions of solution.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_2_step_2",
+          "step_number": 2,
+          "description": "Add a measured amount of reagent to one tube and water to another comparison tube.",
+          "observation": "The tubes now have different concentrations of the reacting species.",
+          "duration_seconds": 3.0,
+          "motion_type": "colour_change",
+          "moving_objects": [
+            "dilute cobalt chloride solution",
+            "hydrochloric acid solution",
+            "water"
+          ],
+          "key_visual": "The tubes now have different concentrations of the reacting species.",
+          "prompt_template": "colour_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        },
+        {
+          "step_id": "scene_2_step_3",
+          "step_number": 3,
+          "description": "Mix gently and compare the colors under the same lighting.",
+          "observation": "The equilibrium mixture shifts color after the concentration change.",
+          "duration_seconds": 3.0,
+          "motion_type": "colour_change",
+          "moving_objects": [
+            "dilute cobalt chloride solution",
+            "hydrochloric acid solution",
+            "water"
+          ],
+          "key_visual": "The equilibrium mixture shifts color after the concentration change.",
+          "prompt_template": "colour_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_3",
+      "scene_name": "Observation and Result",
+      "new_scene": true,
+      "description": "Several labeled test tubes containing a colored equilibrium mixture are compared after controlled additions of solution.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_3_step_4",
+          "step_number": 4,
+          "description": "Record the direction of the visible shift and identify the applied change.",
+          "observation": "The color change provides qualitative evidence of equilibrium adjustment.",
+          "duration_seconds": 3.0,
+          "motion_type": "colour_change",
+          "moving_objects": [
+            "dilute cobalt chloride solution",
+            "hydrochloric acid solution",
+            "water"
+          ],
+          "key_visual": "The color change provides qualitative evidence of equilibrium adjustment.",
+          "prompt_template": "colour_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    }
+  ],
+  "prompt_templates_used": [
+    "colour_change"
+  ],
+  "total_clips": 4,
+  "total_scenes": 3,
+  "status": "dataset_only",
+  "video_generated": false,
+  "video_path": "",
+  "notes": "Image is a placeholder until a license-reviewed local asset is added."
+}

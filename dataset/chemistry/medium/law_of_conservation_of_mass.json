@@ -1,0 +1,152 @@
+{
+  "id": "chemistry_medium_chem_9_002",
+  "name": "Law of Conservation of Mass",
+  "subject": "chemistry",
+  "class_level": 9,
+  "difficulty": "medium",
+  "chapter": "Atoms and Molecules",
+  "ncert_reference": "NCERT textbook portal; Class 9 atoms and molecules activity page to verify",
+  "source_file": "https://ncert.nic.in/textbook.php",
+  "educational_goal": "Compare total mass before and after a chemical reaction in a closed system.",
+  "prerequisites": [
+    "chemical reaction",
+    "conservation of mass",
+    "closed system"
+  ],
+  "estimated_video_duration_seconds": 12,
+  "tags": [
+    "conservation-of-mass",
+    "reaction",
+    "class-9"
+  ],
+  "materials": [
+    "conical flask",
+    "balloon",
+    "baking soda",
+    "vinegar",
+    "balance"
+  ],
+  "safety_notes": [
+    "Use small quantities and eye protection.",
+    "Do not seal a rigid container during gas production."
+  ],
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_name": "Setup and Preparation",
+      "new_scene": true,
+      "description": "A conical flask with vinegar supports a balloon containing baking soda, positioned on a digital balance before and after mixing.",
+      "image_url": "PLACEHOLDER: add a license-reviewed closed-reaction photo",
+      "image_local": "images/chemistry/law_of_conservation_of_mass_setup.jpg",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_1_step_1",
+          "step_number": 1,
+          "description": "Place baking soda in a balloon and vinegar in a flask without mixing them.",
+          "observation": "Reactants are separated while the complete apparatus can be weighed.",
+          "duration_seconds": 3.0,
+          "motion_type": "state_change",
+          "moving_objects": [
+            "conical flask",
+            "balloon",
+            "baking soda"
+          ],
+          "key_visual": "Reactants are separated while the complete apparatus can be weighed.",
+          "prompt_template": "state_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_2",
+      "scene_name": "Main Procedure",
+      "new_scene": true,
+      "description": "A conical flask with vinegar supports a balloon containing baking soda, positioned on a digital balance before and after mixing.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_2_step_2",
+          "step_number": 2,
+          "description": "Attach the balloon to the flask and measure the mass of the closed arrangement.",
+          "observation": "The initial total mass is recorded.",
+          "duration_seconds": 3.0,
+          "motion_type": "observation",
+          "moving_objects": [
+            "conical flask",
+            "balloon",
+            "baking soda"
+          ],
+          "key_visual": "The initial total mass is recorded.",
+          "prompt_template": "observation",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        },
+        {
+          "step_id": "scene_2_step_3",
+          "step_number": 3,
+          "description": "Lift the balloon so the baking soda falls into the vinegar.",
+          "observation": "Fizzing occurs and the balloon inflates as gas forms.",
+          "duration_seconds": 3.0,
+          "motion_type": "fluid_dynamics",
+          "moving_objects": [
+            "conical flask",
+            "balloon",
+            "baking soda"
+          ],
+          "key_visual": "Fizzing occurs and the balloon inflates as gas forms.",
+          "prompt_template": "fluid_dynamics",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_3",
+      "scene_name": "Observation and Result",
+      "new_scene": true,
+      "description": "A conical flask with vinegar supports a balloon containing baking soda, positioned on a digital balance before and after mixing.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_3_step_4",
+          "step_number": 4,
+          "description": "Measure the mass again without opening the arrangement.",
+          "observation": "The total mass remains approximately unchanged in the closed system.",
+          "duration_seconds": 3.0,
+          "motion_type": "continuous_action",
+          "moving_objects": [
+            "conical flask",
+            "balloon",
+            "baking soda"
+          ],
+          "key_visual": "The total mass remains approximately unchanged in the closed system.",
+          "prompt_template": "continuous_action",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    }
+  ],
+  "prompt_templates_used": [
+    "continuous_action",
+    "fluid_dynamics",
+    "observation",
+    "state_change"
+  ],
+  "total_clips": 4,
+  "total_scenes": 3,
+  "status": "dataset_only",
+  "video_generated": false,
+  "video_path": "",
+  "notes": "Image is a placeholder until a license-reviewed local asset is added."
+}

@@ -1,0 +1,151 @@
+{
+  "id": "chemistry_easy_chem_9_001",
+  "name": "Diffusion of an Ink Drop in Water",
+  "subject": "chemistry",
+  "class_level": 9,
+  "difficulty": "easy",
+  "chapter": "Matter in Our Surroundings",
+  "ncert_reference": "NCERT textbook portal; Class 9 matter chapter page to verify",
+  "source_file": "https://ncert.nic.in/textbook.php",
+  "educational_goal": "Observe diffusion and relate the spreading of particles to temperature and particle motion.",
+  "prerequisites": [
+    "diffusion",
+    "particle motion",
+    "temperature"
+  ],
+  "estimated_video_duration_seconds": 12,
+  "tags": [
+    "diffusion",
+    "matter",
+    "class-9"
+  ],
+  "materials": [
+    "two transparent beakers",
+    "cold water",
+    "warm water",
+    "ink drop",
+    "dropper"
+  ],
+  "safety_notes": [
+    "Use warm water that is safe to handle, not boiling water.",
+    "Keep liquids away from electrical equipment."
+  ],
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_name": "Setup and Preparation",
+      "new_scene": true,
+      "description": "Two identical beakers, one marked warm and one cold, show ink diffusing through water without stirring.",
+      "image_url": "PLACEHOLDER: add a license-reviewed diffusion demonstration photo",
+      "image_local": "images/chemistry/diffusion_of_an_ink_drop_in_water_setup.jpg",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_1_step_1",
+          "step_number": 1,
+          "description": "Fill one beaker with cold water and one with warm water.",
+          "observation": "The two beakers contain equal-looking water at different temperatures.",
+          "duration_seconds": 3.0,
+          "motion_type": "state_change",
+          "moving_objects": [
+            "two transparent beakers",
+            "cold water",
+            "warm water"
+          ],
+          "key_visual": "The two beakers contain equal-looking water at different temperatures.",
+          "prompt_template": "state_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_2",
+      "scene_name": "Main Procedure",
+      "new_scene": true,
+      "description": "Two identical beakers, one marked warm and one cold, show ink diffusing through water without stirring.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_2_step_2",
+          "step_number": 2,
+          "description": "Place one drop of ink gently in the center of each beaker without stirring.",
+          "observation": "A dark ink region appears at the point of addition.",
+          "duration_seconds": 3.0,
+          "motion_type": "state_change",
+          "moving_objects": [
+            "two transparent beakers",
+            "cold water",
+            "warm water"
+          ],
+          "key_visual": "A dark ink region appears at the point of addition.",
+          "prompt_template": "state_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        },
+        {
+          "step_id": "scene_2_step_3",
+          "step_number": 3,
+          "description": "Observe both beakers for the same time interval.",
+          "observation": "Ink spreads through warm water faster than through cold water.",
+          "duration_seconds": 3.0,
+          "motion_type": "fluid_dynamics",
+          "moving_objects": [
+            "two transparent beakers",
+            "cold water",
+            "warm water"
+          ],
+          "key_visual": "Ink spreads through warm water faster than through cold water.",
+          "prompt_template": "fluid_dynamics",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_3",
+      "scene_name": "Observation and Result",
+      "new_scene": true,
+      "description": "Two identical beakers, one marked warm and one cold, show ink diffusing through water without stirring.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_3_step_4",
+          "step_number": 4,
+          "description": "Record the relative diffusion rates and explain the observation using particle motion.",
+          "observation": "Higher temperature is associated with faster visible spreading.",
+          "duration_seconds": 3.0,
+          "motion_type": "observation",
+          "moving_objects": [
+            "two transparent beakers",
+            "cold water",
+            "warm water"
+          ],
+          "key_visual": "Higher temperature is associated with faster visible spreading.",
+          "prompt_template": "observation",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    }
+  ],
+  "prompt_templates_used": [
+    "fluid_dynamics",
+    "observation",
+    "state_change"
+  ],
+  "total_clips": 4,
+  "total_scenes": 3,
+  "status": "dataset_only",
+  "video_generated": false,
+  "video_path": "",
+  "notes": "Image is a placeholder until a license-reviewed local asset is added."
+}

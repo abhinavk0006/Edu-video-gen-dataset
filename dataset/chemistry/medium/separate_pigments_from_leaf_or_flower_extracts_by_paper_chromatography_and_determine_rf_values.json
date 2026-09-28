@@ -1,0 +1,140 @@
+{
+  "id": "chemistry_medium_chem_12_501",
+  "name": "Separate pigments from leaf or flower extracts by paper chromatography and determine Rf values",
+  "subject": "chemistry",
+  "class_level": 12,
+  "difficulty": "medium",
+  "chapter": "Chromatography",
+  "ncert_reference": "Manual of Microscale Chemistry Laboratory Kit, Chapter Chromatography, Experiment 5.1; exact PDF pages to verify during citation pass",
+  "source_file": "Manual_01.pdf",
+  "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Separate pigments from leaf or flower extracts by paper chromatography and determine Rf values' and record its manual-defined observations and result.",
+  "prerequisites": [
+    "chromatography",
+    "laboratory observation",
+    "microscale chemistry"
+  ],
+  "estimated_video_duration_seconds": 12,
+  "tags": [
+    "class-12",
+    "manual-01",
+    "chromatography",
+    "5.1"
+  ],
+  "materials": [
+    "chromatography jar, cork and hook, filter paper, capillary tube, pencil, ethanol, leaf or flower extract"
+  ],
+  "safety_notes": [
+    "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
+    "Wear eye protection and do not taste or directly handle chemicals."
+  ],
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_name": "Setup and Preparation",
+      "new_scene": true,
+      "description": "A clean school chemistry bench presents the apparatus and materials for Separate pigments from leaf or flower extracts by paper chromatography and determine Rf values, followed by the controlled visible operations described in Manual_01.pdf.",
+      "image_url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
+      "image_local": "images/chemistry/separate_pigments_from_leaf_or_flower_extracts_by_paper_chromatography_and_determine_rf_values_setup.jpg",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_1_step_1",
+          "step_number": 1,
+          "description": "Draw a pencil reference line about 3 cm from the end of a filter-paper strip.",
+          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "duration_seconds": 3.0,
+          "motion_type": "state_change",
+          "moving_objects": [
+            "chromatography jar, cork and hook, filter paper, capillary tube, pencil, ethanol, leaf or flower extract"
+          ],
+          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "prompt_template": "state_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_2",
+      "scene_name": "Main Procedure",
+      "new_scene": true,
+      "description": "A clean school chemistry bench presents the apparatus and materials for Separate pigments from leaf or flower extracts by paper chromatography and determine Rf values, followed by the controlled visible operations described in Manual_01.pdf.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_2_step_2",
+          "step_number": 2,
+          "description": "Place a small extract spot on the line and suspend the strip in ethanol with the spot above the solvent.",
+          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "duration_seconds": 3.0,
+          "motion_type": "observation",
+          "moving_objects": [
+            "chromatography jar, cork and hook, filter paper, capillary tube, pencil, ethanol, leaf or flower extract"
+          ],
+          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "prompt_template": "observation",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        },
+        {
+          "step_id": "scene_2_step_3",
+          "step_number": 3,
+          "description": "Allow the solvent to rise to about three-fourths of the strip.",
+          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "duration_seconds": 3.0,
+          "motion_type": "fluid_dynamics",
+          "moving_objects": [
+            "chromatography jar, cork and hook, filter paper, capillary tube, pencil, ethanol, leaf or flower extract"
+          ],
+          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "prompt_template": "fluid_dynamics",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_3",
+      "scene_name": "Observation and Result",
+      "new_scene": true,
+      "description": "A clean school chemistry bench presents the apparatus and materials for Separate pigments from leaf or flower extracts by paper chromatography and determine Rf values, followed by the controlled visible operations described in Manual_01.pdf.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_3_step_4",
+          "step_number": 4,
+          "description": "Mark the solvent front and separated spots, measure distances, and calculate each Rf value.",
+          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "duration_seconds": 3.0,
+          "motion_type": "observation",
+          "moving_objects": [
+            "chromatography jar, cork and hook, filter paper, capillary tube, pencil, ethanol, leaf or flower extract"
+          ],
+          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "prompt_template": "observation",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    }
+  ],
+  "prompt_templates_used": [
+    "fluid_dynamics",
+    "observation",
+    "state_change"
+  ],
+  "total_clips": 4,
+  "total_scenes": 3,
+  "status": "dataset_only",
+  "video_generated": false,
+  "video_path": "",
+  "notes": "Image is a placeholder until a license-reviewed local asset is added."
+}

@@ -1,0 +1,123 @@
+{
+  "id": "chemistry_medium_chem_12_603",
+  "name": "Prepare acetanilide",
+  "subject": "chemistry",
+  "class_level": 12,
+  "difficulty": "medium",
+  "chapter": "Preparation of Compounds",
+  "ncert_reference": "Manual of Microscale Chemistry Laboratory Kit, Chapter Preparation of Compounds, Experiment 6.3; exact PDF pages to verify during citation pass",
+  "source_file": "Manual_01.pdf",
+  "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Prepare acetanilide' and record its manual-defined observations and result.",
+  "prerequisites": [
+    "preparation of compounds",
+    "laboratory observation",
+    "microscale chemistry"
+  ],
+  "estimated_video_duration_seconds": 9,
+  "tags": [
+    "class-12",
+    "manual-01",
+    "preparation-of-compounds",
+    "6.3"
+  ],
+  "materials": [
+    "aniline, acetic acid or acetic anhydride, water bath, test tube, filter paper"
+  ],
+  "safety_notes": [
+    "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
+    "Wear eye protection and do not taste or directly handle chemicals."
+  ],
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_name": "Setup and Preparation",
+      "new_scene": true,
+      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare acetanilide, followed by the controlled visible operations described in Manual_01.pdf.",
+      "image_url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
+      "image_local": "images/chemistry/prepare_acetanilide_setup.jpg",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_1_step_1",
+          "step_number": 1,
+          "description": "Mix aniline with glacial acetic acid and the prescribed acetylating reagent.",
+          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "duration_seconds": 3.0,
+          "motion_type": "state_change",
+          "moving_objects": [
+            "aniline, acetic acid or acetic anhydride, water bath, test tube, filter paper"
+          ],
+          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "prompt_template": "state_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_2",
+      "scene_name": "Main Procedure",
+      "new_scene": true,
+      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare acetanilide, followed by the controlled visible operations described in Manual_01.pdf.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_2_step_2",
+          "step_number": 2,
+          "description": "Warm the reaction mixture as directed to form acetanilide.",
+          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "duration_seconds": 3.0,
+          "motion_type": "state_change",
+          "moving_objects": [
+            "aniline, acetic acid or acetic anhydride, water bath, test tube, filter paper"
+          ],
+          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "prompt_template": "state_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_3",
+      "scene_name": "Observation and Result",
+      "new_scene": true,
+      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare acetanilide, followed by the controlled visible operations described in Manual_01.pdf.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_3_step_3",
+          "step_number": 3,
+          "description": "Cool, precipitate, filter, wash, dry, and record the appearance and yield of the product.",
+          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "duration_seconds": 3.0,
+          "motion_type": "colour_change",
+          "moving_objects": [
+            "aniline, acetic acid or acetic anhydride, water bath, test tube, filter paper"
+          ],
+          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "prompt_template": "colour_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    }
+  ],
+  "prompt_templates_used": [
+    "colour_change",
+    "state_change"
+  ],
+  "total_clips": 3,
+  "total_scenes": 3,
+  "status": "dataset_only",
+  "video_generated": false,
+  "video_path": "",
+  "notes": "Image is a placeholder until a license-reviewed local asset is added."
+}

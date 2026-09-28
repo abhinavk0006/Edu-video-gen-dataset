@@ -1,0 +1,72 @@
+{
+  "query": "ohm law",
+  "top_k": 1,
+  "retrieved_experiments": [
+    {
+      "experiment_id": "phy_12_001",
+      "retrieval_score": 0.3219884449276741,
+      "title": "Determine resistance per unit length of a wire from a potential difference-current graph",
+      "subject": "Physics",
+      "class_level": 12,
+      "difficulty": "medium",
+      "educational_goal": "Perform the Physics Laboratory Manual Class 12 experiment 'Determine resistance per unit length of a wire from a potential difference-current graph' and connect the measurements to the stated physical principle.",
+      "status": "source_review",
+      "source_ids": [
+        "physics_manual_11_12"
+      ],
+      "scenes": [
+        {
+          "scene_id": "phy_12_001_scene",
+          "scene_name": "Manual setup and measurement",
+          "description": "A school physics laboratory bench presents the apparatus for Determine resistance per unit length of a wire from a potential difference-current graph, followed by controlled measurement and graphing actions from the supplied Physics Laboratory Manual."
+        }
+      ]
+    }
+  ],
+  "prompt_inputs": [
+    {
+      "experiment_id": "phy_12_001",
+      "scene_id": "phy_12_001_scene",
+      "step_id": 1,
+      "prompt": "Create a realistic educational science video clip for Class 12 Physics experiment 'Determine resistance per unit length of a wire from a potential difference-current graph'. Show the scene 'Manual setup and measurement': A school physics laboratory bench presents the apparatus for Determine resistance per unit length of a wire from a potential difference-current graph, followed by controlled measurement and graphing actions from the supplied Physics Laboratory Manual. Perform this step: Arrange the apparatus and materials required for Determine resistance per unit length of a wire from a potential difference-current graph as shown in the manual. Show the expected observation: The apparatus is aligned and the initial condition is recorded. Visible actions may include: arrange apparatus, take measurements, record readings, plot or calculate result. Use only these materials: manual-specified apparatus, measuring instruments, recording table, graph paper where required. Keep the apparatus, quantities, actions, and scientific outcome accurate. Use clear classroom lighting, stable framing, natural motion, and no labels or watermark.",
+      "negative_prompt": "blurry, distorted apparatus, incorrect measurements, text artifacts, watermark",
+      "starting_image": "PLACEHOLDER: add a license-reviewed real physics laboratory setup image",
+      "source_ids": [
+        "physics_manual_11_12"
+      ]
+    },
+    {
+      "experiment_id": "phy_12_001",
+      "scene_id": "phy_12_001_scene",
+      "step_id": 2,
+      "prompt": "Create a realistic educational science video clip for Class 12 Physics experiment 'Determine resistance per unit length of a wire from a potential difference-current graph'. Show the scene 'Manual setup and measurement': A school physics laboratory bench presents the apparatus for Determine resistance per unit length of a wire from a potential difference-current graph, followed by controlled measurement and graphing actions from the supplied Physics Laboratory Manual. Perform this step: Take the prescribed measurements or make the controlled adjustment described in the manual. Show the expected observation: The relevant physical quantity changes while other conditions are kept controlled. Visible actions may include: arrange apparatus, take measurements, record readings, plot or calculate result. Use only these materials: manual-specified apparatus, measuring instruments, recording table, graph paper where required. Keep the apparatus, quantities, actions, and scientific outcome accurate. Use clear classroom lighting, stable framing, natural motion, and no labels or watermark.",
+      "negative_prompt": "blurry, distorted apparatus, incorrect measurements, text artifacts, watermark",
+      "starting_image": "PLACEHOLDER: add a license-reviewed real physics laboratory setup image",
+      "source_ids": [
+        "physics_manual_11_12"
+      ]
+    },
+    {
+      "experiment_id": "phy_12_001",
+      "scene_id": "phy_12_001_scene",
+      "step_id": 3,
+      "prompt": "Create a realistic educational science video clip for Class 12 Physics experiment 'Determine resistance per unit length of a wire from a potential difference-current graph'. Show the scene 'Manual setup and measurement': A school physics laboratory bench presents the apparatus for Determine resistance per unit length of a wire from a potential difference-current graph, followed by controlled measurement and graphing actions from the supplied Physics Laboratory Manual. Perform this step: Repeat the observation for the required readings or settings and record the result in a table. Show the expected observation: A set of comparable readings is obtained for analysis. Visible actions may include: arrange apparatus, take measurements, record readings, plot or calculate result. Use only these materials: manual-specified apparatus, measuring instruments, recording table, graph paper where required. Keep the apparatus, quantities, actions, and scientific outcome accurate. Use clear classroom lighting, stable framing, natural motion, and no labels or watermark.",
+      "negative_prompt": "blurry, distorted apparatus, incorrect measurements, text artifacts, watermark",
+      "starting_image": "PLACEHOLDER: add a license-reviewed real physics laboratory setup image",
+      "source_ids": [
+        "physics_manual_11_12"
+      ]
+    },
+    {
+      "experiment_id": "phy_12_001",
+      "scene_id": "phy_12_001_scene",
+      "step_id": 4,
+      "prompt": "Create a realistic educational science video clip for Class 12 Physics experiment 'Determine resistance per unit length of a wire from a potential difference-current graph'. Show the scene 'Manual setup and measurement': A school physics laboratory bench presents the apparatus for Determine resistance per unit length of a wire from a potential difference-current graph, followed by controlled measurement and graphing actions from the supplied Physics Laboratory Manual. Perform this step: Plot the required graph or apply the stated relation and report the final quantity. Show the expected observation: The calculated result is compared with the expected physical relationship. Visible actions may include: arrange apparatus, take measurements, record readings, plot or calculate result. Use only these materials: manual-specified apparatus, measuring instruments, recording table, graph paper where required. Keep the apparatus, quantities, actions, and scientific outcome accurate. Use clear classroom lighting, stable framing, natural motion, and no labels or watermark.",
+      "negative_prompt": "blurry, distorted apparatus, incorrect measurements, text artifacts, watermark",
+      "starting_image": "PLACEHOLDER: add a license-reviewed real physics laboratory setup image",
+      "source_ids": [
+        "physics_manual_11_12"
+      ]
+    }
+  ]
+}

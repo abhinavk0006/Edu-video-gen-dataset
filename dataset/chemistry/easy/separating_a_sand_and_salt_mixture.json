@@ -1,0 +1,154 @@
+{
+  "id": "chemistry_easy_chem_8_002",
+  "name": "Separating a Sand and Salt Mixture",
+  "subject": "chemistry",
+  "class_level": 8,
+  "difficulty": "easy",
+  "chapter": "Physical and Chemical Changes",
+  "ncert_reference": "NCERT textbook portal; exact Class 8 chapter and page to verify",
+  "source_file": "https://ncert.nic.in/textbook.php",
+  "educational_goal": "Demonstrate filtration, evaporation, and recovery of components from a sand and salt mixture.",
+  "prerequisites": [
+    "filtration",
+    "evaporation",
+    "separation of mixtures"
+  ],
+  "estimated_video_duration_seconds": 12,
+  "tags": [
+    "filtration",
+    "evaporation",
+    "separation",
+    "class-8"
+  ],
+  "materials": [
+    "sand",
+    "salt",
+    "water",
+    "beaker",
+    "filter paper",
+    "funnel",
+    "evaporating dish"
+  ],
+  "safety_notes": [
+    "Use heat only with adult supervision.",
+    "Handle hot glassware with tongs."
+  ],
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_name": "Setup and Preparation",
+      "new_scene": true,
+      "description": "A school laboratory bench shows a funnel filtering a sand-salt mixture into a beaker and an evaporating dish nearby.",
+      "image_url": "PLACEHOLDER: add a license-reviewed filtration setup photo",
+      "image_local": "images/chemistry/separating_a_sand_and_salt_mixture_setup.jpg",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_1_step_1",
+          "step_number": 1,
+          "description": "Add water to the sand and salt mixture and stir thoroughly.",
+          "observation": "Salt dissolves while sand remains as solid particles.",
+          "duration_seconds": 3.0,
+          "motion_type": "state_change",
+          "moving_objects": [
+            "sand",
+            "salt",
+            "water"
+          ],
+          "key_visual": "Salt dissolves while sand remains as solid particles.",
+          "prompt_template": "state_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_2",
+      "scene_name": "Main Procedure",
+      "new_scene": true,
+      "description": "A school laboratory bench shows a funnel filtering a sand-salt mixture into a beaker and an evaporating dish nearby.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_2_step_2",
+          "step_number": 2,
+          "description": "Pour the mixture through folded filter paper in a funnel.",
+          "observation": "Sand remains on the filter paper and salt solution collects below.",
+          "duration_seconds": 3.0,
+          "motion_type": "state_change",
+          "moving_objects": [
+            "sand",
+            "salt",
+            "water"
+          ],
+          "key_visual": "Sand remains on the filter paper and salt solution collects below.",
+          "prompt_template": "state_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        },
+        {
+          "step_id": "scene_2_step_3",
+          "step_number": 3,
+          "description": "Transfer the filtrate to an evaporating dish and warm it gently.",
+          "observation": "Water evaporates and solid salt crystals remain.",
+          "duration_seconds": 3.0,
+          "motion_type": "fluid_dynamics",
+          "moving_objects": [
+            "sand",
+            "salt",
+            "water"
+          ],
+          "key_visual": "Water evaporates and solid salt crystals remain.",
+          "prompt_template": "fluid_dynamics",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_3",
+      "scene_name": "Observation and Result",
+      "new_scene": true,
+      "description": "A school laboratory bench shows a funnel filtering a sand-salt mixture into a beaker and an evaporating dish nearby.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_3_step_4",
+          "step_number": 4,
+          "description": "Compare the recovered sand and salt with the original mixture.",
+          "observation": "Both components are recovered by using different physical properties.",
+          "duration_seconds": 3.0,
+          "motion_type": "colour_change",
+          "moving_objects": [
+            "sand",
+            "salt",
+            "water"
+          ],
+          "key_visual": "Both components are recovered by using different physical properties.",
+          "prompt_template": "colour_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    }
+  ],
+  "prompt_templates_used": [
+    "colour_change",
+    "fluid_dynamics",
+    "state_change"
+  ],
+  "total_clips": 4,
+  "total_scenes": 3,
+  "status": "dataset_only",
+  "video_generated": false,
+  "video_path": "",
+  "notes": "Image is a placeholder until a license-reviewed local asset is added."
+}

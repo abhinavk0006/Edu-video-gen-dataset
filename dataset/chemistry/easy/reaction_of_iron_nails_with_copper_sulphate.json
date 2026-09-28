@@ -1,0 +1,150 @@
+{
+  "id": "chemistry_easy_chem_10_002",
+  "name": "Reaction of Iron Nails with Copper Sulphate",
+  "subject": "chemistry",
+  "class_level": 10,
+  "difficulty": "easy",
+  "chapter": "Chemical Reactions and Equations",
+  "ncert_reference": "NCERT textbook portal; Class 10 chemical reactions activity page to verify",
+  "source_file": "https://ncert.nic.in/textbook.php",
+  "educational_goal": "Observe a displacement reaction and connect visible changes to relative reactivity of metals.",
+  "prerequisites": [
+    "displacement reaction",
+    "reactivity series",
+    "redox change"
+  ],
+  "estimated_video_duration_seconds": 12,
+  "tags": [
+    "displacement",
+    "metals",
+    "class-10"
+  ],
+  "materials": [
+    "clean iron nail",
+    "copper sulphate solution",
+    "test tube",
+    "sandpaper",
+    "holder"
+  ],
+  "safety_notes": [
+    "Wear eye protection.",
+    "Wash hands after handling chemicals."
+  ],
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_name": "Setup and Preparation",
+      "new_scene": true,
+      "description": "A clean iron nail is suspended in a transparent test tube containing blue copper sulphate solution on a school laboratory bench.",
+      "image_url": "PLACEHOLDER: add a license-reviewed iron-copper sulphate photo",
+      "image_local": "images/chemistry/reaction_of_iron_nails_with_copper_sulphate_setup.jpg",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_1_step_1",
+          "step_number": 1,
+          "description": "Clean an iron nail with sandpaper and place it in a test tube of blue copper sulphate solution.",
+          "observation": "The nail is initially metallic gray and the solution is blue.",
+          "duration_seconds": 3.0,
+          "motion_type": "colour_change",
+          "moving_objects": [
+            "clean iron nail",
+            "copper sulphate solution",
+            "test tube"
+          ],
+          "key_visual": "The nail is initially metallic gray and the solution is blue.",
+          "prompt_template": "colour_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_2",
+      "scene_name": "Main Procedure",
+      "new_scene": true,
+      "description": "A clean iron nail is suspended in a transparent test tube containing blue copper sulphate solution on a school laboratory bench.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_2_step_2",
+          "step_number": 2,
+          "description": "Leave the nail immersed without shaking for an observation period.",
+          "observation": "A reddish-brown coating begins forming on the nail.",
+          "duration_seconds": 3.0,
+          "motion_type": "colour_change",
+          "moving_objects": [
+            "clean iron nail",
+            "copper sulphate solution",
+            "test tube"
+          ],
+          "key_visual": "A reddish-brown coating begins forming on the nail.",
+          "prompt_template": "colour_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        },
+        {
+          "step_id": "scene_2_step_3",
+          "step_number": 3,
+          "description": "Remove the nail and compare the solution color with a fresh sample.",
+          "observation": "The solution becomes less blue as iron displaces copper.",
+          "duration_seconds": 3.0,
+          "motion_type": "colour_change",
+          "moving_objects": [
+            "clean iron nail",
+            "copper sulphate solution",
+            "test tube"
+          ],
+          "key_visual": "The solution becomes less blue as iron displaces copper.",
+          "prompt_template": "colour_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_3",
+      "scene_name": "Observation and Result",
+      "new_scene": true,
+      "description": "A clean iron nail is suspended in a transparent test tube containing blue copper sulphate solution on a school laboratory bench.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_3_step_4",
+          "step_number": 4,
+          "description": "Write the word equation for the displacement reaction.",
+          "observation": "Iron and copper sulphate produce iron sulphate and copper.",
+          "duration_seconds": 3.0,
+          "motion_type": "continuous_action",
+          "moving_objects": [
+            "clean iron nail",
+            "copper sulphate solution",
+            "test tube"
+          ],
+          "key_visual": "Iron and copper sulphate produce iron sulphate and copper.",
+          "prompt_template": "continuous_action",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    }
+  ],
+  "prompt_templates_used": [
+    "colour_change",
+    "continuous_action"
+  ],
+  "total_clips": 4,
+  "total_scenes": 3,
+  "status": "dataset_only",
+  "video_generated": false,
+  "video_path": "",
+  "notes": "Image is a placeholder until a license-reviewed local asset is added."
+}

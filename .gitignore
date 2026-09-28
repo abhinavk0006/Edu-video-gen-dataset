@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+.venv/
+models/
+outputs/
+results*.json
+exports/*_api_results.json
+*.safetensors
+*.ckpt
+*.bin

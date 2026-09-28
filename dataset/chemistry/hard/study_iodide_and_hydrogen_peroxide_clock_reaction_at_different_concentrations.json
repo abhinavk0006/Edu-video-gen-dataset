@@ -1,0 +1,139 @@
+{
+  "id": "chemistry_hard_chem_12_903",
+  "name": "Study iodide and hydrogen peroxide clock reaction at different concentrations",
+  "subject": "chemistry",
+  "class_level": 12,
+  "difficulty": "hard",
+  "chapter": "Chemical Kinetics",
+  "ncert_reference": "Manual of Microscale Chemistry Laboratory Kit, Chapter Chemical Kinetics, Experiment 9.3; exact PDF pages to verify during citation pass",
+  "source_file": "Manual_01.pdf",
+  "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Study iodide and hydrogen peroxide clock reaction at different concentrations' and record its manual-defined observations and result.",
+  "prerequisites": [
+    "chemical kinetics",
+    "laboratory observation",
+    "microscale chemistry"
+  ],
+  "estimated_video_duration_seconds": 12,
+  "tags": [
+    "class-12",
+    "manual-01",
+    "chemical-kinetics",
+    "9.3"
+  ],
+  "materials": [
+    "potassium iodide, hydrogen peroxide, sulphuric acid, sodium thiosulphate, starch, volumetric flasks, stopwatch"
+  ],
+  "safety_notes": [
+    "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
+    "Wear eye protection and do not taste or directly handle chemicals."
+  ],
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_name": "Setup and Preparation",
+      "new_scene": true,
+      "description": "A clean school chemistry bench presents the apparatus and materials for Study iodide and hydrogen peroxide clock reaction at different concentrations, followed by the controlled visible operations described in Manual_01.pdf.",
+      "image_url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
+      "image_local": "images/chemistry/study_iodide_and_hydrogen_peroxide_clock_reaction_at_different_concentrations_setup.jpg",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_1_step_1",
+          "step_number": 1,
+          "description": "Prepare sodium thiosulphate, potassium iodide, acid, hydrogen peroxide, and starch solutions as specified.",
+          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "duration_seconds": 3.0,
+          "motion_type": "observation",
+          "moving_objects": [
+            "potassium iodide, hydrogen peroxide, sulphuric acid, sodium thiosulphate, starch, volumetric flasks, stopwatch"
+          ],
+          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "prompt_template": "observation",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_2",
+      "scene_name": "Main Procedure",
+      "new_scene": true,
+      "description": "A clean school chemistry bench presents the apparatus and materials for Study iodide and hydrogen peroxide clock reaction at different concentrations, followed by the controlled visible operations described in Manual_01.pdf.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_2_step_2",
+          "step_number": 2,
+          "description": "Combine measured volumes in a series of beakers with different iodide concentrations.",
+          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "duration_seconds": 3.0,
+          "motion_type": "colour_change",
+          "moving_objects": [
+            "potassium iodide, hydrogen peroxide, sulphuric acid, sodium thiosulphate, starch, volumetric flasks, stopwatch"
+          ],
+          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "prompt_template": "colour_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        },
+        {
+          "step_id": "scene_2_step_3",
+          "step_number": 3,
+          "description": "Start timing when the reaction mixture is added and record when the intense blue starch-iodine color appears.",
+          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "duration_seconds": 3.0,
+          "motion_type": "colour_change",
+          "moving_objects": [
+            "potassium iodide, hydrogen peroxide, sulphuric acid, sodium thiosulphate, starch, volumetric flasks, stopwatch"
+          ],
+          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "prompt_template": "colour_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_3",
+      "scene_name": "Observation and Result",
+      "new_scene": true,
+      "description": "A clean school chemistry bench presents the apparatus and materials for Study iodide and hydrogen peroxide clock reaction at different concentrations, followed by the controlled visible operations described in Manual_01.pdf.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_3_step_4",
+          "step_number": 4,
+          "description": "Plot inverse time against iodide concentration and interpret the rate trend.",
+          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "duration_seconds": 3.0,
+          "motion_type": "observation",
+          "moving_objects": [
+            "potassium iodide, hydrogen peroxide, sulphuric acid, sodium thiosulphate, starch, volumetric flasks, stopwatch"
+          ],
+          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "prompt_template": "observation",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    }
+  ],
+  "prompt_templates_used": [
+    "colour_change",
+    "observation"
+  ],
+  "total_clips": 4,
+  "total_scenes": 3,
+  "status": "dataset_only",
+  "video_generated": false,
+  "video_path": "",
+  "notes": "Image is a placeholder until a license-reviewed local asset is added."
+}

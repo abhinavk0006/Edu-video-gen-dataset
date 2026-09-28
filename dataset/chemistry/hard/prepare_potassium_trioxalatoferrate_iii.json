@@ -1,0 +1,122 @@
+{
+  "id": "chemistry_hard_chem_12_602",
+  "name": "Prepare potassium trioxalatoferrate(III)",
+  "subject": "chemistry",
+  "class_level": 12,
+  "difficulty": "hard",
+  "chapter": "Preparation of Compounds",
+  "ncert_reference": "Manual of Microscale Chemistry Laboratory Kit, Chapter Preparation of Compounds, Experiment 6.2; exact PDF pages to verify during citation pass",
+  "source_file": "Manual_01.pdf",
+  "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Prepare potassium trioxalatoferrate(III)' and record its manual-defined observations and result.",
+  "prerequisites": [
+    "preparation of compounds",
+    "laboratory observation",
+    "microscale chemistry"
+  ],
+  "estimated_video_duration_seconds": 9,
+  "tags": [
+    "class-12",
+    "manual-01",
+    "preparation-of-compounds",
+    "6.2"
+  ],
+  "materials": [
+    "ferric chloride, oxalic acid, potassium oxalate, water, beakers, burner, filter"
+  ],
+  "safety_notes": [
+    "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
+    "Wear eye protection and do not taste or directly handle chemicals."
+  ],
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_name": "Setup and Preparation",
+      "new_scene": true,
+      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare potassium trioxalatoferrate(III), followed by the controlled visible operations described in Manual_01.pdf.",
+      "image_url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
+      "image_local": "images/chemistry/prepare_potassium_trioxalatoferrate_iii_setup.jpg",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_1_step_1",
+          "step_number": 1,
+          "description": "Mix the prescribed ferric chloride, oxalic acid, and potassium oxalate solutions.",
+          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "duration_seconds": 3.0,
+          "motion_type": "state_change",
+          "moving_objects": [
+            "ferric chloride, oxalic acid, potassium oxalate, water, beakers, burner, filter"
+          ],
+          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "prompt_template": "state_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_2",
+      "scene_name": "Main Procedure",
+      "new_scene": true,
+      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare potassium trioxalatoferrate(III), followed by the controlled visible operations described in Manual_01.pdf.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_2_step_2",
+          "step_number": 2,
+          "description": "Heat or concentrate the mixture under the manual's conditions to form the complex compound.",
+          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "duration_seconds": 3.0,
+          "motion_type": "state_change",
+          "moving_objects": [
+            "ferric chloride, oxalic acid, potassium oxalate, water, beakers, burner, filter"
+          ],
+          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "prompt_template": "state_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_3",
+      "scene_name": "Observation and Result",
+      "new_scene": true,
+      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare potassium trioxalatoferrate(III), followed by the controlled visible operations described in Manual_01.pdf.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_3_step_3",
+          "step_number": 3,
+          "description": "Cool the solution so green crystals separate, then filter, wash, dry, and record the yield.",
+          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "duration_seconds": 3.0,
+          "motion_type": "state_change",
+          "moving_objects": [
+            "ferric chloride, oxalic acid, potassium oxalate, water, beakers, burner, filter"
+          ],
+          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "prompt_template": "state_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    }
+  ],
+  "prompt_templates_used": [
+    "state_change"
+  ],
+  "total_clips": 3,
+  "total_scenes": 3,
+  "status": "dataset_only",
+  "video_generated": false,
+  "video_path": "",
+  "notes": "Image is a placeholder until a license-reviewed local asset is added."
+}

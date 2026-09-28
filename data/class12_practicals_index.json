@@ -1,0 +1,31 @@
+{
+  "source_type": "superseded_user_provided_lab_index_image",
+  "source_note": "Historical transcription of the supplied image. It is retained for provenance only; Manual_01.pdf is the authoritative Class 12 experiment source for the canonical dataset.",
+  "class_level": 12,
+  "subject": "Chemistry",
+  "status": "superseded",
+  "practicals": [
+    {"index_number": 1, "title": "Preparation of a Lyophilic Sol (Starch Sol)", "page": 2},
+    {"index_number": 2, "title": "Preparation of a Lyophobic Sol (Ferric Hydroxide Sol)", "page": 4},
+    {"index_number": 3, "title": "Preparation of Standard Solution of Oxalic Acid", "page": 7},
+    {"index_number": 4, "title": "Rate of Reaction Against Concentration", "page": 10},
+    {"index_number": 5, "title": "Chromatography", "page": 13},
+    {"index_number": 6, "title": "Test for Alcoholic Group", "page": 16},
+    {"index_number": 7, "title": "Test for Phenolic Group", "page": 18},
+    {"index_number": 8, "title": "Test for Aldehydic Group", "page": 19},
+    {"index_number": 9, "title": "Test for Carboxylic Acid Group", "page": 20},
+    {"index_number": 10, "title": "Preparation of Standard Solution of Mohr's Salt", "page": 22},
+    {"index_number": 11, "title": "Standardisation of KMnO4 Using 0.05 M Mohr's Salt Solution", "page": 24},
+    {"index_number": 12, "title": "Preparation of Standard Solution of Oxalic Acid", "page": 26},
+    {"index_number": 13, "title": "Standardisation of KMnO4 Using 0.02 M Oxalic Acid", "page": 28},
+    {"index_number": 14, "title": "Salt Analysis", "page": 30, "subentries": [
+      {"salt_number": 1, "formula": "(NH4)2Fe(SO4)2", "page": 32},
+      {"salt_number": 2, "formula": "BaCO3", "page": 35},
+      {"salt_number": 3, "formula": "MgSO4", "page": 48},
+      {"salt_number": 4, "formula": "NaNO3", "page": 54},
+      {"salt_number": 5, "formula": "AlCl3", "page": 57},
+      {"salt_number": 6, "formula": "ZnSO4", "page": 65},
+      {"salt_number": 7, "formula": "NH4Cl", "page": 71}
+    ]}
+  ]
+}

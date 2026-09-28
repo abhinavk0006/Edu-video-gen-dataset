@@ -1,0 +1,61 @@
+{
+  "query": "acid base titration",
+  "top_k": 1,
+  "retrieved_experiments": [
+    {
+      "experiment_id": "chem_12_1002",
+      "retrieval_score": 0.18027468388640733,
+      "title": "Determine enthalpy of neutralisation of hydrochloric acid and sodium hydroxide",
+      "subject": "Chemistry",
+      "class_level": 12,
+      "difficulty": "medium",
+      "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Determine enthalpy of neutralisation of hydrochloric acid and sodium hydroxide' and record its manual-defined observations and result.",
+      "status": "source_review",
+      "source_ids": [
+        "manual_01_pdf"
+      ],
+      "scenes": [
+        {
+          "scene_id": "chem_12_1002_scene",
+          "scene_name": "Manual setup and procedure",
+          "description": "A clean school chemistry bench presents the apparatus and materials for Determine enthalpy of neutralisation of hydrochloric acid and sodium hydroxide, followed by the controlled visible operations described in Manual_01.pdf."
+        }
+      ]
+    }
+  ],
+  "prompt_inputs": [
+    {
+      "experiment_id": "chem_12_1002",
+      "scene_id": "chem_12_1002_scene",
+      "step_id": 1,
+      "prompt": "Create a realistic educational science video clip for Class 12 Chemistry experiment 'Determine enthalpy of neutralisation of hydrochloric acid and sodium hydroxide'. Show the scene 'Manual setup and procedure': A clean school chemistry bench presents the apparatus and materials for Determine enthalpy of neutralisation of hydrochloric acid and sodium hydroxide, followed by the controlled visible operations described in Manual_01.pdf. Perform this step: Measure equal prescribed volumes of acid and base and record their initial temperatures. Show the expected observation: Record the visible result and measurement described by the manual for this step. Visible actions may include: arrange apparatus, perform manual procedure, record observation. Use only these materials: hydrochloric acid, sodium hydroxide, calorimeter, thermometer, measuring cylinders, stirrer. Keep the apparatus, quantities, actions, and scientific outcome accurate. Use clear classroom lighting, stable framing, natural motion, and no labels or watermark.",
+      "negative_prompt": "blurry, distorted apparatus, incorrect measurements, text artifacts, watermark",
+      "starting_image": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
+      "source_ids": [
+        "manual_01_pdf"
+      ]
+    },
+    {
+      "experiment_id": "chem_12_1002",
+      "scene_id": "chem_12_1002_scene",
+      "step_id": 2,
+      "prompt": "Create a realistic educational science video clip for Class 12 Chemistry experiment 'Determine enthalpy of neutralisation of hydrochloric acid and sodium hydroxide'. Show the scene 'Manual setup and procedure': A clean school chemistry bench presents the apparatus and materials for Determine enthalpy of neutralisation of hydrochloric acid and sodium hydroxide, followed by the controlled visible operations described in Manual_01.pdf. Perform this step: Mix them in the calorimeter while stirring and record the highest temperature reached. Show the expected observation: Record the visible result and measurement described by the manual for this step. Visible actions may include: arrange apparatus, perform manual procedure, record observation. Use only these materials: hydrochloric acid, sodium hydroxide, calorimeter, thermometer, measuring cylinders, stirrer. Keep the apparatus, quantities, actions, and scientific outcome accurate. Use clear classroom lighting, stable framing, natural motion, and no labels or watermark.",
+      "negative_prompt": "blurry, distorted apparatus, incorrect measurements, text artifacts, watermark",
+      "starting_image": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
+      "source_ids": [
+        "manual_01_pdf"
+      ]
+    },
+    {
+      "experiment_id": "chem_12_1002",
+      "scene_id": "chem_12_1002_scene",
+      "step_id": 3,
+      "prompt": "Create a realistic educational science video clip for Class 12 Chemistry experiment 'Determine enthalpy of neutralisation of hydrochloric acid and sodium hydroxide'. Show the scene 'Manual setup and procedure': A clean school chemistry bench presents the apparatus and materials for Determine enthalpy of neutralisation of hydrochloric acid and sodium hydroxide, followed by the controlled visible operations described in Manual_01.pdf. Perform this step: Calculate the heat released per mole of water formed using the manual's formula. Show the expected observation: Record the visible result and measurement described by the manual for this step. Visible actions may include: arrange apparatus, perform manual procedure, record observation. Use only these materials: hydrochloric acid, sodium hydroxide, calorimeter, thermometer, measuring cylinders, stirrer. Keep the apparatus, quantities, actions, and scientific outcome accurate. Use clear classroom lighting, stable framing, natural motion, and no labels or watermark.",
+      "negative_prompt": "blurry, distorted apparatus, incorrect measurements, text artifacts, watermark",
+      "starting_image": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
+      "source_ids": [
+        "manual_01_pdf"
+      ]
+    }
+  ]
+}

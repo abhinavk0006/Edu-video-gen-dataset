@@ -1,0 +1,151 @@
+{
+  "id": "physics_medium_phy_12_002",
+  "name": "Determine wire resistance and resistivity using a metre bridge",
+  "subject": "physics",
+  "class_level": 12,
+  "difficulty": "medium",
+  "chapter": "Physics Class 12 Experiments",
+  "ncert_reference": "Physics Laboratory Manual for Classes XI-XII, Class 12, Experiment 2; exact PDF page to verify during citation pass",
+  "source_file": "Physics_Laboratory_Manual_11-12_E.pdf",
+  "educational_goal": "Perform the Physics Laboratory Manual Class 12 experiment 'Determine wire resistance and resistivity using a metre bridge' and connect the measurements to the stated physical principle.",
+  "prerequisites": [
+    "measurement",
+    "observation",
+    "data analysis",
+    "class-12"
+  ],
+  "estimated_video_duration_seconds": 12,
+  "tags": [
+    "physics",
+    "class-12",
+    "manual-physics",
+    "experiment"
+  ],
+  "materials": [
+    "manual-specified apparatus",
+    "measuring instruments",
+    "recording table",
+    "graph paper where required"
+  ],
+  "safety_notes": [
+    "Follow the supplied manual and teacher supervision for electrical circuits, optics, moving parts, heat, and laboratory equipment.",
+    "Check connections before energising a circuit and handle glassware and weights carefully."
+  ],
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_name": "Setup and Preparation",
+      "new_scene": true,
+      "description": "A school physics laboratory bench presents the apparatus for Determine wire resistance and resistivity using a metre bridge, followed by controlled measurement and graphing actions from the supplied Physics Laboratory Manual.",
+      "image_url": "PLACEHOLDER: add a license-reviewed real physics laboratory setup image",
+      "image_local": "images/physics/determine_wire_resistance_and_resistivity_using_a_metre_bridge_setup.jpg",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_1_step_1",
+          "step_number": 1,
+          "description": "Arrange the apparatus and materials required for Determine wire resistance and resistivity using a metre bridge as shown in the manual.",
+          "observation": "The apparatus is aligned and the initial condition is recorded.",
+          "duration_seconds": 3.0,
+          "motion_type": "colour_change",
+          "moving_objects": [
+            "manual-specified apparatus",
+            "measuring instruments",
+            "recording table"
+          ],
+          "key_visual": "The apparatus is aligned and the initial condition is recorded.",
+          "prompt_template": "colour_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_2",
+      "scene_name": "Main Procedure",
+      "new_scene": true,
+      "description": "A school physics laboratory bench presents the apparatus for Determine wire resistance and resistivity using a metre bridge, followed by controlled measurement and graphing actions from the supplied Physics Laboratory Manual.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_2_step_2",
+          "step_number": 2,
+          "description": "Take the prescribed measurements or make the controlled adjustment described in the manual.",
+          "observation": "The relevant physical quantity changes while other conditions are kept controlled.",
+          "duration_seconds": 3.0,
+          "motion_type": "mechanical_motion",
+          "moving_objects": [
+            "manual-specified apparatus",
+            "measuring instruments",
+            "recording table"
+          ],
+          "key_visual": "The relevant physical quantity changes while other conditions are kept controlled.",
+          "prompt_template": "mechanical_motion",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        },
+        {
+          "step_id": "scene_2_step_3",
+          "step_number": 3,
+          "description": "Repeat the observation for the required readings or settings and record the result in a table.",
+          "observation": "A set of comparable readings is obtained for analysis.",
+          "duration_seconds": 3.0,
+          "motion_type": "colour_change",
+          "moving_objects": [
+            "manual-specified apparatus",
+            "measuring instruments",
+            "recording table"
+          ],
+          "key_visual": "A set of comparable readings is obtained for analysis.",
+          "prompt_template": "colour_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_3",
+      "scene_name": "Observation and Result",
+      "new_scene": true,
+      "description": "A school physics laboratory bench presents the apparatus for Determine wire resistance and resistivity using a metre bridge, followed by controlled measurement and graphing actions from the supplied Physics Laboratory Manual.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_3_step_4",
+          "step_number": 4,
+          "description": "Plot the required graph or apply the stated relation and report the final quantity.",
+          "observation": "The calculated result is compared with the expected physical relationship.",
+          "duration_seconds": 3.0,
+          "motion_type": "colour_change",
+          "moving_objects": [
+            "manual-specified apparatus",
+            "measuring instruments",
+            "recording table"
+          ],
+          "key_visual": "The calculated result is compared with the expected physical relationship.",
+          "prompt_template": "colour_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    }
+  ],
+  "prompt_templates_used": [
+    "colour_change",
+    "mechanical_motion"
+  ],
+  "total_clips": 4,
+  "total_scenes": 3,
+  "status": "dataset_only",
+  "video_generated": false,
+  "video_path": "",
+  "notes": "Image is a placeholder until a license-reviewed local asset is added."
+}

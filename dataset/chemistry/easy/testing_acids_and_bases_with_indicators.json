@@ -1,0 +1,153 @@
+{
+  "id": "chemistry_easy_chem_10_001",
+  "name": "Testing Acids and Bases with Indicators",
+  "subject": "chemistry",
+  "class_level": 10,
+  "difficulty": "easy",
+  "chapter": "Acids, Bases and Salts",
+  "ncert_reference": "NCERT textbook portal; Class 10 acids, bases and salts activity page to verify",
+  "source_file": "https://ncert.nic.in/textbook.php",
+  "educational_goal": "Classify household solutions as acidic, basic, or neutral using safe indicator color changes.",
+  "prerequisites": [
+    "acids",
+    "bases",
+    "indicators",
+    "pH"
+  ],
+  "estimated_video_duration_seconds": 12,
+  "tags": [
+    "acids",
+    "bases",
+    "indicators",
+    "class-10"
+  ],
+  "materials": [
+    "litmus paper",
+    "universal indicator",
+    "lemon juice",
+    "soap solution",
+    "water",
+    "droppers"
+  ],
+  "safety_notes": [
+    "Use dilute household samples only.",
+    "Never taste test solutions."
+  ],
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_name": "Setup and Preparation",
+      "new_scene": true,
+      "description": "A white tile holds labeled drops of household solutions beside red and blue litmus strips and a universal indicator dropper.",
+      "image_url": "PLACEHOLDER: add a license-reviewed indicator test photo",
+      "image_local": "images/chemistry/testing_acids_and_bases_with_indicators_setup.jpg",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_1_step_1",
+          "step_number": 1,
+          "description": "Label small wells or test tubes for each sample and add equal volumes.",
+          "observation": "The samples are arranged for side-by-side comparison.",
+          "duration_seconds": 3.0,
+          "motion_type": "state_change",
+          "moving_objects": [
+            "litmus paper",
+            "universal indicator",
+            "lemon juice"
+          ],
+          "key_visual": "The samples are arranged for side-by-side comparison.",
+          "prompt_template": "state_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_2",
+      "scene_name": "Main Procedure",
+      "new_scene": true,
+      "description": "A white tile holds labeled drops of household solutions beside red and blue litmus strips and a universal indicator dropper.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_2_step_2",
+          "step_number": 2,
+          "description": "Touch blue and red litmus paper to each sample using clean droppers.",
+          "observation": "Acidic and basic samples produce opposite litmus changes.",
+          "duration_seconds": 3.0,
+          "motion_type": "colour_change",
+          "moving_objects": [
+            "litmus paper",
+            "universal indicator",
+            "lemon juice"
+          ],
+          "key_visual": "Acidic and basic samples produce opposite litmus changes.",
+          "prompt_template": "colour_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        },
+        {
+          "step_id": "scene_2_step_3",
+          "step_number": 3,
+          "description": "Add universal indicator to fresh portions of the samples.",
+          "observation": "Different colors indicate different approximate pH values.",
+          "duration_seconds": 3.0,
+          "motion_type": "colour_change",
+          "moving_objects": [
+            "litmus paper",
+            "universal indicator",
+            "lemon juice"
+          ],
+          "key_visual": "Different colors indicate different approximate pH values.",
+          "prompt_template": "colour_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_3",
+      "scene_name": "Observation and Result",
+      "new_scene": true,
+      "description": "A white tile holds labeled drops of household solutions beside red and blue litmus strips and a universal indicator dropper.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_3_step_4",
+          "step_number": 4,
+          "description": "Record each sample classification and indicator color.",
+          "observation": "The observation table links color changes to acidic, basic, or neutral behavior.",
+          "duration_seconds": 3.0,
+          "motion_type": "colour_change",
+          "moving_objects": [
+            "litmus paper",
+            "universal indicator",
+            "lemon juice"
+          ],
+          "key_visual": "The observation table links color changes to acidic, basic, or neutral behavior.",
+          "prompt_template": "colour_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    }
+  ],
+  "prompt_templates_used": [
+    "colour_change",
+    "state_change"
+  ],
+  "total_clips": 4,
+  "total_scenes": 3,
+  "status": "dataset_only",
+  "video_generated": false,
+  "video_path": "",
+  "notes": "Image is a placeholder until a license-reviewed local asset is added."
+}

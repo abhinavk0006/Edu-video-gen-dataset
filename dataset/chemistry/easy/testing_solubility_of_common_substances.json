@@ -1,0 +1,152 @@
+{
+  "id": "chemistry_easy_chem_8_001",
+  "name": "Testing Solubility of Common Substances",
+  "subject": "chemistry",
+  "class_level": 8,
+  "difficulty": "easy",
+  "chapter": "Materials and Their Properties",
+  "ncert_reference": "NCERT textbook portal; exact Class 8 chapter and page to verify",
+  "source_file": "https://ncert.nic.in/textbook.php",
+  "educational_goal": "Compare how common solid substances dissolve in water and distinguish soluble from insoluble materials.",
+  "prerequisites": [
+    "solubility",
+    "mixtures",
+    "solution"
+  ],
+  "estimated_video_duration_seconds": 12,
+  "tags": [
+    "solubility",
+    "mixtures",
+    "class-8"
+  ],
+  "materials": [
+    "water",
+    "salt",
+    "sugar",
+    "sand",
+    "transparent cups",
+    "stirring rods"
+  ],
+  "safety_notes": [
+    "Do not taste laboratory materials.",
+    "Clean spills immediately."
+  ],
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_name": "Setup and Preparation",
+      "new_scene": true,
+      "description": "A clean table shows identical transparent cups of water labeled for salt, sugar, and sand beside small sample piles.",
+      "image_url": "PLACEHOLDER: add a license-reviewed classroom solubility photo",
+      "image_local": "images/chemistry/testing_solubility_of_common_substances_setup.jpg",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_1_step_1",
+          "step_number": 1,
+          "description": "Label one transparent cup for each test substance and add the same volume of water.",
+          "observation": "Each cup starts with a clear, equal-volume water sample.",
+          "duration_seconds": 3.0,
+          "motion_type": "state_change",
+          "moving_objects": [
+            "water",
+            "salt",
+            "sugar"
+          ],
+          "key_visual": "Each cup starts with a clear, equal-volume water sample.",
+          "prompt_template": "state_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_2",
+      "scene_name": "Main Procedure",
+      "new_scene": true,
+      "description": "A clean table shows identical transparent cups of water labeled for salt, sugar, and sand beside small sample piles.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_2_step_2",
+          "step_number": 2,
+          "description": "Add an equal small amount of salt, sugar, or sand to its labeled cup.",
+          "observation": "The solid is visible in each cup before stirring.",
+          "duration_seconds": 3.0,
+          "motion_type": "state_change",
+          "moving_objects": [
+            "water",
+            "salt",
+            "sugar"
+          ],
+          "key_visual": "The solid is visible in each cup before stirring.",
+          "prompt_template": "state_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        },
+        {
+          "step_id": "scene_2_step_3",
+          "step_number": 3,
+          "description": "Stir each cup for the same amount of time.",
+          "observation": "Salt and sugar disappear into the water, while sand remains visible and settles.",
+          "duration_seconds": 3.0,
+          "motion_type": "fluid_dynamics",
+          "moving_objects": [
+            "water",
+            "salt",
+            "sugar"
+          ],
+          "key_visual": "Salt and sugar disappear into the water, while sand remains visible and settles.",
+          "prompt_template": "fluid_dynamics",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_3",
+      "scene_name": "Observation and Result",
+      "new_scene": true,
+      "description": "A clean table shows identical transparent cups of water labeled for salt, sugar, and sand beside small sample piles.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_3_step_4",
+          "step_number": 4,
+          "description": "Classify each substance as soluble or insoluble in water.",
+          "observation": "The results can be compared in a simple observation table.",
+          "duration_seconds": 3.0,
+          "motion_type": "colour_change",
+          "moving_objects": [
+            "water",
+            "salt",
+            "sugar"
+          ],
+          "key_visual": "The results can be compared in a simple observation table.",
+          "prompt_template": "colour_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    }
+  ],
+  "prompt_templates_used": [
+    "colour_change",
+    "fluid_dynamics",
+    "state_change"
+  ],
+  "total_clips": 4,
+  "total_scenes": 3,
+  "status": "dataset_only",
+  "video_generated": false,
+  "video_path": "",
+  "notes": "Image is a placeholder until a license-reviewed local asset is added."
+}

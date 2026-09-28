@@ -1,0 +1,123 @@
+{
+  "id": "chemistry_medium_chem_12_402",
+  "name": "Identify one functional group in an organic compound",
+  "subject": "chemistry",
+  "class_level": 12,
+  "difficulty": "medium",
+  "chapter": "Qualitative Analysis (Organic)",
+  "ncert_reference": "Manual of Microscale Chemistry Laboratory Kit, Chapter Qualitative Analysis (Organic), Experiment 4.2; exact PDF pages to verify during citation pass",
+  "source_file": "Manual_01.pdf",
+  "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Identify one functional group in an organic compound' and record its manual-defined observations and result.",
+  "prerequisites": [
+    "qualitative analysis (organic)",
+    "laboratory observation",
+    "microscale chemistry"
+  ],
+  "estimated_video_duration_seconds": 9,
+  "tags": [
+    "class-12",
+    "manual-01",
+    "qualitative-analysis-(organic)",
+    "4.2"
+  ],
+  "materials": [
+    "unknown organic compound, micro test tubes, droppers, 2,4-DNP, ceric ammonium nitrate, ferric chloride, sodium bicarbonate"
+  ],
+  "safety_notes": [
+    "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
+    "Wear eye protection and do not taste or directly handle chemicals."
+  ],
+  "scenes": [
+    {
+      "scene_id": "scene_1",
+      "scene_name": "Setup and Preparation",
+      "new_scene": true,
+      "description": "A clean school chemistry bench presents the apparatus and materials for Identify one functional group in an organic compound, followed by the controlled visible operations described in Manual_01.pdf.",
+      "image_url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
+      "image_local": "images/chemistry/identify_one_functional_group_in_an_organic_compound_setup.jpg",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_1_step_1",
+          "step_number": 1,
+          "description": "Prepare a small sample or solution of the unknown organic compound.",
+          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "duration_seconds": 3.0,
+          "motion_type": "observation",
+          "moving_objects": [
+            "unknown organic compound, micro test tubes, droppers, 2,4-DNP, ceric ammonium nitrate, ferric chloride, sodium bicarbonate"
+          ],
+          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "prompt_template": "observation",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_2",
+      "scene_name": "Main Procedure",
+      "new_scene": true,
+      "description": "A clean school chemistry bench presents the apparatus and materials for Identify one functional group in an organic compound, followed by the controlled visible operations described in Manual_01.pdf.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_2_step_2",
+          "step_number": 2,
+          "description": "Apply the relevant unsaturation, alcoholic, phenolic, carbonyl, carboxylic-acid, or amino-group test from the manual.",
+          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "duration_seconds": 3.0,
+          "motion_type": "observation",
+          "moving_objects": [
+            "unknown organic compound, micro test tubes, droppers, 2,4-DNP, ceric ammonium nitrate, ferric chloride, sodium bicarbonate"
+          ],
+          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "prompt_template": "observation",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_3",
+      "scene_name": "Observation and Result",
+      "new_scene": true,
+      "description": "A clean school chemistry bench presents the apparatus and materials for Identify one functional group in an organic compound, followed by the controlled visible operations described in Manual_01.pdf.",
+      "image_url": "",
+      "image_local": "",
+      "image_placeholder": true,
+      "steps": [
+        {
+          "step_id": "scene_3_step_3",
+          "step_number": 3,
+          "description": "Observe the specified color, precipitate, gas, or decolorisation response and compare it with the reference result.",
+          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "duration_seconds": 3.0,
+          "motion_type": "colour_change",
+          "moving_objects": [
+            "unknown organic compound, micro test tubes, droppers, 2,4-DNP, ceric ammonium nitrate, ferric chloride, sodium bicarbonate"
+          ],
+          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "prompt_template": "colour_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false
+        }
+      ]
+    }
+  ],
+  "prompt_templates_used": [
+    "colour_change",
+    "observation"
+  ],
+  "total_clips": 3,
+  "total_scenes": 3,
+  "status": "dataset_only",
+  "video_generated": false,
+  "video_path": "",
+  "notes": "Image is a placeholder until a license-reviewed local asset is added."
+}
