@@ -84,6 +84,23 @@ python scripts/api_prompt_variation_test.py --url http://localhost:8000/generate
 
 The API server must already be running at that URL. This repository contains the client harness, but does not yet contain a local video-generation server or model runner.
 
+## Downstream image-to-video pipeline integration
+
+The local retriever and prompt-bundle builder can feed the separate
+[`image-to-video-pipeline`](https://github.com/abhinavk0006/image-to-video-pipeline)
+repository. That pipeline invokes `scripts/build_rag_prompt_bundle.py`, selects
+the highest-ranked positive experiment match, and converts its ordered
+`prompt_inputs` into clip definitions. The mounted user image remains the first
+clip's image; the pipeline extracts each generated clip's last frame for the
+next one. Dataset image URLs are references/placeholders and are not fetched by
+the integration.
+
+For Wan video generation, the pipeline can send those clips to the separate
+[`Wan2.2`](https://github.com/abhinavk0006/Wan2.2) checkout through its Kaggle
+INT8/Lightning adapter. Follow the pipeline README's Kaggle setup; this dataset
+repo remains an independent retrieval/data source and does not install model
+weights or change PyTorch.
+
 ## Source and image policy
 
 NCERT is the primary curriculum anchor. The initial catalog uses official NCERT textbook and laboratory-manual landing pages as references, with page-level citations to be filled during source verification. Image fields may contain placeholders until a real, license-compatible image is selected. Do not treat a placeholder as a usable image asset.
