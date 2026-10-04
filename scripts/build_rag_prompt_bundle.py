@@ -107,6 +107,10 @@ def build_bundle(query: str, top_k: int) -> dict[str, Any]:
                 "prompt": make_step_prompt(record, scene, step),
                 "negative_prompt": "blurry, distorted apparatus, incorrect measurements, text artifacts, watermark",
                 "starting_image": image_asset.get("url", ""),
+                "duration_seconds": step.get(
+                    "estimated_duration_seconds",
+                    step.get("duration_seconds"),
+                ),
                 "source_ids": [source["source_id"] for source in record.get("sources", [])],
             }
             scene_steps.append(prompt_input)
@@ -126,6 +130,7 @@ def build_bundle(query: str, top_k: int) -> dict[str, Any]:
                     "prompt": make_step_prompt(record, scene, step),
                     "negative_prompt": "blurry, distorted apparatus, text artifacts, watermark",
                     "starting_image": "",
+                    "duration_seconds": None,
                     "source_ids": [source["source_id"] for source in record.get("sources", [])],
                 }
                 scene_steps.append(prompt_input)
