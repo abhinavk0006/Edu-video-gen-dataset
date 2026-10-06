@@ -39,7 +39,24 @@
         "properties": {
           "step_id": {"type": "integer", "minimum": 1},
           "instruction": {"type": "string", "minLength": 5},
-          "observation": {"type": "string", "minLength": 5}
+        "observation": {"type": "string", "minLength": 5},
+        "state_before": {"type": "string"},
+        "action": {"type": "string"},
+        "state_after": {"type": "string"},
+        "visual_priority": {"type": "string", "enum": ["low", "normal", "high"]},
+        "continuity_required": {"type": "boolean"},
+        "reference_policy": {
+          "type": "string",
+          "enum": ["independent", "state_keyframe", "previous_state_keyframe", "mid", "near_end", "final"]
+        },
+        "reference_clip": {"type": "string"},
+        "handoff_policy": {"type": "string", "enum": ["none", "mid", "near_end", "final", "offset"]},
+        "handoff_entity": {"type": "string"},
+        "handoff_offset_seconds": {"type": "number", "minimum": 0},
+        "duration_seconds": {"type": "number", "exclusiveMinimum": 0},
+        "estimated_duration_seconds": {"type": "number", "exclusiveMinimum": 0},
+        "reference_image": {"type": "string"},
+        "image_prompt": {"type": "string"}
         }
       }
     },

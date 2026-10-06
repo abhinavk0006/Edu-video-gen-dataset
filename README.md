@@ -70,7 +70,38 @@ To retrieve an experiment and build prompts from its canonical scenes and proced
 python scripts/build_rag_prompt_bundle.py "ohm law" --top-k 1 --output exports/ohm_law_prompt_bundle.json
 ```
 
-The bundle contains the retrieved experiment, source IDs, starting-image references, and one prompt per procedure step. Those prompts can be sent to the API harness directly:
+The bundle contains the retrieved experiment, source IDs, one atomic prompt per
+procedure step, and a rendering plan for each step. Every plan includes
+`state_before`, `action`, `state_after`, `reference_mode`,
+`needs_reference_image`, `reference_clip`, `handoff_policy`,
+`handoff_entity`, `duration_seconds`, and an `image_prompt`. Steps default to
+independent state-keyframe references unless a source step explicitly declares
+`reference_clip`; this prevents an uncertain generated frame from silently
+propagating through an experiment. Friends generating reference images should
+use only the steps where `needs_reference_image` is `true`. A chained step
+consumes the named clip's extracted `mid`, `near_end`, `final`, or offset
+handoff according to its policy.
+
+The structured fields are optional in canonical records for backward
+compatibility. Add them to a `procedure_steps` entry when the chemistry
+requires a dependency, for example:
+
+```json
+{
+  "step_id": 5,
+  "state_before": "white AgCl precipitate already visible",
+  "action": "add dilute ammonia gradually",
+  "state_after": "clear colorless solution",
+  "continuity_required": true,
+  "reference_policy": "previous_state_keyframe",
+  "reference_clip": "silver_nitrate_chloride_test",
+  "handoff_policy": "final",
+  "handoff_entity": "AgCl precipitate",
+  "duration_seconds": 2
+}
+```
+
+The generated bundle can be sent to the API harness directly:
 
 ```powershell
 python scripts/api_prompt_variation_test.py --prompts-file exports/ohm_law_prompt_bundle.json --url http://localhost:8000/generate --json-output exports/ohm_law_api_results.json

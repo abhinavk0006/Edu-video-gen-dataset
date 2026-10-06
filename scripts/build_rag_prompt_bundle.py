@@ -49,17 +49,80 @@ def slugify(value: str) -> str:
 def make_step_prompt(record: dict[str, Any], scene: dict[str, Any], step: dict[str, Any]) -> str:
     materials = ", ".join(record.get("materials", []))
     visible_actions = ", ".join(scene.get("visible_actions", []))
+    structured = [
+        f"Starting state: {step.get('state_before', '')}",
+        f"Action: {step.get('action', step['instruction'])}",
+        f"Required ending state: {step.get('state_after', step['observation'])}",
+    ]
     return (
         f"Create a realistic educational science video clip for Class {record['class_level']} "
         f"{record['subject']} experiment '{record['title']}'. "
         f"Show the scene '{scene['name']}': {scene['description']} "
-        f"Perform this step: {step['instruction']} "
-        f"Show the expected observation: {step['observation']} "
+        f"{' '.join(part for part in structured if part.split(': ', 1)[1].strip())} "
         f"Visible actions may include: {visible_actions}. "
         f"Use only these materials: {materials}. "
         "Keep the apparatus, quantities, actions, and scientific outcome accurate. "
         "Use clear classroom lighting, stable framing, natural motion, and no labels or watermark."
     )
+
+
+def normalize_step(
+    record: dict[str, Any],
+    scene: dict[str, Any],
+    step: dict[str, Any],
+    previous_step: dict[str, Any] | None,
+) -> dict[str, Any]:
+    """Add safe rendering metadata without guessing hidden physical continuity."""
+    explicit_reference = str(step.get("reference_clip", "")).strip()
+    continuity = step.get("continuity_required")
+    if continuity is None:
+        continuity = bool(explicit_reference)
+    policy = str(step.get("reference_policy", "")).strip()
+    if not policy:
+        policy = "previous_state_keyframe" if explicit_reference else "state_keyframe"
+    handoff_policy = str(step.get("handoff_policy", "")).strip()
+    if not handoff_policy:
+        handoff_policy = {
+            "mid": "mid",
+            "near_end": "near_end",
+            "final": "final",
+            "offset": "offset",
+        }.get(policy, "final" if explicit_reference else "none")
+    action = str(step.get("action", step["instruction"])).strip()
+    state_before = str(step.get("state_before", "")).strip()
+    state_after = str(step.get("state_after", step["observation"])).strip()
+    return {
+        "step_id": step["step_id"],
+        "state_before": state_before or f"Before: {step['instruction']}",
+        "action": action,
+        "state_after": state_after,
+        "visual_priority": step.get("visual_priority", "normal"),
+        "continuity_required": bool(continuity),
+        "reference_policy": policy,
+        "reference_clip": explicit_reference,
+        "reference_mode": "chained" if explicit_reference else "independent",
+        "needs_reference_image": not bool(explicit_reference),
+        "handoff_policy": handoff_policy,
+        "handoff_entity": step.get("handoff_entity", ""),
+        "handoff_offset_seconds": step.get("handoff_offset_seconds"),
+        "duration_seconds": step.get(
+            "duration_seconds",
+            step.get("estimated_duration_seconds", record.get("estimated_video_duration_seconds", 2.0)),
+        ),
+        "reference_image": step.get(
+            "reference_image",
+            step.get("input_frame_path", ""),
+        ),
+        "image_prompt": step.get(
+            "image_prompt",
+            (
+                "Create one consistent educational science reference image "
+                f"for the starting state: {state_before}. "
+                "Show only the apparatus required for this atomic step, with no "
+                "duplicate vessels, unrelated equipment, labels, handwriting, or collage."
+            ),
+        ),
+    }
 
 
 def build_bundle(query: str, top_k: int) -> dict[str, Any]:
@@ -100,17 +163,21 @@ def build_bundle(query: str, top_k: int) -> dict[str, Any]:
                     ),
                     {},
                 )
+            normalized = normalize_step(
+                record,
+                scene,
+                step,
+                procedure_steps[step_index - 1] if step_index else None,
+            )
             prompt_input = {
                 "experiment_id": experiment_id,
                 "scene_id": scene["scene_id"],
                 "step_id": step["step_id"],
                 "prompt": make_step_prompt(record, scene, step),
                 "negative_prompt": "blurry, distorted apparatus, incorrect measurements, text artifacts, watermark",
-                "starting_image": image_asset.get("url", ""),
-                "duration_seconds": step.get(
-                    "estimated_duration_seconds",
-                    step.get("duration_seconds"),
-                ),
+                "starting_image": normalized["reference_image"] or image_asset.get("url", ""),
+                "image_prompt": normalized["image_prompt"],
+                **normalized,
                 "source_ids": [source["source_id"] for source in record.get("sources", [])],
             }
             scene_steps.append(prompt_input)
