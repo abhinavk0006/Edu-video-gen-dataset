@@ -12,6 +12,7 @@ from scipy import sparse
 from sklearn.metrics.pairwise import cosine_similarity
 
 from query_rag import rank_documents
+from science_contract import science_contract
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "chemistry_experiments.json"
@@ -149,6 +150,12 @@ def normalize_step(
     state_after = str(step.get("state_after", step["observation"])).strip()
     return {
         "step_id": step["step_id"],
+        "science_spec": science_contract(record, step),
+        "visibility_targets": step.get("visibility_targets", []),
+        "handoff_requirements": step.get("handoff_requirements", []),
+        "render_mode": step.get("render_mode", "wan"),
+        **({"circuit": step["circuit"]} if step.get("circuit") else {}),
+        "diagram_timeline": step.get("diagram_timeline", []),
         "state_before": state_before or f"Before: {step['instruction']}",
         "action": action,
         "state_after": state_after,

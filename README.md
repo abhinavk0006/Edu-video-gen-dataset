@@ -1,3 +1,9 @@
+## Draft scientific requirement contracts
+
+See [SCIENCE_CONTRACTS.md](SCIENCE_CONTRACTS.md) for source-grounded requirement
+records, visibility annotations and rendering metadata. Automatically transcribed
+contracts remain unreviewed until an actual source check is recorded.
+
 # NCERT Chemistry Experiment Dataset
 
 A lightweight, source-traceable catalog of school Chemistry and Physics experiments and activities for Classes 8-12. This repository contains dataset assets only; it does not clone or depend on the video-generation project or download model weights.
