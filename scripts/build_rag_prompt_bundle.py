@@ -34,6 +34,13 @@ ACTION_VERBS = re.compile(
 SEQUENCE_MARKERS = re.compile(r"\b(then|followed by|after that|subsequently)\b", re.IGNORECASE)
 
 
+def requires_clip_split(instruction: str) -> bool:
+    """Flag combined deliberate operations, excluding passive results like dissolution."""
+    actions = [verb.lower() for verb in ACTION_VERBS.findall(instruction)
+               if verb.lower() not in {"dissolve", "record", "test"}]
+    return len(actions) >= 2 or bool(SEQUENCE_MARKERS.search(instruction))
+
+
 def load_canonical_records() -> dict[str, dict[str, Any]]:
     payload = json.loads(DATA_PATH.read_text(encoding="utf-8"))
     return {record["experiment_id"]: record for record in payload["experiments"]}
@@ -70,7 +77,7 @@ def review_reasons(record: dict[str, Any], step: dict[str, Any]) -> list[str]:
         if not value or PLACEHOLDER_TEXT.search(value):
             reasons.append(f"The {label} text is missing or generic and needs manual verification.")
     instruction = str(step.get("action", step.get("instruction", "")))
-    if len(ACTION_VERBS.findall(instruction)) >= 3 or SEQUENCE_MARKERS.search(instruction):
+    if requires_clip_split(instruction):
         reasons.append("This step combines multiple visible operations; split it into shorter clips before generation.")
     return reasons
 
@@ -156,7 +163,7 @@ def normalize_step(
         "handoff_offset_seconds": step.get("handoff_offset_seconds"),
         "duration_seconds": step.get(
             "duration_seconds",
-            step.get("estimated_duration_seconds", record.get("estimated_video_duration_seconds", 2.0)),
+            step.get("estimated_duration_seconds", 3.0),
         ),
         "reference_image": step.get(
             "reference_image",
@@ -178,10 +185,7 @@ def normalize_step(
         "action_pacing": step.get("action_pacing", "slow, single deliberate action"),
         "manual_review_required": bool(review_reasons(record, step)),
         "manual_review_reasons": review_reasons(record, step),
-        "requires_clip_split": (
-            len(ACTION_VERBS.findall(str(step.get("action", step.get("instruction", ""))))) >= 3
-            or bool(SEQUENCE_MARKERS.search(str(step.get("action", step.get("instruction", "")))))
-        ),
+        "requires_clip_split": requires_clip_split(str(step.get("action", step.get("instruction", "")))),
     }
 
 
