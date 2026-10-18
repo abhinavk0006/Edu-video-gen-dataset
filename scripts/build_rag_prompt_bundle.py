@@ -163,7 +163,7 @@ def normalize_step(
         "handoff_offset_seconds": step.get("handoff_offset_seconds"),
         "duration_seconds": step.get(
             "duration_seconds",
-            step.get("estimated_duration_seconds", 3.0),
+            step.get("estimated_duration_seconds", 2.0),
         ),
         "reference_image": step.get(
             "reference_image",

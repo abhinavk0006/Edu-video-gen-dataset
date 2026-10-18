@@ -16,7 +16,7 @@ class RenderingPlanTests(unittest.TestCase):
     def test_experiment_total_is_not_reused_as_each_shot_duration(self):
         record = {"status": "reviewed", "estimated_video_duration_seconds": 240}
         step = {"step_id": 1, "instruction": "Add water slowly", "observation": "The solution is clear"}
-        self.assertEqual(normalize_step(record, {}, step, None)["duration_seconds"], 3.0)
+        self.assertEqual(normalize_step(record, {}, step, None)["duration_seconds"], 2.0)
         self.assertEqual(normalize_step(record, {}, {**step, "duration_seconds": 4.5}, None)["duration_seconds"], 4.5)
 
 
