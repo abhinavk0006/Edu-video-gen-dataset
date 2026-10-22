@@ -30,6 +30,40 @@
     "Wear eye protection.",
     "Wash hands after handling chemicals."
   ],
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "not_covered",
+    "source_ids": [],
+    "requires_protocol_selection": false,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "procedure_steps": [
+    {
+      "step_id": 1,
+      "instruction": "Clean an iron nail with sandpaper and place it in a test tube of blue copper sulphate solution.",
+      "observation": "The nail is initially metallic gray and the solution is blue."
+    },
+    {
+      "step_id": 2,
+      "instruction": "Leave the nail immersed without shaking for an observation period.",
+      "observation": "A reddish-brown coating begins forming on the nail."
+    },
+    {
+      "step_id": 3,
+      "instruction": "Remove the nail and compare the solution color with a fresh sample.",
+      "observation": "The solution becomes less blue as iron displaces copper."
+    },
+    {
+      "step_id": 4,
+      "instruction": "Write the word equation for the displacement reaction.",
+      "observation": "Iron and copper sulphate produce iron sulphate and copper."
+    }
+  ],
+  "source_experiment_id": "chem_10_002",
   "scenes": [
     {
       "scene_id": "scene_1",
@@ -46,6 +80,7 @@
           "description": "Clean an iron nail with sandpaper and place it in a test tube of blue copper sulphate solution.",
           "observation": "The nail is initially metallic gray and the solution is blue.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "colour_change",
           "moving_objects": [
             "clean iron nail",
@@ -75,6 +110,7 @@
           "description": "Leave the nail immersed without shaking for an observation period.",
           "observation": "A reddish-brown coating begins forming on the nail.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "colour_change",
           "moving_objects": [
             "clean iron nail",
@@ -93,6 +129,7 @@
           "description": "Remove the nail and compare the solution color with a fresh sample.",
           "observation": "The solution becomes less blue as iron displaces copper.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "colour_change",
           "moving_objects": [
             "clean iron nail",
@@ -122,6 +159,7 @@
           "description": "Write the word equation for the displacement reaction.",
           "observation": "Iron and copper sulphate produce iron sulphate and copper.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "continuous_action",
           "moving_objects": [
             "clean iron nail",

@@ -30,6 +30,40 @@
     "Use small quantities and eye protection.",
     "Do not seal a rigid container during gas production."
   ],
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "not_covered",
+    "source_ids": [],
+    "requires_protocol_selection": false,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "procedure_steps": [
+    {
+      "step_id": 1,
+      "instruction": "Place baking soda in a balloon and vinegar in a flask without mixing them.",
+      "observation": "Reactants are separated while the complete apparatus can be weighed."
+    },
+    {
+      "step_id": 2,
+      "instruction": "Attach the balloon to the flask and measure the mass of the closed arrangement.",
+      "observation": "The initial total mass is recorded."
+    },
+    {
+      "step_id": 3,
+      "instruction": "Lift the balloon so the baking soda falls into the vinegar.",
+      "observation": "Fizzing occurs and the balloon inflates as gas forms."
+    },
+    {
+      "step_id": 4,
+      "instruction": "Measure the mass again without opening the arrangement.",
+      "observation": "The total mass remains approximately unchanged in the closed system."
+    }
+  ],
+  "source_experiment_id": "chem_9_002",
   "scenes": [
     {
       "scene_id": "scene_1",
@@ -46,6 +80,7 @@
           "description": "Place baking soda in a balloon and vinegar in a flask without mixing them.",
           "observation": "Reactants are separated while the complete apparatus can be weighed.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "state_change",
           "moving_objects": [
             "conical flask",
@@ -75,6 +110,7 @@
           "description": "Attach the balloon to the flask and measure the mass of the closed arrangement.",
           "observation": "The initial total mass is recorded.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "observation",
           "moving_objects": [
             "conical flask",
@@ -93,6 +129,7 @@
           "description": "Lift the balloon so the baking soda falls into the vinegar.",
           "observation": "Fizzing occurs and the balloon inflates as gas forms.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "fluid_dynamics",
           "moving_objects": [
             "conical flask",
@@ -122,6 +159,7 @@
           "description": "Measure the mass again without opening the arrangement.",
           "observation": "The total mass remains approximately unchanged in the closed system.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "continuous_action",
           "moving_objects": [
             "conical flask",

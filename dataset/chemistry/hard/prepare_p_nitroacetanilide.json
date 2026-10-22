@@ -5,9 +5,9 @@
   "class_level": 12,
   "difficulty": "hard",
   "chapter": "Preparation of Compounds",
-  "ncert_reference": "Manual of Microscale Chemistry Laboratory Kit, Chapter Preparation of Compounds, Experiment 6.5; exact PDF pages to verify during citation pass",
-  "source_file": "Manual_01.pdf",
-  "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Prepare p-nitroacetanilide' and record its manual-defined observations and result.",
+  "ncert_reference": "User-supplied NCERT XII Chemistry lelm110.pdf; PDF pages 5 (1-based). File SHA-256 in data/quantity_source_manifest.json.",
+  "source_file": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm110.pdf",
+  "educational_goal": "Study 'Prepare p-nitroacetanilide' using a selected NCERT XII chemistry protocol, its documented quantities and conditions, and conditional observations; review unresolved doses before rendering.",
   "prerequisites": [
     "preparation of compounds",
     "laboratory observation",
@@ -21,18 +21,304 @@
     "6.5"
   ],
   "materials": [
-    "acetanilide, concentrated nitric acid, concentrated sulphuric acid, ice water, filter"
+    "acetanilide",
+    "glacial acetic acid",
+    "concentrated nitric acid",
+    "concentrated sulphuric acid",
+    "100 mL beaker",
+    "ice bath",
+    "crushed ice",
+    "filter",
+    "alcohol"
   ],
   "safety_notes": [
     "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
     "Wear eye protection and do not taste or directly handle chemicals."
   ],
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "transcribed",
+    "source_ids": [
+      "ncert_lelm110"
+    ],
+    "requires_protocol_selection": false,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "protocol_variants": [
+    {
+      "variant_id": "nitration",
+      "title": "p-Nitroacetanilide",
+      "source_id": "ncert_lelm110",
+      "source_experiment": "10.3",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Source discrepancy: materials list gives 1.5 mL HNO3; numbered procedure specifies 1.0 mL. This transcription follows procedure and remains under review."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Dissolve 2 g acetanilide in 2 mL glacial acetic acid in a 100 mL beaker; add 4 mL concentrated sulphuric acid gradually with stirring and cool to 0-5 degrees C.",
+          "observation": "A hot clear solution forms before chilling.",
+          "quantities": [
+            {
+              "reagent": "acetanilide",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "g"
+            },
+            {
+              "reagent": "glacial acetic acid",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "mL"
+            },
+            {
+              "reagent": "conc H2SO4",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 4,
+              "unit": "mL"
+            },
+            {
+              "reagent": "cooling temperature",
+              "role": "condition",
+              "qualifier": "range",
+              "minimum": 0,
+              "maximum": 5,
+              "unit": "degC"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 5,
+              "experiment": "10.3"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Add a cold mixture of 1.0 mL concentrated nitric acid and 1.0 mL concentrated sulphuric acid dropwise with stirring; keep below 10 degrees C.",
+          "observation": "The dose is a separate nitrating mixture; do not add another full 5 mL sulphuric acid charge.",
+          "quantities": [
+            {
+              "reagent": "conc HNO3",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "mL"
+            },
+            {
+              "reagent": "conc H2SO4",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "mL"
+            },
+            {
+              "reagent": "maximum temperature",
+              "role": "upper_limit",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "degC"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 5,
+              "experiment": "10.3"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Allow room temperature, stand about 30 minutes, then pour with stirring onto 100 g crushed ice; filter, wash, dry and recrystallise.",
+          "observation": "Product is isolated; recrystallised p-nitroacetanilide is colourless.",
+          "quantities": [
+            {
+              "reagent": "standing time",
+              "role": "condition",
+              "qualifier": "approximate",
+              "value": 30,
+              "unit": "min"
+            },
+            {
+              "reagent": "crushed ice",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "g"
+            },
+            {
+              "reagent": "recrystallisation alcohol",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "ice_receiver",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 5,
+              "experiment": "10.3"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    }
+  ],
+  "selected_protocol_variant": "nitration",
+  "procedure_steps": [
+    {
+      "instruction": "Dissolve 2 g acetanilide in 2 mL glacial acetic acid in a 100 mL beaker; add 4 mL concentrated sulphuric acid gradually with stirring and cool to 0-5 degrees C.",
+      "observation": "A hot clear solution forms before chilling.",
+      "quantities": [
+        {
+          "reagent": "acetanilide",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 2,
+          "unit": "g"
+        },
+        {
+          "reagent": "glacial acetic acid",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 2,
+          "unit": "mL"
+        },
+        {
+          "reagent": "conc H2SO4",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 4,
+          "unit": "mL"
+        },
+        {
+          "reagent": "cooling temperature",
+          "role": "condition",
+          "qualifier": "range",
+          "minimum": 0,
+          "maximum": 5,
+          "unit": "degC"
+        }
+      ],
+      "sample_id": "reaction",
+      "reaction_scope": "source_defined",
+      "step_id": 1,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm110",
+          "file": "lelm110.pdf",
+          "pdf_page": 5,
+          "experiment": "10.3"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    },
+    {
+      "instruction": "Add a cold mixture of 1.0 mL concentrated nitric acid and 1.0 mL concentrated sulphuric acid dropwise with stirring; keep below 10 degrees C.",
+      "observation": "The dose is a separate nitrating mixture; do not add another full 5 mL sulphuric acid charge.",
+      "quantities": [
+        {
+          "reagent": "conc HNO3",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 1,
+          "unit": "mL"
+        },
+        {
+          "reagent": "conc H2SO4",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 1,
+          "unit": "mL"
+        },
+        {
+          "reagent": "maximum temperature",
+          "role": "upper_limit",
+          "qualifier": "exact",
+          "value": 10,
+          "unit": "degC"
+        }
+      ],
+      "sample_id": "reaction",
+      "reaction_scope": "source_defined",
+      "step_id": 2,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm110",
+          "file": "lelm110.pdf",
+          "pdf_page": 5,
+          "experiment": "10.3"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    },
+    {
+      "instruction": "Allow room temperature, stand about 30 minutes, then pour with stirring onto 100 g crushed ice; filter, wash, dry and recrystallise.",
+      "observation": "Product is isolated; recrystallised p-nitroacetanilide is colourless.",
+      "quantities": [
+        {
+          "reagent": "standing time",
+          "role": "condition",
+          "qualifier": "approximate",
+          "value": 30,
+          "unit": "min"
+        },
+        {
+          "reagent": "crushed ice",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 100,
+          "unit": "g"
+        },
+        {
+          "reagent": "recrystallisation alcohol",
+          "role": "addition",
+          "qualifier": "not_specified"
+        }
+      ],
+      "sample_id": "ice_receiver",
+      "reaction_scope": "source_defined",
+      "step_id": 3,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm110",
+          "file": "lelm110.pdf",
+          "pdf_page": 5,
+          "experiment": "10.3"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    }
+  ],
+  "source_experiment_id": "chem_12_605",
   "scenes": [
     {
       "scene_id": "scene_1",
       "scene_name": "Setup and Preparation",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare p-nitroacetanilide, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Prepare p-nitroacetanilide. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
       "image_local": "images/chemistry/prepare_p_nitroacetanilide_setup.jpg",
       "image_placeholder": true,
@@ -40,18 +326,62 @@
         {
           "step_id": "scene_1_step_1",
           "step_number": 1,
-          "description": "Cool acetanilide and add the prescribed nitrating mixture carefully.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "Dissolve 2 g acetanilide in 2 mL glacial acetic acid in a 100 mL beaker; add 4 mL concentrated sulphuric acid gradually with stirring and cool to 0-5 degrees C.",
+          "observation": "A hot clear solution forms before chilling.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "state_change",
           "moving_objects": [
-            "acetanilide, concentrated nitric acid, concentrated sulphuric acid, ice water, filter"
+            "acetanilide",
+            "glacial acetic acid",
+            "concentrated nitric acid"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "key_visual": "A hot clear solution forms before chilling.",
           "prompt_template": "state_change",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "acetanilide",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "g"
+            },
+            {
+              "reagent": "glacial acetic acid",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "mL"
+            },
+            {
+              "reagent": "conc H2SO4",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 4,
+              "unit": "mL"
+            },
+            {
+              "reagent": "cooling temperature",
+              "role": "condition",
+              "qualifier": "range",
+              "minimum": 0,
+              "maximum": 5,
+              "unit": "degC"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 5,
+              "experiment": "10.3"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined"
         }
       ]
     },
@@ -59,7 +389,7 @@
       "scene_id": "scene_2",
       "scene_name": "Main Procedure",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare p-nitroacetanilide, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Prepare p-nitroacetanilide. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "",
       "image_local": "",
       "image_placeholder": true,
@@ -67,18 +397,54 @@
         {
           "step_id": "scene_2_step_2",
           "step_number": 2,
-          "description": "Maintain the manual's temperature conditions while nitration proceeds.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "Add a cold mixture of 1.0 mL concentrated nitric acid and 1.0 mL concentrated sulphuric acid dropwise with stirring; keep below 10 degrees C.",
+          "observation": "The dose is a separate nitrating mixture; do not add another full 5 mL sulphuric acid charge.",
           "duration_seconds": 3.0,
-          "motion_type": "observation",
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
+          "motion_type": "state_change",
           "moving_objects": [
-            "acetanilide, concentrated nitric acid, concentrated sulphuric acid, ice water, filter"
+            "acetanilide",
+            "glacial acetic acid",
+            "concentrated nitric acid"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "observation",
+          "key_visual": "The dose is a separate nitrating mixture; do not add another full 5 mL sulphuric acid charge.",
+          "prompt_template": "state_change",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "conc HNO3",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "mL"
+            },
+            {
+              "reagent": "conc H2SO4",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "mL"
+            },
+            {
+              "reagent": "maximum temperature",
+              "role": "upper_limit",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "degC"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 5,
+              "experiment": "10.3"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined"
         }
       ]
     },
@@ -86,7 +452,7 @@
       "scene_id": "scene_3",
       "scene_name": "Observation and Result",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare p-nitroacetanilide, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Prepare p-nitroacetanilide. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "",
       "image_local": "",
       "image_placeholder": true,
@@ -94,25 +460,58 @@
         {
           "step_id": "scene_3_step_3",
           "step_number": 3,
-          "description": "Pour into water to precipitate the product, then filter, wash, dry, and record the yield.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "Allow room temperature, stand about 30 minutes, then pour with stirring onto 100 g crushed ice; filter, wash, dry and recrystallise.",
+          "observation": "Product is isolated; recrystallised p-nitroacetanilide is colourless.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "colour_change",
           "moving_objects": [
-            "acetanilide, concentrated nitric acid, concentrated sulphuric acid, ice water, filter"
+            "acetanilide",
+            "glacial acetic acid",
+            "concentrated nitric acid"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "key_visual": "Product is isolated; recrystallised p-nitroacetanilide is colourless.",
           "prompt_template": "colour_change",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "standing time",
+              "role": "condition",
+              "qualifier": "approximate",
+              "value": 30,
+              "unit": "min"
+            },
+            {
+              "reagent": "crushed ice",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "g"
+            },
+            {
+              "reagent": "recrystallisation alcohol",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 5,
+              "experiment": "10.3"
+            }
+          ],
+          "sample_id": "ice_receiver",
+          "reaction_scope": "source_defined"
         }
       ]
     }
   ],
   "prompt_templates_used": [
     "colour_change",
-    "observation",
     "state_change"
   ],
   "total_clips": 3,

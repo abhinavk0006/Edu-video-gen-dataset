@@ -33,6 +33,40 @@
     "Use heat only with adult supervision.",
     "Handle hot glassware with tongs."
   ],
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "not_covered",
+    "source_ids": [],
+    "requires_protocol_selection": false,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "procedure_steps": [
+    {
+      "step_id": 1,
+      "instruction": "Add water to the sand and salt mixture and stir thoroughly.",
+      "observation": "Salt dissolves while sand remains as solid particles."
+    },
+    {
+      "step_id": 2,
+      "instruction": "Pour the mixture through folded filter paper in a funnel.",
+      "observation": "Sand remains on the filter paper and salt solution collects below."
+    },
+    {
+      "step_id": 3,
+      "instruction": "Transfer the filtrate to an evaporating dish and warm it gently.",
+      "observation": "Water evaporates and solid salt crystals remain."
+    },
+    {
+      "step_id": 4,
+      "instruction": "Compare the recovered sand and salt with the original mixture.",
+      "observation": "Both components are recovered by using different physical properties."
+    }
+  ],
+  "source_experiment_id": "chem_8_002",
   "scenes": [
     {
       "scene_id": "scene_1",
@@ -49,6 +83,7 @@
           "description": "Add water to the sand and salt mixture and stir thoroughly.",
           "observation": "Salt dissolves while sand remains as solid particles.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "state_change",
           "moving_objects": [
             "sand",
@@ -78,6 +113,7 @@
           "description": "Pour the mixture through folded filter paper in a funnel.",
           "observation": "Sand remains on the filter paper and salt solution collects below.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "state_change",
           "moving_objects": [
             "sand",
@@ -96,6 +132,7 @@
           "description": "Transfer the filtrate to an evaporating dish and warm it gently.",
           "observation": "Water evaporates and solid salt crystals remain.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "fluid_dynamics",
           "moving_objects": [
             "sand",
@@ -125,6 +162,7 @@
           "description": "Compare the recovered sand and salt with the original mixture.",
           "observation": "Both components are recovered by using different physical properties.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "colour_change",
           "moving_objects": [
             "sand",

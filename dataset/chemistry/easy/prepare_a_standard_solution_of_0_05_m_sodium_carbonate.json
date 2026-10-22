@@ -27,6 +27,35 @@
     "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
     "Wear eye protection and do not taste or directly handle chemicals."
   ],
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "not_covered",
+    "source_ids": [],
+    "requires_protocol_selection": false,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "procedure_steps": [
+    {
+      "step_id": 1,
+      "instruction": "Calculate and weigh the required primary-standard sodium carbonate.",
+      "observation": "Record the visible result and measurement described by the manual for this step."
+    },
+    {
+      "step_id": 2,
+      "instruction": "Dissolve the salt in distilled water and transfer it to a volumetric flask.",
+      "observation": "Record the visible result and measurement described by the manual for this step."
+    },
+    {
+      "step_id": 3,
+      "instruction": "Make up to the mark, mix, and label the 0.05 M solution.",
+      "observation": "Record the visible result and measurement described by the manual for this step."
+    }
+  ],
+  "source_experiment_id": "chem_12_203",
   "scenes": [
     {
       "scene_id": "scene_1",
@@ -43,6 +72,7 @@
           "description": "Calculate and weigh the required primary-standard sodium carbonate.",
           "observation": "Record the visible result and measurement described by the manual for this step.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "colour_change",
           "moving_objects": [
             "sodium carbonate, balance, beaker, volumetric flask, distilled water"
@@ -70,6 +100,7 @@
           "description": "Dissolve the salt in distilled water and transfer it to a volumetric flask.",
           "observation": "Record the visible result and measurement described by the manual for this step.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "state_change",
           "moving_objects": [
             "sodium carbonate, balance, beaker, volumetric flask, distilled water"
@@ -97,6 +128,7 @@
           "description": "Make up to the mark, mix, and label the 0.05 M solution.",
           "observation": "Record the visible result and measurement described by the manual for this step.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "state_change",
           "moving_objects": [
             "sodium carbonate, balance, beaker, volumetric flask, distilled water"

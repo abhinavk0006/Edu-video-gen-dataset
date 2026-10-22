@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+from quantity_contract import quantity_payload, quantity_text
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "chemistry_experiments.json"
@@ -25,13 +26,14 @@ def main() -> None:
             output = {
                 "experiment_id": record["experiment_id"],
                 "USER_INPUT": (
-                    f"Show a school chemistry experiment called '{record['title']}' "
+                    f"Show a school {record['subject'].lower()} experiment called '{record['title']}' "
                     f"for Class {record['class_level']}. Goal: {record['educational_goal']} "
-                    f"Materials: {', '.join(record['materials'])}. {procedure}"
+                    f"Materials: {', '.join(record['materials'])}. {procedure} {quantity_text(record)}"
                 ),
                 "EXPERIMENT_LABEL": record["experiment_id"],
                 "STARTING_IMAGE_URL": image["url"],
                 "source_status": record["status"],
+                **quantity_payload(record),
             }
             handle.write(json.dumps(output, ensure_ascii=False) + "\n")
     print(f"Built notebook-compatible inputs for {len(payload['experiments'])} experiments.")

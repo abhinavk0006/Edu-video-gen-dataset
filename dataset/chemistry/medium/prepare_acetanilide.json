@@ -5,15 +5,15 @@
   "class_level": 12,
   "difficulty": "medium",
   "chapter": "Preparation of Compounds",
-  "ncert_reference": "Manual of Microscale Chemistry Laboratory Kit, Chapter Preparation of Compounds, Experiment 6.3; exact PDF pages to verify during citation pass",
-  "source_file": "Manual_01.pdf",
-  "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Prepare acetanilide' and record its manual-defined observations and result.",
+  "ncert_reference": "User-supplied NCERT XII Chemistry lelm110.pdf; PDF pages 2, 3 (1-based). File SHA-256 in data/quantity_source_manifest.json.",
+  "source_file": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm110.pdf",
+  "educational_goal": "Study 'Prepare acetanilide' using a selected NCERT XII chemistry protocol, its documented quantities and conditions, and conditional observations; review unresolved doses before rendering.",
   "prerequisites": [
     "preparation of compounds",
     "laboratory observation",
     "microscale chemistry"
   ],
-  "estimated_video_duration_seconds": 9,
+  "estimated_video_duration_seconds": 0,
   "tags": [
     "class-12",
     "manual-01",
@@ -21,101 +21,386 @@
     "6.3"
   ],
   "materials": [
-    "aniline, acetic acid or acetic anhydride, water bath, test tube, filter paper"
+    "aniline",
+    "selected acetylating reagent and solvent",
+    "vessel appropriate to the chosen scale",
+    "ice-cold receiving water",
+    "filter",
+    "recrystallisation solvent"
   ],
   "safety_notes": [
     "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
     "Wear eye protection and do not taste or directly handle chemicals."
   ],
-  "scenes": [
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "transcribed",
+    "source_ids": [
+      "ncert_lelm110"
+    ],
+    "requires_protocol_selection": true,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "protocol_variants": [
     {
-      "scene_id": "scene_1",
-      "scene_name": "Setup and Preparation",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare acetanilide, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
-      "image_local": "images/chemistry/prepare_acetanilide_setup.jpg",
-      "image_placeholder": true,
-      "steps": [
+      "variant_id": "anhydride",
+      "title": "Acetanilide / anhydride method",
+      "source_id": "ncert_lelm110",
+      "source_experiment": "10.1",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
         {
-          "step_id": "scene_1_step_1",
-          "step_number": 1,
-          "description": "Mix aniline with glacial acetic acid and the prescribed acetylating reagent.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "state_change",
-          "moving_objects": [
-            "aniline, acetic acid or acetic anhydride, water bath, test tube, filter paper"
+          "instruction": "Place 5 mL aniline in a 100 mL round-bottom flask; add 5 mL acetic anhydride and 5 mL glacial acetic acid.",
+          "observation": "This selects the anhydride method, not the acetyl-chloride alternative.",
+          "quantities": [
+            {
+              "reagent": "aniline",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "mL"
+            },
+            {
+              "reagent": "acetic anhydride",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "mL"
+            },
+            {
+              "reagent": "glacial acetic acid",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "mL"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "state_change",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 2,
+              "experiment": "10.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Add pumice, fit air condenser and reflux on a sand bath for 10-15 minutes; cool.",
+          "observation": "Reaction time is a process condition, not the generated clip duration.",
+          "quantities": [
+            {
+              "reagent": "reflux time",
+              "role": "condition",
+              "qualifier": "range",
+              "minimum": 10,
+              "maximum": 15,
+              "unit": "min"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 2,
+              "experiment": "10.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Pour the cooled reaction mixture into 150-200 mL ice-cold water in a 250 mL beaker while stirring; filter, wash and recrystallise.",
+          "observation": "White acetanilide precipitates in the receiving beaker; do not add 200 mL water to the 100 mL flask.",
+          "quantities": [
+            {
+              "reagent": "receiving water",
+              "role": "addition",
+              "qualifier": "range",
+              "minimum": 150,
+              "maximum": 200,
+              "unit": "mL"
+            },
+            {
+              "reagent": "receiving beaker",
+              "role": "vessel_capacity",
+              "qualifier": "exact",
+              "value": 250,
+              "unit": "mL"
+            },
+            {
+              "reagent": "recrystallisation solvent",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "note": "Small hot-water portion plus few drops alcohol."
+            }
+          ],
+          "sample_id": "receiving_beaker",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 2,
+              "experiment": "10.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         }
       ]
     },
     {
-      "scene_id": "scene_2",
-      "scene_name": "Main Procedure",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare acetanilide, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "",
-      "image_local": "",
-      "image_placeholder": true,
-      "steps": [
+      "variant_id": "acetyl_chloride_pyridine",
+      "title": "Acetanilide / acetyl chloride and pyridine",
+      "source_id": "ncert_lelm110",
+      "source_experiment": "10.1",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
         {
-          "step_id": "scene_2_step_2",
-          "step_number": 2,
-          "description": "Warm the reaction mixture as directed to form acetanilide.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "state_change",
-          "moving_objects": [
-            "aniline, acetic acid or acetic anhydride, water bath, test tube, filter paper"
+          "instruction": "For this alternative use 5 mL aniline, 5 mL acetyl chloride and 5 mL dry pyridine, replacing the anhydride/acetic-acid pair.",
+          "observation": "Mutually exclusive reagent alternatives are not combined.",
+          "quantities": [
+            {
+              "reagent": "aniline",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "mL"
+            },
+            {
+              "reagent": "acetyl chloride",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "mL"
+            },
+            {
+              "reagent": "dry pyridine",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "mL"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "state_change",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 2,
+              "experiment": "10.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Follow the source reflux/cooling procedure for 10-15 minutes.",
+          "observation": "Process duration must be represented explicitly.",
+          "quantities": [
+            {
+              "reagent": "reflux time",
+              "role": "condition",
+              "qualifier": "range",
+              "minimum": 10,
+              "maximum": 15,
+              "unit": "min"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 2,
+              "experiment": "10.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Transfer into 150-200 mL ice-cold water in a 250 mL receiving beaker; isolate, wash and recrystallise.",
+          "observation": "Solid product forms in a larger receiving vessel.",
+          "quantities": [
+            {
+              "reagent": "receiving water",
+              "role": "addition",
+              "qualifier": "range",
+              "minimum": 150,
+              "maximum": 200,
+              "unit": "mL"
+            },
+            {
+              "reagent": "receiving beaker",
+              "role": "vessel_capacity",
+              "qualifier": "exact",
+              "value": 250,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "receiving_beaker",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 2,
+              "experiment": "10.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         }
       ]
     },
     {
-      "scene_id": "scene_3",
-      "scene_name": "Observation and Result",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare acetanilide, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "",
-      "image_local": "",
-      "image_placeholder": true,
-      "steps": [
+      "variant_id": "small_scale_alternative",
+      "title": "Acetanilide / small-scale source alternative",
+      "source_id": "ncert_lelm110",
+      "source_experiment": "10.1 alternative",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
         {
-          "step_id": "scene_3_step_3",
-          "step_number": 3,
-          "description": "Cool, precipitate, filter, wash, dry, and record the appearance and yield of the product.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "colour_change",
-          "moving_objects": [
-            "aniline, acetic acid or acetic anhydride, water bath, test tube, filter paper"
+          "instruction": "In a dry boiling tube mix 1 mL aniline and 1 mL glacial acetic acid.",
+          "observation": "This is a separate small-scale preparation.",
+          "quantities": [
+            {
+              "reagent": "aniline",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "mL"
+            },
+            {
+              "reagent": "glacial acetic acid",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "mL"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "colour_change",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 3,
+              "experiment": "10.1 alternative"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Add a total of 1 mL acetyl chloride in portions of about 0.3 mL, respecting the 1 mL total; heat on a boiling-water bath for 5 minutes and cool.",
+          "observation": "Do not repeat four full 0.3 mL doses; the final portion is the remaining amount.",
+          "quantities": [
+            {
+              "reagent": "acetyl chloride total",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "mL"
+            },
+            {
+              "reagent": "acetyl chloride portion",
+              "role": "portion_limit",
+              "qualifier": "approximate",
+              "value": 0.3,
+              "unit": "mL"
+            },
+            {
+              "reagent": "heating time",
+              "role": "condition",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "min"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 3,
+              "experiment": "10.1 alternative"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Add about 10 mL ice-cold water, stir, filter, wash neutral and recrystallise.",
+          "observation": "White acetanilide is isolated.",
+          "quantities": [
+            {
+              "reagent": "ice-cold water",
+              "role": "addition",
+              "qualifier": "approximate",
+              "value": 10,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 3,
+              "experiment": "10.1 alternative"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         }
       ]
     }
   ],
-  "prompt_templates_used": [
-    "colour_change",
-    "state_change"
+  "selected_protocol_variant": null,
+  "procedure_steps": [
+    {
+      "step_id": 1,
+      "instruction": "Select one source-backed protocol variant and identify its sample and reagents before rendering.",
+      "observation": "This catalogue overview is not an executable combined procedure."
+    },
+    {
+      "step_id": 2,
+      "instruction": "Resolve unspecified doses, source conflicts and sample/reference-image requirements for the selected variant.",
+      "observation": "Unknown quantities remain unset; alternatives and fresh aliquots remain separate."
+    },
+    {
+      "step_id": 3,
+      "instruction": "Use only the selected variant's source-evidenced steps after scientific review.",
+      "observation": "Do not concatenate the alternative tests into one vessel or invent a universal positive outcome."
+    }
   ],
-  "total_clips": 3,
-  "total_scenes": 3,
+  "source_experiment_id": "chem_12_603",
+  "scenes": [],
+  "prompt_templates_used": [],
+  "total_clips": 0,
+  "total_scenes": 0,
   "status": "dataset_only",
   "video_generated": false,
   "video_path": "",

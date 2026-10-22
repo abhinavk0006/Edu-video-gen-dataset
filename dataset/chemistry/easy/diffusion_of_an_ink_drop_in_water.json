@@ -30,6 +30,40 @@
     "Use warm water that is safe to handle, not boiling water.",
     "Keep liquids away from electrical equipment."
   ],
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "not_covered",
+    "source_ids": [],
+    "requires_protocol_selection": false,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "procedure_steps": [
+    {
+      "step_id": 1,
+      "instruction": "Fill one beaker with cold water and one with warm water.",
+      "observation": "The two beakers contain equal-looking water at different temperatures."
+    },
+    {
+      "step_id": 2,
+      "instruction": "Place one drop of ink gently in the center of each beaker without stirring.",
+      "observation": "A dark ink region appears at the point of addition."
+    },
+    {
+      "step_id": 3,
+      "instruction": "Observe both beakers for the same time interval.",
+      "observation": "Ink spreads through warm water faster than through cold water."
+    },
+    {
+      "step_id": 4,
+      "instruction": "Record the relative diffusion rates and explain the observation using particle motion.",
+      "observation": "Higher temperature is associated with faster visible spreading."
+    }
+  ],
+  "source_experiment_id": "chem_9_001",
   "scenes": [
     {
       "scene_id": "scene_1",
@@ -46,6 +80,7 @@
           "description": "Fill one beaker with cold water and one with warm water.",
           "observation": "The two beakers contain equal-looking water at different temperatures.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "state_change",
           "moving_objects": [
             "two transparent beakers",
@@ -75,6 +110,7 @@
           "description": "Place one drop of ink gently in the center of each beaker without stirring.",
           "observation": "A dark ink region appears at the point of addition.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "state_change",
           "moving_objects": [
             "two transparent beakers",
@@ -93,6 +129,7 @@
           "description": "Observe both beakers for the same time interval.",
           "observation": "Ink spreads through warm water faster than through cold water.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "fluid_dynamics",
           "moving_objects": [
             "two transparent beakers",
@@ -122,6 +159,7 @@
           "description": "Record the relative diffusion rates and explain the observation using particle motion.",
           "observation": "Higher temperature is associated with faster visible spreading.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "observation",
           "moving_objects": [
             "two transparent beakers",

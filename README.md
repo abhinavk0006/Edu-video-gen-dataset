@@ -134,6 +134,23 @@ weights or change PyTorch.
 
 ## Source and image policy
 
+### Source-backed quantity protocols (October 2026)
+
+See [QUANTITY_REVIEW.md](QUANTITY_REVIEW.md) for the full 100-record coverage
+inventory, source conflicts, field semantics and rebuilding commands. The
+supplied eleven XII chemistry units enrich 23 records with 115 separate
+protocol variants. Unsupported records are explicitly marked, and missing
+doses remain unset. This enrichment is not scientific approval.
+
+Multi-variant records require explicit selection, for example
+`--protocol chem_12_301=chloride_silver` when building the RAG prompt bundle.
+The builder does not merge different tests or fresh trials into one tube.
+Unselected entries emit no executable prompts and carry `planning_blocked`.
+Review source quantities, sample identities, missing doses and required clip
+splits before sending a selected protocol to generation. The per-file dataset
+and exports preserve structured quantities and evidence, including when no
+complete numeric liquid-state budget can yet be constructed.
+
 NCERT is the primary curriculum anchor. The initial catalog uses official NCERT textbook and laboratory-manual landing pages as references, with page-level citations to be filled during source verification. Image fields may contain placeholders until a real, license-compatible image is selected. Do not treat a placeholder as a usable image asset.
 
 ## Scope

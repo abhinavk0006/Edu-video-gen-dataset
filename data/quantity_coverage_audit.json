@@ -1,0 +1,915 @@
+{
+  "counts": {
+    "not_covered": 75,
+    "cross_reference_only": 1,
+    "transcribed": 19,
+    "partial": 4,
+    "related_test_only": 1
+  },
+  "records": [
+    {
+      "experiment_id": "chem_8_001",
+      "title": "Testing Solubility of Common Substances",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+      ]
+    },
+    {
+      "experiment_id": "chem_8_002",
+      "title": "Separating a Sand and Salt Mixture",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+      ]
+    },
+    {
+      "experiment_id": "chem_9_001",
+      "title": "Diffusion of an Ink Drop in Water",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+      ]
+    },
+    {
+      "experiment_id": "chem_9_002",
+      "title": "Law of Conservation of Mass",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+      ]
+    },
+    {
+      "experiment_id": "chem_10_001",
+      "title": "Testing Acids and Bases with Indicators",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+      ]
+    },
+    {
+      "experiment_id": "chem_10_002",
+      "title": "Reaction of Iron Nails with Copper Sulphate",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+      ]
+    },
+    {
+      "experiment_id": "chem_11_001",
+      "title": "Preparation of a Standard Solution",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+      ]
+    },
+    {
+      "experiment_id": "chem_11_002",
+      "title": "Effect of Concentration on an Equilibrium",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_101",
+      "title": "Determine the boiling point of an organic compound",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_102",
+      "title": "Determine the melting point of an organic compound",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_103",
+      "title": "Purify a given compound by crystallisation",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_201",
+      "title": "Prepare a standard solution of 0.1 M oxalic acid",
+      "coverage": "cross_reference_only",
+      "variants": 0,
+      "gaps": [
+        "lelm106.pdf p3 references Class XI Unit 2 Experiment 2.1 for 0.1 M oxalic acid; preparation mass and batch volume are not given in the supplied PDF."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_202",
+      "title": "Determine the strength of sodium hydroxide using standard oxalic acid",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_203",
+      "title": "Prepare a standard solution of 0.05 M sodium carbonate",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_204",
+      "title": "Determine the strength of hydrochloric acid using standard sodium carbonate",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_205",
+      "title": "Determine the molarity of potassium permanganate using 0.1 M oxalic acid",
+      "coverage": "transcribed",
+      "variants": 1,
+      "gaps": [
+        "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_206",
+      "title": "Determine the molarity of potassium permanganate using Mohr's salt",
+      "coverage": "transcribed",
+      "variants": 1,
+      "gaps": [
+        "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_301",
+      "title": "Detect one cation and one anion in a salt",
+      "coverage": "partial",
+      "variants": 36,
+      "gaps": [
+        "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred.",
+        "Selected test/preparation branches are transcribed; aggregate entry is not an exhaustive executable protocol. Untranscribed branches require source review."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_401",
+      "title": "Detect extra elements in an organic compound",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_402",
+      "title": "Identify one functional group in an organic compound",
+      "coverage": "partial",
+      "variants": 19,
+      "gaps": [
+        "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred.",
+        "Selected test/preparation branches are transcribed; aggregate entry is not an exhaustive executable protocol. Untranscribed branches require source review."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_403",
+      "title": "Characterise carbohydrates, fats, and proteins in food",
+      "coverage": "partial",
+      "variants": 14,
+      "gaps": [
+        "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred.",
+        "Selected test/preparation branches are transcribed; aggregate entry is not an exhaustive executable protocol. Untranscribed branches require source review."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_501",
+      "title": "Separate pigments from leaf or flower extracts by paper chromatography and determine Rf values",
+      "coverage": "transcribed",
+      "variants": 2,
+      "gaps": [
+        "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_502",
+      "title": "Separate lead and cadmium ions in an inorganic mixture by paper chromatography",
+      "coverage": "transcribed",
+      "variants": 1,
+      "gaps": [
+        "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_601",
+      "title": "Prepare potash alum and Mohr's salt double salts",
+      "coverage": "transcribed",
+      "variants": 2,
+      "gaps": [
+        "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_602",
+      "title": "Prepare potassium trioxalatoferrate(III)",
+      "coverage": "transcribed",
+      "variants": 1,
+      "gaps": [
+        "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_603",
+      "title": "Prepare acetanilide",
+      "coverage": "transcribed",
+      "variants": 3,
+      "gaps": [
+        "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_604",
+      "title": "Prepare dibenzalacetone",
+      "coverage": "transcribed",
+      "variants": 1,
+      "gaps": [
+        "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_605",
+      "title": "Prepare p-nitroacetanilide",
+      "coverage": "transcribed",
+      "variants": 1,
+      "gaps": [
+        "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_606",
+      "title": "Prepare phenyl-azo-beta-naphthol",
+      "coverage": "transcribed",
+      "variants": 1,
+      "gaps": [
+        "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_607",
+      "title": "Prepare iodoform",
+      "coverage": "related_test_only",
+      "variants": 0,
+      "gaps": [
+        "lelm108.pdf p4 contains diagnostic iodoform tests, not this preparative experiment. See chem_12_402 variants; no scale substitution made."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_701",
+      "title": "Study pH change by common-ion effect in weak acids and bases",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_702",
+      "title": "Study equilibrium shifts caused by ion concentration or temperature",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_801",
+      "title": "Prepare lyophilic and lyophobic sols",
+      "coverage": "partial",
+      "variants": 6,
+      "gaps": [
+        "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred.",
+        "Selected test/preparation branches are transcribed; aggregate entry is not an exhaustive executable protocol. Untranscribed branches require source review."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_802",
+      "title": "Purify a prepared sol by dialysis",
+      "coverage": "transcribed",
+      "variants": 1,
+      "gaps": [
+        "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_803",
+      "title": "Study the role of emulsifying agents in stabilising oil emulsions",
+      "coverage": "transcribed",
+      "variants": 1,
+      "gaps": [
+        "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_901",
+      "title": "Study concentration effects on sodium thiosulphate and hydrochloric acid reaction rate",
+      "coverage": "transcribed",
+      "variants": 5,
+      "gaps": [
+        "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_902",
+      "title": "Study temperature effects on sodium thiosulphate and hydrochloric acid reaction rate",
+      "coverage": "transcribed",
+      "variants": 5,
+      "gaps": [
+        "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_903",
+      "title": "Study iodide and hydrogen peroxide clock reaction at different concentrations",
+      "coverage": "transcribed",
+      "variants": 3,
+      "gaps": [
+        "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_904",
+      "title": "Study potassium iodate and sodium sulphite clock reaction",
+      "coverage": "transcribed",
+      "variants": 4,
+      "gaps": [
+        "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_1001",
+      "title": "Determine enthalpy of solution of potassium nitrate",
+      "coverage": "transcribed",
+      "variants": 1,
+      "gaps": [
+        "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_1002",
+      "title": "Determine enthalpy of neutralisation of hydrochloric acid and sodium hydroxide",
+      "coverage": "transcribed",
+      "variants": 1,
+      "gaps": [
+        "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+      ]
+    },
+    {
+      "experiment_id": "chem_12_1101",
+      "title": "Study cell potential of Zn|Zn2+||Cu2+|Cu as electrolyte concentration changes",
+      "coverage": "transcribed",
+      "variants": 5,
+      "gaps": [
+        "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_001",
+      "title": "Use of Vernier Callipers to measure dimensions, volume, and density",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_002",
+      "title": "Use of screw gauge to measure wire diameter, sheet thickness, and lamina volume",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_003",
+      "title": "Determine the radius of curvature of a spherical surface by a spherometer",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_004",
+      "title": "Determine masses of two objects using a beam balance",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_005",
+      "title": "Measure the weight of a body using the parallelogram law of vector addition",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_006",
+      "title": "Plot L-T and L-T squared graphs for a simple pendulum and find effective length of a seconds pendulum",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_007",
+      "title": "Study limiting friction versus normal reaction and determine coefficient of friction",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_008",
+      "title": "Find the downward force on a roller along an inclined plane and relate it to sin theta",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_009",
+      "title": "Find the force constant and effective mass of a helical spring using oscillations",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_010",
+      "title": "Study volume versus pressure for air at constant temperature",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_011",
+      "title": "Determine coefficient of viscosity of a liquid using terminal velocity",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_012",
+      "title": "Study temperature of a hot body versus time using a cooling curve",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_013",
+      "title": "Study frequency and length, and length and tension, of a wire using a sonometer",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_014",
+      "title": "Determine speed of sound in air using a resonance tube",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_015",
+      "title": "Determine specific heat capacity of a solid and liquid by the method of mixtures",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_101",
+      "title": "Make paper scales of least count 0.2 cm and 0.5 cm and measure length",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_102",
+      "title": "Determine mass of a body using a metre scale and the principle of moments",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_103",
+      "title": "Plot a graph from data using a proper scale and show precision error bars",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_104",
+      "title": "Measure rolling friction force for a roller on a horizontal plane",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_105",
+      "title": "Study range of a water jet versus angle of projection",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_106",
+      "title": "Study conservation of energy of a ball rolling down an inclined plane",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_107",
+      "title": "Study dissipation of energy of a simple pendulum with time",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_108",
+      "title": "Observe change of state and plot a cooling curve for molten wax",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_109",
+      "title": "Observe and explain heating of a bi-metallic strip",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_110",
+      "title": "Study heating effect on liquid level in a container",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_111",
+      "title": "Study detergent effect on water surface tension using capillary rise",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_11_112",
+      "title": "Study load effect on depression of a clamped metre scale",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_001",
+      "title": "Determine resistance per unit length of a wire from a potential difference-current graph",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_002",
+      "title": "Determine wire resistance and resistivity using a metre bridge",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_003",
+      "title": "Verify series and parallel laws of combination of resistances using a metre bridge",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_004",
+      "title": "Compare emf of Daniel and Leclanche primary cells using a potentiometer",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_005",
+      "title": "Determine internal resistance of a primary cell using a potentiometer",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_006",
+      "title": "Determine galvanometer resistance by half-deflection and its figure of merit",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_007",
+      "title": "Convert a galvanometer into an ammeter and voltmeter and verify the ranges",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_008",
+      "title": "Determine frequency of alternating current using a sonometer",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_009",
+      "title": "Find focal length of a concave mirror from object and image distances",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_010",
+      "title": "Find focal length of a convex lens using u-v or reciprocal graphs",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_011",
+      "title": "Find focal length of a convex mirror using a convex lens",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_012",
+      "title": "Find focal length of a concave lens with a convex lens",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_013",
+      "title": "Determine minimum deviation angle of a glass prism from an incidence-deviation graph",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_014",
+      "title": "Determine refractive index of water using a concave mirror, convex lens, and plane mirror",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_015",
+      "title": "Draw forward and reverse I-V characteristics of a p-n junction",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_016",
+      "title": "Draw a Zener diode characteristic curve and determine reverse breakdown voltage",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_017",
+      "title": "Study common-emitter transistor characteristics and determine current and voltage gains",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_101",
+      "title": "Assemble components of a given electrical circuit",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_102",
+      "title": "Correct an incorrectly connected circuit and draw the corrected diagram",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_103",
+      "title": "Measure resistance and impedance of an inductor with or without an iron core",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_104",
+      "title": "Use a multimeter to measure resistance, voltage, current, and continuity",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_105",
+      "title": "Assemble a household circuit with bulbs, switches, fuse, and power source",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_106",
+      "title": "Study potential drop versus length for a steady-current wire",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_107",
+      "title": "Study light intensity effect on an LDR by varying source distance",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_108",
+      "title": "Identify a diode, LED, transistor, IC, resistor, and capacitor from a mixed set",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_109",
+      "title": "Check a diode, distinguish npn and pnp transistors, and identify transistor terminals",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_110",
+      "title": "Observe refraction and lateral deviation through a glass slab",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_111",
+      "title": "Observe polarisation using two polaroids",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_112",
+      "title": "Observe diffraction of light through a thin slit",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_113",
+      "title": "Study image nature and size for a convex lens and concave mirror using candle and screen",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    },
+    {
+      "experiment_id": "phy_12_114",
+      "title": "Determine focal length of two lenses in contact",
+      "coverage": "not_covered",
+      "variants": 0,
+      "gaps": [
+        "Physics is outside the supplied chemistry manuals; no quantity changes made."
+      ]
+    }
+  ]
+}

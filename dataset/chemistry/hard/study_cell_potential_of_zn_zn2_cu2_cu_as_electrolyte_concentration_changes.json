@@ -5,15 +5,15 @@
   "class_level": 12,
   "difficulty": "hard",
   "chapter": "Electrochemistry",
-  "ncert_reference": "Manual of Microscale Chemistry Laboratory Kit, Chapter Electrochemistry, Experiment 11.1; exact PDF pages to verify during citation pass",
-  "source_file": "Manual_01.pdf",
-  "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Study cell potential of Zn|Zn2+||Cu2+|Cu as electrolyte concentration changes' and record its manual-defined observations and result.",
+  "ncert_reference": "User-supplied NCERT XII Chemistry lelm104.pdf; PDF pages 3 (1-based). File SHA-256 in data/quantity_source_manifest.json.",
+  "source_file": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm104.pdf",
+  "educational_goal": "Study 'Study cell potential of Zn|Zn2+||Cu2+|Cu as electrolyte concentration changes' using a selected NCERT XII chemistry protocol, its documented quantities and conditions, and conditional observations; review unresolved doses before rendering.",
   "prerequisites": [
     "electrochemistry",
     "laboratory observation",
     "microscale chemistry"
   ],
-  "estimated_video_duration_seconds": 12,
+  "estimated_video_duration_seconds": 0,
   "tags": [
     "class-12",
     "manual-01",
@@ -21,116 +21,501 @@
     "11.1"
   ],
   "materials": [
-    "zinc electrode, copper electrode, zinc salt, copper salt, salt bridge, voltmeter, beakers"
+    "zinc electrode",
+    "copper electrode",
+    "1 M zinc sulphate",
+    "separately prepared copper sulphate concentrations",
+    "salt bridge",
+    "voltmeter",
+    "50 mL beakers"
   ],
   "safety_notes": [
     "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
     "Wear eye protection and do not taste or directly handle chemicals."
   ],
-  "scenes": [
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "transcribed",
+    "source_ids": [
+      "ncert_lelm104"
+    ],
+    "requires_protocol_selection": true,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "protocol_variants": [
     {
-      "scene_id": "scene_1",
-      "scene_name": "Setup and Preparation",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Study cell potential of Zn|Zn2+||Cu2+|Cu as electrolyte concentration changes, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
-      "image_local": "images/chemistry/study_cell_potential_of_zn_zn2_cu2_cu_as_electrolyte_concentration_changes_setup.jpg",
-      "image_placeholder": true,
-      "steps": [
+      "variant_id": "0p2m_copper",
+      "title": "Cell with 0.2 M copper sulphate",
+      "source_id": "ncert_lelm104",
+      "source_experiment": "4.1",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Source conflict: materials list starts CuSO4 at 0.25 M; procedure and Table 4.1 specify 0.2 M. These variants follow procedure/table; teacher review pending."
+      ],
+      "procedure_steps": [
         {
-          "step_id": "scene_1_step_1",
-          "step_number": 1,
-          "description": "Assemble zinc and copper half-cells with their electrodes and salt solutions.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "observation",
-          "moving_objects": [
-            "zinc electrode, copper electrode, zinc salt, copper salt, salt bridge, voltmeter, beakers"
+          "instruction": "Set up separate zinc/1 M zinc sulphate and copper/0.2 M copper sulphate half-cells with 50 mL beakers.",
+          "observation": "Two half-cells are connected through a salt bridge; copper electrolyte is blue.",
+          "quantities": [
+            {
+              "reagent": "ZnSO4",
+              "role": "inventory",
+              "qualifier": "exact",
+              "value": 40,
+              "unit": "mL",
+              "concentration": "1 M",
+              "note": "Materials list, not a separately specified procedural transfer."
+            },
+            {
+              "reagent": "CuSO4",
+              "role": "inventory",
+              "qualifier": "exact",
+              "value": 40,
+              "unit": "mL",
+              "concentration": "0.2 M"
+            },
+            {
+              "reagent": "beaker",
+              "role": "vessel_capacity",
+              "qualifier": "exact",
+              "value": 50,
+              "unit": "mL"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "observation",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
-        }
-      ]
-    },
-    {
-      "scene_id": "scene_2",
-      "scene_name": "Main Procedure",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Study cell potential of Zn|Zn2+||Cu2+|Cu as electrolyte concentration changes, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "",
-      "image_local": "",
-      "image_placeholder": true,
-      "steps": [
-        {
-          "step_id": "scene_2_step_2",
-          "step_number": 2,
-          "description": "Connect the cells through the salt bridge and measure the potential at room temperature.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "observation",
-          "moving_objects": [
-            "zinc electrode, copper electrode, zinc salt, copper salt, salt bridge, voltmeter, beakers"
+          "sample_id": "two_half_cells",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm104",
+              "file": "lelm104.pdf",
+              "pdf_page": 3,
+              "experiment": "4.1"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "observation",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         },
         {
-          "step_id": "scene_2_step_3",
-          "step_number": 3,
-          "description": "Change the concentration of one electrolyte at a time and record the corresponding cell potential.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "observation",
-          "moving_objects": [
-            "zinc electrode, copper electrode, zinc salt, copper salt, salt bridge, voltmeter, beakers"
+          "instruction": "Measure potential and polarity with the bridge in place.",
+          "observation": "Record measured potential; do not fabricate a reading.",
+          "quantities": [],
+          "sample_id": "two_half_cells",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm104",
+              "file": "lelm104.pdf",
+              "pdf_page": 3,
+              "experiment": "4.1"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "observation",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Remove the salt bridge after measurement. Replace the copper half-cell with a separately prepared concentration for the next trial.",
+          "observation": "This is a replacement beaker, not a top-up of the prior half-cell.",
+          "quantities": [],
+          "sample_id": "two_half_cells",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm104",
+              "file": "lelm104.pdf",
+              "pdf_page": 3,
+              "experiment": "4.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         }
       ]
     },
     {
-      "scene_id": "scene_3",
-      "scene_name": "Observation and Result",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Study cell potential of Zn|Zn2+||Cu2+|Cu as electrolyte concentration changes, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "",
-      "image_local": "",
-      "image_placeholder": true,
-      "steps": [
+      "variant_id": "0p1m_copper",
+      "title": "Cell with 0.1 M copper sulphate",
+      "source_id": "ncert_lelm104",
+      "source_experiment": "4.1",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Source conflict: materials list starts CuSO4 at 0.25 M; procedure and Table 4.1 specify 0.2 M. These variants follow procedure/table; teacher review pending."
+      ],
+      "procedure_steps": [
         {
-          "step_id": "scene_3_step_4",
-          "step_number": 4,
-          "description": "Compare the measurements with the concentration dependence described in the manual.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "observation",
-          "moving_objects": [
-            "zinc electrode, copper electrode, zinc salt, copper salt, salt bridge, voltmeter, beakers"
+          "instruction": "Set up separate zinc/1 M zinc sulphate and copper/0.1 M copper sulphate half-cells with 50 mL beakers.",
+          "observation": "Two half-cells are connected through a salt bridge; copper electrolyte is blue.",
+          "quantities": [
+            {
+              "reagent": "ZnSO4",
+              "role": "inventory",
+              "qualifier": "exact",
+              "value": 40,
+              "unit": "mL",
+              "concentration": "1 M",
+              "note": "Materials list, not a separately specified procedural transfer."
+            },
+            {
+              "reagent": "CuSO4",
+              "role": "inventory",
+              "qualifier": "exact",
+              "value": 40,
+              "unit": "mL",
+              "concentration": "0.1 M"
+            },
+            {
+              "reagent": "beaker",
+              "role": "vessel_capacity",
+              "qualifier": "exact",
+              "value": 50,
+              "unit": "mL"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "observation",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "sample_id": "two_half_cells",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm104",
+              "file": "lelm104.pdf",
+              "pdf_page": 3,
+              "experiment": "4.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Measure potential and polarity with the bridge in place.",
+          "observation": "Record measured potential; do not fabricate a reading.",
+          "quantities": [],
+          "sample_id": "two_half_cells",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm104",
+              "file": "lelm104.pdf",
+              "pdf_page": 3,
+              "experiment": "4.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Remove the salt bridge after measurement. Replace the copper half-cell with a separately prepared concentration for the next trial.",
+          "observation": "This is a replacement beaker, not a top-up of the prior half-cell.",
+          "quantities": [],
+          "sample_id": "two_half_cells",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm104",
+              "file": "lelm104.pdf",
+              "pdf_page": 3,
+              "experiment": "4.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "0p05m_copper",
+      "title": "Cell with 0.05 M copper sulphate",
+      "source_id": "ncert_lelm104",
+      "source_experiment": "4.1",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Source conflict: materials list starts CuSO4 at 0.25 M; procedure and Table 4.1 specify 0.2 M. These variants follow procedure/table; teacher review pending."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Set up separate zinc/1 M zinc sulphate and copper/0.05 M copper sulphate half-cells with 50 mL beakers.",
+          "observation": "Two half-cells are connected through a salt bridge; copper electrolyte is blue.",
+          "quantities": [
+            {
+              "reagent": "ZnSO4",
+              "role": "inventory",
+              "qualifier": "exact",
+              "value": 40,
+              "unit": "mL",
+              "concentration": "1 M",
+              "note": "Materials list, not a separately specified procedural transfer."
+            },
+            {
+              "reagent": "CuSO4",
+              "role": "inventory",
+              "qualifier": "exact",
+              "value": 40,
+              "unit": "mL",
+              "concentration": "0.05 M"
+            },
+            {
+              "reagent": "beaker",
+              "role": "vessel_capacity",
+              "qualifier": "exact",
+              "value": 50,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "two_half_cells",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm104",
+              "file": "lelm104.pdf",
+              "pdf_page": 3,
+              "experiment": "4.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Measure potential and polarity with the bridge in place.",
+          "observation": "Record measured potential; do not fabricate a reading.",
+          "quantities": [],
+          "sample_id": "two_half_cells",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm104",
+              "file": "lelm104.pdf",
+              "pdf_page": 3,
+              "experiment": "4.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Remove the salt bridge after measurement. Replace the copper half-cell with a separately prepared concentration for the next trial.",
+          "observation": "This is a replacement beaker, not a top-up of the prior half-cell.",
+          "quantities": [],
+          "sample_id": "two_half_cells",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm104",
+              "file": "lelm104.pdf",
+              "pdf_page": 3,
+              "experiment": "4.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "0p025m_copper",
+      "title": "Cell with 0.025 M copper sulphate",
+      "source_id": "ncert_lelm104",
+      "source_experiment": "4.1",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Source conflict: materials list starts CuSO4 at 0.25 M; procedure and Table 4.1 specify 0.2 M. These variants follow procedure/table; teacher review pending."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Set up separate zinc/1 M zinc sulphate and copper/0.025 M copper sulphate half-cells with 50 mL beakers.",
+          "observation": "Two half-cells are connected through a salt bridge; copper electrolyte is blue.",
+          "quantities": [
+            {
+              "reagent": "ZnSO4",
+              "role": "inventory",
+              "qualifier": "exact",
+              "value": 40,
+              "unit": "mL",
+              "concentration": "1 M",
+              "note": "Materials list, not a separately specified procedural transfer."
+            },
+            {
+              "reagent": "CuSO4",
+              "role": "inventory",
+              "qualifier": "exact",
+              "value": 40,
+              "unit": "mL",
+              "concentration": "0.025 M"
+            },
+            {
+              "reagent": "beaker",
+              "role": "vessel_capacity",
+              "qualifier": "exact",
+              "value": 50,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "two_half_cells",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm104",
+              "file": "lelm104.pdf",
+              "pdf_page": 3,
+              "experiment": "4.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Measure potential and polarity with the bridge in place.",
+          "observation": "Record measured potential; do not fabricate a reading.",
+          "quantities": [],
+          "sample_id": "two_half_cells",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm104",
+              "file": "lelm104.pdf",
+              "pdf_page": 3,
+              "experiment": "4.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Remove the salt bridge after measurement. Replace the copper half-cell with a separately prepared concentration for the next trial.",
+          "observation": "This is a replacement beaker, not a top-up of the prior half-cell.",
+          "quantities": [],
+          "sample_id": "two_half_cells",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm104",
+              "file": "lelm104.pdf",
+              "pdf_page": 3,
+              "experiment": "4.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "0p0125m_copper",
+      "title": "Cell with 0.0125 M copper sulphate",
+      "source_id": "ncert_lelm104",
+      "source_experiment": "4.1",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Source conflict: materials list starts CuSO4 at 0.25 M; procedure and Table 4.1 specify 0.2 M. These variants follow procedure/table; teacher review pending."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Set up separate zinc/1 M zinc sulphate and copper/0.0125 M copper sulphate half-cells with 50 mL beakers.",
+          "observation": "Two half-cells are connected through a salt bridge; copper electrolyte is blue.",
+          "quantities": [
+            {
+              "reagent": "ZnSO4",
+              "role": "inventory",
+              "qualifier": "exact",
+              "value": 40,
+              "unit": "mL",
+              "concentration": "1 M",
+              "note": "Materials list, not a separately specified procedural transfer."
+            },
+            {
+              "reagent": "CuSO4",
+              "role": "inventory",
+              "qualifier": "exact",
+              "value": 40,
+              "unit": "mL",
+              "concentration": "0.0125 M"
+            },
+            {
+              "reagent": "beaker",
+              "role": "vessel_capacity",
+              "qualifier": "exact",
+              "value": 50,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "two_half_cells",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm104",
+              "file": "lelm104.pdf",
+              "pdf_page": 3,
+              "experiment": "4.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Measure potential and polarity with the bridge in place.",
+          "observation": "Record measured potential; do not fabricate a reading.",
+          "quantities": [],
+          "sample_id": "two_half_cells",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm104",
+              "file": "lelm104.pdf",
+              "pdf_page": 3,
+              "experiment": "4.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Remove the salt bridge after measurement. Replace the copper half-cell with a separately prepared concentration for the next trial.",
+          "observation": "This is a replacement beaker, not a top-up of the prior half-cell.",
+          "quantities": [],
+          "sample_id": "two_half_cells",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm104",
+              "file": "lelm104.pdf",
+              "pdf_page": 3,
+              "experiment": "4.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         }
       ]
     }
   ],
-  "prompt_templates_used": [
-    "observation"
+  "selected_protocol_variant": null,
+  "procedure_steps": [
+    {
+      "step_id": 1,
+      "instruction": "Select one source-backed protocol variant and identify its sample and reagents before rendering.",
+      "observation": "This catalogue overview is not an executable combined procedure."
+    },
+    {
+      "step_id": 2,
+      "instruction": "Resolve unspecified doses, source conflicts and sample/reference-image requirements for the selected variant.",
+      "observation": "Unknown quantities remain unset; alternatives and fresh aliquots remain separate."
+    },
+    {
+      "step_id": 3,
+      "instruction": "Use only the selected variant's source-evidenced steps after scientific review.",
+      "observation": "Do not concatenate the alternative tests into one vessel or invent a universal positive outcome."
+    }
   ],
-  "total_clips": 4,
-  "total_scenes": 3,
+  "source_experiment_id": "chem_12_1101",
+  "scenes": [],
+  "prompt_templates_used": [],
+  "total_clips": 0,
+  "total_scenes": 0,
   "status": "dataset_only",
   "video_generated": false,
   "video_path": "",

@@ -27,6 +27,35 @@
     "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
     "Wear eye protection and do not taste or directly handle chemicals."
   ],
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "related_test_only",
+    "source_ids": [],
+    "requires_protocol_selection": false,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "lelm108.pdf p4 contains diagnostic iodoform tests, not this preparative experiment. See chem_12_402 variants; no scale substitution made."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "procedure_steps": [
+    {
+      "step_id": 1,
+      "instruction": "Mix the methyl-ketone or suitable precursor with iodine and alkali as prescribed.",
+      "observation": "Record the visible result and measurement described by the manual for this step."
+    },
+    {
+      "step_id": 2,
+      "instruction": "Allow the reaction to proceed until yellow iodoform precipitates.",
+      "observation": "Record the visible result and measurement described by the manual for this step."
+    },
+    {
+      "step_id": 3,
+      "instruction": "Filter, wash, dry, and record the characteristic yellow crystals and yield.",
+      "observation": "Record the visible result and measurement described by the manual for this step."
+    }
+  ],
+  "source_experiment_id": "chem_12_607",
   "scenes": [
     {
       "scene_id": "scene_1",
@@ -43,6 +72,7 @@
           "description": "Mix the methyl-ketone or suitable precursor with iodine and alkali as prescribed.",
           "observation": "Record the visible result and measurement described by the manual for this step.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "state_change",
           "moving_objects": [
             "methyl ketone or ethanol, iodine, sodium hydroxide, water, test tube, filter"
@@ -70,6 +100,7 @@
           "description": "Allow the reaction to proceed until yellow iodoform precipitates.",
           "observation": "Record the visible result and measurement described by the manual for this step.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "colour_change",
           "moving_objects": [
             "methyl ketone or ethanol, iodine, sodium hydroxide, water, test tube, filter"
@@ -97,6 +128,7 @@
           "description": "Filter, wash, dry, and record the characteristic yellow crystals and yield.",
           "observation": "Record the visible result and measurement described by the manual for this step.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "state_change",
           "moving_objects": [
             "methyl ketone or ethanol, iodine, sodium hydroxide, water, test tube, filter"

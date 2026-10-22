@@ -5,9 +5,9 @@
   "class_level": 12,
   "difficulty": "medium",
   "chapter": "Surface Chemistry",
-  "ncert_reference": "Manual of Microscale Chemistry Laboratory Kit, Chapter Surface Chemistry, Experiment 8.2; exact PDF pages to verify during citation pass",
-  "source_file": "Manual_01.pdf",
-  "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Purify a prepared sol by dialysis' and record its manual-defined observations and result.",
+  "ncert_reference": "User-supplied NCERT XII Chemistry lelm101.pdf; PDF pages 4, 5 (1-based). File SHA-256 in data/quantity_source_manifest.json.",
+  "source_file": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm101.pdf",
+  "educational_goal": "Study 'Purify a prepared sol by dialysis' using a selected NCERT XII chemistry protocol, its documented quantities and conditions, and conditional observations; review unresolved doses before rendering.",
   "prerequisites": [
     "surface chemistry",
     "laboratory observation",
@@ -21,18 +21,241 @@
     "8.2"
   ],
   "materials": [
-    "prepared sol, parchment or cellophane paper, trough, thread, water, test tubes, reagents"
+    "albumin sol",
+    "30 by 30 cm membrane",
+    "trough",
+    "thread",
+    "distilled water",
+    "separate test tubes",
+    "uranyl zinc acetate",
+    "silver nitrate"
   ],
   "safety_notes": [
     "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
     "Wear eye protection and do not taste or directly handle chemicals."
   ],
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "transcribed",
+    "source_ids": [
+      "ncert_lelm101"
+    ],
+    "requires_protocol_selection": false,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "protocol_variants": [
+    {
+      "variant_id": "dialysis",
+      "title": "Dialysis of albumin sol",
+      "source_id": "ncert_lelm101",
+      "source_experiment": "1.2",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
+        {
+          "instruction": "Prepare a parchment/cellophane cone from a 30 by 30 cm sheet and place albumin sol inside.",
+          "observation": "Sol is retained inside the membrane.",
+          "quantities": [
+            {
+              "reagent": "membrane side",
+              "role": "apparatus_dimension",
+              "qualifier": "exact",
+              "value": 30,
+              "unit": "cm"
+            },
+            {
+              "reagent": "albumin sol",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 4,
+              "experiment": "1.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Suspend the cone in distilled water and inspect the external water after half an hour; change the external water during dialysis.",
+          "observation": "Small ions diffuse into the external water; the colloid remains inside.",
+          "quantities": [
+            {
+              "reagent": "external water",
+              "role": "addition",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "first inspection",
+              "role": "condition",
+              "qualifier": "exact",
+              "value": 30,
+              "unit": "min"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 5,
+              "experiment": "1.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Use separate external-water aliquots for sodium and chloride tests with uranyl zinc acetate and silver nitrate respectively.",
+          "observation": "Yellow sodium-test and white chloride-test precipitates indicate ions outside the membrane; doses are not stated.",
+          "quantities": [
+            {
+              "reagent": "test aliquots",
+              "role": "addition",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "uranyl zinc acetate",
+              "role": "addition",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "silver nitrate",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "separate_test_aliquots",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 5,
+              "experiment": "1.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    }
+  ],
+  "selected_protocol_variant": "dialysis",
+  "procedure_steps": [
+    {
+      "instruction": "Prepare a parchment/cellophane cone from a 30 by 30 cm sheet and place albumin sol inside.",
+      "observation": "Sol is retained inside the membrane.",
+      "quantities": [
+        {
+          "reagent": "membrane side",
+          "role": "apparatus_dimension",
+          "qualifier": "exact",
+          "value": 30,
+          "unit": "cm"
+        },
+        {
+          "reagent": "albumin sol",
+          "role": "addition",
+          "qualifier": "not_specified"
+        }
+      ],
+      "sample_id": "reaction",
+      "reaction_scope": "source_defined",
+      "step_id": 1,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm101",
+          "file": "lelm101.pdf",
+          "pdf_page": 4,
+          "experiment": "1.2"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    },
+    {
+      "instruction": "Suspend the cone in distilled water and inspect the external water after half an hour; change the external water during dialysis.",
+      "observation": "Small ions diffuse into the external water; the colloid remains inside.",
+      "quantities": [
+        {
+          "reagent": "external water",
+          "role": "addition",
+          "qualifier": "not_specified"
+        },
+        {
+          "reagent": "first inspection",
+          "role": "condition",
+          "qualifier": "exact",
+          "value": 30,
+          "unit": "min"
+        }
+      ],
+      "sample_id": "reaction",
+      "reaction_scope": "source_defined",
+      "step_id": 2,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm101",
+          "file": "lelm101.pdf",
+          "pdf_page": 5,
+          "experiment": "1.2"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    },
+    {
+      "instruction": "Use separate external-water aliquots for sodium and chloride tests with uranyl zinc acetate and silver nitrate respectively.",
+      "observation": "Yellow sodium-test and white chloride-test precipitates indicate ions outside the membrane; doses are not stated.",
+      "quantities": [
+        {
+          "reagent": "test aliquots",
+          "role": "addition",
+          "qualifier": "not_specified"
+        },
+        {
+          "reagent": "uranyl zinc acetate",
+          "role": "addition",
+          "qualifier": "not_specified"
+        },
+        {
+          "reagent": "silver nitrate",
+          "role": "addition",
+          "qualifier": "not_specified"
+        }
+      ],
+      "sample_id": "separate_test_aliquots",
+      "reaction_scope": "source_defined",
+      "step_id": 3,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm101",
+          "file": "lelm101.pdf",
+          "pdf_page": 5,
+          "experiment": "1.2"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    }
+  ],
+  "source_experiment_id": "chem_12_802",
   "scenes": [
     {
       "scene_id": "scene_1",
       "scene_name": "Setup and Preparation",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Purify a prepared sol by dialysis, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Purify a prepared sol by dialysis. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
       "image_local": "images/chemistry/purify_a_prepared_sol_by_dialysis_setup.jpg",
       "image_placeholder": true,
@@ -40,18 +263,45 @@
         {
           "step_id": "scene_1_step_1",
           "step_number": 1,
-          "description": "Place the prepared colloidal sol in a parchment or cellophane membrane bag.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "Prepare a parchment/cellophane cone from a 30 by 30 cm sheet and place albumin sol inside.",
+          "observation": "Sol is retained inside the membrane.",
           "duration_seconds": 3.0,
-          "motion_type": "colour_change",
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
+          "motion_type": "continuous_action",
           "moving_objects": [
-            "prepared sol, parchment or cellophane paper, trough, thread, water, test tubes, reagents"
+            "albumin sol",
+            "30 by 30 cm membrane",
+            "trough"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "colour_change",
+          "key_visual": "Sol is retained inside the membrane.",
+          "prompt_template": "continuous_action",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "membrane side",
+              "role": "apparatus_dimension",
+              "qualifier": "exact",
+              "value": 30,
+              "unit": "cm"
+            },
+            {
+              "reagent": "albumin sol",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 4,
+              "experiment": "1.2"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined"
         }
       ]
     },
@@ -59,7 +309,7 @@
       "scene_id": "scene_2",
       "scene_name": "Main Procedure",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Purify a prepared sol by dialysis, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Purify a prepared sol by dialysis. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "",
       "image_local": "",
       "image_placeholder": true,
@@ -67,18 +317,45 @@
         {
           "step_id": "scene_2_step_2",
           "step_number": 2,
-          "description": "Suspend the bag in water and allow soluble electrolytes to diffuse out.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "Suspend the cone in distilled water and inspect the external water after half an hour; change the external water during dialysis.",
+          "observation": "Small ions diffuse into the external water; the colloid remains inside.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "fluid_dynamics",
           "moving_objects": [
-            "prepared sol, parchment or cellophane paper, trough, thread, water, test tubes, reagents"
+            "albumin sol",
+            "30 by 30 cm membrane",
+            "trough"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "key_visual": "Small ions diffuse into the external water; the colloid remains inside.",
           "prompt_template": "fluid_dynamics",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "external water",
+              "role": "addition",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "first inspection",
+              "role": "condition",
+              "qualifier": "exact",
+              "value": 30,
+              "unit": "min"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 5,
+              "experiment": "1.2"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined"
         }
       ]
     },
@@ -86,7 +363,7 @@
       "scene_id": "scene_3",
       "scene_name": "Observation and Result",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Purify a prepared sol by dialysis, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Purify a prepared sol by dialysis. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "",
       "image_local": "",
       "image_placeholder": true,
@@ -94,24 +371,55 @@
         {
           "step_id": "scene_3_step_3",
           "step_number": 3,
-          "description": "Replace the external water as directed and test the dialysed sol or wash water for removal of impurities.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "Use separate external-water aliquots for sodium and chloride tests with uranyl zinc acetate and silver nitrate respectively.",
+          "observation": "Yellow sodium-test and white chloride-test precipitates indicate ions outside the membrane; doses are not stated.",
           "duration_seconds": 3.0,
-          "motion_type": "fluid_dynamics",
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
+          "motion_type": "colour_change",
           "moving_objects": [
-            "prepared sol, parchment or cellophane paper, trough, thread, water, test tubes, reagents"
+            "albumin sol",
+            "30 by 30 cm membrane",
+            "trough"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "fluid_dynamics",
+          "key_visual": "Yellow sodium-test and white chloride-test precipitates indicate ions outside the membrane; doses are not stated.",
+          "prompt_template": "colour_change",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "test aliquots",
+              "role": "addition",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "uranyl zinc acetate",
+              "role": "addition",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "silver nitrate",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 5,
+              "experiment": "1.2"
+            }
+          ],
+          "sample_id": "separate_test_aliquots",
+          "reaction_scope": "source_defined"
         }
       ]
     }
   ],
   "prompt_templates_used": [
     "colour_change",
+    "continuous_action",
     "fluid_dynamics"
   ],
   "total_clips": 3,

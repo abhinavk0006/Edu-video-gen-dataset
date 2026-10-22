@@ -5,15 +5,15 @@
   "class_level": 12,
   "difficulty": "medium",
   "chapter": "Qualitative Analysis (Organic)",
-  "ncert_reference": "Manual of Microscale Chemistry Laboratory Kit, Chapter Qualitative Analysis (Organic), Experiment 4.3; exact PDF pages to verify during citation pass",
-  "source_file": "Manual_01.pdf",
-  "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Characterise carbohydrates, fats, and proteins in food' and record its manual-defined observations and result.",
+  "ncert_reference": "User-supplied NCERT XII Chemistry lelm111.pdf; PDF pages 2, 4, 5, 6, 7, 8, 10 (1-based). File SHA-256 in data/quantity_source_manifest.json.",
+  "source_file": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm111.pdf",
+  "educational_goal": "Study 'Characterise carbohydrates, fats, and proteins in food' using a selected NCERT XII chemistry protocol, its documented quantities and conditions, and conditional observations; review unresolved doses before rendering.",
   "prerequisites": [
     "qualitative analysis (organic)",
     "laboratory observation",
     "microscale chemistry"
   ],
-  "estimated_video_duration_seconds": 12,
+  "estimated_video_duration_seconds": 0,
   "tags": [
     "class-12",
     "manual-01",
@@ -21,117 +21,781 @@
     "4.3"
   ],
   "materials": [
-    "well plate, micro test tubes, glucose, starch, oil, milk, egg, Molisch reagent, Benedict solution, iodine"
+    "selected food or standard sample",
+    "separate test aliquots",
+    "test tubes sized for the chosen protocol",
+    "selected test reagents",
+    "water bath"
   ],
   "safety_notes": [
     "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
     "Wear eye protection and do not taste or directly handle chemicals."
   ],
-  "scenes": [
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "partial",
+    "source_ids": [
+      "ncert_lelm111"
+    ],
+    "requires_protocol_selection": true,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred.",
+      "Selected test/preparation branches are transcribed; aggregate entry is not an exhaustive executable protocol. Untranscribed branches require source review."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "protocol_variants": [
     {
-      "scene_id": "scene_1",
-      "scene_name": "Setup and Preparation",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Characterise carbohydrates, fats, and proteins in food, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
-      "image_local": "images/chemistry/characterise_carbohydrates_fats_and_proteins_in_food_setup.jpg",
-      "image_placeholder": true,
-      "steps": [
+      "variant_id": "milk_aliquot",
+      "title": "Food preparation / milk aliquot",
+      "source_id": "ncert_lelm111",
+      "source_experiment": "11.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Use a fresh aliquot for each test. Positive result depends on food/analyte identity, not just reagent addition.",
+        "Where food preparation is needed: milk uses 0.5 mL per test; flour/rice/legume extraction uses 100 mg with 10 mL water and boiling (PDF p10). Do not substitute these doses for standard-sugar aliquots."
+      ],
+      "procedure_steps": [
         {
-          "step_id": "scene_1_step_1",
-          "step_number": 1,
-          "description": "Prepare small portions of the pure substances and food samples in a well plate or micro test tubes.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "observation",
-          "moving_objects": [
-            "well plate, micro test tubes, glucose, starch, oil, milk, egg, Molisch reagent, Benedict solution, iodine"
+          "instruction": "Allocate a fresh 0.5 mL milk sample for each selected food test; apply only that test's reviewed reagent protocol.",
+          "observation": "Each test starts from a separate milk aliquot; do not accumulate all test reagents in one sample.",
+          "quantities": [
+            {
+              "reagent": "milk per test",
+              "role": "aliquot",
+              "qualifier": "exact",
+              "value": 0.5,
+              "unit": "mL"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "observation",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm111",
+              "file": "lelm111.pdf",
+              "pdf_page": 10,
+              "experiment": "11.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         }
       ]
     },
     {
-      "scene_id": "scene_2",
-      "scene_name": "Main Procedure",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Characterise carbohydrates, fats, and proteins in food, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "",
-      "image_local": "",
-      "image_placeholder": true,
-      "steps": [
+      "variant_id": "powder_extract",
+      "title": "Food preparation / flour, rice or legume",
+      "source_id": "ncert_lelm111",
+      "source_experiment": "11.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Use a fresh aliquot for each test. Positive result depends on food/analyte identity, not just reagent addition.",
+        "Where food preparation is needed: milk uses 0.5 mL per test; flour/rice/legume extraction uses 100 mg with 10 mL water and boiling (PDF p10). Do not substitute these doses for standard-sugar aliquots."
+      ],
+      "procedure_steps": [
         {
-          "step_id": "scene_2_step_2",
-          "step_number": 2,
-          "description": "Apply Molisch's, Fehling's or Benedict's, iodine, grease-spot, and protein tests as specified.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "observation",
-          "moving_objects": [
-            "well plate, micro test tubes, glucose, starch, oil, milk, egg, Molisch reagent, Benedict solution, iodine"
+          "instruction": "Boil 100 mg selected wheat flour, rice, gram flour or legume powder in 10 mL distilled water; allocate separate portions for the selected tests.",
+          "observation": "This preparation is colloidal; do not assert a clear molecular solution or assume all tests are positive.",
+          "quantities": [
+            {
+              "reagent": "selected food powder",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mg"
+            },
+            {
+              "reagent": "water",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "mL"
+            },
+            {
+              "reagent": "each test aliquot",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "observation",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
-        },
-        {
-          "step_id": "scene_2_step_3",
-          "step_number": 3,
-          "description": "Record the purple ring, brick-red precipitate, blue-black color, translucent spot, or other characteristic observations.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "colour_change",
-          "moving_objects": [
-            "well plate, micro test tubes, glucose, starch, oil, milk, egg, Molisch reagent, Benedict solution, iodine"
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm111",
+              "file": "lelm111.pdf",
+              "pdf_page": 10,
+              "experiment": "11.1"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "colour_change",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         }
       ]
     },
     {
-      "scene_id": "scene_3",
-      "scene_name": "Observation and Result",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Characterise carbohydrates, fats, and proteins in food, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "",
-      "image_local": "",
-      "image_placeholder": true,
-      "steps": [
+      "variant_id": "molisch",
+      "title": "Carbohydrate / Molisch",
+      "source_id": "ncert_lelm111",
+      "source_experiment": "11.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Use a fresh aliquot for each test. Positive result depends on food/analyte identity, not just reagent addition.",
+        "Where food preparation is needed: milk uses 0.5 mL per test; flour/rice/legume extraction uses 100 mg with 10 mL water and boiling (PDF p10). Do not substitute these doses for standard-sugar aliquots."
+      ],
+      "procedure_steps": [
         {
-          "step_id": "scene_3_step_4",
-          "step_number": 4,
-          "description": "Compare the food-sample results with the pure-substance controls.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "observation",
-          "moving_objects": [
-            "well plate, micro test tubes, glucose, starch, oil, milk, egg, Molisch reagent, Benedict solution, iodine"
+          "instruction": "Use a fresh aliquot of the separately prepared 1% sugar sample (aliquot volume unstated); add 2-3 drops 1% alcoholic 1-naphthol, then 2 mL concentrated sulphuric acid carefully down the wall to form a lower layer.",
+          "observation": "A purple ring appears at the interface for a positive test; do not homogenise the endpoint.",
+          "quantities": [
+            {
+              "reagent": "1% sugar aliquot",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "concentration": "1% (basis not stated)"
+            },
+            {
+              "reagent": "1-naphthol",
+              "role": "addition",
+              "qualifier": "range",
+              "minimum": 2,
+              "maximum": 3,
+              "unit": "drops",
+              "concentration": "1% alcoholic"
+            },
+            {
+              "reagent": "conc H2SO4",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "mL"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "observation",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "sample_id": "reaction",
+          "reaction_scope": "interface",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm111",
+              "file": "lelm111.pdf",
+              "pdf_page": 2,
+              "experiment": "11.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "fehling",
+      "title": "Reducing sugar / Fehling",
+      "source_id": "ncert_lelm111",
+      "source_experiment": "11.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Use a fresh aliquot for each test. Positive result depends on food/analyte identity, not just reagent addition.",
+        "Where food preparation is needed: milk uses 0.5 mL per test; flour/rice/legume extraction uses 100 mg with 10 mL water and boiling (PDF p10). Do not substitute these doses for standard-sugar aliquots."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Add freshly mixed 1 mL Fehling A and 1 mL Fehling B to a fresh sugar aliquot and heat on a water bath.",
+          "observation": "Orange-red precipitate is positive for reducing sugars; sucrose is negative before hydrolysis.",
+          "quantities": [
+            {
+              "reagent": "sugar aliquot",
+              "role": "addition",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "Fehling A",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "mL"
+            },
+            {
+              "reagent": "Fehling B",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm111",
+              "file": "lelm111.pdf",
+              "pdf_page": 4,
+              "experiment": "11.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "benedict",
+      "title": "Reducing sugar / Benedict",
+      "source_id": "ncert_lelm111",
+      "source_experiment": "11.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Use a fresh aliquot for each test. Positive result depends on food/analyte identity, not just reagent addition.",
+        "Where food preparation is needed: milk uses 0.5 mL per test; flour/rice/legume extraction uses 100 mg with 10 mL water and boiling (PDF p10). Do not substitute these doses for standard-sugar aliquots."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Add 1 mL Benedict reagent to a fresh sugar aliquot; heat in boiling water for two minutes.",
+          "observation": "Orange-red precipitate is conditional on a reducing sugar.",
+          "quantities": [
+            {
+              "reagent": "sugar aliquot",
+              "role": "addition",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "Benedict reagent",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "mL"
+            },
+            {
+              "reagent": "heating time",
+              "role": "condition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "min"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm111",
+              "file": "lelm111.pdf",
+              "pdf_page": 4,
+              "experiment": "11.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "tollens",
+      "title": "Reducing sugar / Tollens",
+      "source_id": "ncert_lelm111",
+      "source_experiment": "11.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Use a fresh aliquot for each test. Positive result depends on food/analyte identity, not just reagent addition.",
+        "Where food preparation is needed: milk uses 0.5 mL per test; flour/rice/legume extraction uses 100 mg with 10 mL water and boiling (PDF p10). Do not substitute these doses for standard-sugar aliquots."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Prepare fresh reagent from 1 mL aqueous silver nitrate: add NaOH dropwise to form oxide and ammonia until it dissolves; add fresh sugar aliquot and warm on water bath without direct flame.",
+          "observation": "A silver mirror is a positive reducing-sugar result on the glass surface.",
+          "quantities": [
+            {
+              "reagent": "AgNO3",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "mL"
+            },
+            {
+              "reagent": "NaOH",
+              "role": "addition",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "NH4OH",
+              "role": "addition",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "sugar aliquot",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "localized",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm111",
+              "file": "lelm111.pdf",
+              "pdf_page": 5,
+              "experiment": "11.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "barfoed",
+      "title": "Monosaccharide / Barfoed",
+      "source_id": "ncert_lelm111",
+      "source_experiment": "11.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Use a fresh aliquot for each test. Positive result depends on food/analyte identity, not just reagent addition.",
+        "Where food preparation is needed: milk uses 0.5 mL per test; flour/rice/legume extraction uses 100 mg with 10 mL water and boiling (PDF p10). Do not substitute these doses for standard-sugar aliquots."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Use 10 drops 1% sugar solution and 1 mL Barfoed reagent; heat in boiling water for five minutes.",
+          "observation": "A red precipitate within the specified interval supports monosaccharide; prolonged heating can produce misleading disaccharide results.",
+          "quantities": [
+            {
+              "reagent": "sugar solution",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "drops",
+              "concentration": "1% (basis not stated)"
+            },
+            {
+              "reagent": "Barfoed reagent",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "mL"
+            },
+            {
+              "reagent": "heating time",
+              "role": "condition",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "min"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm111",
+              "file": "lelm111.pdf",
+              "pdf_page": 5,
+              "experiment": "11.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "sucrose_hydrolysis",
+      "title": "Sucrose hydrolysis",
+      "source_id": "ncert_lelm111",
+      "source_experiment": "11.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Use a fresh aliquot for each test. Positive result depends on food/analyte identity, not just reagent addition.",
+        "Where food preparation is needed: milk uses 0.5 mL per test; flour/rice/legume extraction uses 100 mg with 10 mL water and boiling (PDF p10). Do not substitute these doses for standard-sugar aliquots."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Heat 5 mL 1% sucrose with 5 drops concentrated HCl on a boiling-water bath; cool and add NaOH until neutral/slightly alkaline. Use separate aliquots for subsequent reducing-sugar tests.",
+          "observation": "Hydrolysed sucrose gives the source's reducing-sugar response; neutralisation dose is not fixed.",
+          "quantities": [
+            {
+              "reagent": "sucrose",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "mL",
+              "concentration": "1% (basis not stated)"
+            },
+            {
+              "reagent": "conc HCl",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "drops"
+            },
+            {
+              "reagent": "NaOH",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "note": "Neutral/slightly alkaline endpoint; no volume given."
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm111",
+              "file": "lelm111.pdf",
+              "pdf_page": 6,
+              "experiment": "11.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "seliwanoff",
+      "title": "Sugar / Seliwanoff",
+      "source_id": "ncert_lelm111",
+      "source_experiment": "11.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Use a fresh aliquot for each test. Positive result depends on food/analyte identity, not just reagent addition.",
+        "Where food preparation is needed: milk uses 0.5 mL per test; flour/rice/legume extraction uses 100 mg with 10 mL water and boiling (PDF p10). Do not substitute these doses for standard-sugar aliquots."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Mix 10 drops 1% sugar with 2 mL Seliwanoff reagent; heat in boiling water for two minutes.",
+          "observation": "Ketohexoses give red, ketopentoses blue-green; aldoses show no colour within two minutes.",
+          "quantities": [
+            {
+              "reagent": "sugar",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "drops",
+              "concentration": "1% (basis not stated)"
+            },
+            {
+              "reagent": "Seliwanoff reagent",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "mL"
+            },
+            {
+              "reagent": "heating time",
+              "role": "condition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "min"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm111",
+              "file": "lelm111.pdf",
+              "pdf_page": 7,
+              "experiment": "11.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "starch_iodine",
+      "title": "Starch / iodine",
+      "source_id": "ncert_lelm111",
+      "source_experiment": "11.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Use a fresh aliquot for each test. Positive result depends on food/analyte identity, not just reagent addition.",
+        "Where food preparation is needed: milk uses 0.5 mL per test; flour/rice/legume extraction uses 100 mg with 10 mL water and boiling (PDF p10). Do not substitute these doses for standard-sugar aliquots."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Make a paste of 0.5 g starch with 5 mL water, disperse into 50 mL boiling water, then use a few drops iodine on a test portion.",
+          "observation": "Starch is colloidal; iodine gives blue. Do not assert the starch dispersion is a true clear solution.",
+          "quantities": [
+            {
+              "reagent": "starch",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 0.5,
+              "unit": "g"
+            },
+            {
+              "reagent": "paste water",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "mL"
+            },
+            {
+              "reagent": "boiling water",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 50,
+              "unit": "mL"
+            },
+            {
+              "reagent": "test portion",
+              "role": "addition",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "iodine",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "note": "Few drops."
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm111",
+              "file": "lelm111.pdf",
+              "pdf_page": 7,
+              "experiment": "11.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "fat_acrolein",
+      "title": "Fat / acrolein (historical method)",
+      "source_id": "ncert_lelm111",
+      "source_experiment": "11.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Use a fresh aliquot for each test. Positive result depends on food/analyte identity, not just reagent addition.",
+        "Where food preparation is needed: milk uses 0.5 mL per test; flour/rice/legume extraction uses 100 mg with 10 mL water and boiling (PDF p10). Do not substitute these doses for standard-sugar aliquots."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Gently heat 3 mL mustard oil/ghee with 0.5 g dry potassium hydrogen sulphate using the reviewed laboratory setup.",
+          "observation": "The source reports an irritating odour, a nonvisual endpoint; do not depict direct inhalation.",
+          "quantities": [
+            {
+              "reagent": "oil or ghee",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 3,
+              "unit": "mL"
+            },
+            {
+              "reagent": "dry KHSO4",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 0.5,
+              "unit": "g"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm111",
+              "file": "lelm111.pdf",
+              "pdf_page": 8,
+              "experiment": "11.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "biuret",
+      "title": "Protein / biuret",
+      "source_id": "ncert_lelm111",
+      "source_experiment": "11.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Use a fresh aliquot for each test. Positive result depends on food/analyte identity, not just reagent addition.",
+        "Where food preparation is needed: milk uses 0.5 mL per test; flour/rice/legume extraction uses 100 mg with 10 mL water and boiling (PDF p10). Do not substitute these doses for standard-sugar aliquots."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Prepare 0.5% (w/v) casein/albumin in 0.1 M NaOH; take 2-3 mL, add about 2 mL 10% NaOH and a few drops copper reagent, warm about five minutes.",
+          "observation": "Violet colour supports a protein response.",
+          "quantities": [
+            {
+              "reagent": "protein stock aliquot",
+              "role": "addition",
+              "qualifier": "range",
+              "minimum": 2,
+              "maximum": 3,
+              "unit": "mL",
+              "concentration": "0.5% w/v in 0.1 M NaOH"
+            },
+            {
+              "reagent": "NaOH",
+              "role": "addition",
+              "qualifier": "approximate",
+              "value": 2,
+              "unit": "mL",
+              "concentration": "10% (basis not stated)"
+            },
+            {
+              "reagent": "copper reagent",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "note": "Few drops."
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm111",
+              "file": "lelm111.pdf",
+              "pdf_page": 10,
+              "experiment": "11.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "ninhydrin",
+      "title": "Protein / ninhydrin",
+      "source_id": "ncert_lelm111",
+      "source_experiment": "11.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Use a fresh aliquot for each test. Positive result depends on food/analyte identity, not just reagent addition.",
+        "Where food preparation is needed: milk uses 0.5 mL per test; flour/rice/legume extraction uses 100 mg with 10 mL water and boiling (PDF p10). Do not substitute these doses for standard-sugar aliquots."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Use 2-3 mL aqueous albumin and 3-4 drops ninhydrin; heat.",
+          "observation": "Blue colour is a positive response.",
+          "quantities": [
+            {
+              "reagent": "albumin solution",
+              "role": "addition",
+              "qualifier": "range",
+              "minimum": 2,
+              "maximum": 3,
+              "unit": "mL"
+            },
+            {
+              "reagent": "ninhydrin",
+              "role": "addition",
+              "qualifier": "range",
+              "minimum": 3,
+              "maximum": 4,
+              "unit": "drops"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm111",
+              "file": "lelm111.pdf",
+              "pdf_page": 10,
+              "experiment": "11.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "xanthoproteic",
+      "title": "Protein / xanthoproteic",
+      "source_id": "ncert_lelm111",
+      "source_experiment": "11.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Use a fresh aliquot for each test. Positive result depends on food/analyte identity, not just reagent addition.",
+        "Where food preparation is needed: milk uses 0.5 mL per test; flour/rice/legume extraction uses 100 mg with 10 mL water and boiling (PDF p10). Do not substitute these doses for standard-sugar aliquots."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Use 1 mL aqueous albumin with a few drops concentrated nitric acid; heat for a few minutes, cool under the tap and add a few drops 10 M NaOH.",
+          "observation": "Yellow changes to orange after alkali addition for the source sample.",
+          "quantities": [
+            {
+              "reagent": "albumin solution",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "mL"
+            },
+            {
+              "reagent": "conc HNO3",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "note": "Few drops."
+            },
+            {
+              "reagent": "NaOH",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "concentration": "10 M",
+              "note": "Few drops."
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm111",
+              "file": "lelm111.pdf",
+              "pdf_page": 10,
+              "experiment": "11.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         }
       ]
     }
   ],
-  "prompt_templates_used": [
-    "colour_change",
-    "observation"
+  "selected_protocol_variant": null,
+  "procedure_steps": [
+    {
+      "step_id": 1,
+      "instruction": "Select one source-backed protocol variant and identify its sample and reagents before rendering.",
+      "observation": "This catalogue overview is not an executable combined procedure."
+    },
+    {
+      "step_id": 2,
+      "instruction": "Resolve unspecified doses, source conflicts and sample/reference-image requirements for the selected variant.",
+      "observation": "Unknown quantities remain unset; alternatives and fresh aliquots remain separate."
+    },
+    {
+      "step_id": 3,
+      "instruction": "Use only the selected variant's source-evidenced steps after scientific review.",
+      "observation": "Do not concatenate the alternative tests into one vessel or invent a universal positive outcome."
+    }
   ],
-  "total_clips": 4,
-  "total_scenes": 3,
+  "source_experiment_id": "chem_12_403",
+  "scenes": [],
+  "prompt_templates_used": [],
+  "total_clips": 0,
+  "total_scenes": 0,
   "status": "dataset_only",
   "video_generated": false,
   "video_path": "",

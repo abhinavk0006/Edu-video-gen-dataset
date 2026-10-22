@@ -5,9 +5,9 @@
   "class_level": 12,
   "difficulty": "medium",
   "chapter": "Thermochemistry",
-  "ncert_reference": "Manual of Microscale Chemistry Laboratory Kit, Chapter Thermochemistry, Experiment 10.2; exact PDF pages to verify during citation pass",
-  "source_file": "Manual_01.pdf",
-  "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Determine enthalpy of neutralisation of hydrochloric acid and sodium hydroxide' and record its manual-defined observations and result.",
+  "ncert_reference": "User-supplied NCERT XII Chemistry lelm103.pdf; PDF pages 7 (1-based). File SHA-256 in data/quantity_source_manifest.json.",
+  "source_file": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm103.pdf",
+  "educational_goal": "Study 'Determine enthalpy of neutralisation of hydrochloric acid and sodium hydroxide' using a selected NCERT XII chemistry protocol, its documented quantities and conditions, and conditional observations; review unresolved doses before rendering.",
   "prerequisites": [
     "thermochemistry",
     "laboratory observation",
@@ -21,18 +21,210 @@
     "10.2"
   ],
   "materials": [
-    "hydrochloric acid, sodium hydroxide, calorimeter, thermometer, measuring cylinders, stirrer"
+    "1 M hydrochloric acid",
+    "1 M sodium hydroxide",
+    "calibrated calorimeter",
+    "250 mL beaker",
+    "thermometer",
+    "measuring cylinders",
+    "stirrer"
   ],
   "safety_notes": [
     "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
     "Wear eye protection and do not taste or directly handle chemicals."
   ],
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "transcribed",
+    "source_ids": [
+      "ncert_lelm103"
+    ],
+    "requires_protocol_selection": false,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "protocol_variants": [
+    {
+      "variant_id": "neutralisation",
+      "title": "Neutralisation calorimetry",
+      "source_id": "ncert_lelm103",
+      "source_experiment": "3.2",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Calibrate using Experiment 3.1; calibration water is separate, not an additional reaction dose."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Use the separately calibrated calorimeter; place 100 mL 1 M HCl inside and record temperature.",
+          "observation": "The acid is a clear solution.",
+          "quantities": [
+            {
+              "reagent": "HCl",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL",
+              "concentration": "1 M"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm103",
+              "file": "lelm103.pdf",
+              "pdf_page": 7,
+              "experiment": "3.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Measure 100 mL 1 M NaOH in a separate 250 mL beaker and record temperature.",
+          "observation": "Base is measured separately before transfer.",
+          "quantities": [
+            {
+              "reagent": "NaOH",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL",
+              "concentration": "1 M"
+            }
+          ],
+          "sample_id": "base_beaker",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm103",
+              "file": "lelm103.pdf",
+              "pdf_page": 7,
+              "experiment": "3.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Pour the measured base into the acid, stir and record temperature rise.",
+          "observation": "The mixed liquid stays clear; measured temperature rises.",
+          "quantities": [
+            {
+              "reagent": "prepared NaOH charge",
+              "role": "transfer",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "whole_contents",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm103",
+              "file": "lelm103.pdf",
+              "pdf_page": 7,
+              "experiment": "3.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    }
+  ],
+  "selected_protocol_variant": "neutralisation",
+  "procedure_steps": [
+    {
+      "instruction": "Use the separately calibrated calorimeter; place 100 mL 1 M HCl inside and record temperature.",
+      "observation": "The acid is a clear solution.",
+      "quantities": [
+        {
+          "reagent": "HCl",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 100,
+          "unit": "mL",
+          "concentration": "1 M"
+        }
+      ],
+      "sample_id": "reaction",
+      "reaction_scope": "source_defined",
+      "step_id": 1,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm103",
+          "file": "lelm103.pdf",
+          "pdf_page": 7,
+          "experiment": "3.2"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    },
+    {
+      "instruction": "Measure 100 mL 1 M NaOH in a separate 250 mL beaker and record temperature.",
+      "observation": "Base is measured separately before transfer.",
+      "quantities": [
+        {
+          "reagent": "NaOH",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 100,
+          "unit": "mL",
+          "concentration": "1 M"
+        }
+      ],
+      "sample_id": "base_beaker",
+      "reaction_scope": "source_defined",
+      "step_id": 2,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm103",
+          "file": "lelm103.pdf",
+          "pdf_page": 7,
+          "experiment": "3.2"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    },
+    {
+      "instruction": "Pour the measured base into the acid, stir and record temperature rise.",
+      "observation": "The mixed liquid stays clear; measured temperature rises.",
+      "quantities": [
+        {
+          "reagent": "prepared NaOH charge",
+          "role": "transfer",
+          "qualifier": "exact",
+          "value": 100,
+          "unit": "mL"
+        }
+      ],
+      "sample_id": "reaction",
+      "reaction_scope": "whole_contents",
+      "step_id": 3,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm103",
+          "file": "lelm103.pdf",
+          "pdf_page": 7,
+          "experiment": "3.2"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    }
+  ],
+  "source_experiment_id": "chem_12_1002",
   "scenes": [
     {
       "scene_id": "scene_1",
       "scene_name": "Setup and Preparation",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Determine enthalpy of neutralisation of hydrochloric acid and sodium hydroxide, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Determine enthalpy of neutralisation of hydrochloric acid and sodium hydroxide. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
       "image_local": "images/chemistry/determine_enthalpy_of_neutralisation_of_hydrochloric_acid_and_sodium_hydroxide_setup.jpg",
       "image_placeholder": true,
@@ -40,18 +232,41 @@
         {
           "step_id": "scene_1_step_1",
           "step_number": 1,
-          "description": "Measure equal prescribed volumes of acid and base and record their initial temperatures.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "Use the separately calibrated calorimeter; place 100 mL 1 M HCl inside and record temperature.",
+          "observation": "The acid is a clear solution.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "observation",
           "moving_objects": [
-            "hydrochloric acid, sodium hydroxide, calorimeter, thermometer, measuring cylinders, stirrer"
+            "1 M hydrochloric acid",
+            "1 M sodium hydroxide",
+            "calibrated calorimeter"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "key_visual": "The acid is a clear solution.",
           "prompt_template": "observation",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "HCl",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL",
+              "concentration": "1 M"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm103",
+              "file": "lelm103.pdf",
+              "pdf_page": 7,
+              "experiment": "3.2"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined"
         }
       ]
     },
@@ -59,7 +274,7 @@
       "scene_id": "scene_2",
       "scene_name": "Main Procedure",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Determine enthalpy of neutralisation of hydrochloric acid and sodium hydroxide, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Determine enthalpy of neutralisation of hydrochloric acid and sodium hydroxide. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "",
       "image_local": "",
       "image_placeholder": true,
@@ -67,18 +282,41 @@
         {
           "step_id": "scene_2_step_2",
           "step_number": 2,
-          "description": "Mix them in the calorimeter while stirring and record the highest temperature reached.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "Measure 100 mL 1 M NaOH in a separate 250 mL beaker and record temperature.",
+          "observation": "Base is measured separately before transfer.",
           "duration_seconds": 3.0,
-          "motion_type": "state_change",
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
+          "motion_type": "colour_change",
           "moving_objects": [
-            "hydrochloric acid, sodium hydroxide, calorimeter, thermometer, measuring cylinders, stirrer"
+            "1 M hydrochloric acid",
+            "1 M sodium hydroxide",
+            "calibrated calorimeter"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "state_change",
+          "key_visual": "Base is measured separately before transfer.",
+          "prompt_template": "colour_change",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "NaOH",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL",
+              "concentration": "1 M"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm103",
+              "file": "lelm103.pdf",
+              "pdf_page": 7,
+              "experiment": "3.2"
+            }
+          ],
+          "sample_id": "base_beaker",
+          "reaction_scope": "source_defined"
         }
       ]
     },
@@ -86,7 +324,7 @@
       "scene_id": "scene_3",
       "scene_name": "Observation and Result",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Determine enthalpy of neutralisation of hydrochloric acid and sodium hydroxide, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Determine enthalpy of neutralisation of hydrochloric acid and sodium hydroxide. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "",
       "image_local": "",
       "image_placeholder": true,
@@ -94,25 +332,47 @@
         {
           "step_id": "scene_3_step_3",
           "step_number": 3,
-          "description": "Calculate the heat released per mole of water formed using the manual's formula.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "Pour the measured base into the acid, stir and record temperature rise.",
+          "observation": "The mixed liquid stays clear; measured temperature rises.",
           "duration_seconds": 3.0,
-          "motion_type": "state_change",
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
+          "motion_type": "colour_change",
           "moving_objects": [
-            "hydrochloric acid, sodium hydroxide, calorimeter, thermometer, measuring cylinders, stirrer"
+            "1 M hydrochloric acid",
+            "1 M sodium hydroxide",
+            "calibrated calorimeter"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "state_change",
+          "key_visual": "The mixed liquid stays clear; measured temperature rises.",
+          "prompt_template": "colour_change",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "prepared NaOH charge",
+              "role": "transfer",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm103",
+              "file": "lelm103.pdf",
+              "pdf_page": 7,
+              "experiment": "3.2"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "whole_contents"
         }
       ]
     }
   ],
   "prompt_templates_used": [
-    "observation",
-    "state_change"
+    "colour_change",
+    "observation"
   ],
   "total_clips": 3,
   "total_scenes": 3,

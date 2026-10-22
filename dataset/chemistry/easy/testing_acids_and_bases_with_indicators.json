@@ -33,6 +33,40 @@
     "Use dilute household samples only.",
     "Never taste test solutions."
   ],
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "not_covered",
+    "source_ids": [],
+    "requires_protocol_selection": false,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "procedure_steps": [
+    {
+      "step_id": 1,
+      "instruction": "Label small wells or test tubes for each sample and add equal volumes.",
+      "observation": "The samples are arranged for side-by-side comparison."
+    },
+    {
+      "step_id": 2,
+      "instruction": "Touch blue and red litmus paper to each sample using clean droppers.",
+      "observation": "Acidic and basic samples produce opposite litmus changes."
+    },
+    {
+      "step_id": 3,
+      "instruction": "Add universal indicator to fresh portions of the samples.",
+      "observation": "Different colors indicate different approximate pH values."
+    },
+    {
+      "step_id": 4,
+      "instruction": "Record each sample classification and indicator color.",
+      "observation": "The observation table links color changes to acidic, basic, or neutral behavior."
+    }
+  ],
+  "source_experiment_id": "chem_10_001",
   "scenes": [
     {
       "scene_id": "scene_1",
@@ -49,6 +83,7 @@
           "description": "Label small wells or test tubes for each sample and add equal volumes.",
           "observation": "The samples are arranged for side-by-side comparison.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "state_change",
           "moving_objects": [
             "litmus paper",
@@ -78,6 +113,7 @@
           "description": "Touch blue and red litmus paper to each sample using clean droppers.",
           "observation": "Acidic and basic samples produce opposite litmus changes.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "colour_change",
           "moving_objects": [
             "litmus paper",
@@ -96,6 +132,7 @@
           "description": "Add universal indicator to fresh portions of the samples.",
           "observation": "Different colors indicate different approximate pH values.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "colour_change",
           "moving_objects": [
             "litmus paper",
@@ -125,6 +162,7 @@
           "description": "Record each sample classification and indicator color.",
           "observation": "The observation table links color changes to acidic, basic, or neutral behavior.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "colour_change",
           "moving_objects": [
             "litmus paper",

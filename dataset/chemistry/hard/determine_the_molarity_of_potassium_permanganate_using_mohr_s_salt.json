@@ -5,15 +5,15 @@
   "class_level": 12,
   "difficulty": "hard",
   "chapter": "Volumetric Analysis",
-  "ncert_reference": "Manual of Microscale Chemistry Laboratory Kit, Chapter Volumetric Analysis, Experiment 2.6; exact PDF pages to verify during citation pass",
-  "source_file": "Manual_01.pdf",
-  "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Determine the molarity of potassium permanganate using Mohr's salt' and record its manual-defined observations and result.",
+  "ncert_reference": "User-supplied NCERT XII Chemistry lelm106.pdf; PDF pages 7 (1-based). File SHA-256 in data/quantity_source_manifest.json.",
+  "source_file": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm106.pdf",
+  "educational_goal": "Study 'Determine the molarity of potassium permanganate using Mohr's salt' using a selected NCERT XII chemistry protocol, its documented quantities and conditions, and conditional observations; review unresolved doses before rendering.",
   "prerequisites": [
     "volumetric analysis",
     "laboratory observation",
     "microscale chemistry"
   ],
-  "estimated_video_duration_seconds": 12,
+  "estimated_video_duration_seconds": 9,
   "tags": [
     "class-12",
     "manual-01",
@@ -21,18 +21,249 @@
     "2.6"
   ],
   "materials": [
-    "burette, Mohr's salt solution, potassium permanganate, dilute sulphuric acid, pipette, flask"
+    "burette",
+    "pipette",
+    "conical flask",
+    "250 mL volumetric flask",
+    "Mohr's salt",
+    "potassium permanganate",
+    "sulphuric acid",
+    "water"
   ],
   "safety_notes": [
     "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
     "Wear eye protection and do not taste or directly handle chemicals."
   ],
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "transcribed",
+    "source_ids": [
+      "ncert_lelm106"
+    ],
+    "requires_protocol_selection": false,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "protocol_variants": [
+    {
+      "variant_id": "mohr_0p05m",
+      "title": "KMnO4 against Mohr's salt",
+      "source_id": "ncert_lelm106",
+      "source_experiment": "6.2",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
+        {
+          "instruction": "Weigh 4.9000 g Mohr's salt, dissolve and transfer to a 250 mL volumetric flask; add dilute sulphuric acid dropwise until clear, then make up to the mark with water and mix.",
+          "observation": "Final stock volume is 250 mL, not 250 mL of added water. The stock is clear, potentially pale green.",
+          "quantities": [
+            {
+              "reagent": "Mohr's salt",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 4.9,
+              "unit": "g"
+            },
+            {
+              "reagent": "dilute H2SO4",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "note": "Dropwise until clear; dose not stated."
+            },
+            {
+              "reagent": "prepared stock",
+              "role": "final_solution_volume",
+              "qualifier": "exact",
+              "value": 250,
+              "unit": "mL",
+              "concentration": "0.05 M"
+            }
+          ],
+          "sample_id": "stock",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm106",
+              "file": "lelm106.pdf",
+              "pdf_page": 7,
+              "experiment": "6.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Take 10 mL 0.05 M stock in a conical flask and add about 5 mL 1 M sulphuric acid.",
+          "observation": "A clear acidified aliquot is ready for titration.",
+          "quantities": [
+            {
+              "reagent": "Mohr stock",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "mL",
+              "concentration": "0.05 M"
+            },
+            {
+              "reagent": "H2SO4",
+              "role": "addition",
+              "qualifier": "approximate",
+              "value": 5,
+              "unit": "mL",
+              "concentration": "1 M"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm106",
+              "file": "lelm106.pdf",
+              "pdf_page": 7,
+              "experiment": "6.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Titrate at room temperature with permanganate while swirling to permanent pale pink; repeat on fresh aliquots for concordant readings. Do not heat.",
+          "observation": "Endpoint is pale pink; volume consumed is measured.",
+          "quantities": [
+            {
+              "reagent": "KMnO4",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "note": "Endpoint-controlled; volume not predetermined."
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "whole_contents",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm106",
+              "file": "lelm106.pdf",
+              "pdf_page": 7,
+              "experiment": "6.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    }
+  ],
+  "selected_protocol_variant": "mohr_0p05m",
+  "procedure_steps": [
+    {
+      "instruction": "Weigh 4.9000 g Mohr's salt, dissolve and transfer to a 250 mL volumetric flask; add dilute sulphuric acid dropwise until clear, then make up to the mark with water and mix.",
+      "observation": "Final stock volume is 250 mL, not 250 mL of added water. The stock is clear, potentially pale green.",
+      "quantities": [
+        {
+          "reagent": "Mohr's salt",
+          "role": "stock_preparation",
+          "qualifier": "exact",
+          "value": 4.9,
+          "unit": "g"
+        },
+        {
+          "reagent": "dilute H2SO4",
+          "role": "addition",
+          "qualifier": "not_specified",
+          "note": "Dropwise until clear; dose not stated."
+        },
+        {
+          "reagent": "prepared stock",
+          "role": "final_solution_volume",
+          "qualifier": "exact",
+          "value": 250,
+          "unit": "mL",
+          "concentration": "0.05 M"
+        }
+      ],
+      "sample_id": "stock",
+      "reaction_scope": "source_defined",
+      "step_id": 1,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm106",
+          "file": "lelm106.pdf",
+          "pdf_page": 7,
+          "experiment": "6.2"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    },
+    {
+      "instruction": "Take 10 mL 0.05 M stock in a conical flask and add about 5 mL 1 M sulphuric acid.",
+      "observation": "A clear acidified aliquot is ready for titration.",
+      "quantities": [
+        {
+          "reagent": "Mohr stock",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 10,
+          "unit": "mL",
+          "concentration": "0.05 M"
+        },
+        {
+          "reagent": "H2SO4",
+          "role": "addition",
+          "qualifier": "approximate",
+          "value": 5,
+          "unit": "mL",
+          "concentration": "1 M"
+        }
+      ],
+      "sample_id": "reaction",
+      "reaction_scope": "source_defined",
+      "step_id": 2,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm106",
+          "file": "lelm106.pdf",
+          "pdf_page": 7,
+          "experiment": "6.2"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    },
+    {
+      "instruction": "Titrate at room temperature with permanganate while swirling to permanent pale pink; repeat on fresh aliquots for concordant readings. Do not heat.",
+      "observation": "Endpoint is pale pink; volume consumed is measured.",
+      "quantities": [
+        {
+          "reagent": "KMnO4",
+          "role": "addition",
+          "qualifier": "not_specified",
+          "note": "Endpoint-controlled; volume not predetermined."
+        }
+      ],
+      "sample_id": "reaction",
+      "reaction_scope": "whole_contents",
+      "step_id": 3,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm106",
+          "file": "lelm106.pdf",
+          "pdf_page": 7,
+          "experiment": "6.2"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    }
+  ],
+  "source_experiment_id": "chem_12_206",
   "scenes": [
     {
       "scene_id": "scene_1",
       "scene_name": "Setup and Preparation",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Determine the molarity of potassium permanganate using Mohr's salt, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Determine the molarity of potassium permanganate using Mohr's salt. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
       "image_local": "images/chemistry/determine_the_molarity_of_potassium_permanganate_using_mohr_s_salt_setup.jpg",
       "image_placeholder": true,
@@ -40,18 +271,54 @@
         {
           "step_id": "scene_1_step_1",
           "step_number": 1,
-          "description": "Prepare or use the standard Mohr's salt solution and fill the burettes as directed.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "Weigh 4.9000 g Mohr's salt, dissolve and transfer to a 250 mL volumetric flask; add dilute sulphuric acid dropwise until clear, then make up to the mark with water and mix.",
+          "observation": "Final stock volume is 250 mL, not 250 mL of added water. The stock is clear, potentially pale green.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "state_change",
           "moving_objects": [
-            "burette, Mohr's salt solution, potassium permanganate, dilute sulphuric acid, pipette, flask"
+            "burette",
+            "pipette",
+            "conical flask"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "key_visual": "Final stock volume is 250 mL, not 250 mL of added water. The stock is clear, potentially pale green.",
           "prompt_template": "state_change",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "Mohr's salt",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 4.9,
+              "unit": "g"
+            },
+            {
+              "reagent": "dilute H2SO4",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "note": "Dropwise until clear; dose not stated."
+            },
+            {
+              "reagent": "prepared stock",
+              "role": "final_solution_volume",
+              "qualifier": "exact",
+              "value": 250,
+              "unit": "mL",
+              "concentration": "0.05 M"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm106",
+              "file": "lelm106.pdf",
+              "pdf_page": 7,
+              "experiment": "6.2"
+            }
+          ],
+          "sample_id": "stock",
+          "reaction_scope": "source_defined"
         }
       ]
     },
@@ -59,7 +326,7 @@
       "scene_id": "scene_2",
       "scene_name": "Main Procedure",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Determine the molarity of potassium permanganate using Mohr's salt, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Determine the molarity of potassium permanganate using Mohr's salt. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "",
       "image_local": "",
       "image_placeholder": true,
@@ -67,34 +334,49 @@
         {
           "step_id": "scene_2_step_2",
           "step_number": 2,
-          "description": "Acidify the measured Mohr's salt aliquot with dilute sulphuric acid.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "Take 10 mL 0.05 M stock in a conical flask and add about 5 mL 1 M sulphuric acid.",
+          "observation": "A clear acidified aliquot is ready for titration.",
           "duration_seconds": 3.0,
-          "motion_type": "colour_change",
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
+          "motion_type": "state_change",
           "moving_objects": [
-            "burette, Mohr's salt solution, potassium permanganate, dilute sulphuric acid, pipette, flask"
+            "burette",
+            "pipette",
+            "conical flask"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "colour_change",
+          "key_visual": "A clear acidified aliquot is ready for titration.",
+          "prompt_template": "state_change",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
-        },
-        {
-          "step_id": "scene_2_step_3",
-          "step_number": 3,
-          "description": "Titrate with potassium permanganate until the first permanent light-pink color appears.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "colour_change",
-          "moving_objects": [
-            "burette, Mohr's salt solution, potassium permanganate, dilute sulphuric acid, pipette, flask"
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "Mohr stock",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "mL",
+              "concentration": "0.05 M"
+            },
+            {
+              "reagent": "H2SO4",
+              "role": "addition",
+              "qualifier": "approximate",
+              "value": 5,
+              "unit": "mL",
+              "concentration": "1 M"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "colour_change",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm106",
+              "file": "lelm106.pdf",
+              "pdf_page": 7,
+              "experiment": "6.2"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined"
         }
       ]
     },
@@ -102,36 +384,56 @@
       "scene_id": "scene_3",
       "scene_name": "Observation and Result",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Determine the molarity of potassium permanganate using Mohr's salt, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Determine the molarity of potassium permanganate using Mohr's salt. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "",
       "image_local": "",
       "image_placeholder": true,
       "steps": [
         {
-          "step_id": "scene_3_step_4",
-          "step_number": 4,
-          "description": "Repeat for concordant titres and calculate the molarity of the permanganate solution.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "step_id": "scene_3_step_3",
+          "step_number": 3,
+          "description": "Titrate at room temperature with permanganate while swirling to permanent pale pink; repeat on fresh aliquots for concordant readings. Do not heat.",
+          "observation": "Endpoint is pale pink; volume consumed is measured.",
           "duration_seconds": 3.0,
-          "motion_type": "observation",
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
+          "motion_type": "colour_change",
           "moving_objects": [
-            "burette, Mohr's salt solution, potassium permanganate, dilute sulphuric acid, pipette, flask"
+            "burette",
+            "pipette",
+            "conical flask"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "observation",
+          "key_visual": "Endpoint is pale pink; volume consumed is measured.",
+          "prompt_template": "colour_change",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "KMnO4",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "note": "Endpoint-controlled; volume not predetermined."
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm106",
+              "file": "lelm106.pdf",
+              "pdf_page": 7,
+              "experiment": "6.2"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "whole_contents"
         }
       ]
     }
   ],
   "prompt_templates_used": [
     "colour_change",
-    "observation",
     "state_change"
   ],
-  "total_clips": 4,
+  "total_clips": 3,
   "total_scenes": 3,
   "status": "dataset_only",
   "video_generated": false,

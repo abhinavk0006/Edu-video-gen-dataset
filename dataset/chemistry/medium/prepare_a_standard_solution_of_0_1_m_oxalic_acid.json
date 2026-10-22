@@ -27,6 +27,35 @@
     "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
     "Wear eye protection and do not taste or directly handle chemicals."
   ],
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "cross_reference_only",
+    "source_ids": [],
+    "requires_protocol_selection": false,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "lelm106.pdf p3 references Class XI Unit 2 Experiment 2.1 for 0.1 M oxalic acid; preparation mass and batch volume are not given in the supplied PDF."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "procedure_steps": [
+    {
+      "step_id": 1,
+      "instruction": "Calculate and accurately weigh the required oxalic acid.",
+      "observation": "Record the visible result and measurement described by the manual for this step."
+    },
+    {
+      "step_id": 2,
+      "instruction": "Dissolve it in distilled water and transfer the solution quantitatively to a volumetric flask.",
+      "observation": "Record the visible result and measurement described by the manual for this step."
+    },
+    {
+      "step_id": 3,
+      "instruction": "Make the volume up to the calibration mark, mix thoroughly, and label the standard solution.",
+      "observation": "Record the visible result and measurement described by the manual for this step."
+    }
+  ],
+  "source_experiment_id": "chem_12_201",
   "scenes": [
     {
       "scene_id": "scene_1",
@@ -43,6 +72,7 @@
           "description": "Calculate and accurately weigh the required oxalic acid.",
           "observation": "Record the visible result and measurement described by the manual for this step.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "colour_change",
           "moving_objects": [
             "oxalic acid, balance, beaker, volumetric flask, funnel, distilled water"
@@ -70,6 +100,7 @@
           "description": "Dissolve it in distilled water and transfer the solution quantitatively to a volumetric flask.",
           "observation": "Record the visible result and measurement described by the manual for this step.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "state_change",
           "moving_objects": [
             "oxalic acid, balance, beaker, volumetric flask, funnel, distilled water"
@@ -97,6 +128,7 @@
           "description": "Make the volume up to the calibration mark, mix thoroughly, and label the standard solution.",
           "observation": "Record the visible result and measurement described by the manual for this step.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "state_change",
           "moving_objects": [
             "oxalic acid, balance, beaker, volumetric flask, funnel, distilled water"

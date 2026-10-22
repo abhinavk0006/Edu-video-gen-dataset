@@ -5,9 +5,9 @@
   "class_level": 12,
   "difficulty": "hard",
   "chapter": "Preparation of Compounds",
-  "ncert_reference": "Manual of Microscale Chemistry Laboratory Kit, Chapter Preparation of Compounds, Experiment 6.2; exact PDF pages to verify during citation pass",
-  "source_file": "Manual_01.pdf",
-  "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Prepare potassium trioxalatoferrate(III)' and record its manual-defined observations and result.",
+  "ncert_reference": "User-supplied NCERT XII Chemistry lelm109.pdf; PDF pages 3 (1-based). File SHA-256 in data/quantity_source_manifest.json.",
+  "source_file": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm109.pdf",
+  "educational_goal": "Study 'Prepare potassium trioxalatoferrate(III)' using a selected NCERT XII chemistry protocol, its documented quantities and conditions, and conditional observations; review unresolved doses before rendering.",
   "prerequisites": [
     "preparation of compounds",
     "laboratory observation",
@@ -21,18 +21,243 @@
     "6.2"
   ],
   "materials": [
-    "ferric chloride, oxalic acid, potassium oxalate, water, beakers, burner, filter"
+    "oxalic acid",
+    "potassium hydroxide",
+    "ferric chloride",
+    "water",
+    "50 mL beaker",
+    "water bath",
+    "filter",
+    "alcohol"
   ],
   "safety_notes": [
     "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
     "Wear eye protection and do not taste or directly handle chemicals."
   ],
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "transcribed",
+    "source_ids": [
+      "ncert_lelm109"
+    ],
+    "requires_protocol_selection": false,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "protocol_variants": [
+    {
+      "variant_id": "ferrioxalate",
+      "title": "Potassium trioxalatoferrate(III)",
+      "source_id": "ncert_lelm109",
+      "source_experiment": "9.2",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
+        {
+          "instruction": "Dissolve 3 g oxalic acid in 12.5 mL hot water in a 50 mL beaker.",
+          "observation": "The starting solution is homogeneous.",
+          "quantities": [
+            {
+              "reagent": "oxalic acid",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 3,
+              "unit": "g"
+            },
+            {
+              "reagent": "water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 12.5,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm109",
+              "file": "lelm109.pdf",
+              "pdf_page": 3,
+              "experiment": "9.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Add 3.8 g potassium hydroxide gradually with stirring, then 2.5 g ferric chloride and stir until fully dissolved.",
+          "observation": "A green solution forms throughout the mixed contents.",
+          "quantities": [
+            {
+              "reagent": "KOH",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 3.8,
+              "unit": "g"
+            },
+            {
+              "reagent": "FeCl3",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2.5,
+              "unit": "g"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "whole_contents",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm109",
+              "file": "lelm109.pdf",
+              "pdf_page": 3,
+              "experiment": "9.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Filter, concentrate the green filtrate on a water bath, cool slowly, wash crystals with 1:1 water/alcohol and dry.",
+          "observation": "Green crystals are isolated; wash amount is unstated.",
+          "quantities": [
+            {
+              "reagent": "water : alcohol",
+              "role": "mixture_ratio",
+              "qualifier": "exact",
+              "value": "1:1",
+              "unit": "volume_ratio"
+            },
+            {
+              "reagent": "wash mixture",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm109",
+              "file": "lelm109.pdf",
+              "pdf_page": 3,
+              "experiment": "9.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    }
+  ],
+  "selected_protocol_variant": "ferrioxalate",
+  "procedure_steps": [
+    {
+      "instruction": "Dissolve 3 g oxalic acid in 12.5 mL hot water in a 50 mL beaker.",
+      "observation": "The starting solution is homogeneous.",
+      "quantities": [
+        {
+          "reagent": "oxalic acid",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 3,
+          "unit": "g"
+        },
+        {
+          "reagent": "water",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 12.5,
+          "unit": "mL"
+        }
+      ],
+      "sample_id": "reaction",
+      "reaction_scope": "source_defined",
+      "step_id": 1,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm109",
+          "file": "lelm109.pdf",
+          "pdf_page": 3,
+          "experiment": "9.2"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    },
+    {
+      "instruction": "Add 3.8 g potassium hydroxide gradually with stirring, then 2.5 g ferric chloride and stir until fully dissolved.",
+      "observation": "A green solution forms throughout the mixed contents.",
+      "quantities": [
+        {
+          "reagent": "KOH",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 3.8,
+          "unit": "g"
+        },
+        {
+          "reagent": "FeCl3",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 2.5,
+          "unit": "g"
+        }
+      ],
+      "sample_id": "reaction",
+      "reaction_scope": "whole_contents",
+      "step_id": 2,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm109",
+          "file": "lelm109.pdf",
+          "pdf_page": 3,
+          "experiment": "9.2"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    },
+    {
+      "instruction": "Filter, concentrate the green filtrate on a water bath, cool slowly, wash crystals with 1:1 water/alcohol and dry.",
+      "observation": "Green crystals are isolated; wash amount is unstated.",
+      "quantities": [
+        {
+          "reagent": "water : alcohol",
+          "role": "mixture_ratio",
+          "qualifier": "exact",
+          "value": "1:1",
+          "unit": "volume_ratio"
+        },
+        {
+          "reagent": "wash mixture",
+          "role": "addition",
+          "qualifier": "not_specified"
+        }
+      ],
+      "sample_id": "reaction",
+      "reaction_scope": "source_defined",
+      "step_id": 3,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm109",
+          "file": "lelm109.pdf",
+          "pdf_page": 3,
+          "experiment": "9.2"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    }
+  ],
+  "source_experiment_id": "chem_12_602",
   "scenes": [
     {
       "scene_id": "scene_1",
       "scene_name": "Setup and Preparation",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare potassium trioxalatoferrate(III), followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Prepare potassium trioxalatoferrate(III). Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
       "image_local": "images/chemistry/prepare_potassium_trioxalatoferrate_iii_setup.jpg",
       "image_placeholder": true,
@@ -40,18 +265,47 @@
         {
           "step_id": "scene_1_step_1",
           "step_number": 1,
-          "description": "Mix the prescribed ferric chloride, oxalic acid, and potassium oxalate solutions.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "Dissolve 3 g oxalic acid in 12.5 mL hot water in a 50 mL beaker.",
+          "observation": "The starting solution is homogeneous.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "state_change",
           "moving_objects": [
-            "ferric chloride, oxalic acid, potassium oxalate, water, beakers, burner, filter"
+            "oxalic acid",
+            "potassium hydroxide",
+            "ferric chloride"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "key_visual": "The starting solution is homogeneous.",
           "prompt_template": "state_change",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "oxalic acid",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 3,
+              "unit": "g"
+            },
+            {
+              "reagent": "water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 12.5,
+              "unit": "mL"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm109",
+              "file": "lelm109.pdf",
+              "pdf_page": 3,
+              "experiment": "9.2"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined"
         }
       ]
     },
@@ -59,7 +313,7 @@
       "scene_id": "scene_2",
       "scene_name": "Main Procedure",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare potassium trioxalatoferrate(III), followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Prepare potassium trioxalatoferrate(III). Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "",
       "image_local": "",
       "image_placeholder": true,
@@ -67,18 +321,47 @@
         {
           "step_id": "scene_2_step_2",
           "step_number": 2,
-          "description": "Heat or concentrate the mixture under the manual's conditions to form the complex compound.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "Add 3.8 g potassium hydroxide gradually with stirring, then 2.5 g ferric chloride and stir until fully dissolved.",
+          "observation": "A green solution forms throughout the mixed contents.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "state_change",
           "moving_objects": [
-            "ferric chloride, oxalic acid, potassium oxalate, water, beakers, burner, filter"
+            "oxalic acid",
+            "potassium hydroxide",
+            "ferric chloride"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "key_visual": "A green solution forms throughout the mixed contents.",
           "prompt_template": "state_change",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "KOH",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 3.8,
+              "unit": "g"
+            },
+            {
+              "reagent": "FeCl3",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2.5,
+              "unit": "g"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm109",
+              "file": "lelm109.pdf",
+              "pdf_page": 3,
+              "experiment": "9.2"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "whole_contents"
         }
       ]
     },
@@ -86,7 +369,7 @@
       "scene_id": "scene_3",
       "scene_name": "Observation and Result",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare potassium trioxalatoferrate(III), followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Prepare potassium trioxalatoferrate(III). Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "",
       "image_local": "",
       "image_placeholder": true,
@@ -94,18 +377,45 @@
         {
           "step_id": "scene_3_step_3",
           "step_number": 3,
-          "description": "Cool the solution so green crystals separate, then filter, wash, dry, and record the yield.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "Filter, concentrate the green filtrate on a water bath, cool slowly, wash crystals with 1:1 water/alcohol and dry.",
+          "observation": "Green crystals are isolated; wash amount is unstated.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "state_change",
           "moving_objects": [
-            "ferric chloride, oxalic acid, potassium oxalate, water, beakers, burner, filter"
+            "oxalic acid",
+            "potassium hydroxide",
+            "ferric chloride"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "key_visual": "Green crystals are isolated; wash amount is unstated.",
           "prompt_template": "state_change",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "water : alcohol",
+              "role": "mixture_ratio",
+              "qualifier": "exact",
+              "value": "1:1",
+              "unit": "volume_ratio"
+            },
+            {
+              "reagent": "wash mixture",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm109",
+              "file": "lelm109.pdf",
+              "pdf_page": 3,
+              "experiment": "9.2"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined"
         }
       ]
     }

@@ -19,45 +19,72 @@
     "status"
   ],
   "properties": {
-    "experiment_id": {"type": "string", "pattern": "^(chem|phy)_(8|9|10|11|12)_[0-9]{3,4}$"},
-    "subject": {"type": "string", "enum": ["Chemistry", "Physics"]},
-    "class_level": {"type": "integer", "enum": [8, 9, 10, 11, 12]},
-    "chapter": {"type": "string", "minLength": 1},
-    "title": {"type": "string", "minLength": 1},
-    "difficulty": {"type": "string", "enum": ["easy", "medium", "hard"]},
-    "educational_goal": {"type": "string", "minLength": 20},
-    "concepts": {"type": "array", "items": {"type": "string"}, "minItems": 1},
-    "materials": {"type": "array", "items": {"type": "string"}, "minItems": 1},
-    "safety_notes": {"type": "array", "items": {"type": "string"}},
+    "experiment_id": {
+      "type": "string",
+      "pattern": "^(chem|phy)_(8|9|10|11|12)_[0-9]{3,4}$"
+    },
+    "subject": {
+      "type": "string",
+      "enum": [
+        "Chemistry",
+        "Physics"
+      ]
+    },
+    "class_level": {
+      "type": "integer",
+      "enum": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "chapter": {
+      "type": "string",
+      "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "easy",
+        "medium",
+        "hard"
+      ]
+    },
+    "educational_goal": {
+      "type": "string",
+      "minLength": 20
+    },
+    "concepts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "materials": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "safety_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
     "procedure_steps": {
       "type": "array",
       "minItems": 3,
       "items": {
-        "type": "object",
-        "additionalProperties": false,
-        "required": ["step_id", "instruction", "observation"],
-        "properties": {
-          "step_id": {"type": "integer", "minimum": 1},
-          "instruction": {"type": "string", "minLength": 5},
-        "observation": {"type": "string", "minLength": 5},
-        "state_before": {"type": "string"},
-        "action": {"type": "string"},
-        "state_after": {"type": "string"},
-        "visual_priority": {"type": "string", "enum": ["low", "normal", "high"]},
-        "continuity_required": {"type": "boolean"},
-        "reference_policy": {
-          "type": "string",
-          "enum": ["independent", "state_keyframe", "previous_state_keyframe", "mid", "near_end", "final"]
-        },
-        "reference_clip": {"type": "string"},
-        "handoff_policy": {"type": "string", "enum": ["none", "mid", "near_end", "final", "offset"]},
-        "handoff_entity": {"type": "string"},
-        "handoff_offset_seconds": {"type": "number", "minimum": 0},
-        "duration_seconds": {"type": "number", "exclusiveMinimum": 0},
-        "estimated_duration_seconds": {"type": "number", "exclusiveMinimum": 0},
-        "reference_image": {"type": "string"},
-        "image_prompt": {"type": "string"}
-        }
+        "$ref": "#/$defs/procedure_step"
       }
     },
     "scenes": {
@@ -66,13 +93,35 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["scene_id", "name", "description", "visible_actions", "image_asset_id"],
+        "required": [
+          "scene_id",
+          "name",
+          "description",
+          "visible_actions",
+          "image_asset_id"
+        ],
         "properties": {
-          "scene_id": {"type": "string"},
-          "name": {"type": "string", "minLength": 1},
-          "description": {"type": "string", "minLength": 20},
-          "visible_actions": {"type": "array", "items": {"type": "string"}, "minItems": 1},
-          "image_asset_id": {"type": "string"}
+          "scene_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "minLength": 20
+          },
+          "visible_actions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "image_asset_id": {
+            "type": "string"
+          }
         }
       }
     },
@@ -82,13 +131,40 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["source_id", "source_type", "url", "citation", "verification_status"],
+        "required": [
+          "source_id",
+          "source_type",
+          "url",
+          "citation",
+          "verification_status"
+        ],
         "properties": {
-          "source_id": {"type": "string"},
-          "source_type": {"type": "string", "enum": ["ncert_textbook", "ncert_lab_manual", "reference"]},
-          "url": {"type": "string", "format": "uri"},
-          "citation": {"type": "string", "minLength": 5},
-          "verification_status": {"type": "string", "enum": ["needs_page_check", "verified"]}
+          "source_id": {
+            "type": "string"
+          },
+          "source_type": {
+            "type": "string",
+            "enum": [
+              "ncert_textbook",
+              "ncert_lab_manual",
+              "reference"
+            ]
+          },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          },
+          "citation": {
+            "type": "string",
+            "minLength": 5
+          },
+          "verification_status": {
+            "type": "string",
+            "enum": [
+              "needs_page_check",
+              "verified"
+            ]
+          }
         }
       }
     },
@@ -98,17 +174,426 @@
       "items": {
         "type": "object",
         "additionalProperties": false,
-        "required": ["image_asset_id", "role", "url", "license_status"],
+        "required": [
+          "image_asset_id",
+          "role",
+          "url",
+          "license_status"
+        ],
         "properties": {
-          "image_asset_id": {"type": "string"},
-          "role": {"type": "string", "enum": ["starting_image", "scene_reference"]},
-          "url": {"type": "string"},
-          "license_status": {"type": "string", "enum": ["placeholder", "needs_review", "verified"]},
-          "attribution": {"type": "string"}
+          "image_asset_id": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "starting_image",
+              "scene_reference"
+            ]
+          },
+          "url": {
+            "type": "string"
+          },
+          "license_status": {
+            "type": "string",
+            "enum": [
+              "placeholder",
+              "needs_review",
+              "verified"
+            ]
+          },
+          "attribution": {
+            "type": "string"
+          }
         }
       }
     },
-    "tags": {"type": "array", "items": {"type": "string"}},
-    "status": {"type": "string", "enum": ["draft", "source_review", "ready"]}
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "source_review",
+        "ready"
+      ]
+    },
+    "legacy_procedure_steps": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/procedure_step"
+      }
+    },
+    "selected_protocol_variant": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "quantity_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "date",
+        "coverage",
+        "source_ids",
+        "requires_protocol_selection",
+        "numeric_completeness",
+        "gaps",
+        "policy"
+      ],
+      "properties": {
+        "date": {
+          "type": "string",
+          "format": "date"
+        },
+        "coverage": {
+          "type": "string",
+          "enum": [
+            "transcribed",
+            "partial",
+            "not_covered",
+            "cross_reference_only",
+            "related_test_only"
+          ]
+        },
+        "source_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "requires_protocol_selection": {
+          "type": "boolean"
+        },
+        "numeric_completeness": {
+          "const": "not_certified"
+        },
+        "gaps": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "policy": {
+          "type": "string"
+        },
+        "previous_title": {
+          "type": "string"
+        }
+      }
+    },
+    "protocol_variants": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "variant_id",
+          "title",
+          "source_id",
+          "source_experiment",
+          "coverage",
+          "sample_policy",
+          "notes",
+          "procedure_steps"
+        ],
+        "properties": {
+          "variant_id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "source_experiment": {
+            "type": "string"
+          },
+          "coverage": {
+            "type": "string",
+            "enum": [
+              "transcribed",
+              "partial"
+            ]
+          },
+          "sample_policy": {
+            "type": "string"
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "procedure_steps": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "$ref": "#/$defs/procedure_step"
+            }
+          }
+        }
+      }
+    },
+    "legacy_materials": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "legacy_scenes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "scene_id",
+          "name",
+          "description",
+          "visible_actions",
+          "image_asset_id"
+        ],
+        "properties": {
+          "scene_id": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": {
+            "type": "string",
+            "minLength": 20
+          },
+          "visible_actions": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "image_asset_id": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "legacy_educational_goal": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "quantity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reagent",
+        "role",
+        "qualifier"
+      ],
+      "properties": {
+        "reagent": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "type": "string",
+          "enum": [
+            "addition",
+            "vessel_capacity",
+            "stock_preparation",
+            "condition",
+            "apparatus_dimension",
+            "aliquot",
+            "transfer",
+            "inventory",
+            "mixture_ratio",
+            "final_solution_volume",
+            "portion_limit",
+            "upper_limit",
+            "recrystallisation",
+            "alternative",
+            "relative_dilution"
+          ]
+        },
+        "qualifier": {
+          "type": "string",
+          "enum": [
+            "exact",
+            "approximate",
+            "range",
+            "not_specified"
+          ]
+        },
+        "value": {
+          "type": [
+            "number",
+            "string"
+          ]
+        },
+        "minimum": {
+          "type": "number"
+        },
+        "maximum": {
+          "type": "number"
+        },
+        "unit": {
+          "type": "string"
+        },
+        "concentration": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "procedure_step": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "step_id",
+        "instruction",
+        "observation"
+      ],
+      "properties": {
+        "step_id": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "instruction": {
+          "type": "string",
+          "minLength": 5
+        },
+        "observation": {
+          "type": "string",
+          "minLength": 5
+        },
+        "state_before": {
+          "type": "string"
+        },
+        "action": {
+          "type": "string"
+        },
+        "state_after": {
+          "type": "string"
+        },
+        "visual_priority": {
+          "type": "string",
+          "enum": [
+            "low",
+            "normal",
+            "high"
+          ]
+        },
+        "continuity_required": {
+          "type": "boolean"
+        },
+        "reference_policy": {
+          "type": "string",
+          "enum": [
+            "independent",
+            "state_keyframe",
+            "previous_state_keyframe",
+            "mid",
+            "near_end",
+            "final"
+          ]
+        },
+        "reference_clip": {
+          "type": "string"
+        },
+        "handoff_policy": {
+          "type": "string",
+          "enum": [
+            "none",
+            "mid",
+            "near_end",
+            "final",
+            "offset"
+          ]
+        },
+        "handoff_entity": {
+          "type": "string"
+        },
+        "handoff_offset_seconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "duration_seconds": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "estimated_duration_seconds": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "reference_image": {
+          "type": "string"
+        },
+        "image_prompt": {
+          "type": "string"
+        },
+        "quantities": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/quantity"
+          }
+        },
+        "source_evidence": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "source_id",
+              "file",
+              "pdf_page",
+              "experiment"
+            ],
+            "properties": {
+              "source_id": {
+                "type": "string"
+              },
+              "file": {
+                "type": "string"
+              },
+              "pdf_page": {
+                "type": "integer",
+                "minimum": 1
+              },
+              "experiment": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "sample_id": {
+          "type": "string"
+        },
+        "reaction_scope": {
+          "type": "string",
+          "enum": [
+            "source_defined",
+            "whole_contents",
+            "interface",
+            "stratified",
+            "localized"
+          ]
+        },
+        "quantity_constraint": {
+          "type": "string"
+        }
+      }
+    }
   }
 }

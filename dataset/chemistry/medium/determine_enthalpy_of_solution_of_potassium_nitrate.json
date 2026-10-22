@@ -5,9 +5,9 @@
   "class_level": 12,
   "difficulty": "medium",
   "chapter": "Thermochemistry",
-  "ncert_reference": "Manual of Microscale Chemistry Laboratory Kit, Chapter Thermochemistry, Experiment 10.1; exact PDF pages to verify during citation pass",
-  "source_file": "Manual_01.pdf",
-  "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Determine enthalpy of solution of potassium nitrate' and record its manual-defined observations and result.",
+  "ncert_reference": "User-supplied NCERT XII Chemistry lelm103.pdf; PDF pages 3, 4, 5 (1-based). File SHA-256 in data/quantity_source_manifest.json.",
+  "source_file": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm103.pdf",
+  "educational_goal": "Study 'Determine enthalpy of solution of potassium nitrate' using a selected NCERT XII chemistry protocol, its documented quantities and conditions, and conditional observations; review unresolved doses before rendering.",
   "prerequisites": [
     "thermochemistry",
     "laboratory observation",
@@ -21,18 +21,233 @@
     "10.1"
   ],
   "materials": [
-    "potassium nitrate, water, calorimeter, balance, thermometer, stirrer"
+    "potassium nitrate",
+    "water",
+    "calorimeter",
+    "250 mL beakers",
+    "500 mL insulating outer beaker",
+    "balance",
+    "thermometer",
+    "stirrer"
   ],
   "safety_notes": [
     "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
     "Wear eye protection and do not taste or directly handle chemicals."
   ],
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "transcribed",
+    "source_ids": [
+      "ncert_lelm103"
+    ],
+    "requires_protocol_selection": false,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "protocol_variants": [
+    {
+      "variant_id": "potassium_nitrate",
+      "title": "Enthalpy of dissolution of potassium nitrate",
+      "source_id": "ncert_lelm103",
+      "source_experiment": "3.1",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
+        {
+          "instruction": "Calibrate the calorimeter separately: measure 100 mL cold water in beaker A and 100 mL hot water at 50-60 degrees C in beaker B; mix and record temperatures.",
+          "observation": "Calibration water is not retained for the dissolution run.",
+          "quantities": [
+            {
+              "reagent": "cold water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            },
+            {
+              "reagent": "hot water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            },
+            {
+              "reagent": "hot-water temperature",
+              "role": "condition",
+              "qualifier": "range",
+              "minimum": 50,
+              "maximum": 60,
+              "unit": "degC"
+            }
+          ],
+          "sample_id": "calibration",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm103",
+              "file": "lelm103.pdf",
+              "pdf_page": 3,
+              "experiment": "3.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "For the dissolution run place a fresh 100 mL water charge in the calibrated calorimeter and record its temperature.",
+          "observation": "The initial water charge is clear.",
+          "quantities": [
+            {
+              "reagent": "water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm103",
+              "file": "lelm103.pdf",
+              "pdf_page": 4,
+              "experiment": "3.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Weigh W1 grams potassium nitrate, record W1, add to the water and stir until fully dissolved; record temperature.",
+          "observation": "A clear solution forms and temperature decreases. W1 is a measured variable, not an invented fixed mass.",
+          "quantities": [
+            {
+              "reagent": "KNO3",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "note": "Procedure uses measured W1; materials inventory lists 2 g but is not a required exact procedural dose."
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "whole_contents",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm103",
+              "file": "lelm103.pdf",
+              "pdf_page": 5,
+              "experiment": "3.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    }
+  ],
+  "selected_protocol_variant": "potassium_nitrate",
+  "procedure_steps": [
+    {
+      "instruction": "Calibrate the calorimeter separately: measure 100 mL cold water in beaker A and 100 mL hot water at 50-60 degrees C in beaker B; mix and record temperatures.",
+      "observation": "Calibration water is not retained for the dissolution run.",
+      "quantities": [
+        {
+          "reagent": "cold water",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 100,
+          "unit": "mL"
+        },
+        {
+          "reagent": "hot water",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 100,
+          "unit": "mL"
+        },
+        {
+          "reagent": "hot-water temperature",
+          "role": "condition",
+          "qualifier": "range",
+          "minimum": 50,
+          "maximum": 60,
+          "unit": "degC"
+        }
+      ],
+      "sample_id": "calibration",
+      "reaction_scope": "source_defined",
+      "step_id": 1,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm103",
+          "file": "lelm103.pdf",
+          "pdf_page": 3,
+          "experiment": "3.1"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    },
+    {
+      "instruction": "For the dissolution run place a fresh 100 mL water charge in the calibrated calorimeter and record its temperature.",
+      "observation": "The initial water charge is clear.",
+      "quantities": [
+        {
+          "reagent": "water",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 100,
+          "unit": "mL"
+        }
+      ],
+      "sample_id": "reaction",
+      "reaction_scope": "source_defined",
+      "step_id": 2,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm103",
+          "file": "lelm103.pdf",
+          "pdf_page": 4,
+          "experiment": "3.1"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    },
+    {
+      "instruction": "Weigh W1 grams potassium nitrate, record W1, add to the water and stir until fully dissolved; record temperature.",
+      "observation": "A clear solution forms and temperature decreases. W1 is a measured variable, not an invented fixed mass.",
+      "quantities": [
+        {
+          "reagent": "KNO3",
+          "role": "addition",
+          "qualifier": "not_specified",
+          "note": "Procedure uses measured W1; materials inventory lists 2 g but is not a required exact procedural dose."
+        }
+      ],
+      "sample_id": "reaction",
+      "reaction_scope": "whole_contents",
+      "step_id": 3,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm103",
+          "file": "lelm103.pdf",
+          "pdf_page": 5,
+          "experiment": "3.1"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    }
+  ],
+  "source_experiment_id": "chem_12_1001",
   "scenes": [
     {
       "scene_id": "scene_1",
       "scene_name": "Setup and Preparation",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Determine enthalpy of solution of potassium nitrate, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Determine enthalpy of solution of potassium nitrate. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
       "image_local": "images/chemistry/determine_enthalpy_of_solution_of_potassium_nitrate_setup.jpg",
       "image_placeholder": true,
@@ -40,18 +255,55 @@
         {
           "step_id": "scene_1_step_1",
           "step_number": 1,
-          "description": "Measure the prescribed water and potassium nitrate quantities for the stated molar ratio.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "Calibrate the calorimeter separately: measure 100 mL cold water in beaker A and 100 mL hot water at 50-60 degrees C in beaker B; mix and record temperatures.",
+          "observation": "Calibration water is not retained for the dissolution run.",
           "duration_seconds": 3.0,
-          "motion_type": "fluid_dynamics",
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
+          "motion_type": "state_change",
           "moving_objects": [
-            "potassium nitrate, water, calorimeter, balance, thermometer, stirrer"
+            "potassium nitrate",
+            "water",
+            "calorimeter"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "fluid_dynamics",
+          "key_visual": "Calibration water is not retained for the dissolution run.",
+          "prompt_template": "state_change",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "cold water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            },
+            {
+              "reagent": "hot water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            },
+            {
+              "reagent": "hot-water temperature",
+              "role": "condition",
+              "qualifier": "range",
+              "minimum": 50,
+              "maximum": 60,
+              "unit": "degC"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm103",
+              "file": "lelm103.pdf",
+              "pdf_page": 3,
+              "experiment": "3.1"
+            }
+          ],
+          "sample_id": "calibration",
+          "reaction_scope": "source_defined"
         }
       ]
     },
@@ -59,7 +311,7 @@
       "scene_id": "scene_2",
       "scene_name": "Main Procedure",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Determine enthalpy of solution of potassium nitrate, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Determine enthalpy of solution of potassium nitrate. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "",
       "image_local": "",
       "image_placeholder": true,
@@ -67,18 +319,40 @@
         {
           "step_id": "scene_2_step_2",
           "step_number": 2,
-          "description": "Record the initial temperature, dissolve the salt with stirring, and record the final temperature.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "For the dissolution run place a fresh 100 mL water charge in the calibrated calorimeter and record its temperature.",
+          "observation": "The initial water charge is clear.",
           "duration_seconds": 3.0,
-          "motion_type": "state_change",
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
+          "motion_type": "fluid_dynamics",
           "moving_objects": [
-            "potassium nitrate, water, calorimeter, balance, thermometer, stirrer"
+            "potassium nitrate",
+            "water",
+            "calorimeter"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "state_change",
+          "key_visual": "The initial water charge is clear.",
+          "prompt_template": "fluid_dynamics",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm103",
+              "file": "lelm103.pdf",
+              "pdf_page": 4,
+              "experiment": "3.1"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined"
         }
       ]
     },
@@ -86,7 +360,7 @@
       "scene_id": "scene_3",
       "scene_name": "Observation and Result",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Determine enthalpy of solution of potassium nitrate, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Determine enthalpy of solution of potassium nitrate. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "",
       "image_local": "",
       "image_placeholder": true,
@@ -94,25 +368,46 @@
         {
           "step_id": "scene_3_step_3",
           "step_number": 3,
-          "description": "Use the temperature change and supplied calculation method to determine enthalpy of solution.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "Weigh W1 grams potassium nitrate, record W1, add to the water and stir until fully dissolved; record temperature.",
+          "observation": "A clear solution forms and temperature decreases. W1 is a measured variable, not an invented fixed mass.",
           "duration_seconds": 3.0,
-          "motion_type": "observation",
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
+          "motion_type": "colour_change",
           "moving_objects": [
-            "potassium nitrate, water, calorimeter, balance, thermometer, stirrer"
+            "potassium nitrate",
+            "water",
+            "calorimeter"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "observation",
+          "key_visual": "A clear solution forms and temperature decreases. W1 is a measured variable, not an invented fixed mass.",
+          "prompt_template": "colour_change",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "KNO3",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "note": "Procedure uses measured W1; materials inventory lists 2 g but is not a required exact procedural dose."
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm103",
+              "file": "lelm103.pdf",
+              "pdf_page": 5,
+              "experiment": "3.1"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "whole_contents"
         }
       ]
     }
   ],
   "prompt_templates_used": [
+    "colour_change",
     "fluid_dynamics",
-    "observation",
     "state_change"
   ],
   "total_clips": 3,

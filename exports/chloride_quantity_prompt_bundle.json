@@ -1,0 +1,2066 @@
+{
+  "query": "Detect one cation and one anion in a salt",
+  "top_k": 1,
+  "retrieved_experiments": [
+    {
+      "experiment_id": "chem_12_301",
+      "retrieval_score": 1.0,
+      "retrieval_method": "explicit_protocol_selection",
+      "title": "Detect one cation and one anion in a salt",
+      "subject": "Chemistry",
+      "class_level": 12,
+      "difficulty": "hard",
+      "educational_goal": "Study 'Detect one cation and one anion in a salt' using a selected NCERT XII chemistry protocol, its documented quantities and conditions, and conditional observations; review unresolved doses before rendering.",
+      "status": "source_review",
+      "manual_review_required": true,
+      "source_ids": [
+        "ncert_lelm107",
+        "manual_01_pdf"
+      ],
+      "scenes": [
+        {
+          "scene_id": "selected_protocol",
+          "scene_name": "Selected source-backed protocol",
+          "description": "A fixed educational view of Detect one cation and one anion in a salt. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging."
+        }
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Take 1 mL sodium carbonate extract and acidify with dilute nitric acid; the manual also allows a water extract.",
+          "observation": "Use a separate chloride-test aliquot. Initial clarity/colour depend on the specified sample.",
+          "quantities": [
+            {
+              "reagent": "carbonate extract",
+              "role": "aliquot",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "mL"
+            },
+            {
+              "reagent": "dilute HNO3",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm107",
+              "file": "lelm107.pdf",
+              "pdf_page": 9,
+              "experiment": "7.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Add silver nitrate solution to this acidified aliquot.",
+          "observation": "A curdy white silver chloride precipitate forms only when chloride is present.",
+          "quantities": [
+            {
+              "reagent": "AgNO3 solution",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "whole_contents",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm107",
+              "file": "lelm107.pdf",
+              "pdf_page": 9,
+              "experiment": "7.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Add ammonium hydroxide to the same precipitate and mix as appropriate for the reviewed procedure.",
+          "observation": "Silver chloride dissolves to a clear solution when the documented chemical conditions are met; no residual white upper layer should be invented.",
+          "quantities": [
+            {
+              "reagent": "NH4OH",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "note": "Exact dose, concentration and capacity are not specified; review required."
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "whole_contents",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm107",
+              "file": "lelm107.pdf",
+              "pdf_page": 10,
+              "experiment": "7.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ],
+      "quantity_review": {
+        "date": "2026-10-22",
+        "coverage": "partial",
+        "source_ids": [
+          "ncert_lelm107"
+        ],
+        "requires_protocol_selection": true,
+        "numeric_completeness": "not_certified",
+        "gaps": [
+          "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred.",
+          "Selected test/preparation branches are transcribed; aggregate entry is not an exhaustive executable protocol. Untranscribed branches require source review."
+        ],
+        "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+      },
+      "protocol_variants": [
+        {
+          "variant_id": "original_solution",
+          "title": "Original solution / water-soluble salt",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [
+            "If insoluble, follow the manual's separate solvent trials using fresh salt. Do not pour every alternative solvent into the same tube.",
+            "The specimen 1 g in 20 mL on PDF p37 is for a particular MgSO4 example, not a universal dose."
+          ],
+          "procedure_steps": [
+            {
+              "instruction": "Take a little salt and a few mL distilled water; shake and heat if needed until fully dissolved.",
+              "observation": "The original solution must be clear and transparent; its colour depends on the chosen salt. Do not invent a universal white solution.",
+              "quantities": [
+                {
+                  "reagent": "salt",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "water",
+                  "role": "addition",
+                  "qualifier": "not_specified",
+                  "note": "A few mL; exact volume absent."
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "whole_contents",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 21,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "carbonate_extract",
+          "title": "Sodium carbonate extract stock",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [],
+          "procedure_steps": [
+            {
+              "instruction": "Boil 1 g salt with about 3 g sodium carbonate and 15 mL water for about 10 minutes; cool and filter.",
+              "observation": "Filtrate is a stock extract for separate anion-test aliquots.",
+              "quantities": [
+                {
+                  "reagent": "salt",
+                  "role": "stock_preparation",
+                  "qualifier": "exact",
+                  "value": 1,
+                  "unit": "g"
+                },
+                {
+                  "reagent": "Na2CO3",
+                  "role": "stock_preparation",
+                  "qualifier": "approximate",
+                  "value": 3,
+                  "unit": "g"
+                },
+                {
+                  "reagent": "water",
+                  "role": "stock_preparation",
+                  "qualifier": "exact",
+                  "value": 15,
+                  "unit": "mL"
+                },
+                {
+                  "reagent": "boiling time",
+                  "role": "condition",
+                  "qualifier": "approximate",
+                  "value": 10,
+                  "unit": "min"
+                }
+              ],
+              "sample_id": "extract_stock",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 4,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "chloride_silver",
+          "title": "Chloride / silver nitrate and ammonia",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [
+            "The source does not specify acid, AgNO3 or NH4OH dose volumes, test-tube capacity, safe fill or initial solid mass for this confirmation.",
+            "Do not replace this aliquot with the source's unrelated MgSO4 specimen quantities."
+          ],
+          "procedure_steps": [
+            {
+              "instruction": "Take 1 mL sodium carbonate extract and acidify with dilute nitric acid; the manual also allows a water extract.",
+              "observation": "Use a separate chloride-test aliquot. Initial clarity/colour depend on the specified sample.",
+              "quantities": [
+                {
+                  "reagent": "carbonate extract",
+                  "role": "aliquot",
+                  "qualifier": "exact",
+                  "value": 1,
+                  "unit": "mL"
+                },
+                {
+                  "reagent": "dilute HNO3",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 9,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            },
+            {
+              "instruction": "Add silver nitrate solution to this acidified aliquot.",
+              "observation": "A curdy white silver chloride precipitate forms only when chloride is present.",
+              "quantities": [
+                {
+                  "reagent": "AgNO3 solution",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "whole_contents",
+              "step_id": 2,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 9,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            },
+            {
+              "instruction": "Add ammonium hydroxide to the same precipitate and mix as appropriate for the reviewed procedure.",
+              "observation": "Silver chloride dissolves to a clear solution when the documented chemical conditions are met; no residual white upper layer should be invented.",
+              "quantities": [
+                {
+                  "reagent": "NH4OH",
+                  "role": "addition",
+                  "qualifier": "not_specified",
+                  "note": "Exact dose, concentration and capacity are not specified; review required."
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "whole_contents",
+              "step_id": 3,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 10,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "carbonate",
+          "title": "Carbonate",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [],
+          "procedure_steps": [
+            {
+              "instruction": "Use 0.1 g salt with dilute acid; pass evolved gas into limewater.",
+              "observation": "Carbon dioxide makes limewater milky; excess CO2 can clear it.",
+              "quantities": [
+                {
+                  "reagent": "salt",
+                  "role": "addition",
+                  "qualifier": "exact",
+                  "value": 0.1,
+                  "unit": "g"
+                },
+                {
+                  "reagent": "dilute acid",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "limewater",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 4,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "sulphide",
+          "title": "Sulphide / nitroprusside",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [],
+          "procedure_steps": [
+            {
+              "instruction": "Make 1 mL water extract alkaline with ammonium hydroxide or sodium carbonate; add one drop sodium nitroprusside.",
+              "observation": "Purple/violet colour indicates sulphide.",
+              "quantities": [
+                {
+                  "reagent": "water extract",
+                  "role": "aliquot",
+                  "qualifier": "exact",
+                  "value": 1,
+                  "unit": "mL"
+                },
+                {
+                  "reagent": "alkali",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "sodium nitroprusside",
+                  "role": "addition",
+                  "qualifier": "exact",
+                  "value": 1,
+                  "unit": "drops"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 4,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "sulphite",
+          "title": "Sulphite",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [],
+          "procedure_steps": [
+            {
+              "instruction": "Add barium chloride to 1 mL extract; treat the white precipitate with dilute HCl. Test a separate precipitate portion with a few drops acidified permanganate.",
+              "observation": "Barium sulphite dissolves in acid; permanganate decolourises.",
+              "quantities": [
+                {
+                  "reagent": "extract",
+                  "role": "aliquot",
+                  "qualifier": "exact",
+                  "value": 1,
+                  "unit": "mL"
+                },
+                {
+                  "reagent": "BaCl2",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "dilute HCl",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "acidified KMnO4",
+                  "role": "addition",
+                  "qualifier": "not_specified",
+                  "note": "Few drops; exact count absent."
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 4,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "nitrite_iodide",
+          "title": "Nitrite / iodide-starch",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [],
+          "procedure_steps": [
+            {
+              "instruction": "Add a few drops each KI and starch to 1 mL water extract and acidify with acetic acid.",
+              "observation": "Blue colour indicates a positive nitrite test.",
+              "quantities": [
+                {
+                  "reagent": "water extract",
+                  "role": "aliquot",
+                  "qualifier": "exact",
+                  "value": 1,
+                  "unit": "mL"
+                },
+                {
+                  "reagent": "KI",
+                  "role": "addition",
+                  "qualifier": "not_specified",
+                  "note": "Few drops."
+                },
+                {
+                  "reagent": "starch",
+                  "role": "addition",
+                  "qualifier": "not_specified",
+                  "note": "Few drops."
+                },
+                {
+                  "reagent": "acetic acid",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 4,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "nitrite_azo",
+          "title": "Nitrite / azo test",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [],
+          "procedure_steps": [
+            {
+              "instruction": "Acidify 1 mL water extract with acetic acid; add 2-3 drops sulphanilic acid followed by 2-3 drops 1-naphthylamine reagent.",
+              "observation": "A red colour is a positive test.",
+              "quantities": [
+                {
+                  "reagent": "water extract",
+                  "role": "aliquot",
+                  "qualifier": "exact",
+                  "value": 1,
+                  "unit": "mL"
+                },
+                {
+                  "reagent": "acetic acid",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "sulphanilic acid",
+                  "role": "addition",
+                  "qualifier": "range",
+                  "minimum": 2,
+                  "maximum": 3,
+                  "unit": "drops"
+                },
+                {
+                  "reagent": "1-naphthylamine",
+                  "role": "addition",
+                  "qualifier": "range",
+                  "minimum": 2,
+                  "maximum": 3,
+                  "unit": "drops"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 4,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "acetate_ferric",
+          "title": "Acetate / ferric chloride",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [],
+          "procedure_steps": [
+            {
+              "instruction": "Shake 0.1 g salt with 1-2 mL water, filter if needed; add 1-2 mL neutral ferric chloride and boil.",
+              "observation": "Deep red colour changes to a brown-red precipitate on boiling.",
+              "quantities": [
+                {
+                  "reagent": "salt",
+                  "role": "addition",
+                  "qualifier": "exact",
+                  "value": 0.1,
+                  "unit": "g"
+                },
+                {
+                  "reagent": "water",
+                  "role": "addition",
+                  "qualifier": "range",
+                  "minimum": 1,
+                  "maximum": 2,
+                  "unit": "mL"
+                },
+                {
+                  "reagent": "neutral FeCl3",
+                  "role": "addition",
+                  "qualifier": "range",
+                  "minimum": 1,
+                  "maximum": 2,
+                  "unit": "mL"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 5,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "acetate_ester",
+          "title": "Acetate / ester",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [],
+          "procedure_steps": [
+            {
+              "instruction": "Heat 0.1 g salt with 1 mL ethanol and 0.2 mL concentrated sulphuric acid.",
+              "observation": "The source reports a fruity odour; this is not a visible colour change or an instruction to inhale.",
+              "quantities": [
+                {
+                  "reagent": "salt",
+                  "role": "addition",
+                  "qualifier": "exact",
+                  "value": 0.1,
+                  "unit": "g"
+                },
+                {
+                  "reagent": "ethanol",
+                  "role": "addition",
+                  "qualifier": "exact",
+                  "value": 1,
+                  "unit": "mL"
+                },
+                {
+                  "reagent": "conc H2SO4",
+                  "role": "addition",
+                  "qualifier": "exact",
+                  "value": 0.2,
+                  "unit": "mL"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 5,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "bromide_layer",
+          "title": "Bromide / layer test",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [],
+          "procedure_steps": [
+            {
+              "instruction": "Neutralise 1 mL extract with HCl; add 1 mL source-approved organic solvent and excess chlorine water dropwise; shake.",
+              "observation": "Brown colour develops in the organic layer; layering is intentional.",
+              "quantities": [
+                {
+                  "reagent": "extract",
+                  "role": "aliquot",
+                  "qualifier": "exact",
+                  "value": 1,
+                  "unit": "mL"
+                },
+                {
+                  "reagent": "HCl",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "organic solvent",
+                  "role": "addition",
+                  "qualifier": "exact",
+                  "value": 1,
+                  "unit": "mL"
+                },
+                {
+                  "reagent": "chlorine water",
+                  "role": "addition",
+                  "qualifier": "not_specified",
+                  "note": "Endpoint/excess; no fixed volume."
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "stratified",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 9,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "iodide_layer",
+          "title": "Iodide / layer test",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [],
+          "procedure_steps": [
+            {
+              "instruction": "Use 1 mL salt solution neutralised with HCl; add 1 mL source-approved organic solvent and excess chlorine water dropwise; shake.",
+              "observation": "Violet colour develops in the organic layer; do not homogenise the final layers.",
+              "quantities": [
+                {
+                  "reagent": "salt solution",
+                  "role": "aliquot",
+                  "qualifier": "exact",
+                  "value": 1,
+                  "unit": "mL"
+                },
+                {
+                  "reagent": "HCl",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "organic solvent",
+                  "role": "addition",
+                  "qualifier": "exact",
+                  "value": 1,
+                  "unit": "mL"
+                },
+                {
+                  "reagent": "chlorine water",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "stratified",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 9,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "nitrate_ring",
+          "title": "Nitrate / brown-ring test",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [],
+          "procedure_steps": [
+            {
+              "instruction": "To 1 mL aqueous salt solution add 2 mL concentrated sulphuric acid; mix, cool under the tap, then introduce fresh ferrous sulphate down the wall without shaking.",
+              "observation": "A brown ring forms at the interface; a layered endpoint is required.",
+              "quantities": [
+                {
+                  "reagent": "salt solution",
+                  "role": "aliquot",
+                  "qualifier": "exact",
+                  "value": 1,
+                  "unit": "mL"
+                },
+                {
+                  "reagent": "conc H2SO4",
+                  "role": "addition",
+                  "qualifier": "exact",
+                  "value": 2,
+                  "unit": "mL"
+                },
+                {
+                  "reagent": "fresh FeSO4",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "interface",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 10,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "oxalate",
+          "title": "Oxalate",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [],
+          "procedure_steps": [
+            {
+              "instruction": "Acidify 1 mL extract with acetic acid; add calcium chloride. Isolate the precipitate, dissolve in dilute sulphuric acid, add very dilute permanganate and warm.",
+              "observation": "White calcium oxalate forms; subsequent permanganate loses colour and evolved CO2 makes limewater milky.",
+              "quantities": [
+                {
+                  "reagent": "extract",
+                  "role": "aliquot",
+                  "qualifier": "exact",
+                  "value": 1,
+                  "unit": "mL"
+                },
+                {
+                  "reagent": "acetic acid",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "CaCl2",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "dil H2SO4",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "dil KMnO4",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 10,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "sulphate",
+          "title": "Sulphate",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [],
+          "procedure_steps": [
+            {
+              "instruction": "Acidify 1 mL water/carbonate extract with dilute HCl and add barium chloride.",
+              "observation": "White barium sulphate precipitate is insoluble in concentrated HCl or HNO3.",
+              "quantities": [
+                {
+                  "reagent": "extract",
+                  "role": "aliquot",
+                  "qualifier": "exact",
+                  "value": 1,
+                  "unit": "mL"
+                },
+                {
+                  "reagent": "dil HCl",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "BaCl2",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 14,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "phosphate",
+          "title": "Phosphate",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [],
+          "procedure_steps": [
+            {
+              "instruction": "Acidify a separate extract aliquot with concentrated nitric acid; add ammonium molybdate and heat to boiling.",
+              "observation": "Canary-yellow precipitate indicates phosphate.",
+              "quantities": [
+                {
+                  "reagent": "extract aliquot",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "conc HNO3",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "ammonium molybdate",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 14,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "ammonium",
+          "title": "Ammonium",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [],
+          "procedure_steps": [
+            {
+              "instruction": "Heat 0.1 g salt with 1-2 mL NaOH. Hold an HCl-moistened glass rod near the mouth; use a separate gas receiver for a Nessler test if selected.",
+              "observation": "HCl rod produces white fumes; Nessler reagent gives brown colour/precipitate in its receiver. Do not colour the parent liquid blue.",
+              "quantities": [
+                {
+                  "reagent": "salt",
+                  "role": "addition",
+                  "qualifier": "exact",
+                  "value": 0.1,
+                  "unit": "g"
+                },
+                {
+                  "reagent": "NaOH solution",
+                  "role": "addition",
+                  "qualifier": "range",
+                  "minimum": 1,
+                  "maximum": 2,
+                  "unit": "mL"
+                },
+                {
+                  "reagent": "HCl on rod",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "Nessler reagent",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 21,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "dry_heating",
+          "title": "Preliminary dry heating",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [],
+          "procedure_steps": [
+            {
+              "instruction": "Heat about 0.1 g dry salt for about one minute; compare hot and cold residue.",
+              "observation": "Colour depends on the salt and is preliminary evidence only.",
+              "quantities": [
+                {
+                  "reagent": "salt",
+                  "role": "addition",
+                  "qualifier": "approximate",
+                  "value": 0.1,
+                  "unit": "g"
+                },
+                {
+                  "reagent": "heating time",
+                  "role": "condition",
+                  "qualifier": "approximate",
+                  "value": 1,
+                  "unit": "min"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 16,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "flame",
+          "title": "Flame test",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [],
+          "procedure_steps": [
+            {
+              "instruction": "Clean the platinum loop; make a small salt paste with 2-3 drops concentrated HCl and introduce the loaded loop into the flame.",
+              "observation": "Characteristic flame colour depends on the cation; this is not a solution colour change.",
+              "quantities": [
+                {
+                  "reagent": "salt",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "conc HCl",
+                  "role": "addition",
+                  "qualifier": "range",
+                  "minimum": 2,
+                  "maximum": 3,
+                  "unit": "drops"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 16,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "charcoal",
+          "title": "Charcoal cavity",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [],
+          "procedure_steps": [
+            {
+              "instruction": "Use a fresh charcoal cavity with about 0.2 g salt and about 0.5 g anhydrous sodium carbonate; moisten with 1-2 drops water and heat as prescribed.",
+              "observation": "Residue/bead colour depends on the cation and whether hot or cold.",
+              "quantities": [
+                {
+                  "reagent": "salt",
+                  "role": "addition",
+                  "qualifier": "approximate",
+                  "value": 0.2,
+                  "unit": "g"
+                },
+                {
+                  "reagent": "Na2CO3",
+                  "role": "addition",
+                  "qualifier": "approximate",
+                  "value": 0.5,
+                  "unit": "g"
+                },
+                {
+                  "reagent": "water",
+                  "role": "addition",
+                  "qualifier": "range",
+                  "minimum": 1,
+                  "maximum": 2,
+                  "unit": "drops"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 19,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "cobalt_nitrate",
+          "title": "Cobalt nitrate residue test",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [],
+          "procedure_steps": [
+            {
+              "instruction": "For a white charcoal-test residue add 2-3 drops cobalt nitrate solution and heat as prescribed.",
+              "observation": "Zn/Al/Mg residues give distinct colours; do not assert one universal outcome.",
+              "quantities": [
+                {
+                  "reagent": "cobalt nitrate",
+                  "role": "addition",
+                  "qualifier": "range",
+                  "minimum": 2,
+                  "maximum": 3,
+                  "unit": "drops"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 20,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "bromide_silver",
+          "title": "Bromide / silver salt",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [],
+          "procedure_steps": [
+            {
+              "instruction": "Acidify a fresh 1 mL extract aliquot with dilute nitric acid, add silver nitrate and examine solubility in ammonium hydroxide.",
+              "observation": "Positive precipitate: pale yellow; dissolves with difficulty in ammonia.",
+              "quantities": [
+                {
+                  "reagent": "extract",
+                  "role": "aliquot",
+                  "qualifier": "exact",
+                  "value": 1,
+                  "unit": "mL"
+                },
+                {
+                  "reagent": "dil HNO3",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "AgNO3",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "NH4OH",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 9,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "iodide_silver",
+          "title": "Iodide / silver salt",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [],
+          "procedure_steps": [
+            {
+              "instruction": "Acidify a fresh 1 mL extract aliquot with dilute nitric acid, add silver nitrate and examine solubility in ammonium hydroxide.",
+              "observation": "Positive precipitate: yellow; insoluble in ammonia.",
+              "quantities": [
+                {
+                  "reagent": "extract",
+                  "role": "aliquot",
+                  "qualifier": "exact",
+                  "value": 1,
+                  "unit": "mL"
+                },
+                {
+                  "reagent": "dil HNO3",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "AgNO3",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "NH4OH",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 9,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "cation_lead",
+          "title": "Lead confirmation (requires prior group separation)",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [
+            "Partial confirmation branch; preceding group separation and sample allocation must be selected and reviewed. No numeric doses given for these additions."
+          ],
+          "procedure_steps": [
+            {
+              "instruction": "Dissolve the group-I precipitate in hot water; divide into separate portions for KI, potassium chromate, and alcohol/dilute sulphuric acid tests.",
+              "observation": "KI and chromate produce yellow precipitates; sulphate is white.",
+              "quantities": [
+                {
+                  "reagent": "hot water",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "KI",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "potassium chromate",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "alcohol",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "dil H2SO4",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 23,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "cation_copper",
+          "title": "Copper confirmation (requires prior group separation)",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [
+            "Partial confirmation branch; preceding group separation and sample allocation must be selected and reviewed. No numeric doses given for these additions."
+          ],
+          "procedure_steps": [
+            {
+              "instruction": "Use the reviewed group-IIA copper solution; add excess ammonium hydroxide, then acidify with acetic acid and add potassium ferrocyanide.",
+              "observation": "Deep-blue ammonia complex precedes chocolate-brown ferrocyanide precipitate.",
+              "quantities": [
+                {
+                  "reagent": "NH4OH",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "acetic acid",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "potassium ferrocyanide",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 25,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "cation_arsenic",
+          "title": "Arsenic confirmation (requires prior group separation)",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [
+            "Partial confirmation branch; preceding group separation and sample allocation must be selected and reviewed. No numeric doses given for these additions."
+          ],
+          "procedure_steps": [
+            {
+              "instruction": "Use the reviewed group-IIB branch: acidify yellow ammonium-sulphide solution with dilute HCl; dissolve the precipitate in hot concentrated nitric acid and add ammonium molybdate.",
+              "observation": "Yellow sulphide and subsequently canary-yellow molybdate support the selected arsenic branch.",
+              "quantities": [
+                {
+                  "reagent": "dil HCl",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "conc HNO3",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "ammonium molybdate",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 25,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "cation_iron",
+          "title": "Iron confirmation (requires prior group separation)",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [
+            "Partial confirmation branch; preceding group separation and sample allocation must be selected and reviewed. No numeric doses given for these additions."
+          ],
+          "procedure_steps": [
+            {
+              "instruction": "Dissolve group-III brown precipitate in dilute HCl; split into separate portions for potassium ferrocyanide and potassium thiocyanate.",
+              "observation": "Separate tests give Prussian blue and blood-red colours respectively.",
+              "quantities": [
+                {
+                  "reagent": "dil HCl",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "potassium ferrocyanide",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "potassium thiocyanate",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 27,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "cation_aluminium",
+          "title": "Aluminium confirmation (requires prior group separation)",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [
+            "Partial confirmation branch; preceding group separation and sample allocation must be selected and reviewed. No numeric doses given for these additions."
+          ],
+          "procedure_steps": [
+            {
+              "instruction": "Dissolve group-III white precipitate in dilute HCl; split for NaOH solubility and litmus/ammonium-hydroxide lake tests.",
+              "observation": "NaOH precipitate dissolves in excess; lake test has a blue floating mass in colourless solution.",
+              "quantities": [
+                {
+                  "reagent": "dil HCl",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "NaOH",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "blue litmus solution",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "NH4OH",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 27,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "cation_zinc",
+          "title": "Zinc confirmation (requires prior group separation)",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [
+            "Partial confirmation branch; preceding group separation and sample allocation must be selected and reviewed. No numeric doses given for these additions."
+          ],
+          "procedure_steps": [
+            {
+              "instruction": "Dissolve the group-IV white precipitate in hot dilute HCl; split for excess NaOH and, separately, NH4OH neutralisation followed by potassium ferrocyanide.",
+              "observation": "White hydroxide dissolves in excess NaOH; separate ferrocyanide test gives bluish-white precipitate.",
+              "quantities": [
+                {
+                  "reagent": "dil HCl",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "NaOH",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "NH4OH",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "potassium ferrocyanide",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 29,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "cation_manganese",
+          "title": "Manganese confirmation (requires prior group separation)",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [
+            "Partial confirmation branch; preceding group separation and sample allocation must be selected and reviewed. No numeric doses given for these additions."
+          ],
+          "procedure_steps": [
+            {
+              "instruction": "Dissolve the group-IV flesh-coloured precipitate in hot dilute HCl and add excess NaOH.",
+              "observation": "White hydroxide becomes brown on standing.",
+              "quantities": [
+                {
+                  "reagent": "dil HCl",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "NaOH",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 29,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "cation_nickel",
+          "title": "Nickel confirmation (requires prior group separation)",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [
+            "Partial confirmation branch; preceding group separation and sample allocation must be selected and reviewed. No numeric doses given for these additions."
+          ],
+          "procedure_steps": [
+            {
+              "instruction": "Use the source-prepared group-IV solution; make alkaline with ammonium hydroxide and add a few drops dimethylglyoxime.",
+              "observation": "Bright-red precipitate confirms the selected nickel branch.",
+              "quantities": [
+                {
+                  "reagent": "NH4OH",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "dimethylglyoxime",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 29,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "cation_cobalt",
+          "title": "Cobalt confirmation (requires prior group separation)",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [
+            "Partial confirmation branch; preceding group separation and sample allocation must be selected and reviewed. No numeric doses given for these additions."
+          ],
+          "procedure_steps": [
+            {
+              "instruction": "Use a separate portion of group-IV solution; neutralise with ammonium hydroxide, acidify with dilute acetic acid and add solid potassium nitrite.",
+              "observation": "Yellow precipitate confirms the selected cobalt branch.",
+              "quantities": [
+                {
+                  "reagent": "NH4OH",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "acetic acid",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "potassium nitrite",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 29,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "cation_barium",
+          "title": "Barium confirmation (requires prior group separation)",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [
+            "Partial confirmation branch; preceding group separation and sample allocation must be selected and reviewed. No numeric doses given for these additions."
+          ],
+          "procedure_steps": [
+            {
+              "instruction": "Dissolve group-V carbonate in hot dilute acetic acid; use a separate portion with potassium chromate.",
+              "observation": "Yellow precipitate supports barium; grassy-green flame is a separate confirmation.",
+              "quantities": [
+                {
+                  "reagent": "dil acetic acid",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "potassium chromate",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 31,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "cation_strontium",
+          "title": "Strontium confirmation (requires prior group separation)",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [
+            "Partial confirmation branch; preceding group separation and sample allocation must be selected and reviewed. No numeric doses given for these additions."
+          ],
+          "procedure_steps": [
+            {
+              "instruction": "With barium absent, add ammonium sulphate to a separate group-V solution portion; heat, scratch and cool.",
+              "observation": "White sulphate precipitate supports strontium; crimson flame is separate.",
+              "quantities": [
+                {
+                  "reagent": "ammonium sulphate",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 31,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "cation_calcium",
+          "title": "Calcium confirmation (requires prior group separation)",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [
+            "Partial confirmation branch; preceding group separation and sample allocation must be selected and reviewed. No numeric doses given for these additions."
+          ],
+          "procedure_steps": [
+            {
+              "instruction": "With barium and strontium absent, add ammonium oxalate to a separate group-V solution portion and shake.",
+              "observation": "White calcium oxalate precipitate forms; brick-red flame is separate.",
+              "quantities": [
+                {
+                  "reagent": "ammonium oxalate",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 31,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        },
+        {
+          "variant_id": "cation_magnesium",
+          "title": "Magnesium confirmation (requires prior group separation)",
+          "source_id": "ncert_lelm107",
+          "source_experiment": "7.1",
+          "coverage": "partial",
+          "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+          "notes": [
+            "Partial confirmation branch; preceding group separation and sample allocation must be selected and reviewed. No numeric doses given for these additions."
+          ],
+          "procedure_steps": [
+            {
+              "instruction": "With group V absent, add disodium hydrogenphosphate to the ammoniacal original-solution aliquot, scratch the tube and warm if delayed.",
+              "observation": "White crystalline magnesium ammonium phosphate precipitates.",
+              "quantities": [
+                {
+                  "reagent": "original solution aliquot",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                },
+                {
+                  "reagent": "disodium hydrogenphosphate",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 1,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 33,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+            }
+          ]
+        }
+      ],
+      "selected_protocol_variant": "chloride_silver",
+      "planning_blocked": false,
+      "planning_block_reason": ""
+    }
+  ],
+  "prompt_inputs": [
+    {
+      "experiment_id": "chem_12_301",
+      "scene_id": "selected_protocol",
+      "step_id": 1,
+      "prompt": "Create a realistic educational science video clip for Class 12 Chemistry experiment 'Detect one cation and one anion in a salt'. Show the scene 'Selected source-backed protocol'. Starting state:  Perform only this procedure step: Take 1 mL sodium carbonate extract and acidify with dilute nitric acid; the manual also allows a water extract. End in this documented state: Use a separate chloride-test aliquot. Initial clarity/colour depend on the specified sample. Source quantity facts: {\"quantities\": [{\"reagent\": \"carbonate extract\", \"role\": \"aliquot\", \"qualifier\": \"exact\", \"value\": 1, \"unit\": \"mL\"}, {\"reagent\": \"dilute HNO3\", \"role\": \"addition\", \"qualifier\": \"not_specified\"}], \"source_evidence\": [{\"source_id\": \"ncert_lelm107\", \"file\": \"lelm107.pdf\", \"pdf_page\": 9, \"experiment\": \"7.1\"}], \"sample_id\": \"reaction\", \"reaction_scope\": \"source_defined\"} Quantity: Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL. Use only apparatus already present in the reference image or explicitly named in this step. Show only this procedure step, acting on its named target; preserve the count and positions of other apparatus. Depict each observation on the correct physical target. Keep named indicators and measuring devices visible: paper or strips change on the paper, while a liquid indicator changes the sample only when the procedure says it does. Follow the manual's order and stated quantities; do not invent an exact amount or ratio when none is documented, and never fill a vessel to the rim. Do not invent a reaction, color change, reagent, or apparatus that the source does not specify. This source has unverified details: depict only explicitly documented actions and results; do not fill gaps by guessing. Keep the camera fixed, the operation slow and clearly visible, and omit labels and watermarks.",
+      "negative_prompt": "blurry, distorted apparatus, incorrect measurements, text artifacts, watermark",
+      "starting_image": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
+      "image_prompt": "Create one consistent educational science reference image for the starting state: . Show only the apparatus required for this atomic step, with no duplicate vessels, unrelated equipment, labels, handwriting, or collage.",
+      "state_before": "Before: Take 1 mL sodium carbonate extract and acidify with dilute nitric acid; the manual also allows a water extract.",
+      "action": "Take 1 mL sodium carbonate extract and acidify with dilute nitric acid; the manual also allows a water extract.",
+      "state_after": "Use a separate chloride-test aliquot. Initial clarity/colour depend on the specified sample.",
+      "visual_priority": "normal",
+      "continuity_required": false,
+      "reference_policy": "state_keyframe",
+      "reference_clip": "",
+      "reference_mode": "independent",
+      "needs_reference_image": true,
+      "handoff_policy": "none",
+      "handoff_entity": "",
+      "handoff_offset_seconds": null,
+      "duration_seconds": 2.0,
+      "reference_image": "",
+      "target_object": "",
+      "preserve_objects": [],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+      "observable_target": "",
+      "action_pacing": "slow, single deliberate action",
+      "manual_review_required": true,
+      "manual_review_reasons": [
+        "Experiment source status is source_review.",
+        "Resolve or explicitly approve not_specified quantity for dilute HNO3 before numeric dose planning.",
+        "Aggregate protocol coverage is partial; review the selected branch and its prerequisites."
+      ],
+      "requires_clip_split": false,
+      "quantities": [
+        {
+          "reagent": "carbonate extract",
+          "role": "aliquot",
+          "qualifier": "exact",
+          "value": 1,
+          "unit": "mL"
+        },
+        {
+          "reagent": "dilute HNO3",
+          "role": "addition",
+          "qualifier": "not_specified"
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm107",
+          "file": "lelm107.pdf",
+          "pdf_page": 9,
+          "experiment": "7.1"
+        }
+      ],
+      "sample_id": "reaction",
+      "reaction_scope": "source_defined",
+      "source_ids": [
+        "ncert_lelm107",
+        "manual_01_pdf"
+      ],
+      "source_status": "source_review"
+    },
+    {
+      "experiment_id": "chem_12_301",
+      "scene_id": "selected_protocol",
+      "step_id": 2,
+      "prompt": "Create a realistic educational science video clip for Class 12 Chemistry experiment 'Detect one cation and one anion in a salt'. Show the scene 'Selected source-backed protocol'. Starting state:  Perform only this procedure step: Add silver nitrate solution to this acidified aliquot. End in this documented state: A curdy white silver chloride precipitate forms only when chloride is present. Source quantity facts: {\"quantities\": [{\"reagent\": \"AgNO3 solution\", \"role\": \"addition\", \"qualifier\": \"not_specified\"}], \"source_evidence\": [{\"source_id\": \"ncert_lelm107\", \"file\": \"lelm107.pdf\", \"pdf_page\": 9, \"experiment\": \"7.1\"}], \"sample_id\": \"reaction\", \"reaction_scope\": \"whole_contents\"} Quantity: Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL. Use only apparatus already present in the reference image or explicitly named in this step. Show only this procedure step, acting on its named target; preserve the count and positions of other apparatus. Depict each observation on the correct physical target. Keep named indicators and measuring devices visible: paper or strips change on the paper, while a liquid indicator changes the sample only when the procedure says it does. Follow the manual's order and stated quantities; do not invent an exact amount or ratio when none is documented, and never fill a vessel to the rim. Do not invent a reaction, color change, reagent, or apparatus that the source does not specify. This source has unverified details: depict only explicitly documented actions and results; do not fill gaps by guessing. Keep the camera fixed, the operation slow and clearly visible, and omit labels and watermarks.",
+      "negative_prompt": "blurry, distorted apparatus, incorrect measurements, text artifacts, watermark",
+      "starting_image": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
+      "image_prompt": "Create one consistent educational science reference image for the starting state: . Show only the apparatus required for this atomic step, with no duplicate vessels, unrelated equipment, labels, handwriting, or collage.",
+      "state_before": "Before: Add silver nitrate solution to this acidified aliquot.",
+      "action": "Add silver nitrate solution to this acidified aliquot.",
+      "state_after": "A curdy white silver chloride precipitate forms only when chloride is present.",
+      "visual_priority": "normal",
+      "continuity_required": false,
+      "reference_policy": "state_keyframe",
+      "reference_clip": "",
+      "reference_mode": "independent",
+      "needs_reference_image": true,
+      "handoff_policy": "none",
+      "handoff_entity": "",
+      "handoff_offset_seconds": null,
+      "duration_seconds": 2.0,
+      "reference_image": "",
+      "target_object": "",
+      "preserve_objects": [],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+      "observable_target": "",
+      "action_pacing": "slow, single deliberate action",
+      "manual_review_required": true,
+      "manual_review_reasons": [
+        "Experiment source status is source_review.",
+        "Resolve or explicitly approve not_specified quantity for AgNO3 solution before numeric dose planning.",
+        "Aggregate protocol coverage is partial; review the selected branch and its prerequisites."
+      ],
+      "requires_clip_split": false,
+      "quantities": [
+        {
+          "reagent": "AgNO3 solution",
+          "role": "addition",
+          "qualifier": "not_specified"
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm107",
+          "file": "lelm107.pdf",
+          "pdf_page": 9,
+          "experiment": "7.1"
+        }
+      ],
+      "sample_id": "reaction",
+      "reaction_scope": "whole_contents",
+      "source_ids": [
+        "ncert_lelm107",
+        "manual_01_pdf"
+      ],
+      "source_status": "source_review"
+    },
+    {
+      "experiment_id": "chem_12_301",
+      "scene_id": "selected_protocol",
+      "step_id": 3,
+      "prompt": "Create a realistic educational science video clip for Class 12 Chemistry experiment 'Detect one cation and one anion in a salt'. Show the scene 'Selected source-backed protocol'. Starting state:  Perform only this procedure step: Add ammonium hydroxide to the same precipitate and mix as appropriate for the reviewed procedure. End in this documented state: Silver chloride dissolves to a clear solution when the documented chemical conditions are met; no residual white upper layer should be invented. Source quantity facts: {\"quantities\": [{\"reagent\": \"NH4OH\", \"role\": \"addition\", \"qualifier\": \"not_specified\", \"note\": \"Exact dose, concentration and capacity are not specified; review required.\"}], \"source_evidence\": [{\"source_id\": \"ncert_lelm107\", \"file\": \"lelm107.pdf\", \"pdf_page\": 10, \"experiment\": \"7.1\"}], \"sample_id\": \"reaction\", \"reaction_scope\": \"whole_contents\"} Quantity: Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL. Use only apparatus already present in the reference image or explicitly named in this step. Show only this procedure step, acting on its named target; preserve the count and positions of other apparatus. Depict each observation on the correct physical target. Keep named indicators and measuring devices visible: paper or strips change on the paper, while a liquid indicator changes the sample only when the procedure says it does. Follow the manual's order and stated quantities; do not invent an exact amount or ratio when none is documented, and never fill a vessel to the rim. Do not invent a reaction, color change, reagent, or apparatus that the source does not specify. This source has unverified details: depict only explicitly documented actions and results; do not fill gaps by guessing. Keep the camera fixed, the operation slow and clearly visible, and omit labels and watermarks.",
+      "negative_prompt": "blurry, distorted apparatus, incorrect measurements, text artifacts, watermark",
+      "starting_image": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
+      "image_prompt": "Create one consistent educational science reference image for the starting state: . Show only the apparatus required for this atomic step, with no duplicate vessels, unrelated equipment, labels, handwriting, or collage.",
+      "state_before": "Before: Add ammonium hydroxide to the same precipitate and mix as appropriate for the reviewed procedure.",
+      "action": "Add ammonium hydroxide to the same precipitate and mix as appropriate for the reviewed procedure.",
+      "state_after": "Silver chloride dissolves to a clear solution when the documented chemical conditions are met; no residual white upper layer should be invented.",
+      "visual_priority": "normal",
+      "continuity_required": false,
+      "reference_policy": "state_keyframe",
+      "reference_clip": "",
+      "reference_mode": "independent",
+      "needs_reference_image": true,
+      "handoff_policy": "none",
+      "handoff_entity": "",
+      "handoff_offset_seconds": null,
+      "duration_seconds": 2.0,
+      "reference_image": "",
+      "target_object": "",
+      "preserve_objects": [],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+      "observable_target": "",
+      "action_pacing": "slow, single deliberate action",
+      "manual_review_required": true,
+      "manual_review_reasons": [
+        "Experiment source status is source_review.",
+        "Resolve or explicitly approve not_specified quantity for NH4OH before numeric dose planning.",
+        "Aggregate protocol coverage is partial; review the selected branch and its prerequisites.",
+        "This step combines multiple visible operations; split it into shorter clips before generation."
+      ],
+      "requires_clip_split": true,
+      "quantities": [
+        {
+          "reagent": "NH4OH",
+          "role": "addition",
+          "qualifier": "not_specified",
+          "note": "Exact dose, concentration and capacity are not specified; review required."
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm107",
+          "file": "lelm107.pdf",
+          "pdf_page": 10,
+          "experiment": "7.1"
+        }
+      ],
+      "sample_id": "reaction",
+      "reaction_scope": "whole_contents",
+      "source_ids": [
+        "ncert_lelm107",
+        "manual_01_pdf"
+      ],
+      "source_status": "source_review"
+    }
+  ]
+}

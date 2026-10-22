@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "last_updated": "2026-09-28",
+  "last_updated": "2026-10-22",
   "total_experiments": 100,
   "subjects": {
     "physics": {
@@ -190,13 +190,13 @@
     },
     {
       "id": "chemistry_hard_chem_12_205",
-      "name": "Determine the molarity of potassium permanganate using 0.05 M oxalic acid",
+      "name": "Determine the molarity of potassium permanganate using 0.1 M oxalic acid",
       "subject": "chemistry",
       "class_level": 12,
       "difficulty": "hard",
       "path": "chemistry/hard/determine_the_molarity_of_potassium_permanganate_using_0_05_m_oxalic_acid.json",
       "video_generated": false,
-      "total_clips": 4,
+      "total_clips": 3,
       "total_scenes": 3
     },
     {
@@ -207,7 +207,7 @@
       "difficulty": "hard",
       "path": "chemistry/hard/determine_the_molarity_of_potassium_permanganate_using_mohr_s_salt.json",
       "video_generated": false,
-      "total_clips": 4,
+      "total_clips": 3,
       "total_scenes": 3
     },
     {
@@ -218,8 +218,8 @@
       "difficulty": "hard",
       "path": "chemistry/hard/detect_one_cation_and_one_anion_in_a_salt.json",
       "video_generated": false,
-      "total_clips": 4,
-      "total_scenes": 3
+      "total_clips": 0,
+      "total_scenes": 0
     },
     {
       "id": "chemistry_hard_chem_12_401",
@@ -240,8 +240,8 @@
       "difficulty": "medium",
       "path": "chemistry/medium/identify_one_functional_group_in_an_organic_compound.json",
       "video_generated": false,
-      "total_clips": 3,
-      "total_scenes": 3
+      "total_clips": 0,
+      "total_scenes": 0
     },
     {
       "id": "chemistry_medium_chem_12_403",
@@ -251,8 +251,8 @@
       "difficulty": "medium",
       "path": "chemistry/medium/characterise_carbohydrates_fats_and_proteins_in_food.json",
       "video_generated": false,
-      "total_clips": 4,
-      "total_scenes": 3
+      "total_clips": 0,
+      "total_scenes": 0
     },
     {
       "id": "chemistry_medium_chem_12_501",
@@ -262,8 +262,8 @@
       "difficulty": "medium",
       "path": "chemistry/medium/separate_pigments_from_leaf_or_flower_extracts_by_paper_chromatography_and_determine_rf_values.json",
       "video_generated": false,
-      "total_clips": 4,
-      "total_scenes": 3
+      "total_clips": 0,
+      "total_scenes": 0
     },
     {
       "id": "chemistry_hard_chem_12_502",
@@ -273,7 +273,7 @@
       "difficulty": "hard",
       "path": "chemistry/hard/separate_lead_and_cadmium_ions_in_an_inorganic_mixture_by_paper_chromatography.json",
       "video_generated": false,
-      "total_clips": 4,
+      "total_clips": 3,
       "total_scenes": 3
     },
     {
@@ -284,8 +284,8 @@
       "difficulty": "medium",
       "path": "chemistry/medium/prepare_potash_alum_and_mohr_s_salt_double_salts.json",
       "video_generated": false,
-      "total_clips": 3,
-      "total_scenes": 3
+      "total_clips": 0,
+      "total_scenes": 0
     },
     {
       "id": "chemistry_hard_chem_12_602",
@@ -306,8 +306,8 @@
       "difficulty": "medium",
       "path": "chemistry/medium/prepare_acetanilide.json",
       "video_generated": false,
-      "total_clips": 3,
-      "total_scenes": 3
+      "total_clips": 0,
+      "total_scenes": 0
     },
     {
       "id": "chemistry_medium_chem_12_604",
@@ -339,7 +339,7 @@
       "difficulty": "hard",
       "path": "chemistry/hard/prepare_phenyl_azo_beta_naphthol.json",
       "video_generated": false,
-      "total_clips": 3,
+      "total_clips": 4,
       "total_scenes": 3
     },
     {
@@ -383,8 +383,8 @@
       "difficulty": "medium",
       "path": "chemistry/medium/prepare_lyophilic_and_lyophobic_sols.json",
       "video_generated": false,
-      "total_clips": 4,
-      "total_scenes": 3
+      "total_clips": 0,
+      "total_scenes": 0
     },
     {
       "id": "chemistry_medium_chem_12_802",
@@ -405,7 +405,7 @@
       "difficulty": "easy",
       "path": "chemistry/easy/study_the_role_of_emulsifying_agents_in_stabilising_oil_emulsions.json",
       "video_generated": false,
-      "total_clips": 3,
+      "total_clips": 4,
       "total_scenes": 3
     },
     {
@@ -416,8 +416,8 @@
       "difficulty": "medium",
       "path": "chemistry/medium/study_concentration_effects_on_sodium_thiosulphate_and_hydrochloric_acid_reaction_rate.json",
       "video_generated": false,
-      "total_clips": 3,
-      "total_scenes": 3
+      "total_clips": 0,
+      "total_scenes": 0
     },
     {
       "id": "chemistry_medium_chem_12_902",
@@ -427,8 +427,8 @@
       "difficulty": "medium",
       "path": "chemistry/medium/study_temperature_effects_on_sodium_thiosulphate_and_hydrochloric_acid_reaction_rate.json",
       "video_generated": false,
-      "total_clips": 3,
-      "total_scenes": 3
+      "total_clips": 0,
+      "total_scenes": 0
     },
     {
       "id": "chemistry_hard_chem_12_903",
@@ -438,8 +438,8 @@
       "difficulty": "hard",
       "path": "chemistry/hard/study_iodide_and_hydrogen_peroxide_clock_reaction_at_different_concentrations.json",
       "video_generated": false,
-      "total_clips": 4,
-      "total_scenes": 3
+      "total_clips": 0,
+      "total_scenes": 0
     },
     {
       "id": "chemistry_hard_chem_12_904",
@@ -449,8 +449,8 @@
       "difficulty": "hard",
       "path": "chemistry/hard/study_potassium_iodate_and_sodium_sulphite_clock_reaction.json",
       "video_generated": false,
-      "total_clips": 4,
-      "total_scenes": 3
+      "total_clips": 0,
+      "total_scenes": 0
     },
     {
       "id": "chemistry_medium_chem_12_1001",
@@ -482,8 +482,8 @@
       "difficulty": "hard",
       "path": "chemistry/hard/study_cell_potential_of_zn_zn2_cu2_cu_as_electrolyte_concentration_changes.json",
       "video_generated": false,
-      "total_clips": 4,
-      "total_scenes": 3
+      "total_clips": 0,
+      "total_scenes": 0
     },
     {
       "id": "physics_medium_phy_11_001",

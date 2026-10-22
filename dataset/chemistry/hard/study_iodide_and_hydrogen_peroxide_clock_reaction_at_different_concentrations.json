@@ -5,15 +5,15 @@
   "class_level": 12,
   "difficulty": "hard",
   "chapter": "Chemical Kinetics",
-  "ncert_reference": "Manual of Microscale Chemistry Laboratory Kit, Chapter Chemical Kinetics, Experiment 9.3; exact PDF pages to verify during citation pass",
-  "source_file": "Manual_01.pdf",
-  "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Study iodide and hydrogen peroxide clock reaction at different concentrations' and record its manual-defined observations and result.",
+  "ncert_reference": "User-supplied NCERT XII Chemistry lelm102.pdf; PDF pages 6, 7 (1-based). File SHA-256 in data/quantity_source_manifest.json.",
+  "source_file": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm102.pdf",
+  "educational_goal": "Study 'Study iodide and hydrogen peroxide clock reaction at different concentrations' using a selected NCERT XII chemistry protocol, its documented quantities and conditions, and conditional observations; review unresolved doses before rendering.",
   "prerequisites": [
     "chemical kinetics",
     "laboratory observation",
     "microscale chemistry"
   ],
-  "estimated_video_duration_seconds": 12,
+  "estimated_video_duration_seconds": 0,
   "tags": [
     "class-12",
     "manual-01",
@@ -21,117 +21,453 @@
     "9.3"
   ],
   "materials": [
-    "potassium iodide, hydrogen peroxide, sulphuric acid, sodium thiosulphate, starch, volumetric flasks, stopwatch"
+    "potassium iodide",
+    "hydrogen peroxide",
+    "sulphuric acid",
+    "sodium thiosulphate",
+    "fresh starch",
+    "water",
+    "separate stock and reaction flasks",
+    "stopwatch"
   ],
   "safety_notes": [
     "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
     "Wear eye protection and do not taste or directly handle chemicals."
   ],
-  "scenes": [
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "transcribed",
+    "source_ids": [
+      "ncert_lelm102"
+    ],
+    "requires_protocol_selection": true,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "protocol_variants": [
     {
-      "scene_id": "scene_1",
-      "scene_name": "Setup and Preparation",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Study iodide and hydrogen peroxide clock reaction at different concentrations, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
-      "image_local": "images/chemistry/study_iodide_and_hydrogen_peroxide_clock_reaction_at_different_concentrations_setup.jpg",
-      "image_placeholder": true,
-      "steps": [
+      "variant_id": "mixture_b",
+      "title": "Iodide clock mixture B",
+      "source_id": "ncert_lelm102",
+      "source_experiment": "2.2",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
         {
-          "step_id": "scene_1_step_1",
-          "step_number": 1,
-          "description": "Prepare sodium thiosulphate, potassium iodide, acid, hydrogen peroxide, and starch solutions as specified.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "observation",
-          "moving_objects": [
-            "potassium iodide, hydrogen peroxide, sulphuric acid, sodium thiosulphate, starch, volumetric flasks, stopwatch"
+          "instruction": "Prepare stock A in a 500 mL flask: 25 mL 3% hydrogen peroxide, 25 mL 2.5 M sulphuric acid, 5 mL fresh starch solution and 195 mL water.",
+          "observation": "Stock A is separate from the reaction flask.",
+          "quantities": [
+            {
+              "reagent": "H2O2",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL",
+              "concentration": "3% (basis not stated)"
+            },
+            {
+              "reagent": "H2SO4",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL",
+              "concentration": "2.5 M"
+            },
+            {
+              "reagent": "starch solution",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "mL"
+            },
+            {
+              "reagent": "water",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 195,
+              "unit": "mL"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "observation",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
-        }
-      ]
-    },
-    {
-      "scene_id": "scene_2",
-      "scene_name": "Main Procedure",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Study iodide and hydrogen peroxide clock reaction at different concentrations, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "",
-      "image_local": "",
-      "image_placeholder": true,
-      "steps": [
-        {
-          "step_id": "scene_2_step_2",
-          "step_number": 2,
-          "description": "Combine measured volumes in a series of beakers with different iodide concentrations.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "colour_change",
-          "moving_objects": [
-            "potassium iodide, hydrogen peroxide, sulphuric acid, sodium thiosulphate, starch, volumetric flasks, stopwatch"
+          "sample_id": "stock_A",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 6,
+              "experiment": "2.2"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "colour_change",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         },
         {
-          "step_id": "scene_2_step_3",
-          "step_number": 3,
-          "description": "Start timing when the reaction mixture is added and record when the intense blue starch-iodine color appears.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "colour_change",
-          "moving_objects": [
-            "potassium iodide, hydrogen peroxide, sulphuric acid, sodium thiosulphate, starch, volumetric flasks, stopwatch"
+          "instruction": "Prepare stock B in a separate 250 mL flask: 10 mL 0.04 M thiosulphate, 10 mL 0.1 M KI and 80 mL water.",
+          "observation": "This is a 100 mL stock mixture, not the final reaction charge.",
+          "quantities": [
+            {
+              "reagent": "thiosulphate",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "mL",
+              "concentration": "0.04 M"
+            },
+            {
+              "reagent": "KI",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "mL",
+              "concentration": "0.1 M"
+            },
+            {
+              "reagent": "water",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 80,
+              "unit": "mL"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "colour_change",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "sample_id": "stock_B",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 7,
+              "experiment": "2.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Combine 25 mL A with 25 mL B in fresh reaction flask E; stir and time from halfway through the second transfer.",
+          "observation": "Blue colour appears after the clock delay; repeat with fresh aliquots and average measured readings.",
+          "quantities": [
+            {
+              "reagent": "stock A",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL"
+            },
+            {
+              "reagent": "stock B",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 7,
+              "experiment": "2.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         }
       ]
     },
     {
-      "scene_id": "scene_3",
-      "scene_name": "Observation and Result",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Study iodide and hydrogen peroxide clock reaction at different concentrations, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "",
-      "image_local": "",
-      "image_placeholder": true,
-      "steps": [
+      "variant_id": "mixture_c",
+      "title": "Iodide clock mixture C",
+      "source_id": "ncert_lelm102",
+      "source_experiment": "2.2",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
         {
-          "step_id": "scene_3_step_4",
-          "step_number": 4,
-          "description": "Plot inverse time against iodide concentration and interpret the rate trend.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "observation",
-          "moving_objects": [
-            "potassium iodide, hydrogen peroxide, sulphuric acid, sodium thiosulphate, starch, volumetric flasks, stopwatch"
+          "instruction": "Prepare stock A in a 500 mL flask: 25 mL 3% hydrogen peroxide, 25 mL 2.5 M sulphuric acid, 5 mL fresh starch solution and 195 mL water.",
+          "observation": "Stock A is separate from the reaction flask.",
+          "quantities": [
+            {
+              "reagent": "H2O2",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL",
+              "concentration": "3% (basis not stated)"
+            },
+            {
+              "reagent": "H2SO4",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL",
+              "concentration": "2.5 M"
+            },
+            {
+              "reagent": "starch solution",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "mL"
+            },
+            {
+              "reagent": "water",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 195,
+              "unit": "mL"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "observation",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "sample_id": "stock_A",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 6,
+              "experiment": "2.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Prepare stock C in a separate 250 mL flask: 10 mL 0.04 M thiosulphate, 20 mL 0.1 M KI and 70 mL water.",
+          "observation": "This is a 100 mL stock mixture, not the final reaction charge.",
+          "quantities": [
+            {
+              "reagent": "thiosulphate",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "mL",
+              "concentration": "0.04 M"
+            },
+            {
+              "reagent": "KI",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 20,
+              "unit": "mL",
+              "concentration": "0.1 M"
+            },
+            {
+              "reagent": "water",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 70,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "stock_C",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 7,
+              "experiment": "2.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Combine 25 mL A with 25 mL C in fresh reaction flask E; stir and time from halfway through the second transfer.",
+          "observation": "Blue colour appears after the clock delay; repeat with fresh aliquots and average measured readings.",
+          "quantities": [
+            {
+              "reagent": "stock A",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL"
+            },
+            {
+              "reagent": "stock C",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 7,
+              "experiment": "2.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "mixture_d",
+      "title": "Iodide clock mixture D",
+      "source_id": "ncert_lelm102",
+      "source_experiment": "2.2",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
+        {
+          "instruction": "Prepare stock A in a 500 mL flask: 25 mL 3% hydrogen peroxide, 25 mL 2.5 M sulphuric acid, 5 mL fresh starch solution and 195 mL water.",
+          "observation": "Stock A is separate from the reaction flask.",
+          "quantities": [
+            {
+              "reagent": "H2O2",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL",
+              "concentration": "3% (basis not stated)"
+            },
+            {
+              "reagent": "H2SO4",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL",
+              "concentration": "2.5 M"
+            },
+            {
+              "reagent": "starch solution",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "mL"
+            },
+            {
+              "reagent": "water",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 195,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "stock_A",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 6,
+              "experiment": "2.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Prepare stock D in a separate 250 mL flask: 10 mL 0.04 M thiosulphate, 30 mL 0.1 M KI and 60 mL water.",
+          "observation": "This is a 100 mL stock mixture, not the final reaction charge.",
+          "quantities": [
+            {
+              "reagent": "thiosulphate",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "mL",
+              "concentration": "0.04 M"
+            },
+            {
+              "reagent": "KI",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 30,
+              "unit": "mL",
+              "concentration": "0.1 M"
+            },
+            {
+              "reagent": "water",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 60,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "stock_D",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 7,
+              "experiment": "2.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Combine 25 mL A with 25 mL D in fresh reaction flask E; stir and time from halfway through the second transfer.",
+          "observation": "Blue colour appears after the clock delay; repeat with fresh aliquots and average measured readings.",
+          "quantities": [
+            {
+              "reagent": "stock A",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL"
+            },
+            {
+              "reagent": "stock D",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 7,
+              "experiment": "2.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         }
       ]
     }
   ],
-  "prompt_templates_used": [
-    "colour_change",
-    "observation"
+  "selected_protocol_variant": null,
+  "procedure_steps": [
+    {
+      "step_id": 1,
+      "instruction": "Select one source-backed protocol variant and identify its sample and reagents before rendering.",
+      "observation": "This catalogue overview is not an executable combined procedure."
+    },
+    {
+      "step_id": 2,
+      "instruction": "Resolve unspecified doses, source conflicts and sample/reference-image requirements for the selected variant.",
+      "observation": "Unknown quantities remain unset; alternatives and fresh aliquots remain separate."
+    },
+    {
+      "step_id": 3,
+      "instruction": "Use only the selected variant's source-evidenced steps after scientific review.",
+      "observation": "Do not concatenate the alternative tests into one vessel or invent a universal positive outcome."
+    }
   ],
-  "total_clips": 4,
-  "total_scenes": 3,
+  "source_experiment_id": "chem_12_903",
+  "scenes": [],
+  "prompt_templates_used": [],
+  "total_clips": 0,
+  "total_scenes": 0,
   "status": "dataset_only",
   "video_generated": false,
   "video_path": "",

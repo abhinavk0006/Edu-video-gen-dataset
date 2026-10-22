@@ -32,6 +32,40 @@
     "Wear goggles and follow the reagent label.",
     "Use a pipette filler rather than mouth pipetting."
   ],
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "not_covered",
+    "source_ids": [],
+    "requires_protocol_selection": false,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "procedure_steps": [
+    {
+      "step_id": 1,
+      "instruction": "Calculate and weigh the required mass of a suitable soluble reagent.",
+      "observation": "The balance reading is recorded to the required precision."
+    },
+    {
+      "step_id": 2,
+      "instruction": "Dissolve the reagent in a small volume of distilled water in a beaker.",
+      "observation": "The solid dissolves to form a clear or uniformly colored solution."
+    },
+    {
+      "step_id": 3,
+      "instruction": "Transfer the solution quantitatively into a volumetric flask and rinse the beaker.",
+      "observation": "Rinse portions are added so the dissolved material is transferred completely."
+    },
+    {
+      "step_id": 4,
+      "instruction": "Make the volume up to the calibration mark and mix by inversion.",
+      "observation": "A homogeneous standard solution with known concentration is obtained."
+    }
+  ],
+  "source_experiment_id": "chem_11_001",
   "scenes": [
     {
       "scene_id": "scene_1",
@@ -48,6 +82,7 @@
           "description": "Calculate and weigh the required mass of a suitable soluble reagent.",
           "observation": "The balance reading is recorded to the required precision.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "colour_change",
           "moving_objects": [
             "analytical balance",
@@ -77,6 +112,7 @@
           "description": "Dissolve the reagent in a small volume of distilled water in a beaker.",
           "observation": "The solid dissolves to form a clear or uniformly colored solution.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "colour_change",
           "moving_objects": [
             "analytical balance",
@@ -95,6 +131,7 @@
           "description": "Transfer the solution quantitatively into a volumetric flask and rinse the beaker.",
           "observation": "Rinse portions are added so the dissolved material is transferred completely.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "colour_change",
           "moving_objects": [
             "analytical balance",
@@ -124,6 +161,7 @@
           "description": "Make the volume up to the calibration mark and mix by inversion.",
           "observation": "A homogeneous standard solution with known concentration is obtained.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "state_change",
           "moving_objects": [
             "analytical balance",

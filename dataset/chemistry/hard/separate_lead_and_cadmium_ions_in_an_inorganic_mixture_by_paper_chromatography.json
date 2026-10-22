@@ -5,15 +5,15 @@
   "class_level": 12,
   "difficulty": "hard",
   "chapter": "Chromatography",
-  "ncert_reference": "Manual of Microscale Chemistry Laboratory Kit, Chapter Chromatography, Experiment 5.2; exact PDF pages to verify during citation pass",
-  "source_file": "Manual_01.pdf",
-  "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Separate lead and cadmium ions in an inorganic mixture by paper chromatography' and record its manual-defined observations and result.",
+  "ncert_reference": "User-supplied NCERT XII Chemistry lelm105.pdf; PDF pages 5 (1-based). File SHA-256 in data/quantity_source_manifest.json.",
+  "source_file": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm105.pdf",
+  "educational_goal": "Study 'Separate lead and cadmium ions in an inorganic mixture by paper chromatography' using a selected NCERT XII chemistry protocol, its documented quantities and conditions, and conditional observations; review unresolved doses before rendering.",
   "prerequisites": [
     "chromatography",
     "laboratory observation",
     "microscale chemistry"
   ],
-  "estimated_video_duration_seconds": 12,
+  "estimated_video_duration_seconds": 9,
   "tags": [
     "class-12",
     "manual-01",
@@ -21,18 +21,215 @@
     "5.2"
   ],
   "materials": [
-    "chromatography paper, jar, capillary tube, lead and cadmium solutions, solvent, developer"
+    "chromatography paper",
+    "developing jar",
+    "capillary",
+    "lead/cadmium nitrate sample",
+    "ethanol",
+    "6 M nitric acid",
+    "water",
+    "ammonium sulphide developer"
   ],
   "safety_notes": [
     "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
     "Wear eye protection and do not taste or directly handle chemicals."
   ],
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "transcribed",
+    "source_ids": [
+      "ncert_lelm105"
+    ],
+    "requires_protocol_selection": false,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "protocol_variants": [
+    {
+      "variant_id": "metal_ions",
+      "title": "Paper separation of lead and cadmium",
+      "source_id": "ncert_lelm105",
+      "source_experiment": "5.2",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
+        {
+          "instruction": "Apply 1-2% lead/cadmium nitrate sample solution to 4 by 17 cm paper with baseline 3 cm from its end.",
+          "observation": "Dry sample spots are above the mobile-phase level.",
+          "quantities": [
+            {
+              "reagent": "sample concentration",
+              "role": "condition",
+              "qualifier": "range",
+              "minimum": 1,
+              "maximum": 2,
+              "unit": "%",
+              "note": "Percentage basis not specified."
+            },
+            {
+              "reagent": "sample spot dose",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "paper",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm105",
+              "file": "lelm105.pdf",
+              "pdf_page": 5,
+              "experiment": "5.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Develop in ethanol : 6 M nitric acid : water, 8:1:1 by volume; keep solvent below the baseline.",
+          "observation": "The source specifies a ratio, not a total mobile-phase volume.",
+          "quantities": [
+            {
+              "reagent": "ethanol : 6 M HNO3 : water",
+              "role": "mixture_ratio",
+              "qualifier": "exact",
+              "value": "8:1:1",
+              "unit": "volume_ratio"
+            }
+          ],
+          "sample_id": "chamber",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm105",
+              "file": "lelm105.pdf",
+              "pdf_page": 5,
+              "experiment": "5.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Mark the solvent front, dry and apply ammonium sulphide developer.",
+          "observation": "Lead gives black and cadmium yellow spots; measure distances for Rf.",
+          "quantities": [
+            {
+              "reagent": "developer dose",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "paper",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm105",
+              "file": "lelm105.pdf",
+              "pdf_page": 5,
+              "experiment": "5.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    }
+  ],
+  "selected_protocol_variant": "metal_ions",
+  "procedure_steps": [
+    {
+      "instruction": "Apply 1-2% lead/cadmium nitrate sample solution to 4 by 17 cm paper with baseline 3 cm from its end.",
+      "observation": "Dry sample spots are above the mobile-phase level.",
+      "quantities": [
+        {
+          "reagent": "sample concentration",
+          "role": "condition",
+          "qualifier": "range",
+          "minimum": 1,
+          "maximum": 2,
+          "unit": "%",
+          "note": "Percentage basis not specified."
+        },
+        {
+          "reagent": "sample spot dose",
+          "role": "addition",
+          "qualifier": "not_specified"
+        }
+      ],
+      "sample_id": "paper",
+      "reaction_scope": "source_defined",
+      "step_id": 1,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm105",
+          "file": "lelm105.pdf",
+          "pdf_page": 5,
+          "experiment": "5.2"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    },
+    {
+      "instruction": "Develop in ethanol : 6 M nitric acid : water, 8:1:1 by volume; keep solvent below the baseline.",
+      "observation": "The source specifies a ratio, not a total mobile-phase volume.",
+      "quantities": [
+        {
+          "reagent": "ethanol : 6 M HNO3 : water",
+          "role": "mixture_ratio",
+          "qualifier": "exact",
+          "value": "8:1:1",
+          "unit": "volume_ratio"
+        }
+      ],
+      "sample_id": "chamber",
+      "reaction_scope": "source_defined",
+      "step_id": 2,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm105",
+          "file": "lelm105.pdf",
+          "pdf_page": 5,
+          "experiment": "5.2"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    },
+    {
+      "instruction": "Mark the solvent front, dry and apply ammonium sulphide developer.",
+      "observation": "Lead gives black and cadmium yellow spots; measure distances for Rf.",
+      "quantities": [
+        {
+          "reagent": "developer dose",
+          "role": "addition",
+          "qualifier": "not_specified"
+        }
+      ],
+      "sample_id": "paper",
+      "reaction_scope": "source_defined",
+      "step_id": 3,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm105",
+          "file": "lelm105.pdf",
+          "pdf_page": 5,
+          "experiment": "5.2"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    }
+  ],
+  "source_experiment_id": "chem_12_502",
   "scenes": [
     {
       "scene_id": "scene_1",
       "scene_name": "Setup and Preparation",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Separate lead and cadmium ions in an inorganic mixture by paper chromatography, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Separate lead and cadmium ions in an inorganic mixture by paper chromatography. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
       "image_local": "images/chemistry/separate_lead_and_cadmium_ions_in_an_inorganic_mixture_by_paper_chromatography_setup.jpg",
       "image_placeholder": true,
@@ -40,18 +237,47 @@
         {
           "step_id": "scene_1_step_1",
           "step_number": 1,
-          "description": "Spot the prepared inorganic mixture and reference solutions on chromatography paper.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "Apply 1-2% lead/cadmium nitrate sample solution to 4 by 17 cm paper with baseline 3 cm from its end.",
+          "observation": "Dry sample spots are above the mobile-phase level.",
           "duration_seconds": 3.0,
-          "motion_type": "colour_change",
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
+          "motion_type": "continuous_action",
           "moving_objects": [
-            "chromatography paper, jar, capillary tube, lead and cadmium solutions, solvent, developer"
+            "chromatography paper",
+            "developing jar",
+            "capillary"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "colour_change",
+          "key_visual": "Dry sample spots are above the mobile-phase level.",
+          "prompt_template": "continuous_action",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "sample concentration",
+              "role": "condition",
+              "qualifier": "range",
+              "minimum": 1,
+              "maximum": 2,
+              "unit": "%",
+              "note": "Percentage basis not specified."
+            },
+            {
+              "reagent": "sample spot dose",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm105",
+              "file": "lelm105.pdf",
+              "pdf_page": 5,
+              "experiment": "5.2"
+            }
+          ],
+          "sample_id": "paper",
+          "reaction_scope": "source_defined"
         }
       ]
     },
@@ -59,7 +285,7 @@
       "scene_id": "scene_2",
       "scene_name": "Main Procedure",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Separate lead and cadmium ions in an inorganic mixture by paper chromatography, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Separate lead and cadmium ions in an inorganic mixture by paper chromatography. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "",
       "image_local": "",
       "image_placeholder": true,
@@ -67,34 +293,40 @@
         {
           "step_id": "scene_2_step_2",
           "step_number": 2,
-          "description": "Develop the paper in the prescribed solvent while keeping the spots above the solvent level.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "Develop in ethanol : 6 M nitric acid : water, 8:1:1 by volume; keep solvent below the baseline.",
+          "observation": "The source specifies a ratio, not a total mobile-phase volume.",
           "duration_seconds": 3.0,
-          "motion_type": "observation",
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
+          "motion_type": "fluid_dynamics",
           "moving_objects": [
-            "chromatography paper, jar, capillary tube, lead and cadmium solutions, solvent, developer"
+            "chromatography paper",
+            "developing jar",
+            "capillary"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "observation",
+          "key_visual": "The source specifies a ratio, not a total mobile-phase volume.",
+          "prompt_template": "fluid_dynamics",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
-        },
-        {
-          "step_id": "scene_2_step_3",
-          "step_number": 3,
-          "description": "Remove and dry the paper, then locate the separated cation spots with the specified developer.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "observation",
-          "moving_objects": [
-            "chromatography paper, jar, capillary tube, lead and cadmium solutions, solvent, developer"
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "ethanol : 6 M HNO3 : water",
+              "role": "mixture_ratio",
+              "qualifier": "exact",
+              "value": "8:1:1",
+              "unit": "volume_ratio"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "observation",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm105",
+              "file": "lelm105.pdf",
+              "pdf_page": 5,
+              "experiment": "5.2"
+            }
+          ],
+          "sample_id": "chamber",
+          "reaction_scope": "source_defined"
         }
       ]
     },
@@ -102,35 +334,55 @@
       "scene_id": "scene_3",
       "scene_name": "Observation and Result",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Separate lead and cadmium ions in an inorganic mixture by paper chromatography, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Separate lead and cadmium ions in an inorganic mixture by paper chromatography. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "",
       "image_local": "",
       "image_placeholder": true,
       "steps": [
         {
-          "step_id": "scene_3_step_4",
-          "step_number": 4,
-          "description": "Compare positions or Rf values with references to identify the constituents.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "step_id": "scene_3_step_3",
+          "step_number": 3,
+          "description": "Mark the solvent front, dry and apply ammonium sulphide developer.",
+          "observation": "Lead gives black and cadmium yellow spots; measure distances for Rf.",
           "duration_seconds": 3.0,
-          "motion_type": "observation",
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
+          "motion_type": "continuous_action",
           "moving_objects": [
-            "chromatography paper, jar, capillary tube, lead and cadmium solutions, solvent, developer"
+            "chromatography paper",
+            "developing jar",
+            "capillary"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "observation",
+          "key_visual": "Lead gives black and cadmium yellow spots; measure distances for Rf.",
+          "prompt_template": "continuous_action",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "developer dose",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm105",
+              "file": "lelm105.pdf",
+              "pdf_page": 5,
+              "experiment": "5.2"
+            }
+          ],
+          "sample_id": "paper",
+          "reaction_scope": "source_defined"
         }
       ]
     }
   ],
   "prompt_templates_used": [
-    "colour_change",
-    "observation"
+    "continuous_action",
+    "fluid_dynamics"
   ],
-  "total_clips": 4,
+  "total_clips": 3,
   "total_scenes": 3,
   "status": "dataset_only",
   "video_generated": false,

@@ -5,15 +5,15 @@
   "class_level": 12,
   "difficulty": "medium",
   "chapter": "Qualitative Analysis (Organic)",
-  "ncert_reference": "Manual of Microscale Chemistry Laboratory Kit, Chapter Qualitative Analysis (Organic), Experiment 4.2; exact PDF pages to verify during citation pass",
-  "source_file": "Manual_01.pdf",
-  "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Identify one functional group in an organic compound' and record its manual-defined observations and result.",
+  "ncert_reference": "User-supplied NCERT XII Chemistry lelm108.pdf; PDF pages 2, 4, 5, 6, 9, 10, 11, 13 (1-based). File SHA-256 in data/quantity_source_manifest.json.",
+  "source_file": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm108.pdf",
+  "educational_goal": "Study 'Identify one functional group in an organic compound' using a selected NCERT XII chemistry protocol, its documented quantities and conditions, and conditional observations; review unresolved doses before rendering.",
   "prerequisites": [
     "qualitative analysis (organic)",
     "laboratory observation",
     "microscale chemistry"
   ],
-  "estimated_video_duration_seconds": 9,
+  "estimated_video_duration_seconds": 0,
   "tags": [
     "class-12",
     "manual-01",
@@ -21,101 +21,1099 @@
     "4.2"
   ],
   "materials": [
-    "unknown organic compound, micro test tubes, droppers, 2,4-DNP, ceric ammonium nitrate, ferric chloride, sodium bicarbonate"
+    "identified organic sample",
+    "test tubes sized for the chosen protocol",
+    "selected functional-group reagents",
+    "water bath"
   ],
   "safety_notes": [
     "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
     "Wear eye protection and do not taste or directly handle chemicals."
   ],
-  "scenes": [
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "partial",
+    "source_ids": [
+      "ncert_lelm108"
+    ],
+    "requires_protocol_selection": true,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred.",
+      "Selected test/preparation branches are transcribed; aggregate entry is not an exhaustive executable protocol. Untranscribed branches require source review."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "protocol_variants": [
     {
-      "scene_id": "scene_1",
-      "scene_name": "Setup and Preparation",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Identify one functional group in an organic compound, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
-      "image_local": "images/chemistry/identify_one_functional_group_in_an_organic_compound_setup.jpg",
-      "image_placeholder": true,
-      "steps": [
+      "variant_id": "bromine",
+      "title": "Unsaturation / bromine",
+      "source_id": "ncert_lelm108",
+      "source_experiment": "8.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Choose the analyte and this test branch explicitly. Positive outcomes are conditional; use a fresh aliquot, not one tube for every functional-group test."
+      ],
+      "procedure_steps": [
         {
-          "step_id": "scene_1_step_1",
-          "step_number": 1,
-          "description": "Prepare a small sample or solution of the unknown organic compound.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "observation",
-          "moving_objects": [
-            "unknown organic compound, micro test tubes, droppers, 2,4-DNP, ceric ammonium nitrate, ferric chloride, sodium bicarbonate"
+          "instruction": "Dissolve 0.1 g solid OR 5 drops liquid sample in 2 mL source-approved solvent; add 2% bromine solution dropwise with shaking.",
+          "observation": "Decolourisation supports unsaturation, subject to the source's interference checks.",
+          "quantities": [
+            {
+              "reagent": "solid sample",
+              "role": "alternative",
+              "qualifier": "exact",
+              "value": 0.1,
+              "unit": "g"
+            },
+            {
+              "reagent": "liquid sample",
+              "role": "alternative",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "drops"
+            },
+            {
+              "reagent": "solvent",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "mL"
+            },
+            {
+              "reagent": "bromine",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "concentration": "2% (basis not stated)"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "observation",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm108",
+              "file": "lelm108.pdf",
+              "pdf_page": 2,
+              "experiment": "8.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         }
       ]
     },
     {
-      "scene_id": "scene_2",
-      "scene_name": "Main Procedure",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Identify one functional group in an organic compound, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "",
-      "image_local": "",
-      "image_placeholder": true,
-      "steps": [
+      "variant_id": "baeyer",
+      "title": "Unsaturation / Baeyer",
+      "source_id": "ncert_lelm108",
+      "source_experiment": "8.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Choose the analyte and this test branch explicitly. Positive outcomes are conditional; use a fresh aliquot, not one tube for every functional-group test."
+      ],
+      "procedure_steps": [
         {
-          "step_id": "scene_2_step_2",
-          "step_number": 2,
-          "description": "Apply the relevant unsaturation, alcoholic, phenolic, carbonyl, carboxylic-acid, or amino-group test from the manual.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "observation",
-          "moving_objects": [
-            "unknown organic compound, micro test tubes, droppers, 2,4-DNP, ceric ammonium nitrate, ferric chloride, sodium bicarbonate"
+          "instruction": "Use 25-30 mg sample in 2 mL water or alcohol-free acetone; add alkaline permanganate prepared from equal volumes 1% KMnO4 and 1% sodium carbonate.",
+          "observation": "Discharge of more than one drop supports unsaturation; both source unsaturation tests are needed.",
+          "quantities": [
+            {
+              "reagent": "sample",
+              "role": "addition",
+              "qualifier": "range",
+              "minimum": 25,
+              "maximum": 30,
+              "unit": "mg"
+            },
+            {
+              "reagent": "solvent",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "mL"
+            },
+            {
+              "reagent": "KMnO4 : Na2CO3",
+              "role": "mixture_ratio",
+              "qualifier": "exact",
+              "value": "1:1",
+              "unit": "volume_ratio",
+              "concentration": "1% each, basis not stated"
+            },
+            {
+              "reagent": "alkaline permanganate",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "observation",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm108",
+              "file": "lelm108.pdf",
+              "pdf_page": 2,
+              "experiment": "8.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         }
       ]
     },
     {
-      "scene_id": "scene_3",
-      "scene_name": "Observation and Result",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Identify one functional group in an organic compound, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "",
-      "image_local": "",
-      "image_placeholder": true,
-      "steps": [
+      "variant_id": "ceric",
+      "title": "Alcohol / ceric ammonium nitrate",
+      "source_id": "ncert_lelm108",
+      "source_experiment": "8.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Choose the analyte and this test branch explicitly. Positive outcomes are conditional; use a fresh aliquot, not one tube for every functional-group test."
+      ],
+      "procedure_steps": [
         {
-          "step_id": "scene_3_step_3",
-          "step_number": 3,
-          "description": "Observe the specified color, precipitate, gas, or decolorisation response and compare it with the reference result.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "colour_change",
-          "moving_objects": [
-            "unknown organic compound, micro test tubes, droppers, 2,4-DNP, ceric ammonium nitrate, ferric chloride, sodium bicarbonate"
+          "instruction": "Add a few drops ceric ammonium nitrate reagent to 1 mL compound solution.",
+          "observation": "Red colour can be transient and disappears with excess reagent.",
+          "quantities": [
+            {
+              "reagent": "sample solution",
+              "role": "aliquot",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "mL"
+            },
+            {
+              "reagent": "ceric reagent",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "note": "Few drops, not an exact count."
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "colour_change",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm108",
+              "file": "lelm108.pdf",
+              "pdf_page": 4,
+              "experiment": "8.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "iodoform_hypochlorite",
+      "title": "Iodoform / hypochlorite test",
+      "source_id": "ncert_lelm108",
+      "source_experiment": "8.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Choose the analyte and this test branch explicitly. Positive outcomes are conditional; use a fresh aliquot, not one tube for every functional-group test."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "To 0.2 mL compound add 10 mL 10% KI and 10 mL fresh sodium hypochlorite; warm.",
+          "observation": "Yellow iodoform crystals indicate a compatible analyte; do not assert all alcohols test positive.",
+          "quantities": [
+            {
+              "reagent": "compound",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 0.2,
+              "unit": "mL"
+            },
+            {
+              "reagent": "KI solution",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "mL",
+              "concentration": "10% (basis not stated)"
+            },
+            {
+              "reagent": "fresh NaOCl",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm108",
+              "file": "lelm108.pdf",
+              "pdf_page": 4,
+              "experiment": "8.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "iodoform_iodine",
+      "title": "Iodoform / iodine-alkali test",
+      "source_id": "ncert_lelm108",
+      "source_experiment": "8.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Choose the analyte and this test branch explicitly. Positive outcomes are conditional; use a fresh aliquot, not one tube for every functional-group test."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Use 0.1 g solid OR 4-5 drops liquid in 2 mL water; add dioxane dropwise only if needed for homogeneity. Add 2 mL 5% NaOH, then iodine/KI reagent to a persistent dark colour. Follow source heating/endpoint sequence; remove excess iodine with a few drops NaOH, dilute with an equal volume of water and stand 10-15 minutes.",
+          "observation": "Yellow iodoform precipitate is conditional on the analyte. Equal-volume dilution is relative to the current mixture, not a guessed fixed mL dose.",
+          "quantities": [
+            {
+              "reagent": "solid sample",
+              "role": "alternative",
+              "qualifier": "exact",
+              "value": 0.1,
+              "unit": "g"
+            },
+            {
+              "reagent": "liquid sample",
+              "role": "alternative",
+              "qualifier": "range",
+              "minimum": 4,
+              "maximum": 5,
+              "unit": "drops"
+            },
+            {
+              "reagent": "water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "mL"
+            },
+            {
+              "reagent": "NaOH solution",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "mL",
+              "concentration": "5% (basis not stated)"
+            },
+            {
+              "reagent": "iodine/KI",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "note": "Persistent iodine endpoint; no fixed amount."
+            },
+            {
+              "reagent": "dilution water",
+              "role": "relative_dilution",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "current_mixture_volume"
+            },
+            {
+              "reagent": "standing time",
+              "role": "condition",
+              "qualifier": "range",
+              "minimum": 10,
+              "maximum": 15,
+              "unit": "min"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm108",
+              "file": "lelm108.pdf",
+              "pdf_page": 4,
+              "experiment": "8.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "lucas",
+      "title": "Alcohol / Lucas",
+      "source_id": "ncert_lelm108",
+      "source_experiment": "8.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Choose the analyte and this test branch explicitly. Positive outcomes are conditional; use a fresh aliquot, not one tube for every functional-group test."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Mix 1 mL compound with 10 mL Lucas reagent and shake; observe the time of layer/turbidity formation.",
+          "observation": "Tertiary is immediate, secondary about 1-5 minutes, primary slow under source conditions; phase separation is intentional.",
+          "quantities": [
+            {
+              "reagent": "compound",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "mL"
+            },
+            {
+              "reagent": "Lucas reagent",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "stratified",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm108",
+              "file": "lelm108.pdf",
+              "pdf_page": 5,
+              "experiment": "8.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "phenol_ferric",
+      "title": "Phenol / ferric chloride",
+      "source_id": "ncert_lelm108",
+      "source_experiment": "8.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Choose the analyte and this test branch explicitly. Positive outcomes are conditional; use a fresh aliquot, not one tube for every functional-group test."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Add neutral ferric chloride dropwise to 2 mL aqueous or alcoholic sample solution.",
+          "observation": "Blue, green, violet or red depends on the phenol; do not hard-code one universal colour.",
+          "quantities": [
+            {
+              "reagent": "sample solution",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "mL"
+            },
+            {
+              "reagent": "neutral FeCl3",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm108",
+              "file": "lelm108.pdf",
+              "pdf_page": 6,
+              "experiment": "8.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "phthalein",
+      "title": "Phenol / phthalein",
+      "source_id": "ncert_lelm108",
+      "source_experiment": "8.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Choose the analyte and this test branch explicitly. Positive outcomes are conditional; use a fresh aliquot, not one tube for every functional-group test."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Heat 0.1 g sample with 0.1 g phthalic anhydride and 1-2 drops concentrated sulphuric acid in an oil bath for about one minute; cool and transfer into a separate beaker containing 15 mL dilute NaOH.",
+          "observation": "Dye colour depends on compound; excess base can fade the colour.",
+          "quantities": [
+            {
+              "reagent": "sample",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 0.1,
+              "unit": "g"
+            },
+            {
+              "reagent": "phthalic anhydride",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 0.1,
+              "unit": "g"
+            },
+            {
+              "reagent": "conc H2SO4",
+              "role": "addition",
+              "qualifier": "range",
+              "minimum": 1,
+              "maximum": 2,
+              "unit": "drops"
+            },
+            {
+              "reagent": "receiving dilute NaOH",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 15,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm108",
+              "file": "lelm108.pdf",
+              "pdf_page": 6,
+              "experiment": "8.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "dnp",
+      "title": "Carbonyl / 2,4-DNP",
+      "source_id": "ncert_lelm108",
+      "source_experiment": "8.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Choose the analyte and this test branch explicitly. Positive outcomes are conditional; use a fresh aliquot, not one tube for every functional-group test."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Dissolve 2-3 drops liquid OR a few crystals solid in 2-3 mL alcohol; add a few drops alcoholic DNP reagent. If needed warm on a water bath and cool.",
+          "observation": "Yellow/orange/orange-red precipitate supports carbonyl; result depends on sample.",
+          "quantities": [
+            {
+              "reagent": "liquid sample",
+              "role": "alternative",
+              "qualifier": "range",
+              "minimum": 2,
+              "maximum": 3,
+              "unit": "drops"
+            },
+            {
+              "reagent": "solid sample",
+              "role": "alternative",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "alcohol",
+              "role": "addition",
+              "qualifier": "range",
+              "minimum": 2,
+              "maximum": 3,
+              "unit": "mL"
+            },
+            {
+              "reagent": "DNP reagent",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm108",
+              "file": "lelm108.pdf",
+              "pdf_page": 9,
+              "experiment": "8.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "schiff",
+      "title": "Aldehyde / Schiff",
+      "source_id": "ncert_lelm108",
+      "source_experiment": "8.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Choose the analyte and this test branch explicitly. Positive outcomes are conditional; use a fresh aliquot, not one tube for every functional-group test."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Use 3-4 drops liquid or a few solid crystals dissolved in alcohol; add 2-3 drops Schiff reagent.",
+          "observation": "Pink colour supports an aldehyde under the source conditions.",
+          "quantities": [
+            {
+              "reagent": "liquid sample",
+              "role": "alternative",
+              "qualifier": "range",
+              "minimum": 3,
+              "maximum": 4,
+              "unit": "drops"
+            },
+            {
+              "reagent": "solid sample",
+              "role": "alternative",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "alcohol",
+              "role": "addition",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "Schiff reagent",
+              "role": "addition",
+              "qualifier": "range",
+              "minimum": 2,
+              "maximum": 3,
+              "unit": "drops"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm108",
+              "file": "lelm108.pdf",
+              "pdf_page": 9,
+              "experiment": "8.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "fehling",
+      "title": "Aldehyde / Fehling",
+      "source_id": "ncert_lelm108",
+      "source_experiment": "8.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Choose the analyte and this test branch explicitly. Positive outcomes are conditional; use a fresh aliquot, not one tube for every functional-group test."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Mix about 1 mL each Fehling A and B; add 2-3 drops liquid OR about 2 mL solid-sample solution and heat on a water bath for about two minutes.",
+          "observation": "Brick-red precipitate is positive; aromatic aldehydes may not respond.",
+          "quantities": [
+            {
+              "reagent": "Fehling A",
+              "role": "addition",
+              "qualifier": "approximate",
+              "value": 1,
+              "unit": "mL"
+            },
+            {
+              "reagent": "Fehling B",
+              "role": "addition",
+              "qualifier": "approximate",
+              "value": 1,
+              "unit": "mL"
+            },
+            {
+              "reagent": "liquid sample",
+              "role": "alternative",
+              "qualifier": "range",
+              "minimum": 2,
+              "maximum": 3,
+              "unit": "drops"
+            },
+            {
+              "reagent": "solid-sample solution",
+              "role": "alternative",
+              "qualifier": "approximate",
+              "value": 2,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm108",
+              "file": "lelm108.pdf",
+              "pdf_page": 9,
+              "experiment": "8.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "benedict",
+      "title": "Aldehyde / Benedict",
+      "source_id": "ncert_lelm108",
+      "source_experiment": "8.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Choose the analyte and this test branch explicitly. Positive outcomes are conditional; use a fresh aliquot, not one tube for every functional-group test."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Add 5 drops compound/solution to 2 mL Benedict reagent; heat in boiling water for five minutes.",
+          "observation": "Orange-red precipitate is a positive result for a responsive sample.",
+          "quantities": [
+            {
+              "reagent": "sample",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "drops"
+            },
+            {
+              "reagent": "Benedict reagent",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "mL"
+            },
+            {
+              "reagent": "heating time",
+              "role": "condition",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "min"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm108",
+              "file": "lelm108.pdf",
+              "pdf_page": 10,
+              "experiment": "8.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "tollens",
+      "title": "Aldehyde / Tollens",
+      "source_id": "ncert_lelm108",
+      "source_experiment": "8.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Choose the analyte and this test branch explicitly. Positive outcomes are conditional; use a fresh aliquot, not one tube for every functional-group test."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Prepare fresh reagent from 1 mL about 2% silver nitrate and 1-2 drops NaOH; dissolve the oxide with ammonia dropwise, add sample solution and warm on a water bath for about five minutes; no direct flame.",
+          "observation": "A silver mirror supports an aldehyde; silver belongs on the glass surface.",
+          "quantities": [
+            {
+              "reagent": "AgNO3",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "mL",
+              "concentration": "about 2%, basis not stated"
+            },
+            {
+              "reagent": "NaOH",
+              "role": "addition",
+              "qualifier": "range",
+              "minimum": 1,
+              "maximum": 2,
+              "unit": "drops"
+            },
+            {
+              "reagent": "NH4OH",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "note": "Until precipitate dissolves; no fixed amount."
+            },
+            {
+              "reagent": "sample solution",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "localized",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm108",
+              "file": "lelm108.pdf",
+              "pdf_page": 10,
+              "experiment": "8.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "carboxyl_litmus",
+      "title": "Carboxyl / litmus",
+      "source_id": "ncert_lelm108",
+      "source_experiment": "8.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Choose the analyte and this test branch explicitly. Positive outcomes are conditional; use a fresh aliquot, not one tube for every functional-group test."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Use a glass rod to place one drop compound/solution on moist blue litmus paper.",
+          "observation": "The paper turns red; do not turn the parent sample red.",
+          "quantities": [
+            {
+              "reagent": "sample",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "drops"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "localized",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm108",
+              "file": "lelm108.pdf",
+              "pdf_page": 11,
+              "experiment": "8.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "bicarbonate",
+      "title": "Carboxyl / bicarbonate",
+      "source_id": "ncert_lelm108",
+      "source_experiment": "8.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Choose the analyte and this test branch explicitly. Positive outcomes are conditional; use a fresh aliquot, not one tube for every functional-group test."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Add a few drops liquid compound OR a few solid crystals to 2 mL saturated sodium bicarbonate.",
+          "observation": "Effervescence indicates CO2 release for a responsive acid.",
+          "quantities": [
+            {
+              "reagent": "saturated NaHCO3",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "mL"
+            },
+            {
+              "reagent": "sample",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm108",
+              "file": "lelm108.pdf",
+              "pdf_page": 11,
+              "experiment": "8.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "ester",
+      "title": "Carboxyl / ester",
+      "source_id": "ncert_lelm108",
+      "source_experiment": "8.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Choose the analyte and this test branch explicitly. Positive outcomes are conditional; use a fresh aliquot, not one tube for every functional-group test."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Heat about 0.1 g sample with 1 mL ethanol/methanol and 2-3 drops concentrated sulphuric acid on a 50 degrees C water bath for 10-15 minutes; pour into sodium carbonate solution.",
+          "observation": "The source's odour result is nonvisual; do not invent a colour change.",
+          "quantities": [
+            {
+              "reagent": "sample",
+              "role": "addition",
+              "qualifier": "approximate",
+              "value": 0.1,
+              "unit": "g"
+            },
+            {
+              "reagent": "alcohol",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "mL"
+            },
+            {
+              "reagent": "conc H2SO4",
+              "role": "addition",
+              "qualifier": "range",
+              "minimum": 2,
+              "maximum": 3,
+              "unit": "drops"
+            },
+            {
+              "reagent": "Na2CO3 receiver",
+              "role": "addition",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "water bath",
+              "role": "condition",
+              "qualifier": "exact",
+              "value": 50,
+              "unit": "degC"
+            },
+            {
+              "reagent": "heating time",
+              "role": "condition",
+              "qualifier": "range",
+              "minimum": 10,
+              "maximum": 15,
+              "unit": "min"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm108",
+              "file": "lelm108.pdf",
+              "pdf_page": 11,
+              "experiment": "8.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "amine_solubility",
+      "title": "Amine / acid solubility",
+      "source_id": "ncert_lelm108",
+      "source_experiment": "8.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Choose the analyte and this test branch explicitly. Positive outcomes are conditional; use a fresh aliquot, not one tube for every functional-group test."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Shake 1 mL compound with a few drops dilute hydrochloric acid.",
+          "observation": "Solubility change is conditional on the selected compound.",
+          "quantities": [
+            {
+              "reagent": "compound",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "mL"
+            },
+            {
+              "reagent": "dil HCl",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "note": "Few drops."
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm108",
+              "file": "lelm108.pdf",
+              "pdf_page": 13,
+              "experiment": "8.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "carbylamine",
+      "title": "Primary amine / carbylamine (historical method)",
+      "source_id": "ncert_lelm108",
+      "source_experiment": "8.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Choose the analyte and this test branch explicitly. Positive outcomes are conditional; use a fresh aliquot, not one tube for every functional-group test."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "The source uses 2-3 drops compound, 2-3 drops chloroform and an equal volume of 0.5 M alcoholic KOH with gentle heating; use only after specialist review.",
+          "observation": "The source reports an offensive odour, not a visible colour change. Do not depict inhalation or assume a positive test for every amine.",
+          "quantities": [
+            {
+              "reagent": "compound",
+              "role": "addition",
+              "qualifier": "range",
+              "minimum": 2,
+              "maximum": 3,
+              "unit": "drops"
+            },
+            {
+              "reagent": "chloroform",
+              "role": "addition",
+              "qualifier": "range",
+              "minimum": 2,
+              "maximum": 3,
+              "unit": "drops"
+            },
+            {
+              "reagent": "alcoholic KOH",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "concentration": "0.5 M",
+              "note": "Source says equal volume; resolve the comparison and total before numeric planning."
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm108",
+              "file": "lelm108.pdf",
+              "pdf_page": 13,
+              "experiment": "8.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "amine_azo",
+      "title": "Amine / azo dye",
+      "source_id": "ncert_lelm108",
+      "source_experiment": "8.1",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Choose the analyte and this test branch explicitly. Positive outcomes are conditional; use a fresh aliquot, not one tube for every functional-group test."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Dissolve about 0.2 g compound in 2 mL dilute HCl and cool below 5 degrees C; add 2 mL cold 2.5% sodium nitrite. Separately dissolve 0.2 g beta-naphthol in NaOH; slowly add cold diazonium solution to this receiver with shaking.",
+          "observation": "Scarlet-red dye is conditional on a suitable aromatic primary amine.",
+          "quantities": [
+            {
+              "reagent": "compound",
+              "role": "addition",
+              "qualifier": "approximate",
+              "value": 0.2,
+              "unit": "g"
+            },
+            {
+              "reagent": "dil HCl",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "mL"
+            },
+            {
+              "reagent": "NaNO2",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "mL",
+              "concentration": "2.5% (basis not stated)"
+            },
+            {
+              "reagent": "beta-naphthol",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 0.2,
+              "unit": "g"
+            },
+            {
+              "reagent": "NaOH",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm108",
+              "file": "lelm108.pdf",
+              "pdf_page": 13,
+              "experiment": "8.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         }
       ]
     }
   ],
-  "prompt_templates_used": [
-    "colour_change",
-    "observation"
+  "selected_protocol_variant": null,
+  "procedure_steps": [
+    {
+      "step_id": 1,
+      "instruction": "Select one source-backed protocol variant and identify its sample and reagents before rendering.",
+      "observation": "This catalogue overview is not an executable combined procedure."
+    },
+    {
+      "step_id": 2,
+      "instruction": "Resolve unspecified doses, source conflicts and sample/reference-image requirements for the selected variant.",
+      "observation": "Unknown quantities remain unset; alternatives and fresh aliquots remain separate."
+    },
+    {
+      "step_id": 3,
+      "instruction": "Use only the selected variant's source-evidenced steps after scientific review.",
+      "observation": "Do not concatenate the alternative tests into one vessel or invent a universal positive outcome."
+    }
   ],
-  "total_clips": 3,
-  "total_scenes": 3,
+  "source_experiment_id": "chem_12_402",
+  "scenes": [],
+  "prompt_templates_used": [],
+  "total_clips": 0,
+  "total_scenes": 0,
   "status": "dataset_only",
   "video_generated": false,
   "video_path": "",

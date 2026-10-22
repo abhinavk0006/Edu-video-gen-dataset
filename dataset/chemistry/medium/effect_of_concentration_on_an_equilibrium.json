@@ -30,6 +30,40 @@
     "Use teacher-prepared dilute solutions and goggles.",
     "Do not perform with concentrated reagents."
   ],
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "not_covered",
+    "source_ids": [],
+    "requires_protocol_selection": false,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "procedure_steps": [
+    {
+      "step_id": 1,
+      "instruction": "Place equal portions of the equilibrium mixture into labeled test tubes.",
+      "observation": "Each tube begins with a comparable color."
+    },
+    {
+      "step_id": 2,
+      "instruction": "Add a measured amount of reagent to one tube and water to another comparison tube.",
+      "observation": "The tubes now have different concentrations of the reacting species."
+    },
+    {
+      "step_id": 3,
+      "instruction": "Mix gently and compare the colors under the same lighting.",
+      "observation": "The equilibrium mixture shifts color after the concentration change."
+    },
+    {
+      "step_id": 4,
+      "instruction": "Record the direction of the visible shift and identify the applied change.",
+      "observation": "The color change provides qualitative evidence of equilibrium adjustment."
+    }
+  ],
+  "source_experiment_id": "chem_11_002",
   "scenes": [
     {
       "scene_id": "scene_1",
@@ -46,6 +80,7 @@
           "description": "Place equal portions of the equilibrium mixture into labeled test tubes.",
           "observation": "Each tube begins with a comparable color.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "colour_change",
           "moving_objects": [
             "dilute cobalt chloride solution",
@@ -75,6 +110,7 @@
           "description": "Add a measured amount of reagent to one tube and water to another comparison tube.",
           "observation": "The tubes now have different concentrations of the reacting species.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "colour_change",
           "moving_objects": [
             "dilute cobalt chloride solution",
@@ -93,6 +129,7 @@
           "description": "Mix gently and compare the colors under the same lighting.",
           "observation": "The equilibrium mixture shifts color after the concentration change.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "colour_change",
           "moving_objects": [
             "dilute cobalt chloride solution",
@@ -122,6 +159,7 @@
           "description": "Record the direction of the visible shift and identify the applied change.",
           "observation": "The color change provides qualitative evidence of equilibrium adjustment.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "colour_change",
           "moving_objects": [
             "dilute cobalt chloride solution",

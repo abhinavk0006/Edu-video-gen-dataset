@@ -5,15 +5,15 @@
   "class_level": 12,
   "difficulty": "hard",
   "chapter": "Preparation of Compounds",
-  "ncert_reference": "Manual of Microscale Chemistry Laboratory Kit, Chapter Preparation of Compounds, Experiment 6.6; exact PDF pages to verify during citation pass",
-  "source_file": "Manual_01.pdf",
-  "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Prepare phenyl-azo-beta-naphthol' and record its manual-defined observations and result.",
+  "ncert_reference": "User-supplied NCERT XII Chemistry lelm110.pdf; PDF pages 7, 8 (1-based). File SHA-256 in data/quantity_source_manifest.json.",
+  "source_file": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm110.pdf",
+  "educational_goal": "Study 'Prepare phenyl-azo-beta-naphthol' using a selected NCERT XII chemistry protocol, its documented quantities and conditions, and conditional observations; review unresolved doses before rendering.",
   "prerequisites": [
     "preparation of compounds",
     "laboratory observation",
     "microscale chemistry"
   ],
-  "estimated_video_duration_seconds": 9,
+  "estimated_video_duration_seconds": 12,
   "tags": [
     "class-12",
     "manual-01",
@@ -21,18 +21,368 @@
     "6.6"
   ],
   "materials": [
-    "aniline, dilute hydrochloric acid, sodium nitrite, beta-naphthol, alkali, ice bath, filter"
+    "aniline",
+    "concentrated hydrochloric acid",
+    "sodium nitrite",
+    "beta-naphthol",
+    "10% NaOH",
+    "water",
+    "ice",
+    "separate preparation and receiving beakers",
+    "filter"
   ],
   "safety_notes": [
     "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
     "Wear eye protection and do not taste or directly handle chemicals."
   ],
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "transcribed",
+    "source_ids": [
+      "ncert_lelm110"
+    ],
+    "requires_protocol_selection": false,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "protocol_variants": [
+    {
+      "variant_id": "azo_coupling",
+      "title": "Phenyl-azo-beta-naphthol",
+      "source_id": "ncert_lelm110",
+      "source_experiment": "10.4",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
+        {
+          "instruction": "Combine 6.5 mL concentrated HCl, 6.5 mL water and 2 mL aniline as specified; cool to 0-5 degrees C.",
+          "observation": "Diazotisation uses a chilled aniline preparation.",
+          "quantities": [
+            {
+              "reagent": "conc HCl",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 6.5,
+              "unit": "mL"
+            },
+            {
+              "reagent": "water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 6.5,
+              "unit": "mL"
+            },
+            {
+              "reagent": "aniline",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "mL"
+            },
+            {
+              "reagent": "temperature",
+              "role": "condition",
+              "qualifier": "range",
+              "minimum": 0,
+              "maximum": 5,
+              "unit": "degC"
+            }
+          ],
+          "sample_id": "diazonium",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 7,
+              "experiment": "10.4"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Prepare 1.6 g sodium nitrite in 8 mL water and add to the chilled aniline preparation.",
+          "observation": "The diazonium preparation remains cold.",
+          "quantities": [
+            {
+              "reagent": "NaNO2",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1.6,
+              "unit": "g"
+            },
+            {
+              "reagent": "water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 8,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "diazonium",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 7,
+              "experiment": "10.4"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Separately dissolve 3.2 g beta-naphthol in 18 mL 10% NaOH and add about 25 g crushed ice.",
+          "observation": "This is a separate cold alkaline receiving mixture.",
+          "quantities": [
+            {
+              "reagent": "beta-naphthol",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 3.2,
+              "unit": "g"
+            },
+            {
+              "reagent": "NaOH solution",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 18,
+              "unit": "mL",
+              "concentration": "10% (basis not stated)"
+            },
+            {
+              "reagent": "ice",
+              "role": "addition",
+              "qualifier": "approximate",
+              "value": 25,
+              "unit": "g"
+            }
+          ],
+          "sample_id": "coupling_receiver",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 8,
+              "experiment": "10.4"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Add the chilled diazonium preparation to the cold alkaline beta-naphthol, maintaining the source direction; stand in ice for 30 minutes with occasional shaking, then isolate and recrystallise about a quarter of the product.",
+          "observation": "Orange-red azo product forms.",
+          "quantities": [
+            {
+              "reagent": "standing time",
+              "role": "condition",
+              "qualifier": "exact",
+              "value": 30,
+              "unit": "min"
+            },
+            {
+              "reagent": "product portion",
+              "role": "recrystallisation",
+              "qualifier": "exact",
+              "value": 0.25,
+              "unit": "fraction_of_product"
+            },
+            {
+              "reagent": "glacial acetic acid",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "coupling_receiver",
+          "reaction_scope": "source_defined",
+          "step_id": 4,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 8,
+              "experiment": "10.4"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    }
+  ],
+  "selected_protocol_variant": "azo_coupling",
+  "procedure_steps": [
+    {
+      "instruction": "Combine 6.5 mL concentrated HCl, 6.5 mL water and 2 mL aniline as specified; cool to 0-5 degrees C.",
+      "observation": "Diazotisation uses a chilled aniline preparation.",
+      "quantities": [
+        {
+          "reagent": "conc HCl",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 6.5,
+          "unit": "mL"
+        },
+        {
+          "reagent": "water",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 6.5,
+          "unit": "mL"
+        },
+        {
+          "reagent": "aniline",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 2,
+          "unit": "mL"
+        },
+        {
+          "reagent": "temperature",
+          "role": "condition",
+          "qualifier": "range",
+          "minimum": 0,
+          "maximum": 5,
+          "unit": "degC"
+        }
+      ],
+      "sample_id": "diazonium",
+      "reaction_scope": "source_defined",
+      "step_id": 1,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm110",
+          "file": "lelm110.pdf",
+          "pdf_page": 7,
+          "experiment": "10.4"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    },
+    {
+      "instruction": "Prepare 1.6 g sodium nitrite in 8 mL water and add to the chilled aniline preparation.",
+      "observation": "The diazonium preparation remains cold.",
+      "quantities": [
+        {
+          "reagent": "NaNO2",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 1.6,
+          "unit": "g"
+        },
+        {
+          "reagent": "water",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 8,
+          "unit": "mL"
+        }
+      ],
+      "sample_id": "diazonium",
+      "reaction_scope": "source_defined",
+      "step_id": 2,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm110",
+          "file": "lelm110.pdf",
+          "pdf_page": 7,
+          "experiment": "10.4"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    },
+    {
+      "instruction": "Separately dissolve 3.2 g beta-naphthol in 18 mL 10% NaOH and add about 25 g crushed ice.",
+      "observation": "This is a separate cold alkaline receiving mixture.",
+      "quantities": [
+        {
+          "reagent": "beta-naphthol",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 3.2,
+          "unit": "g"
+        },
+        {
+          "reagent": "NaOH solution",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 18,
+          "unit": "mL",
+          "concentration": "10% (basis not stated)"
+        },
+        {
+          "reagent": "ice",
+          "role": "addition",
+          "qualifier": "approximate",
+          "value": 25,
+          "unit": "g"
+        }
+      ],
+      "sample_id": "coupling_receiver",
+      "reaction_scope": "source_defined",
+      "step_id": 3,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm110",
+          "file": "lelm110.pdf",
+          "pdf_page": 8,
+          "experiment": "10.4"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    },
+    {
+      "instruction": "Add the chilled diazonium preparation to the cold alkaline beta-naphthol, maintaining the source direction; stand in ice for 30 minutes with occasional shaking, then isolate and recrystallise about a quarter of the product.",
+      "observation": "Orange-red azo product forms.",
+      "quantities": [
+        {
+          "reagent": "standing time",
+          "role": "condition",
+          "qualifier": "exact",
+          "value": 30,
+          "unit": "min"
+        },
+        {
+          "reagent": "product portion",
+          "role": "recrystallisation",
+          "qualifier": "exact",
+          "value": 0.25,
+          "unit": "fraction_of_product"
+        },
+        {
+          "reagent": "glacial acetic acid",
+          "role": "addition",
+          "qualifier": "not_specified"
+        }
+      ],
+      "sample_id": "coupling_receiver",
+      "reaction_scope": "source_defined",
+      "step_id": 4,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm110",
+          "file": "lelm110.pdf",
+          "pdf_page": 8,
+          "experiment": "10.4"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    }
+  ],
+  "source_experiment_id": "chem_12_606",
   "scenes": [
     {
       "scene_id": "scene_1",
       "scene_name": "Setup and Preparation",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare phenyl-azo-beta-naphthol, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Prepare phenyl-azo-beta-naphthol. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
       "image_local": "images/chemistry/prepare_phenyl_azo_beta_naphthol_setup.jpg",
       "image_placeholder": true,
@@ -40,18 +390,62 @@
         {
           "step_id": "scene_1_step_1",
           "step_number": 1,
-          "description": "Diazotise aniline with nitrous acid at 0-5 degrees C as specified.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "Combine 6.5 mL concentrated HCl, 6.5 mL water and 2 mL aniline as specified; cool to 0-5 degrees C.",
+          "observation": "Diazotisation uses a chilled aniline preparation.",
           "duration_seconds": 3.0,
-          "motion_type": "observation",
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
+          "motion_type": "state_change",
           "moving_objects": [
-            "aniline, dilute hydrochloric acid, sodium nitrite, beta-naphthol, alkali, ice bath, filter"
+            "aniline",
+            "concentrated hydrochloric acid",
+            "sodium nitrite"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "observation",
+          "key_visual": "Diazotisation uses a chilled aniline preparation.",
+          "prompt_template": "state_change",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "conc HCl",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 6.5,
+              "unit": "mL"
+            },
+            {
+              "reagent": "water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 6.5,
+              "unit": "mL"
+            },
+            {
+              "reagent": "aniline",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "mL"
+            },
+            {
+              "reagent": "temperature",
+              "role": "condition",
+              "qualifier": "range",
+              "minimum": 0,
+              "maximum": 5,
+              "unit": "degC"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 7,
+              "experiment": "10.4"
+            }
+          ],
+          "sample_id": "diazonium",
+          "reaction_scope": "source_defined"
         }
       ]
     },
@@ -59,7 +453,7 @@
       "scene_id": "scene_2",
       "scene_name": "Main Procedure",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare phenyl-azo-beta-naphthol, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Prepare phenyl-azo-beta-naphthol. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "",
       "image_local": "",
       "image_placeholder": true,
@@ -67,18 +461,100 @@
         {
           "step_id": "scene_2_step_2",
           "step_number": 2,
-          "description": "Add the diazonium solution to beta-naphthol in alkaline medium.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "Prepare 1.6 g sodium nitrite in 8 mL water and add to the chilled aniline preparation.",
+          "observation": "The diazonium preparation remains cold.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "state_change",
           "moving_objects": [
-            "aniline, dilute hydrochloric acid, sodium nitrite, beta-naphthol, alkali, ice bath, filter"
+            "aniline",
+            "concentrated hydrochloric acid",
+            "sodium nitrite"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "key_visual": "The diazonium preparation remains cold.",
           "prompt_template": "state_change",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "NaNO2",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1.6,
+              "unit": "g"
+            },
+            {
+              "reagent": "water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 8,
+              "unit": "mL"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 7,
+              "experiment": "10.4"
+            }
+          ],
+          "sample_id": "diazonium",
+          "reaction_scope": "source_defined"
+        },
+        {
+          "step_id": "scene_2_step_3",
+          "step_number": 3,
+          "description": "Separately dissolve 3.2 g beta-naphthol in 18 mL 10% NaOH and add about 25 g crushed ice.",
+          "observation": "This is a separate cold alkaline receiving mixture.",
+          "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
+          "motion_type": "state_change",
+          "moving_objects": [
+            "aniline",
+            "concentrated hydrochloric acid",
+            "sodium nitrite"
+          ],
+          "key_visual": "This is a separate cold alkaline receiving mixture.",
+          "prompt_template": "state_change",
+          "motion_prompt": "",
+          "negative_prompt": "camera movement, blurry, distorted apparatus",
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "beta-naphthol",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 3.2,
+              "unit": "g"
+            },
+            {
+              "reagent": "NaOH solution",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 18,
+              "unit": "mL",
+              "concentration": "10% (basis not stated)"
+            },
+            {
+              "reagent": "ice",
+              "role": "addition",
+              "qualifier": "approximate",
+              "value": 25,
+              "unit": "g"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 8,
+              "experiment": "10.4"
+            }
+          ],
+          "sample_id": "coupling_receiver",
+          "reaction_scope": "source_defined"
         }
       ]
     },
@@ -86,36 +562,69 @@
       "scene_id": "scene_3",
       "scene_name": "Observation and Result",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare phenyl-azo-beta-naphthol, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Prepare phenyl-azo-beta-naphthol. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "",
       "image_local": "",
       "image_placeholder": true,
       "steps": [
         {
-          "step_id": "scene_3_step_3",
-          "step_number": 3,
-          "description": "Observe the azo-dye color, filter the product, wash, dry, and record the yield.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "step_id": "scene_3_step_4",
+          "step_number": 4,
+          "description": "Add the chilled diazonium preparation to the cold alkaline beta-naphthol, maintaining the source direction; stand in ice for 30 minutes with occasional shaking, then isolate and recrystallise about a quarter of the product.",
+          "observation": "Orange-red azo product forms.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "colour_change",
           "moving_objects": [
-            "aniline, dilute hydrochloric acid, sodium nitrite, beta-naphthol, alkali, ice bath, filter"
+            "aniline",
+            "concentrated hydrochloric acid",
+            "sodium nitrite"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "key_visual": "Orange-red azo product forms.",
           "prompt_template": "colour_change",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "standing time",
+              "role": "condition",
+              "qualifier": "exact",
+              "value": 30,
+              "unit": "min"
+            },
+            {
+              "reagent": "product portion",
+              "role": "recrystallisation",
+              "qualifier": "exact",
+              "value": 0.25,
+              "unit": "fraction_of_product"
+            },
+            {
+              "reagent": "glacial acetic acid",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 8,
+              "experiment": "10.4"
+            }
+          ],
+          "sample_id": "coupling_receiver",
+          "reaction_scope": "source_defined"
         }
       ]
     }
   ],
   "prompt_templates_used": [
     "colour_change",
-    "observation",
     "state_change"
   ],
-  "total_clips": 3,
+  "total_clips": 4,
   "total_scenes": 3,
   "status": "dataset_only",
   "video_generated": false,

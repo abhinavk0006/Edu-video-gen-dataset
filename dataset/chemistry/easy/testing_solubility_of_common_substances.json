@@ -31,6 +31,40 @@
     "Do not taste laboratory materials.",
     "Clean spills immediately."
   ],
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "not_covered",
+    "source_ids": [],
+    "requires_protocol_selection": false,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "The supplied Class XII chemistry units do not specify this record's complete procedure and doses; original values are unchanged."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "procedure_steps": [
+    {
+      "step_id": 1,
+      "instruction": "Label one transparent cup for each test substance and add the same volume of water.",
+      "observation": "Each cup starts with a clear, equal-volume water sample."
+    },
+    {
+      "step_id": 2,
+      "instruction": "Add an equal small amount of salt, sugar, or sand to its labeled cup.",
+      "observation": "The solid is visible in each cup before stirring."
+    },
+    {
+      "step_id": 3,
+      "instruction": "Stir each cup for the same amount of time.",
+      "observation": "Salt and sugar disappear into the water, while sand remains visible and settles."
+    },
+    {
+      "step_id": 4,
+      "instruction": "Classify each substance as soluble or insoluble in water.",
+      "observation": "The results can be compared in a simple observation table."
+    }
+  ],
+  "source_experiment_id": "chem_8_001",
   "scenes": [
     {
       "scene_id": "scene_1",
@@ -47,6 +81,7 @@
           "description": "Label one transparent cup for each test substance and add the same volume of water.",
           "observation": "Each cup starts with a clear, equal-volume water sample.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "state_change",
           "moving_objects": [
             "water",
@@ -76,6 +111,7 @@
           "description": "Add an equal small amount of salt, sugar, or sand to its labeled cup.",
           "observation": "The solid is visible in each cup before stirring.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "state_change",
           "moving_objects": [
             "water",
@@ -94,6 +130,7 @@
           "description": "Stir each cup for the same amount of time.",
           "observation": "Salt and sugar disappear into the water, while sand remains visible and settles.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "fluid_dynamics",
           "moving_objects": [
             "water",
@@ -123,6 +160,7 @@
           "description": "Classify each substance as soluble or insoluble in water.",
           "observation": "The results can be compared in a simple observation table.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "colour_change",
           "moving_objects": [
             "water",

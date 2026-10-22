@@ -12,6 +12,7 @@ from scipy import sparse
 from sklearn.metrics.pairwise import cosine_similarity
 
 from query_rag import rank_documents
+from quantity_contract import STEP_FIELDS, quantity_payload, select_protocol
 
 ROOT = Path(__file__).resolve().parents[1]
 DATA_PATH = ROOT / "data" / "chemistry_experiments.json"
@@ -72,6 +73,11 @@ def review_reasons(record: dict[str, Any], step: dict[str, Any]) -> list[str]:
     status = str(record.get("status", "")).strip().lower()
     if status not in REVIEWED_STATUSES:
         reasons.append(f"Experiment source status is {status or 'unspecified'}.")
+    for fact in step.get("quantities", []):
+        if fact.get("qualifier") in {"not_specified", "range", "approximate"}:
+            reasons.append(f"Resolve or explicitly approve {fact['qualifier']} quantity for {fact['reagent']} before numeric dose planning.")
+    if record.get("quantity_review", {}).get("coverage") == "partial":
+        reasons.append("Aggregate protocol coverage is partial; review the selected branch and its prerequisites.")
     for field, label in (("instruction", "procedure"), ("observation", "observation")):
         value = str(step.get(field, "")).strip()
         if not value or PLACEHOLDER_TEXT.search(value):
@@ -98,6 +104,7 @@ def make_step_prompt(record: dict[str, Any], scene: dict[str, Any], step: dict[s
         f"Starting state: {step.get('state_before', '')}",
         f"Perform only this procedure step: {instruction}",
         f"End in this documented state: {observation}",
+        "Source quantity facts: " + json.dumps({key: step[key] for key in STEP_FIELDS if key in step}, ensure_ascii=False),
     ]
     for label, value in (
         ("Target", target),
@@ -186,13 +193,25 @@ def normalize_step(
         "manual_review_required": bool(review_reasons(record, step)),
         "manual_review_reasons": review_reasons(record, step),
         "requires_clip_split": requires_clip_split(str(step.get("action", step.get("instruction", "")))),
+        **{key: step[key] for key in STEP_FIELDS if key in step},
     }
 
 
-def build_bundle(query: str, top_k: int) -> dict[str, Any]:
+def build_bundle(query: str, top_k: int, protocol_selections: dict[str, str] | None = None) -> dict[str, Any]:
     vectorizer, matrix, documents = load_index()
     records = load_canonical_records()
     ranked = rank_documents(query, vectorizer, matrix, documents, top_n=top_k)
+    selections = protocol_selections or {}
+    if len(selections) > top_k:
+        raise ValueError("--top-k must cover all explicitly selected experiments")
+    for experiment_id, variant_id in selections.items():
+        if experiment_id not in records:
+            raise ValueError(f"Unknown explicitly selected experiment {experiment_id}")
+        select_protocol(records[experiment_id], variant_id)
+    # An explicit experiment/protocol choice pins that record, regardless of
+    # vector ranking. Never silently ignore it and render a different experiment.
+    ranked = ([{"id": key, "score": 1.0, "method": "explicit_protocol_selection"} for key in selections]
+              + [item for item in ranked if item["id"] not in selections])[:top_k]
     experiments: list[dict[str, Any]] = []
     prompt_inputs: list[dict[str, Any]] = []
 
@@ -203,7 +222,8 @@ def build_bundle(query: str, top_k: int) -> dict[str, Any]:
             continue
 
         scenes = record.get("scenes", [])
-        procedure_steps = record.get("procedure_steps", [])
+        selection = (protocol_selections or {}).get(experiment_id)
+        procedure_steps = select_protocol(record, selection)
         scene_steps: list[dict[str, Any]] = []
         for step_index, step in enumerate(procedure_steps):
             scene = scenes[min(step_index, len(scenes) - 1)] if scenes else {
@@ -250,7 +270,7 @@ def build_bundle(query: str, top_k: int) -> dict[str, Any]:
             scene_steps.append(prompt_input)
             prompt_inputs.append(prompt_input)
 
-        if not procedure_steps:
+        if not procedure_steps and not record.get("protocol_variants"):
             for scene in scenes:
                 step = {
                     "step_id": f"{scene['scene_id']}_overview",
@@ -279,6 +299,7 @@ def build_bundle(query: str, top_k: int) -> dict[str, Any]:
         experiments.append({
             "experiment_id": experiment_id,
             "retrieval_score": result["score"],
+            "retrieval_method": result.get("method", "tfidf"),
             "title": record["title"],
             "subject": record["subject"],
             "class_level": record["class_level"],
@@ -288,6 +309,11 @@ def build_bundle(query: str, top_k: int) -> dict[str, Any]:
             "manual_review_required": str(record.get("status", "")).strip().lower() not in REVIEWED_STATUSES,
             "source_ids": [source["source_id"] for source in record.get("sources", [])],
             "scenes": scene_bundle,
+            "procedure_steps": procedure_steps,
+            **quantity_payload(record),
+            "selected_protocol_variant": selection or record.get("selected_protocol_variant"),
+            "planning_blocked": bool(record.get("protocol_variants") and not procedure_steps),
+            "planning_block_reason": "Select one protocol variant before building video steps." if record.get("protocol_variants") and not procedure_steps else "",
         })
 
     return {
@@ -305,6 +331,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("query", help="Natural-language experiment query.")
     parser.add_argument("--top-k", type=int, default=3, help="Number of experiments to retrieve.")
     parser.add_argument("--output", default=str(DEFAULT_OUTPUT), help="JSON bundle output path.")
+    parser.add_argument("--protocol", action="append", default=[], metavar="EXPERIMENT_ID=VARIANT_ID", help="Explicit protocol selection; may be repeated. Alternatives are never merged.")
     return parser.parse_args()
 
 
@@ -313,7 +340,8 @@ def main() -> None:
     if args.top_k < 1:
         raise ValueError("--top-k must be at least 1")
 
-    bundle = build_bundle(args.query, args.top_k)
+    selections = dict(item.split("=", 1) for item in args.protocol)
+    bundle = build_bundle(args.query, args.top_k, selections)
     output_path = Path(args.output)
     if not output_path.is_absolute():
         output_path = Path.cwd() / output_path

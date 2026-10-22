@@ -5,15 +5,15 @@
   "class_level": 12,
   "difficulty": "hard",
   "chapter": "Chemical Kinetics",
-  "ncert_reference": "Manual of Microscale Chemistry Laboratory Kit, Chapter Chemical Kinetics, Experiment 9.4; exact PDF pages to verify during citation pass",
-  "source_file": "Manual_01.pdf",
-  "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Study potassium iodate and sodium sulphite clock reaction' and record its manual-defined observations and result.",
+  "ncert_reference": "User-supplied NCERT XII Chemistry lelm102.pdf; PDF pages 9, 10 (1-based). File SHA-256 in data/quantity_source_manifest.json.",
+  "source_file": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm102.pdf",
+  "educational_goal": "Study 'Study potassium iodate and sodium sulphite clock reaction' using a selected NCERT XII chemistry protocol, its documented quantities and conditions, and conditional observations; review unresolved doses before rendering.",
   "prerequisites": [
     "chemical kinetics",
     "laboratory observation",
     "microscale chemistry"
   ],
-  "estimated_video_duration_seconds": 12,
+  "estimated_video_duration_seconds": 0,
   "tags": [
     "class-12",
     "manual-01",
@@ -21,117 +21,556 @@
     "9.4"
   ],
   "materials": [
-    "potassium iodate, sodium sulphite, starch, sulphuric acid, water, beakers, stopwatch"
+    "potassium iodate",
+    "fresh sodium sulphite",
+    "fresh starch",
+    "sulphuric acid",
+    "water",
+    "250 mL flasks",
+    "stopwatch"
   ],
   "safety_notes": [
     "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
     "Wear eye protection and do not taste or directly handle chemicals."
   ],
-  "scenes": [
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "transcribed",
+    "source_ids": [
+      "ncert_lelm102"
+    ],
+    "requires_protocol_selection": true,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "protocol_variants": [
     {
-      "scene_id": "scene_1",
-      "scene_name": "Setup and Preparation",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Study potassium iodate and sodium sulphite clock reaction, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
-      "image_local": "images/chemistry/study_potassium_iodate_and_sodium_sulphite_clock_reaction_setup.jpg",
-      "image_placeholder": true,
-      "steps": [
+      "variant_id": "mixture_b",
+      "title": "Iodate clock mixture B",
+      "source_id": "ncert_lelm102",
+      "source_experiment": "2.3",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
         {
-          "step_id": "scene_1_step_1",
-          "step_number": 1,
-          "description": "Prepare potassium iodate, sodium sulphite, and freshly prepared starch solutions.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "colour_change",
-          "moving_objects": [
-            "potassium iodate, sodium sulphite, starch, sulphuric acid, water, beakers, stopwatch"
+          "instruction": "Prepare stock A: 25 mL 6% potassium iodate, 25 mL 2 M sulphuric acid and 50 mL water in a 250 mL flask.",
+          "observation": "Stock A is separate from the reaction flask.",
+          "quantities": [
+            {
+              "reagent": "KIO3",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL",
+              "concentration": "6% (basis not stated)"
+            },
+            {
+              "reagent": "H2SO4",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL",
+              "concentration": "2 M"
+            },
+            {
+              "reagent": "water",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 50,
+              "unit": "mL"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "colour_change",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
-        }
-      ]
-    },
-    {
-      "scene_id": "scene_2",
-      "scene_name": "Main Procedure",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Study potassium iodate and sodium sulphite clock reaction, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "",
-      "image_local": "",
-      "image_placeholder": true,
-      "steps": [
-        {
-          "step_id": "scene_2_step_2",
-          "step_number": 2,
-          "description": "Mix measured volumes with different potassium iodate concentrations.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "colour_change",
-          "moving_objects": [
-            "potassium iodate, sodium sulphite, starch, sulphuric acid, water, beakers, stopwatch"
+          "sample_id": "stock_A",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 9,
+              "experiment": "2.3"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "colour_change",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         },
         {
-          "step_id": "scene_2_step_3",
-          "step_number": 3,
-          "description": "Record the time required for the blue starch-iodine color to appear.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "colour_change",
-          "moving_objects": [
-            "potassium iodate, sodium sulphite, starch, sulphuric acid, water, beakers, stopwatch"
+          "instruction": "Prepare stock B: 20 mL 6% sodium sulphite, 5 mL 5% starch and 75 mL water in a separate 250 mL flask.",
+          "observation": "This stock totals 100 mL; only an aliquot enters the reaction.",
+          "quantities": [
+            {
+              "reagent": "Na2SO3",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 20,
+              "unit": "mL",
+              "concentration": "6% (basis not stated)"
+            },
+            {
+              "reagent": "starch",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "mL",
+              "concentration": "5% (basis not stated)"
+            },
+            {
+              "reagent": "water",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 75,
+              "unit": "mL"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "colour_change",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "sample_id": "stock_B",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 9,
+              "experiment": "2.3"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Combine 25 mL A and 25 mL B in fresh flask F; stir, time from halfway through addition and record the blue endpoint. Repeat twice with fresh aliquots.",
+          "observation": "Blue endpoint time is measured for this mixture.",
+          "quantities": [
+            {
+              "reagent": "stock A",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL"
+            },
+            {
+              "reagent": "stock B",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 10,
+              "experiment": "2.3"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         }
       ]
     },
     {
-      "scene_id": "scene_3",
-      "scene_name": "Observation and Result",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Study potassium iodate and sodium sulphite clock reaction, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "",
-      "image_local": "",
-      "image_placeholder": true,
-      "steps": [
+      "variant_id": "mixture_c",
+      "title": "Iodate clock mixture C",
+      "source_id": "ncert_lelm102",
+      "source_experiment": "2.3",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
         {
-          "step_id": "scene_3_step_4",
-          "step_number": 4,
-          "description": "Plot inverse time against potassium iodate concentration and draw the manual's conclusion.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "observation",
-          "moving_objects": [
-            "potassium iodate, sodium sulphite, starch, sulphuric acid, water, beakers, stopwatch"
+          "instruction": "Prepare stock A: 25 mL 6% potassium iodate, 25 mL 2 M sulphuric acid and 50 mL water in a 250 mL flask.",
+          "observation": "Stock A is separate from the reaction flask.",
+          "quantities": [
+            {
+              "reagent": "KIO3",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL",
+              "concentration": "6% (basis not stated)"
+            },
+            {
+              "reagent": "H2SO4",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL",
+              "concentration": "2 M"
+            },
+            {
+              "reagent": "water",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 50,
+              "unit": "mL"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "observation",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "sample_id": "stock_A",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 9,
+              "experiment": "2.3"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Prepare stock C: 15 mL 6% sodium sulphite, 5 mL 5% starch and 80 mL water in a separate 250 mL flask.",
+          "observation": "This stock totals 100 mL; only an aliquot enters the reaction.",
+          "quantities": [
+            {
+              "reagent": "Na2SO3",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 15,
+              "unit": "mL",
+              "concentration": "6% (basis not stated)"
+            },
+            {
+              "reagent": "starch",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "mL",
+              "concentration": "5% (basis not stated)"
+            },
+            {
+              "reagent": "water",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 80,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "stock_C",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 9,
+              "experiment": "2.3"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Combine 25 mL A and 25 mL C in fresh flask F; stir, time from halfway through addition and record the blue endpoint. Repeat twice with fresh aliquots.",
+          "observation": "Blue endpoint time is measured for this mixture.",
+          "quantities": [
+            {
+              "reagent": "stock A",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL"
+            },
+            {
+              "reagent": "stock C",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 10,
+              "experiment": "2.3"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "mixture_d",
+      "title": "Iodate clock mixture D",
+      "source_id": "ncert_lelm102",
+      "source_experiment": "2.3",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
+        {
+          "instruction": "Prepare stock A: 25 mL 6% potassium iodate, 25 mL 2 M sulphuric acid and 50 mL water in a 250 mL flask.",
+          "observation": "Stock A is separate from the reaction flask.",
+          "quantities": [
+            {
+              "reagent": "KIO3",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL",
+              "concentration": "6% (basis not stated)"
+            },
+            {
+              "reagent": "H2SO4",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL",
+              "concentration": "2 M"
+            },
+            {
+              "reagent": "water",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 50,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "stock_A",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 9,
+              "experiment": "2.3"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Prepare stock D: 10 mL 6% sodium sulphite, 5 mL 5% starch and 85 mL water in a separate 250 mL flask.",
+          "observation": "This stock totals 100 mL; only an aliquot enters the reaction.",
+          "quantities": [
+            {
+              "reagent": "Na2SO3",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "mL",
+              "concentration": "6% (basis not stated)"
+            },
+            {
+              "reagent": "starch",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "mL",
+              "concentration": "5% (basis not stated)"
+            },
+            {
+              "reagent": "water",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 85,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "stock_D",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 9,
+              "experiment": "2.3"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Combine 25 mL A and 25 mL D in fresh flask F; stir, time from halfway through addition and record the blue endpoint. Repeat twice with fresh aliquots.",
+          "observation": "Blue endpoint time is measured for this mixture.",
+          "quantities": [
+            {
+              "reagent": "stock A",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL"
+            },
+            {
+              "reagent": "stock D",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 10,
+              "experiment": "2.3"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "mixture_e",
+      "title": "Iodate clock mixture E",
+      "source_id": "ncert_lelm102",
+      "source_experiment": "2.3",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
+        {
+          "instruction": "Prepare stock A: 25 mL 6% potassium iodate, 25 mL 2 M sulphuric acid and 50 mL water in a 250 mL flask.",
+          "observation": "Stock A is separate from the reaction flask.",
+          "quantities": [
+            {
+              "reagent": "KIO3",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL",
+              "concentration": "6% (basis not stated)"
+            },
+            {
+              "reagent": "H2SO4",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL",
+              "concentration": "2 M"
+            },
+            {
+              "reagent": "water",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 50,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "stock_A",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 9,
+              "experiment": "2.3"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Prepare stock E: 5 mL 6% sodium sulphite, 5 mL 5% starch and 90 mL water in a separate 250 mL flask.",
+          "observation": "This stock totals 100 mL; only an aliquot enters the reaction.",
+          "quantities": [
+            {
+              "reagent": "Na2SO3",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "mL",
+              "concentration": "6% (basis not stated)"
+            },
+            {
+              "reagent": "starch",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "mL",
+              "concentration": "5% (basis not stated)"
+            },
+            {
+              "reagent": "water",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 90,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "stock_E",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 9,
+              "experiment": "2.3"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Combine 25 mL A and 25 mL E in fresh flask F; stir, time from halfway through addition and record the blue endpoint. Repeat twice with fresh aliquots.",
+          "observation": "Blue endpoint time is measured for this mixture.",
+          "quantities": [
+            {
+              "reagent": "stock A",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL"
+            },
+            {
+              "reagent": "stock E",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 10,
+              "experiment": "2.3"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         }
       ]
     }
   ],
-  "prompt_templates_used": [
-    "colour_change",
-    "observation"
+  "selected_protocol_variant": null,
+  "procedure_steps": [
+    {
+      "step_id": 1,
+      "instruction": "Select one source-backed protocol variant and identify its sample and reagents before rendering.",
+      "observation": "This catalogue overview is not an executable combined procedure."
+    },
+    {
+      "step_id": 2,
+      "instruction": "Resolve unspecified doses, source conflicts and sample/reference-image requirements for the selected variant.",
+      "observation": "Unknown quantities remain unset; alternatives and fresh aliquots remain separate."
+    },
+    {
+      "step_id": 3,
+      "instruction": "Use only the selected variant's source-evidenced steps after scientific review.",
+      "observation": "Do not concatenate the alternative tests into one vessel or invent a universal positive outcome."
+    }
   ],
-  "total_clips": 4,
-  "total_scenes": 3,
+  "source_experiment_id": "chem_12_904",
+  "scenes": [],
+  "prompt_templates_used": [],
+  "total_clips": 0,
+  "total_scenes": 0,
   "status": "dataset_only",
   "video_generated": false,
   "video_path": "",

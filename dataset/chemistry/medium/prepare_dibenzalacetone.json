@@ -5,9 +5,9 @@
   "class_level": 12,
   "difficulty": "medium",
   "chapter": "Preparation of Compounds",
-  "ncert_reference": "Manual of Microscale Chemistry Laboratory Kit, Chapter Preparation of Compounds, Experiment 6.4; exact PDF pages to verify during citation pass",
-  "source_file": "Manual_01.pdf",
-  "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Prepare dibenzalacetone' and record its manual-defined observations and result.",
+  "ncert_reference": "User-supplied NCERT XII Chemistry lelm110.pdf; PDF pages 4 (1-based). File SHA-256 in data/quantity_source_manifest.json.",
+  "source_file": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm110.pdf",
+  "educational_goal": "Study 'Prepare dibenzalacetone' using a selected NCERT XII chemistry protocol, its documented quantities and conditions, and conditional observations; review unresolved doses before rendering.",
   "prerequisites": [
     "preparation of compounds",
     "laboratory observation",
@@ -21,18 +21,316 @@
     "6.4"
   ],
   "materials": [
-    "benzaldehyde, acetone, dilute alkali, beaker, stirrer, filter"
+    "benzaldehyde",
+    "acetone",
+    "sodium hydroxide",
+    "ethanol",
+    "water",
+    "250 mL beaker",
+    "stirrer",
+    "ice bath",
+    "filter"
   ],
   "safety_notes": [
     "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
     "Wear eye protection and do not taste or directly handle chemicals."
   ],
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "transcribed",
+    "source_ids": [
+      "ncert_lelm110"
+    ],
+    "requires_protocol_selection": false,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "protocol_variants": [
+    {
+      "variant_id": "dibenzalacetone",
+      "title": "Dibenzalacetone",
+      "source_id": "ncert_lelm110",
+      "source_experiment": "10.2",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
+        {
+          "instruction": "Dissolve 3.15 g NaOH in 25 mL ethanol and 30 mL water in a 250 mL beaker; cool to 20-25 degrees C.",
+          "observation": "The alkaline mixture is prepared before carbonyl addition.",
+          "quantities": [
+            {
+              "reagent": "NaOH",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 3.15,
+              "unit": "g"
+            },
+            {
+              "reagent": "ethanol",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL"
+            },
+            {
+              "reagent": "water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 30,
+              "unit": "mL"
+            },
+            {
+              "reagent": "temperature",
+              "role": "condition",
+              "qualifier": "range",
+              "minimum": 20,
+              "maximum": 25,
+              "unit": "degC"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 4,
+              "experiment": "10.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Separately mix 3.2 mL benzaldehyde and 2.3 mL acetone; add half this mixture slowly with vigorous stirring, then stir 15 minutes.",
+          "observation": "Fluffy precipitate begins in 1-2 minutes; preserve the unused half separately.",
+          "quantities": [
+            {
+              "reagent": "benzaldehyde",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 3.2,
+              "unit": "mL"
+            },
+            {
+              "reagent": "acetone",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 2.3,
+              "unit": "mL"
+            },
+            {
+              "reagent": "carbonyl mixture",
+              "role": "transfer",
+              "qualifier": "exact",
+              "value": 0.5,
+              "unit": "fraction_of_prepared_stock"
+            },
+            {
+              "reagent": "stirring time",
+              "role": "condition",
+              "qualifier": "exact",
+              "value": 15,
+              "unit": "min"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 4,
+              "experiment": "10.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Add the remaining half and stir 30 minutes; filter, wash cold and recrystallise from a small solvent portion.",
+          "observation": "Pale-yellow dibenzalacetone is isolated.",
+          "quantities": [
+            {
+              "reagent": "remaining stock",
+              "role": "transfer",
+              "qualifier": "exact",
+              "value": 0.5,
+              "unit": "fraction_of_prepared_stock"
+            },
+            {
+              "reagent": "stirring time",
+              "role": "condition",
+              "qualifier": "exact",
+              "value": 30,
+              "unit": "min"
+            },
+            {
+              "reagent": "recrystallisation solvent",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 4,
+              "experiment": "10.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    }
+  ],
+  "selected_protocol_variant": "dibenzalacetone",
+  "procedure_steps": [
+    {
+      "instruction": "Dissolve 3.15 g NaOH in 25 mL ethanol and 30 mL water in a 250 mL beaker; cool to 20-25 degrees C.",
+      "observation": "The alkaline mixture is prepared before carbonyl addition.",
+      "quantities": [
+        {
+          "reagent": "NaOH",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 3.15,
+          "unit": "g"
+        },
+        {
+          "reagent": "ethanol",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 25,
+          "unit": "mL"
+        },
+        {
+          "reagent": "water",
+          "role": "addition",
+          "qualifier": "exact",
+          "value": 30,
+          "unit": "mL"
+        },
+        {
+          "reagent": "temperature",
+          "role": "condition",
+          "qualifier": "range",
+          "minimum": 20,
+          "maximum": 25,
+          "unit": "degC"
+        }
+      ],
+      "sample_id": "reaction",
+      "reaction_scope": "source_defined",
+      "step_id": 1,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm110",
+          "file": "lelm110.pdf",
+          "pdf_page": 4,
+          "experiment": "10.2"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    },
+    {
+      "instruction": "Separately mix 3.2 mL benzaldehyde and 2.3 mL acetone; add half this mixture slowly with vigorous stirring, then stir 15 minutes.",
+      "observation": "Fluffy precipitate begins in 1-2 minutes; preserve the unused half separately.",
+      "quantities": [
+        {
+          "reagent": "benzaldehyde",
+          "role": "stock_preparation",
+          "qualifier": "exact",
+          "value": 3.2,
+          "unit": "mL"
+        },
+        {
+          "reagent": "acetone",
+          "role": "stock_preparation",
+          "qualifier": "exact",
+          "value": 2.3,
+          "unit": "mL"
+        },
+        {
+          "reagent": "carbonyl mixture",
+          "role": "transfer",
+          "qualifier": "exact",
+          "value": 0.5,
+          "unit": "fraction_of_prepared_stock"
+        },
+        {
+          "reagent": "stirring time",
+          "role": "condition",
+          "qualifier": "exact",
+          "value": 15,
+          "unit": "min"
+        }
+      ],
+      "sample_id": "reaction",
+      "reaction_scope": "source_defined",
+      "step_id": 2,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm110",
+          "file": "lelm110.pdf",
+          "pdf_page": 4,
+          "experiment": "10.2"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    },
+    {
+      "instruction": "Add the remaining half and stir 30 minutes; filter, wash cold and recrystallise from a small solvent portion.",
+      "observation": "Pale-yellow dibenzalacetone is isolated.",
+      "quantities": [
+        {
+          "reagent": "remaining stock",
+          "role": "transfer",
+          "qualifier": "exact",
+          "value": 0.5,
+          "unit": "fraction_of_prepared_stock"
+        },
+        {
+          "reagent": "stirring time",
+          "role": "condition",
+          "qualifier": "exact",
+          "value": 30,
+          "unit": "min"
+        },
+        {
+          "reagent": "recrystallisation solvent",
+          "role": "addition",
+          "qualifier": "not_specified"
+        }
+      ],
+      "sample_id": "reaction",
+      "reaction_scope": "source_defined",
+      "step_id": 3,
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm110",
+          "file": "lelm110.pdf",
+          "pdf_page": 4,
+          "experiment": "10.2"
+        }
+      ],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+    }
+  ],
+  "source_experiment_id": "chem_12_604",
   "scenes": [
     {
       "scene_id": "scene_1",
       "scene_name": "Setup and Preparation",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare dibenzalacetone, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Prepare dibenzalacetone. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
       "image_local": "images/chemistry/prepare_dibenzalacetone_setup.jpg",
       "image_placeholder": true,
@@ -40,18 +338,62 @@
         {
           "step_id": "scene_1_step_1",
           "step_number": 1,
-          "description": "Mix benzaldehyde and acetone in the prescribed dilute alkaline medium.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "Dissolve 3.15 g NaOH in 25 mL ethanol and 30 mL water in a 250 mL beaker; cool to 20-25 degrees C.",
+          "observation": "The alkaline mixture is prepared before carbonyl addition.",
           "duration_seconds": 3.0,
-          "motion_type": "state_change",
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
+          "motion_type": "colour_change",
           "moving_objects": [
-            "benzaldehyde, acetone, dilute alkali, beaker, stirrer, filter"
+            "benzaldehyde",
+            "acetone",
+            "sodium hydroxide"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "state_change",
+          "key_visual": "The alkaline mixture is prepared before carbonyl addition.",
+          "prompt_template": "colour_change",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "NaOH",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 3.15,
+              "unit": "g"
+            },
+            {
+              "reagent": "ethanol",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL"
+            },
+            {
+              "reagent": "water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 30,
+              "unit": "mL"
+            },
+            {
+              "reagent": "temperature",
+              "role": "condition",
+              "qualifier": "range",
+              "minimum": 20,
+              "maximum": 25,
+              "unit": "degC"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 4,
+              "experiment": "10.2"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined"
         }
       ]
     },
@@ -59,7 +401,7 @@
       "scene_id": "scene_2",
       "scene_name": "Main Procedure",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare dibenzalacetone, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Prepare dibenzalacetone. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "",
       "image_local": "",
       "image_placeholder": true,
@@ -67,18 +409,61 @@
         {
           "step_id": "scene_2_step_2",
           "step_number": 2,
-          "description": "Stir the mixture while the condensation product precipitates.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "Separately mix 3.2 mL benzaldehyde and 2.3 mL acetone; add half this mixture slowly with vigorous stirring, then stir 15 minutes.",
+          "observation": "Fluffy precipitate begins in 1-2 minutes; preserve the unused half separately.",
           "duration_seconds": 3.0,
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
           "motion_type": "colour_change",
           "moving_objects": [
-            "benzaldehyde, acetone, dilute alkali, beaker, stirrer, filter"
+            "benzaldehyde",
+            "acetone",
+            "sodium hydroxide"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
+          "key_visual": "Fluffy precipitate begins in 1-2 minutes; preserve the unused half separately.",
           "prompt_template": "colour_change",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "benzaldehyde",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 3.2,
+              "unit": "mL"
+            },
+            {
+              "reagent": "acetone",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 2.3,
+              "unit": "mL"
+            },
+            {
+              "reagent": "carbonyl mixture",
+              "role": "transfer",
+              "qualifier": "exact",
+              "value": 0.5,
+              "unit": "fraction_of_prepared_stock"
+            },
+            {
+              "reagent": "stirring time",
+              "role": "condition",
+              "qualifier": "exact",
+              "value": 15,
+              "unit": "min"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 4,
+              "experiment": "10.2"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined"
         }
       ]
     },
@@ -86,7 +471,7 @@
       "scene_id": "scene_3",
       "scene_name": "Observation and Result",
       "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare dibenzalacetone, followed by the controlled visible operations described in Manual_01.pdf.",
+      "description": "A fixed educational view of Prepare dibenzalacetone. Prepare only the apparatus and starting state for the selected protocol and its identified sample; use its supplied NCERT source, not legacy microscale staging.",
       "image_url": "",
       "image_local": "",
       "image_placeholder": true,
@@ -94,18 +479,52 @@
         {
           "step_id": "scene_3_step_3",
           "step_number": 3,
-          "description": "Filter and wash the solid, recrystallise if directed, dry it, and record its color and yield.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
+          "description": "Add the remaining half and stir 30 minutes; filter, wash cold and recrystallise from a small solvent portion.",
+          "observation": "Pale-yellow dibenzalacetone is isolated.",
           "duration_seconds": 3.0,
-          "motion_type": "colour_change",
+          "duration_basis": "Placeholder render budget; not the laboratory process duration. Plan splits and waiting-time cards before generation.",
+          "motion_type": "state_change",
           "moving_objects": [
-            "benzaldehyde, acetone, dilute alkali, beaker, stirrer, filter"
+            "benzaldehyde",
+            "acetone",
+            "sodium hydroxide"
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "colour_change",
+          "key_visual": "Pale-yellow dibenzalacetone is isolated.",
+          "prompt_template": "state_change",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [
+            {
+              "reagent": "remaining stock",
+              "role": "transfer",
+              "qualifier": "exact",
+              "value": 0.5,
+              "unit": "fraction_of_prepared_stock"
+            },
+            {
+              "reagent": "stirring time",
+              "role": "condition",
+              "qualifier": "exact",
+              "value": 30,
+              "unit": "min"
+            },
+            {
+              "reagent": "recrystallisation solvent",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 4,
+              "experiment": "10.2"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined"
         }
       ]
     }

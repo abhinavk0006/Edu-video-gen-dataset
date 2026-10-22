@@ -5,15 +5,15 @@
   "class_level": 12,
   "difficulty": "medium",
   "chapter": "Preparation of Compounds",
-  "ncert_reference": "Manual of Microscale Chemistry Laboratory Kit, Chapter Preparation of Compounds, Experiment 6.1; exact PDF pages to verify during citation pass",
-  "source_file": "Manual_01.pdf",
-  "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Prepare potash alum and Mohr's salt double salts' and record its manual-defined observations and result.",
+  "ncert_reference": "User-supplied NCERT XII Chemistry lelm109.pdf; PDF pages 1, 2 (1-based). File SHA-256 in data/quantity_source_manifest.json.",
+  "source_file": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm109.pdf",
+  "educational_goal": "Study 'Prepare potash alum and Mohr's salt double salts' using a selected NCERT XII chemistry protocol, its documented quantities and conditions, and conditional observations; review unresolved doses before rendering.",
   "prerequisites": [
     "preparation of compounds",
     "laboratory observation",
     "microscale chemistry"
   ],
-  "estimated_video_duration_seconds": 9,
+  "estimated_video_duration_seconds": 0,
   "tags": [
     "class-12",
     "manual-01",
@@ -21,101 +21,276 @@
     "6.1"
   ],
   "materials": [
-    "potassium sulphate, aluminium sulphate, ferrous sulphate, ammonium sulphate, water, dilute sulphuric acid, beakers, filter"
+    "potassium sulphate",
+    "aluminium sulphate",
+    "ferrous sulphate",
+    "ammonium sulphate",
+    "dilute sulphuric acid",
+    "water",
+    "alcohol",
+    "50 mL vessels",
+    "filter"
   ],
   "safety_notes": [
     "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
     "Wear eye protection and do not taste or directly handle chemicals."
   ],
-  "scenes": [
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "transcribed",
+    "source_ids": [
+      "ncert_lelm109"
+    ],
+    "requires_protocol_selection": true,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "protocol_variants": [
     {
-      "scene_id": "scene_1",
-      "scene_name": "Setup and Preparation",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare potash alum and Mohr's salt double salts, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
-      "image_local": "images/chemistry/prepare_potash_alum_and_mohr_s_salt_double_salts_setup.jpg",
-      "image_placeholder": true,
-      "steps": [
+      "variant_id": "potash_alum",
+      "title": "Potash alum",
+      "source_id": "ncert_lelm109",
+      "source_experiment": "9.1(a)",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Use step-specific about 0.4 mL acid; the general introduction mentions 2-3 mL at unspecified scale."
+      ],
+      "procedure_steps": [
         {
-          "step_id": "scene_1_step_1",
-          "step_number": 1,
-          "description": "Dissolve the constituent salts separately in measured water and add dilute sulphuric acid where prescribed.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "colour_change",
-          "moving_objects": [
-            "potassium sulphate, aluminium sulphate, ferrous sulphate, ammonium sulphate, water, dilute sulphuric acid, beakers, filter"
+          "instruction": "In a 50 mL beaker heat 10 mL water to about 40 degrees C; dissolve 6.6 g aluminium sulphate and add about 0.4 mL dilute sulphuric acid.",
+          "observation": "Dissolved reagents form the crystallisation solution.",
+          "quantities": [
+            {
+              "reagent": "water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "mL"
+            },
+            {
+              "reagent": "aluminium sulphate",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 6.6,
+              "unit": "g"
+            },
+            {
+              "reagent": "dil H2SO4",
+              "role": "addition",
+              "qualifier": "approximate",
+              "value": 0.4,
+              "unit": "mL"
+            },
+            {
+              "reagent": "beaker",
+              "role": "vessel_capacity",
+              "qualifier": "exact",
+              "value": 50,
+              "unit": "mL"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "colour_change",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm109",
+              "file": "lelm109.pdf",
+              "pdf_page": 1,
+              "experiment": "9.1(a)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Add 2.4 g potassium sulphate, heat and stir until dissolved; cool slowly to room temperature.",
+          "observation": "White alum crystals form during cooling.",
+          "quantities": [
+            {
+              "reagent": "K2SO4",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2.4,
+              "unit": "g"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm109",
+              "file": "lelm109.pdf",
+              "pdf_page": 2,
+              "experiment": "9.1(a)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Filter crystals, wash with cold water/alcohol 1:1 mixture and dry.",
+          "observation": "Crystals remain on the filter; wash-liquid volume is not specified.",
+          "quantities": [
+            {
+              "reagent": "water : alcohol",
+              "role": "mixture_ratio",
+              "qualifier": "exact",
+              "value": "1:1",
+              "unit": "volume_ratio"
+            },
+            {
+              "reagent": "wash mixture",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm109",
+              "file": "lelm109.pdf",
+              "pdf_page": 2,
+              "experiment": "9.1(a)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         }
       ]
     },
     {
-      "scene_id": "scene_2",
-      "scene_name": "Main Procedure",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare potash alum and Mohr's salt double salts, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "",
-      "image_local": "",
-      "image_placeholder": true,
-      "steps": [
+      "variant_id": "mohr_crystals",
+      "title": "Mohr's salt crystals",
+      "source_id": "ncert_lelm109",
+      "source_experiment": "9.1(b)",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
         {
-          "step_id": "scene_2_step_2",
-          "step_number": 2,
-          "description": "Mix the solutions and concentrate them by heating to the saturation point.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "state_change",
-          "moving_objects": [
-            "potassium sulphate, aluminium sulphate, ferrous sulphate, ammonium sulphate, water, dilute sulphuric acid, beakers, filter"
+          "instruction": "Heat 3.5 g ferrous sulphate and 1.7 g ammonium sulphate in 5 mL water in a 50 mL flask; add about 0.5 mL dilute sulphuric acid.",
+          "observation": "A crystallisation solution is prepared.",
+          "quantities": [
+            {
+              "reagent": "ferrous sulphate",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 3.5,
+              "unit": "g"
+            },
+            {
+              "reagent": "ammonium sulphate",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1.7,
+              "unit": "g"
+            },
+            {
+              "reagent": "water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "mL"
+            },
+            {
+              "reagent": "dil H2SO4",
+              "role": "addition",
+              "qualifier": "approximate",
+              "value": 0.5,
+              "unit": "mL"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "state_change",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
-        }
-      ]
-    },
-    {
-      "scene_id": "scene_3",
-      "scene_name": "Observation and Result",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare potash alum and Mohr's salt double salts, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "",
-      "image_local": "",
-      "image_placeholder": true,
-      "steps": [
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm109",
+              "file": "lelm109.pdf",
+              "pdf_page": 2,
+              "experiment": "9.1(b)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
         {
-          "step_id": "scene_3_step_3",
-          "step_number": 3,
-          "description": "Cool slowly so crystals form, then filter, wash, dry, weigh, and record their color and shape.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "colour_change",
-          "moving_objects": [
-            "potassium sulphate, aluminium sulphate, ferrous sulphate, ammonium sulphate, water, dilute sulphuric acid, beakers, filter"
+          "instruction": "Concentrate to the crystallisation point and cool slowly to room temperature.",
+          "observation": "Light-green crystals form; evaporation reduces liquid, it is not a continuity reset.",
+          "quantities": [],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm109",
+              "file": "lelm109.pdf",
+              "pdf_page": 2,
+              "experiment": "9.1(b)"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "colour_change",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Filter and wash with a small amount of cold 1:1 water/alcohol, then alcohol; dry.",
+          "observation": "Wash quantities are unspecified.",
+          "quantities": [
+            {
+              "reagent": "water : alcohol",
+              "role": "mixture_ratio",
+              "qualifier": "exact",
+              "value": "1:1",
+              "unit": "volume_ratio"
+            },
+            {
+              "reagent": "wash liquid",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm109",
+              "file": "lelm109.pdf",
+              "pdf_page": 2,
+              "experiment": "9.1(b)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         }
       ]
     }
   ],
-  "prompt_templates_used": [
-    "colour_change",
-    "state_change"
+  "selected_protocol_variant": null,
+  "procedure_steps": [
+    {
+      "step_id": 1,
+      "instruction": "Select one source-backed protocol variant and identify its sample and reagents before rendering.",
+      "observation": "This catalogue overview is not an executable combined procedure."
+    },
+    {
+      "step_id": 2,
+      "instruction": "Resolve unspecified doses, source conflicts and sample/reference-image requirements for the selected variant.",
+      "observation": "Unknown quantities remain unset; alternatives and fresh aliquots remain separate."
+    },
+    {
+      "step_id": 3,
+      "instruction": "Use only the selected variant's source-evidenced steps after scientific review.",
+      "observation": "Do not concatenate the alternative tests into one vessel or invent a universal positive outcome."
+    }
   ],
-  "total_clips": 3,
-  "total_scenes": 3,
+  "source_experiment_id": "chem_12_601",
+  "scenes": [],
+  "prompt_templates_used": [],
+  "total_clips": 0,
+  "total_scenes": 0,
   "status": "dataset_only",
   "video_generated": false,
   "video_path": "",

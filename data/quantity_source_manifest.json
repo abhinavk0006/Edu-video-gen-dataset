@@ -1,0 +1,83 @@
+{
+  "date": "2026-10-22",
+  "page_numbering": "1-based PDF page, not printed folio",
+  "sources": [
+    {
+      "source_id": "ncert_lelm101",
+      "file": "lelm101.pdf",
+      "pdf_pages": 7,
+      "sha256": "6fe0f646d3615f67903005929da00c9580c57713a4951e37965e4f3ee9f2619a",
+      "url": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm101.pdf"
+    },
+    {
+      "source_id": "ncert_lelm102",
+      "file": "lelm102.pdf",
+      "pdf_pages": 11,
+      "sha256": "c45debd78bad2a5a1ef44deec777021448ca926bb98d661cee1864d01a397ddb",
+      "url": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm102.pdf"
+    },
+    {
+      "source_id": "ncert_lelm103",
+      "file": "lelm103.pdf",
+      "pdf_pages": 11,
+      "sha256": "a62054b38a9e5e2d0422c69f382bfbf050cb0e608fa1e428c5e6c58703d4388e",
+      "url": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm103.pdf"
+    },
+    {
+      "source_id": "ncert_lelm104",
+      "file": "lelm104.pdf",
+      "pdf_pages": 4,
+      "sha256": "32db8ab3e6d84f1d2159d9129b10c0e7edc2d2491959ad44e687eb018bb2bce7",
+      "url": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm104.pdf"
+    },
+    {
+      "source_id": "ncert_lelm105",
+      "file": "lelm105.pdf",
+      "pdf_pages": 6,
+      "sha256": "7726b010a8d8058d70eb2ca02e12db2909313b4036a3cb7d86dfa37677be4d2f",
+      "url": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm105.pdf"
+    },
+    {
+      "source_id": "ncert_lelm106",
+      "file": "lelm106.pdf",
+      "pdf_pages": 9,
+      "sha256": "3656295dc3d885a5ad96ef694a96ac58f226f175d9438bb5461cb4bb19b918f2",
+      "url": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm106.pdf"
+    },
+    {
+      "source_id": "ncert_lelm107",
+      "file": "lelm107.pdf",
+      "pdf_pages": 37,
+      "sha256": "f992c14f5f3487b7e5a5b0b5522e65237e1793e3d0dd3d9373dcb5664319fe7d",
+      "url": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm107.pdf"
+    },
+    {
+      "source_id": "ncert_lelm108",
+      "file": "lelm108.pdf",
+      "pdf_pages": 14,
+      "sha256": "b64c1eb1692136053c96c4cb8c03aa75c2feddefaa22537c08562908ef72d407",
+      "url": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm108.pdf"
+    },
+    {
+      "source_id": "ncert_lelm109",
+      "file": "lelm109.pdf",
+      "pdf_pages": 4,
+      "sha256": "a4916856753f81a0ede769c0fee1be75fa76650858acc03d73a30c75ff615ab2",
+      "url": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm109.pdf"
+    },
+    {
+      "source_id": "ncert_lelm110",
+      "file": "lelm110.pdf",
+      "pdf_pages": 10,
+      "sha256": "0bcf00ee34d20a5533f77d6ef14f2464d479079d8e75892383df2eeae70d51ef",
+      "url": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm110.pdf"
+    },
+    {
+      "source_id": "ncert_lelm111",
+      "file": "lelm111.pdf",
+      "pdf_pages": 11,
+      "sha256": "3755f26c6820336085a26383e459c55b659dee105cd53c285026824f374f3f62",
+      "url": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm111.pdf"
+    }
+  ]
+}

@@ -5,15 +5,15 @@
   "class_level": 12,
   "difficulty": "medium",
   "chapter": "Chemical Kinetics",
-  "ncert_reference": "Manual of Microscale Chemistry Laboratory Kit, Chapter Chemical Kinetics, Experiment 9.1; exact PDF pages to verify during citation pass",
-  "source_file": "Manual_01.pdf",
-  "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Study concentration effects on sodium thiosulphate and hydrochloric acid reaction rate' and record its manual-defined observations and result.",
+  "ncert_reference": "User-supplied NCERT XII Chemistry lelm102.pdf; PDF pages 2, 3 (1-based). File SHA-256 in data/quantity_source_manifest.json.",
+  "source_file": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm102.pdf",
+  "educational_goal": "Study 'Study concentration effects on sodium thiosulphate and hydrochloric acid reaction rate' using a selected NCERT XII chemistry protocol, its documented quantities and conditions, and conditional observations; review unresolved doses before rendering.",
   "prerequisites": [
     "chemical kinetics",
     "laboratory observation",
     "microscale chemistry"
   ],
-  "estimated_video_duration_seconds": 9,
+  "estimated_video_duration_seconds": 0,
   "tags": [
     "class-12",
     "manual-01",
@@ -21,101 +21,491 @@
     "9.1"
   ],
   "materials": [
-    "sodium thiosulphate, hydrochloric acid, water, micro test tubes, stopwatch, white background"
+    "0.1 M sodium thiosulphate",
+    "1 M hydrochloric acid",
+    "100 mL beaker",
+    "burette",
+    "stopwatch",
+    "cross-marked background",
+    "temperature bath"
   ],
   "safety_notes": [
     "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
     "Wear eye protection and do not taste or directly handle chemicals."
   ],
-  "scenes": [
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "transcribed",
+    "source_ids": [
+      "ncert_lelm102"
+    ],
+    "requires_protocol_selection": true,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "protocol_variants": [
     {
-      "scene_id": "scene_1",
-      "scene_name": "Setup and Preparation",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Study concentration effects on sodium thiosulphate and hydrochloric acid reaction rate, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
-      "image_local": "images/chemistry/study_concentration_effects_on_sodium_thiosulphate_and_hydrochloric_acid_reaction_rate_setup.jpg",
-      "image_placeholder": true,
-      "steps": [
+      "variant_id": "hcl_1ml",
+      "title": "Fresh trial with 1 mL HCl",
+      "source_id": "ncert_lelm102",
+      "source_experiment": "2.1(A)",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
         {
-          "step_id": "scene_1_step_1",
-          "step_number": 1,
-          "description": "Prepare mixtures with different concentrations while keeping total volume and temperature controlled.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "state_change",
-          "moving_objects": [
-            "sodium thiosulphate, hydrochloric acid, water, micro test tubes, stopwatch, white background"
+          "instruction": "Take a fresh 50 mL aliquot of 0.1 M sodium thiosulphate in a 100 mL beaker; keep the temperature constant.",
+          "observation": "The initial aliquot is clear.",
+          "quantities": [
+            {
+              "reagent": "sodium thiosulphate",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 50,
+              "unit": "mL",
+              "concentration": "0.1 M"
+            },
+            {
+              "reagent": "beaker",
+              "role": "vessel_capacity",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "state_change",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 2,
+              "experiment": "2.1(A)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Add 1 mL 1 M HCl, swirl and start timing halfway through this transfer.",
+          "observation": "Sulphur formation gradually obscures the cross below the beaker.",
+          "quantities": [
+            {
+              "reagent": "HCl",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "mL",
+              "concentration": "1 M"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 3,
+              "experiment": "2.1(A)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Stop timing when the cross disappears and record the measured elapsed time.",
+          "observation": "Compare this independent trial with the other prescribed acid volumes; do not invent a time.",
+          "quantities": [],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 3,
+              "experiment": "2.1(A)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         }
       ]
     },
     {
-      "scene_id": "scene_2",
-      "scene_name": "Main Procedure",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Study concentration effects on sodium thiosulphate and hydrochloric acid reaction rate, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "",
-      "image_local": "",
-      "image_placeholder": true,
-      "steps": [
+      "variant_id": "hcl_2ml",
+      "title": "Fresh trial with 2 mL HCl",
+      "source_id": "ncert_lelm102",
+      "source_experiment": "2.1(A)",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
         {
-          "step_id": "scene_2_step_2",
-          "step_number": 2,
-          "description": "Start each reaction and measure the time until the solution becomes translucent from sulphur formation.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "observation",
-          "moving_objects": [
-            "sodium thiosulphate, hydrochloric acid, water, micro test tubes, stopwatch, white background"
+          "instruction": "Take a fresh 50 mL aliquot of 0.1 M sodium thiosulphate in a 100 mL beaker; keep the temperature constant.",
+          "observation": "The initial aliquot is clear.",
+          "quantities": [
+            {
+              "reagent": "sodium thiosulphate",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 50,
+              "unit": "mL",
+              "concentration": "0.1 M"
+            },
+            {
+              "reagent": "beaker",
+              "role": "vessel_capacity",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "observation",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 2,
+              "experiment": "2.1(A)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Add 2 mL 1 M HCl, swirl and start timing halfway through this transfer.",
+          "observation": "Sulphur formation gradually obscures the cross below the beaker.",
+          "quantities": [
+            {
+              "reagent": "HCl",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "mL",
+              "concentration": "1 M"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 3,
+              "experiment": "2.1(A)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Stop timing when the cross disappears and record the measured elapsed time.",
+          "observation": "Compare this independent trial with the other prescribed acid volumes; do not invent a time.",
+          "quantities": [],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 3,
+              "experiment": "2.1(A)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         }
       ]
     },
     {
-      "scene_id": "scene_3",
-      "scene_name": "Observation and Result",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Study concentration effects on sodium thiosulphate and hydrochloric acid reaction rate, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "",
-      "image_local": "",
-      "image_placeholder": true,
-      "steps": [
+      "variant_id": "hcl_4ml",
+      "title": "Fresh trial with 4 mL HCl",
+      "source_id": "ncert_lelm102",
+      "source_experiment": "2.1(A)",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
         {
-          "step_id": "scene_3_step_3",
-          "step_number": 3,
-          "description": "Calculate or compare inverse time as rate and relate it to concentration.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "observation",
-          "moving_objects": [
-            "sodium thiosulphate, hydrochloric acid, water, micro test tubes, stopwatch, white background"
+          "instruction": "Take a fresh 50 mL aliquot of 0.1 M sodium thiosulphate in a 100 mL beaker; keep the temperature constant.",
+          "observation": "The initial aliquot is clear.",
+          "quantities": [
+            {
+              "reagent": "sodium thiosulphate",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 50,
+              "unit": "mL",
+              "concentration": "0.1 M"
+            },
+            {
+              "reagent": "beaker",
+              "role": "vessel_capacity",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "observation",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 2,
+              "experiment": "2.1(A)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Add 4 mL 1 M HCl, swirl and start timing halfway through this transfer.",
+          "observation": "Sulphur formation gradually obscures the cross below the beaker.",
+          "quantities": [
+            {
+              "reagent": "HCl",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 4,
+              "unit": "mL",
+              "concentration": "1 M"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 3,
+              "experiment": "2.1(A)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Stop timing when the cross disappears and record the measured elapsed time.",
+          "observation": "Compare this independent trial with the other prescribed acid volumes; do not invent a time.",
+          "quantities": [],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 3,
+              "experiment": "2.1(A)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "hcl_8ml",
+      "title": "Fresh trial with 8 mL HCl",
+      "source_id": "ncert_lelm102",
+      "source_experiment": "2.1(A)",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
+        {
+          "instruction": "Take a fresh 50 mL aliquot of 0.1 M sodium thiosulphate in a 100 mL beaker; keep the temperature constant.",
+          "observation": "The initial aliquot is clear.",
+          "quantities": [
+            {
+              "reagent": "sodium thiosulphate",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 50,
+              "unit": "mL",
+              "concentration": "0.1 M"
+            },
+            {
+              "reagent": "beaker",
+              "role": "vessel_capacity",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 2,
+              "experiment": "2.1(A)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Add 8 mL 1 M HCl, swirl and start timing halfway through this transfer.",
+          "observation": "Sulphur formation gradually obscures the cross below the beaker.",
+          "quantities": [
+            {
+              "reagent": "HCl",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 8,
+              "unit": "mL",
+              "concentration": "1 M"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 3,
+              "experiment": "2.1(A)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Stop timing when the cross disappears and record the measured elapsed time.",
+          "observation": "Compare this independent trial with the other prescribed acid volumes; do not invent a time.",
+          "quantities": [],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 3,
+              "experiment": "2.1(A)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "hcl_16ml",
+      "title": "Fresh trial with 16 mL HCl",
+      "source_id": "ncert_lelm102",
+      "source_experiment": "2.1(A)",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
+        {
+          "instruction": "Take a fresh 50 mL aliquot of 0.1 M sodium thiosulphate in a 100 mL beaker; keep the temperature constant.",
+          "observation": "The initial aliquot is clear.",
+          "quantities": [
+            {
+              "reagent": "sodium thiosulphate",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 50,
+              "unit": "mL",
+              "concentration": "0.1 M"
+            },
+            {
+              "reagent": "beaker",
+              "role": "vessel_capacity",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 2,
+              "experiment": "2.1(A)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Add 16 mL 1 M HCl, swirl and start timing halfway through this transfer.",
+          "observation": "Sulphur formation gradually obscures the cross below the beaker.",
+          "quantities": [
+            {
+              "reagent": "HCl",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 16,
+              "unit": "mL",
+              "concentration": "1 M"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 3,
+              "experiment": "2.1(A)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Stop timing when the cross disappears and record the measured elapsed time.",
+          "observation": "Compare this independent trial with the other prescribed acid volumes; do not invent a time.",
+          "quantities": [],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 3,
+              "experiment": "2.1(A)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         }
       ]
     }
   ],
-  "prompt_templates_used": [
-    "observation",
-    "state_change"
+  "selected_protocol_variant": null,
+  "procedure_steps": [
+    {
+      "step_id": 1,
+      "instruction": "Select one source-backed protocol variant and identify its sample and reagents before rendering.",
+      "observation": "This catalogue overview is not an executable combined procedure."
+    },
+    {
+      "step_id": 2,
+      "instruction": "Resolve unspecified doses, source conflicts and sample/reference-image requirements for the selected variant.",
+      "observation": "Unknown quantities remain unset; alternatives and fresh aliquots remain separate."
+    },
+    {
+      "step_id": 3,
+      "instruction": "Use only the selected variant's source-evidenced steps after scientific review.",
+      "observation": "Do not concatenate the alternative tests into one vessel or invent a universal positive outcome."
+    }
   ],
-  "total_clips": 3,
-  "total_scenes": 3,
+  "source_experiment_id": "chem_12_901",
+  "scenes": [],
+  "prompt_templates_used": [],
+  "total_clips": 0,
+  "total_scenes": 0,
   "status": "dataset_only",
   "video_generated": false,
   "video_path": "",

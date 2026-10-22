@@ -27,6 +27,7 @@ def load_documents(path: Path) -> list[dict]:
             documents.append({
                 "id": obj["id"],
                 "text": obj["text"],
+                "search_text": obj.get("search_text", obj["text"]),
                 "metadata": obj["metadata"],
             })
     return documents
@@ -42,7 +43,7 @@ def make_search_text(doc: dict) -> str:
     source_ids = " ".join(str(source_id) for source_id in metadata.get("source_ids", []) if source_id)
 
     # Use the full original text and a compact metadata summary so retrieval is stronger on real classroom concepts.
-    text = str(doc.get("text", "") or "")
+    text = str(doc.get("search_text", doc.get("text", "")) or "")
     summary = " ".join(item for item in [title, subject, class_level, difficulty, tags, source_ids] if item)
     return f"{text} {summary}"
 

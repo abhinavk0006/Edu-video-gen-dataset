@@ -5,15 +5,15 @@
   "class_level": 12,
   "difficulty": "medium",
   "chapter": "Surface Chemistry",
-  "ncert_reference": "Manual of Microscale Chemistry Laboratory Kit, Chapter Surface Chemistry, Experiment 8.1; exact PDF pages to verify during citation pass",
-  "source_file": "Manual_01.pdf",
-  "educational_goal": "Perform the Class 12 microscale chemistry experiment 'Prepare lyophilic and lyophobic sols' and record its manual-defined observations and result.",
+  "ncert_reference": "User-supplied NCERT XII Chemistry lelm101.pdf; PDF pages 2, 3 (1-based). File SHA-256 in data/quantity_source_manifest.json.",
+  "source_file": "https://ncert.nic.in/pdf/publication/sciencelaboratorymanuals/classXII/chemistry/lelm101.pdf",
+  "educational_goal": "Study 'Prepare lyophilic and lyophobic sols' using a selected NCERT XII chemistry protocol, its documented quantities and conditions, and conditional observations; review unresolved doses before rendering.",
   "prerequisites": [
     "surface chemistry",
     "laboratory observation",
     "microscale chemistry"
   ],
-  "estimated_video_duration_seconds": 12,
+  "estimated_video_duration_seconds": 0,
   "tags": [
     "class-12",
     "manual-01",
@@ -21,117 +21,590 @@
     "8.1"
   ],
   "materials": [
-    "egg albumin, starch or gum, ferric chloride or aluminium chloride, arsenic trioxide, hydrogen sulphide, sodium chloride, water, beakers"
+    "selected colloid precursor",
+    "water",
+    "250 mL beakers",
+    "stirrer",
+    "heat source",
+    "reagents for the chosen colloid only"
   ],
   "safety_notes": [
     "Follow the supplied manual and teacher supervision for quantities, heating, acids, bases, organic solvents, and waste disposal.",
     "Wear eye protection and do not taste or directly handle chemicals."
   ],
-  "scenes": [
+  "quantity_review": {
+    "date": "2026-10-22",
+    "coverage": "partial",
+    "source_ids": [
+      "ncert_lelm101"
+    ],
+    "requires_protocol_selection": true,
+    "numeric_completeness": "not_certified",
+    "gaps": [
+      "No vessel safe-working volume or calibrated drop-to-mL conversion has been inferred.",
+      "Selected test/preparation branches are transcribed; aggregate entry is not an exhaustive executable protocol. Untranscribed branches require source review."
+    ],
+    "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
+  },
+  "protocol_variants": [
     {
-      "scene_id": "scene_1",
-      "scene_name": "Setup and Preparation",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare lyophilic and lyophobic sols, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
-      "image_local": "images/chemistry/prepare_lyophilic_and_lyophobic_sols_setup.jpg",
-      "image_placeholder": true,
-      "steps": [
+      "variant_id": "starch",
+      "title": "Starch sol",
+      "source_id": "ncert_lelm101",
+      "source_experiment": "1.1(a)",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
         {
-          "step_id": "scene_1_step_1",
-          "step_number": 1,
-          "description": "Prepare egg albumin sol by mixing albumin with 15 percent sodium chloride solution.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "state_change",
-          "moving_objects": [
-            "egg albumin, starch or gum, ferric chloride or aluminium chloride, arsenic trioxide, hydrogen sulphide, sodium chloride, water, beakers"
+          "instruction": "Boil 100 mL distilled water in a 250 mL beaker.",
+          "observation": "Boiling water is initially clear.",
+          "quantities": [
+            {
+              "reagent": "water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            },
+            {
+              "reagent": "beaker",
+              "role": "vessel_capacity",
+              "qualifier": "exact",
+              "value": 250,
+              "unit": "mL"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "state_change",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
-        }
-      ]
-    },
-    {
-      "scene_id": "scene_2",
-      "scene_name": "Main Procedure",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare lyophilic and lyophobic sols, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "",
-      "image_local": "",
-      "image_placeholder": true,
-      "steps": [
-        {
-          "step_id": "scene_2_step_2",
-          "step_number": 2,
-          "description": "Prepare starch or gum sol by adding a paste to boiling water with constant stirring.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "state_change",
-          "moving_objects": [
-            "egg albumin, starch or gum, ferric chloride or aluminium chloride, arsenic trioxide, hydrogen sulphide, sodium chloride, water, beakers"
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 2,
+              "experiment": "1.1(a)"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "state_change",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         },
         {
-          "step_id": "scene_2_step_3",
-          "step_number": 3,
-          "description": "Prepare ferric or aluminium hydroxide sol by adding dilute chloride solution to boiling water.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "state_change",
-          "moving_objects": [
-            "egg albumin, starch or gum, ferric chloride or aluminium chloride, arsenic trioxide, hydrogen sulphide, sodium chloride, water, beakers"
+          "instruction": "Make a paste of 500 mg starch with a little hot water; add to the boiling water while stirring.",
+          "observation": "Dispersed material forms a sol; do not label this a true molecular solution.",
+          "quantities": [
+            {
+              "reagent": "starch",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 500,
+              "unit": "mg"
+            },
+            {
+              "reagent": "paste water",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "state_change",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 2,
+              "experiment": "1.1(a)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Boil with constant stirring for 10 minutes.",
+          "observation": "The prepared sol remains dispersed.",
+          "quantities": [
+            {
+              "reagent": "stirring time",
+              "role": "condition",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "min"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 2,
+              "experiment": "1.1(a)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         }
       ]
     },
     {
-      "scene_id": "scene_3",
-      "scene_name": "Observation and Result",
-      "new_scene": true,
-      "description": "A clean school chemistry bench presents the apparatus and materials for Prepare lyophilic and lyophobic sols, followed by the controlled visible operations described in Manual_01.pdf.",
-      "image_url": "",
-      "image_local": "",
-      "image_placeholder": true,
-      "steps": [
+      "variant_id": "gum",
+      "title": "Gum sol",
+      "source_id": "ncert_lelm101",
+      "source_experiment": "1.1(a)",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
         {
-          "step_id": "scene_3_step_4",
-          "step_number": 4,
-          "description": "Prepare arsenic sulphide sol as specified and compare the appearance of the sols.",
-          "observation": "Record the visible result and measurement described by the manual for this step.",
-          "duration_seconds": 3.0,
-          "motion_type": "observation",
-          "moving_objects": [
-            "egg albumin, starch or gum, ferric chloride or aluminium chloride, arsenic trioxide, hydrogen sulphide, sodium chloride, water, beakers"
+          "instruction": "Boil 100 mL distilled water in a 250 mL beaker.",
+          "observation": "Boiling water is initially clear.",
+          "quantities": [
+            {
+              "reagent": "water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            },
+            {
+              "reagent": "beaker",
+              "role": "vessel_capacity",
+              "qualifier": "exact",
+              "value": 250,
+              "unit": "mL"
+            }
           ],
-          "key_visual": "Record the visible result and measurement described by the manual for this step.",
-          "prompt_template": "observation",
-          "motion_prompt": "",
-          "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 2,
+              "experiment": "1.1(a)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Make a paste of 500 mg gum with a little hot water; add to the boiling water while stirring.",
+          "observation": "Dispersed material forms a sol; do not label this a true molecular solution.",
+          "quantities": [
+            {
+              "reagent": "gum",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 500,
+              "unit": "mg"
+            },
+            {
+              "reagent": "paste water",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 2,
+              "experiment": "1.1(a)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Boil with constant stirring for 10 minutes.",
+          "observation": "The prepared sol remains dispersed.",
+          "quantities": [
+            {
+              "reagent": "stirring time",
+              "role": "condition",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "min"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 2,
+              "experiment": "1.1(a)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "albumin",
+      "title": "Egg-albumin sol",
+      "source_id": "ncert_lelm101",
+      "source_experiment": "1.1(a)",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
+        {
+          "instruction": "Place 100 mL of 5% (w/v) sodium chloride solution in a 250 mL beaker.",
+          "observation": "A clear salt solution is present.",
+          "quantities": [
+            {
+              "reagent": "NaCl solution",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL",
+              "concentration": "5% w/v"
+            },
+            {
+              "reagent": "beaker",
+              "role": "vessel_capacity",
+              "qualifier": "exact",
+              "value": 250,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 2,
+              "experiment": "1.1(a)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Separate the albumin of one egg and stir it into the sodium chloride solution.",
+          "observation": "Albumin is dispersed in the prepared sol.",
+          "quantities": [
+            {
+              "reagent": "egg albumin",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "egg"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 2,
+              "experiment": "1.1(a)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "ferric_chloride",
+      "title": "Ferric Chloride hydrolysis sol",
+      "source_id": "ncert_lelm101",
+      "source_experiment": "1.1(b)",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
+        {
+          "instruction": "Dissolve 2 g ferric chloride in 100 mL boiling water in a 250 mL beaker (water preparation begins on PDF p2).",
+          "observation": "This is a stock preparation, not an addition to the final vessel.",
+          "quantities": [
+            {
+              "reagent": "ferric chloride",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "g"
+            },
+            {
+              "reagent": "water",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "stock",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 3,
+              "experiment": "1.1(b)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Boil another 100 mL water in a separate 250 mL beaker.",
+          "observation": "The receiving beaker contains its own water charge.",
+          "quantities": [
+            {
+              "reagent": "water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            },
+            {
+              "reagent": "beaker",
+              "role": "vessel_capacity",
+              "qualifier": "exact",
+              "value": 250,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 3,
+              "experiment": "1.1(b)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Add 10 mL of the prepared stock drop by drop with stirring; continue boiling.",
+          "observation": "A brown hydroxide sol forms; this is not a clear dissolved salt solution.",
+          "quantities": [
+            {
+              "reagent": "stock aliquot",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 3,
+              "experiment": "1.1(b)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "aluminium_chloride",
+      "title": "Aluminium Chloride hydrolysis sol",
+      "source_id": "ncert_lelm101",
+      "source_experiment": "1.1(b)",
+      "coverage": "transcribed",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [],
+      "procedure_steps": [
+        {
+          "instruction": "Dissolve 2 g aluminium chloride in 100 mL boiling water in a 250 mL beaker (water preparation begins on PDF p2).",
+          "observation": "This is a stock preparation, not an addition to the final vessel.",
+          "quantities": [
+            {
+              "reagent": "aluminium chloride",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "g"
+            },
+            {
+              "reagent": "water",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "stock",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 3,
+              "experiment": "1.1(b)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Boil another 100 mL water in a separate 250 mL beaker.",
+          "observation": "The receiving beaker contains its own water charge.",
+          "quantities": [
+            {
+              "reagent": "water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            },
+            {
+              "reagent": "beaker",
+              "role": "vessel_capacity",
+              "qualifier": "exact",
+              "value": 250,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 3,
+              "experiment": "1.1(b)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Add 10 mL of the prepared stock drop by drop with stirring; continue boiling.",
+          "observation": "A white hydroxide sol forms; this is not a clear dissolved salt solution.",
+          "quantities": [
+            {
+              "reagent": "stock aliquot",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 3,
+              "experiment": "1.1(b)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        }
+      ]
+    },
+    {
+      "variant_id": "arsenious_sulphide",
+      "title": "Arsenious sulphide sol (historical hazardous method)",
+      "source_id": "ncert_lelm101",
+      "source_experiment": "1.1(b)",
+      "coverage": "partial",
+      "sample_policy": "Independent protocol; do not concatenate with other variants. Within this protocol preserve each named sample; new aliquots/trials need separate state tracks and reference images.",
+      "notes": [
+        "Toxic arsenic/H2S method requires domain and safety review; odour is not a visual endpoint."
+      ],
+      "procedure_steps": [
+        {
+          "instruction": "Boil 0.2 g arsenious oxide with 100 mL water; cool and filter.",
+          "observation": "The filtered preparation is used for the sol.",
+          "quantities": [
+            {
+              "reagent": "arsenious oxide",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 0.2,
+              "unit": "g"
+            },
+            {
+              "reagent": "water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 3,
+              "experiment": "1.1(b)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+        },
+        {
+          "instruction": "Pass hydrogen sulphide through the filtrate using the reviewed laboratory setup; remove excess gas by the source heating/filtering procedure.",
+          "observation": "A yellow arsenious sulphide sol forms.",
+          "quantities": [
+            {
+              "reagent": "H2S",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "note": "Source uses an odour endpoint. Do not depict inhalation or invent a gas dose."
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 3,
+              "experiment": "1.1(b)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
         }
       ]
     }
   ],
-  "prompt_templates_used": [
-    "observation",
-    "state_change"
+  "selected_protocol_variant": null,
+  "procedure_steps": [
+    {
+      "step_id": 1,
+      "instruction": "Select one source-backed protocol variant and identify its sample and reagents before rendering.",
+      "observation": "This catalogue overview is not an executable combined procedure."
+    },
+    {
+      "step_id": 2,
+      "instruction": "Resolve unspecified doses, source conflicts and sample/reference-image requirements for the selected variant.",
+      "observation": "Unknown quantities remain unset; alternatives and fresh aliquots remain separate."
+    },
+    {
+      "step_id": 3,
+      "instruction": "Use only the selected variant's source-evidenced steps after scientific review.",
+      "observation": "Do not concatenate the alternative tests into one vessel or invent a universal positive outcome."
+    }
   ],
-  "total_clips": 4,
-  "total_scenes": 3,
+  "source_experiment_id": "chem_12_801",
+  "scenes": [],
+  "prompt_templates_used": [],
+  "total_clips": 0,
+  "total_scenes": 0,
   "status": "dataset_only",
   "video_generated": false,
   "video_path": "",
