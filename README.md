@@ -1,3 +1,9 @@
+## Draft scientific requirement contracts
+
+See [SCIENCE_CONTRACTS.md](SCIENCE_CONTRACTS.md) for source-grounded requirement
+records, visibility annotations and rendering metadata. Automatically transcribed
+contracts remain unreviewed until an actual source check is recorded.
+
 # NCERT Chemistry Experiment Dataset
 
 A lightweight, source-traceable catalog of school Chemistry and Physics experiments and activities for Classes 8-12. This repository contains dataset assets only; it does not clone or depend on the video-generation project or download model weights.
@@ -141,6 +147,14 @@ inventory, source conflicts, field semantics and rebuilding commands. The
 supplied eleven XII chemistry units enrich 23 records with 115 separate
 protocol variants. Unsupported records are explicitly marked, and missing
 doses remain unset. This enrichment is not scientific approval.
+
+All 100 records also carry a draft `rendering_contract` and per-step scientific
+requirements. These expose missing quantities, sample continuity, observable
+outcomes and pacing requirements. They do not add unsupported numerical values.
+The 58 physics records await the source manual for detailed values and validation;
+an experiment title alone never creates a validated circuit topology. Run
+`scripts/enrich_rendering_contracts.py` after the quantity transcription and before
+rebuilding exports.
 
 Multi-variant records require explicit selection, for example
 `--protocol chem_12_301=chloride_silver` when building the RAG prompt bundle.

@@ -103,7 +103,28 @@
               "experiment": "10.4"
             }
           ],
-          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Combine 6.5 mL concentrated HCl, 6.5 mL water and 2 mL aniline as specified; cool to 0-5 degrees C.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Diazotisation uses a chilled aniline preparation.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         },
         {
           "instruction": "Prepare 1.6 g sodium nitrite in 8 mL water and add to the chilled aniline preparation.",
@@ -135,7 +156,28 @@
               "experiment": "10.4"
             }
           ],
-          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Prepare 1.6 g sodium nitrite in 8 mL water and add to the chilled aniline preparation.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "The diazonium preparation remains cold.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         },
         {
           "instruction": "Separately dissolve 3.2 g beta-naphthol in 18 mL 10% NaOH and add about 25 g crushed ice.",
@@ -175,7 +217,28 @@
               "experiment": "10.4"
             }
           ],
-          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Separately dissolve 3.2 g beta-naphthol in 18 mL 10% NaOH and add about 25 g crushed ice.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "This is a separate cold alkaline receiving mixture.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         },
         {
           "instruction": "Add the chilled diazonium preparation to the cold alkaline beta-naphthol, maintaining the source direction; stand in ice for 30 minutes with occasional shaking, then isolate and recrystallise about a quarter of the product.",
@@ -212,12 +275,51 @@
               "experiment": "10.4"
             }
           ],
-          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Add the chilled diazonium preparation to the cold alkaline beta-naphthol, maintaining the source direction; stand in ice for 30 minutes with occasional shaking, then isolate and recrystallise about a quarter of the product.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Orange-red azo product forms.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         }
       ]
     }
   ],
   "selected_protocol_variant": "azo_coupling",
+  "rendering_contract": {
+    "version": 1,
+    "review_status": "draft",
+    "source_reviewed": false,
+    "quantity_coverage": "transcribed",
+    "required_source_details": [
+      "reagent identity and concentration",
+      "dose or endpoint for each addition",
+      "initial sample state and volume",
+      "vessel capacity and safe working volume"
+    ],
+    "numeric_values_inferred": false,
+    "continuity_policy": "Preserve the last state of each identified sample/apparatus; allocate a separate reference for a fresh sample or changed setup.",
+    "observation_policy": "Show only the selected source's conditional observation on its named target, after its documented cause.",
+    "pacing_policy": "Split separate actions; retain laboratory waiting/heating times as process conditions, not compressed clip durations.",
+    "physics_status": "not_applicable",
+    "render_mode_policy": "Choose the rendering mode after reviewing the actual setup. Circuit diagrams require explicit validated topology; never infer it from a title."
+  },
   "procedure_steps": [
     {
       "instruction": "Combine 6.5 mL concentrated HCl, 6.5 mL water and 2 mL aniline as specified; cool to 0-5 degrees C.",
@@ -264,7 +366,28 @@
           "experiment": "10.4"
         }
       ],
-      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+      "science_spec": {
+        "source_reviewed": false,
+        "entities": [],
+        "preconditions": [],
+        "requirements": [
+          {
+            "id": "action",
+            "description": "Combine 6.5 mL concentrated HCl, 6.5 mL water and 2 mL aniline as specified; cool to 0-5 degrees C.",
+            "critical": true,
+            "evidence_kind": "interval"
+          },
+          {
+            "id": "observation",
+            "description": "Diazotisation uses a chilled aniline preparation.",
+            "critical": true,
+            "evidence_kind": "interval"
+          }
+        ],
+        "temporal_order": [],
+        "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+      }
     },
     {
       "instruction": "Prepare 1.6 g sodium nitrite in 8 mL water and add to the chilled aniline preparation.",
@@ -296,7 +419,28 @@
           "experiment": "10.4"
         }
       ],
-      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+      "science_spec": {
+        "source_reviewed": false,
+        "entities": [],
+        "preconditions": [],
+        "requirements": [
+          {
+            "id": "action",
+            "description": "Prepare 1.6 g sodium nitrite in 8 mL water and add to the chilled aniline preparation.",
+            "critical": true,
+            "evidence_kind": "interval"
+          },
+          {
+            "id": "observation",
+            "description": "The diazonium preparation remains cold.",
+            "critical": true,
+            "evidence_kind": "interval"
+          }
+        ],
+        "temporal_order": [],
+        "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+      }
     },
     {
       "instruction": "Separately dissolve 3.2 g beta-naphthol in 18 mL 10% NaOH and add about 25 g crushed ice.",
@@ -336,7 +480,28 @@
           "experiment": "10.4"
         }
       ],
-      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+      "science_spec": {
+        "source_reviewed": false,
+        "entities": [],
+        "preconditions": [],
+        "requirements": [
+          {
+            "id": "action",
+            "description": "Separately dissolve 3.2 g beta-naphthol in 18 mL 10% NaOH and add about 25 g crushed ice.",
+            "critical": true,
+            "evidence_kind": "interval"
+          },
+          {
+            "id": "observation",
+            "description": "This is a separate cold alkaline receiving mixture.",
+            "critical": true,
+            "evidence_kind": "interval"
+          }
+        ],
+        "temporal_order": [],
+        "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+      }
     },
     {
       "instruction": "Add the chilled diazonium preparation to the cold alkaline beta-naphthol, maintaining the source direction; stand in ice for 30 minutes with occasional shaking, then isolate and recrystallise about a quarter of the product.",
@@ -373,7 +538,28 @@
           "experiment": "10.4"
         }
       ],
-      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+      "science_spec": {
+        "source_reviewed": false,
+        "entities": [],
+        "preconditions": [],
+        "requirements": [
+          {
+            "id": "action",
+            "description": "Add the chilled diazonium preparation to the cold alkaline beta-naphthol, maintaining the source direction; stand in ice for 30 minutes with occasional shaking, then isolate and recrystallise about a quarter of the product.",
+            "critical": true,
+            "evidence_kind": "interval"
+          },
+          {
+            "id": "observation",
+            "description": "Orange-red azo product forms.",
+            "critical": true,
+            "evidence_kind": "interval"
+          }
+        ],
+        "temporal_order": [],
+        "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+      }
     }
   ],
   "source_experiment_id": "chem_12_606",
@@ -445,7 +631,28 @@
             }
           ],
           "sample_id": "diazonium",
-          "reaction_scope": "source_defined"
+          "reaction_scope": "source_defined",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Combine 6.5 mL concentrated HCl, 6.5 mL water and 2 mL aniline as specified; cool to 0-5 degrees C.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Diazotisation uses a chilled aniline preparation.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         }
       ]
     },
@@ -501,7 +708,28 @@
             }
           ],
           "sample_id": "diazonium",
-          "reaction_scope": "source_defined"
+          "reaction_scope": "source_defined",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Prepare 1.6 g sodium nitrite in 8 mL water and add to the chilled aniline preparation.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "The diazonium preparation remains cold.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         },
         {
           "step_id": "scene_2_step_3",
@@ -554,7 +782,28 @@
             }
           ],
           "sample_id": "coupling_receiver",
-          "reaction_scope": "source_defined"
+          "reaction_scope": "source_defined",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Separately dissolve 3.2 g beta-naphthol in 18 mL 10% NaOH and add about 25 g crushed ice.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "This is a separate cold alkaline receiving mixture.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         }
       ]
     },
@@ -615,7 +864,28 @@
             }
           ],
           "sample_id": "coupling_receiver",
-          "reaction_scope": "source_defined"
+          "reaction_scope": "source_defined",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Add the chilled diazonium preparation to the cold alkaline beta-naphthol, maintaining the source direction; stand in ice for 30 minutes with occasional shaking, then isolate and recrystallise about a quarter of the product.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Orange-red azo product forms.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         }
       ]
     }

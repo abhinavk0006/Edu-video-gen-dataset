@@ -87,7 +87,28 @@
               "experiment": "2.1(B)"
             }
           ],
-          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Equilibrate fresh 50 mL 0.1 M thiosulphate at 30 degrees C.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Each temperature trial starts with a fresh clear aliquot.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         },
         {
           "instruction": "Add 5 mL 1 M HCl, swirl and start timing halfway through transfer.",
@@ -113,7 +134,28 @@
               "experiment": "2.1(B)"
             }
           ],
-          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Add 5 mL 1 M HCl, swirl and start timing halfway through transfer.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Sulphur gradually clouds the sample.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         },
         {
           "instruction": "Record the time when the cross disappears.",
@@ -130,7 +172,28 @@
               "experiment": "2.1(B)"
             }
           ],
-          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Record the time when the cross disappears.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Record measured time without fabricating a numerical result.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         }
       ]
     },
@@ -174,7 +237,28 @@
               "experiment": "2.1(B)"
             }
           ],
-          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Equilibrate fresh 50 mL 0.1 M thiosulphate at 40 degrees C.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Each temperature trial starts with a fresh clear aliquot.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         },
         {
           "instruction": "Add 5 mL 1 M HCl, swirl and start timing halfway through transfer.",
@@ -200,7 +284,28 @@
               "experiment": "2.1(B)"
             }
           ],
-          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Add 5 mL 1 M HCl, swirl and start timing halfway through transfer.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Sulphur gradually clouds the sample.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         },
         {
           "instruction": "Record the time when the cross disappears.",
@@ -217,7 +322,28 @@
               "experiment": "2.1(B)"
             }
           ],
-          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Record the time when the cross disappears.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Record measured time without fabricating a numerical result.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         }
       ]
     },
@@ -261,7 +387,28 @@
               "experiment": "2.1(B)"
             }
           ],
-          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Equilibrate fresh 50 mL 0.1 M thiosulphate at 50 degrees C.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Each temperature trial starts with a fresh clear aliquot.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         },
         {
           "instruction": "Add 5 mL 1 M HCl, swirl and start timing halfway through transfer.",
@@ -287,7 +434,28 @@
               "experiment": "2.1(B)"
             }
           ],
-          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Add 5 mL 1 M HCl, swirl and start timing halfway through transfer.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Sulphur gradually clouds the sample.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         },
         {
           "instruction": "Record the time when the cross disappears.",
@@ -304,7 +472,28 @@
               "experiment": "2.1(B)"
             }
           ],
-          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Record the time when the cross disappears.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Record measured time without fabricating a numerical result.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         }
       ]
     },
@@ -348,7 +537,28 @@
               "experiment": "2.1(B)"
             }
           ],
-          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Equilibrate fresh 50 mL 0.1 M thiosulphate at 60 degrees C.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Each temperature trial starts with a fresh clear aliquot.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         },
         {
           "instruction": "Add 5 mL 1 M HCl, swirl and start timing halfway through transfer.",
@@ -374,7 +584,28 @@
               "experiment": "2.1(B)"
             }
           ],
-          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Add 5 mL 1 M HCl, swirl and start timing halfway through transfer.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Sulphur gradually clouds the sample.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         },
         {
           "instruction": "Record the time when the cross disappears.",
@@ -391,7 +622,28 @@
               "experiment": "2.1(B)"
             }
           ],
-          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Record the time when the cross disappears.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Record measured time without fabricating a numerical result.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         }
       ]
     },
@@ -435,7 +687,28 @@
               "experiment": "2.1(B)"
             }
           ],
-          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Equilibrate fresh 50 mL 0.1 M thiosulphate at 70 degrees C.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Each temperature trial starts with a fresh clear aliquot.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         },
         {
           "instruction": "Add 5 mL 1 M HCl, swirl and start timing halfway through transfer.",
@@ -461,7 +734,28 @@
               "experiment": "2.1(B)"
             }
           ],
-          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Add 5 mL 1 M HCl, swirl and start timing halfway through transfer.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Sulphur gradually clouds the sample.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         },
         {
           "instruction": "Record the time when the cross disappears.",
@@ -478,27 +772,132 @@
               "experiment": "2.1(B)"
             }
           ],
-          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Record the time when the cross disappears.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Record measured time without fabricating a numerical result.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         }
       ]
     }
   ],
   "selected_protocol_variant": null,
+  "rendering_contract": {
+    "version": 1,
+    "review_status": "draft",
+    "source_reviewed": false,
+    "quantity_coverage": "transcribed",
+    "required_source_details": [
+      "reagent identity and concentration",
+      "dose or endpoint for each addition",
+      "initial sample state and volume",
+      "vessel capacity and safe working volume"
+    ],
+    "numeric_values_inferred": false,
+    "continuity_policy": "Preserve the last state of each identified sample/apparatus; allocate a separate reference for a fresh sample or changed setup.",
+    "observation_policy": "Show only the selected source's conditional observation on its named target, after its documented cause.",
+    "pacing_policy": "Split separate actions; retain laboratory waiting/heating times as process conditions, not compressed clip durations.",
+    "physics_status": "not_applicable",
+    "render_mode_policy": "Choose the rendering mode after reviewing the actual setup. Circuit diagrams require explicit validated topology; never infer it from a title."
+  },
   "procedure_steps": [
     {
       "step_id": 1,
       "instruction": "Select one source-backed protocol variant and identify its sample and reagents before rendering.",
-      "observation": "This catalogue overview is not an executable combined procedure."
+      "observation": "This catalogue overview is not an executable combined procedure.",
+      "science_spec": {
+        "source_reviewed": false,
+        "entities": [],
+        "preconditions": [],
+        "requirements": [
+          {
+            "id": "action",
+            "description": "Select one source-backed protocol variant and identify its sample and reagents before rendering.",
+            "critical": true,
+            "evidence_kind": "interval"
+          },
+          {
+            "id": "observation",
+            "description": "This catalogue overview is not an executable combined procedure.",
+            "critical": true,
+            "evidence_kind": "interval"
+          }
+        ],
+        "temporal_order": [],
+        "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+      },
+      "quantities": []
     },
     {
       "step_id": 2,
       "instruction": "Resolve unspecified doses, source conflicts and sample/reference-image requirements for the selected variant.",
-      "observation": "Unknown quantities remain unset; alternatives and fresh aliquots remain separate."
+      "observation": "Unknown quantities remain unset; alternatives and fresh aliquots remain separate.",
+      "science_spec": {
+        "source_reviewed": false,
+        "entities": [],
+        "preconditions": [],
+        "requirements": [
+          {
+            "id": "action",
+            "description": "Resolve unspecified doses, source conflicts and sample/reference-image requirements for the selected variant.",
+            "critical": true,
+            "evidence_kind": "interval"
+          },
+          {
+            "id": "observation",
+            "description": "Unknown quantities remain unset; alternatives and fresh aliquots remain separate.",
+            "critical": true,
+            "evidence_kind": "interval"
+          }
+        ],
+        "temporal_order": [],
+        "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+      },
+      "quantities": []
     },
     {
       "step_id": 3,
       "instruction": "Use only the selected variant's source-evidenced steps after scientific review.",
-      "observation": "Do not concatenate the alternative tests into one vessel or invent a universal positive outcome."
+      "observation": "Do not concatenate the alternative tests into one vessel or invent a universal positive outcome.",
+      "science_spec": {
+        "source_reviewed": false,
+        "entities": [],
+        "preconditions": [],
+        "requirements": [
+          {
+            "id": "action",
+            "description": "Use only the selected variant's source-evidenced steps after scientific review.",
+            "critical": true,
+            "evidence_kind": "interval"
+          },
+          {
+            "id": "observation",
+            "description": "Do not concatenate the alternative tests into one vessel or invent a universal positive outcome.",
+            "critical": true,
+            "evidence_kind": "interval"
+          }
+        ],
+        "temporal_order": [],
+        "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+      },
+      "quantities": []
     }
   ],
   "source_experiment_id": "chem_12_902",

@@ -26,8 +26,8 @@
       ],
       "procedure_steps": [
         {
-          "instruction": "Take 1 mL sodium carbonate extract and acidify with dilute nitric acid; the manual also allows a water extract.",
-          "observation": "Use a separate chloride-test aliquot. Initial clarity/colour depend on the specified sample.",
+          "instruction": "Take 1 mL sodium carbonate extract as a separate chloride-test aliquot; the manual also allows a water extract.",
+          "observation": "The separate test aliquot is ready. Initial clarity/colour depend on the specified sample.",
           "quantities": [
             {
               "reagent": "carbonate extract",
@@ -35,11 +35,6 @@
               "qualifier": "exact",
               "value": 1,
               "unit": "mL"
-            },
-            {
-              "reagent": "dilute HNO3",
-              "role": "addition",
-              "qualifier": "not_specified"
             }
           ],
           "sample_id": "reaction",
@@ -53,7 +48,72 @@
               "experiment": "7.1"
             }
           ],
-          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Take 1 mL sodium carbonate extract as a separate chloride-test aliquot; the manual also allows a water extract.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "The separate test aliquot is ready. Initial clarity/colour depend on the specified sample.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "Acidify this chloride-test aliquot with dilute nitric acid.",
+          "observation": "The same aliquot is acidified; its dose and resulting volume are not specified.",
+          "quantities": [
+            {
+              "reagent": "dilute HNO3",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm107",
+              "file": "lelm107.pdf",
+              "pdf_page": 9,
+              "experiment": "7.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Acidify this chloride-test aliquot with dilute nitric acid.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "The same aliquot is acidified; its dose and resulting volume are not specified.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         },
         {
           "instruction": "Add silver nitrate solution to this acidified aliquot.",
@@ -67,7 +127,7 @@
           ],
           "sample_id": "reaction",
           "reaction_scope": "whole_contents",
-          "step_id": 2,
+          "step_id": 3,
           "source_evidence": [
             {
               "source_id": "ncert_lelm107",
@@ -76,10 +136,31 @@
               "experiment": "7.1"
             }
           ],
-          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Add silver nitrate solution to this acidified aliquot.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "A curdy white silver chloride precipitate forms only when chloride is present.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         },
         {
-          "instruction": "Add ammonium hydroxide to the same precipitate and mix as appropriate for the reviewed procedure.",
+          "instruction": "Add ammonium hydroxide to the same silver chloride precipitate.",
           "observation": "Silver chloride dissolves to a clear solution when the documented chemical conditions are met; no residual white upper layer should be invented.",
           "quantities": [
             {
@@ -91,7 +172,7 @@
           ],
           "sample_id": "reaction",
           "reaction_scope": "whole_contents",
-          "step_id": 3,
+          "step_id": 4,
           "source_evidence": [
             {
               "source_id": "ncert_lelm107",
@@ -100,7 +181,28 @@
               "experiment": "7.1"
             }
           ],
-          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Add ammonium hydroxide to the same silver chloride precipitate.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Silver chloride dissolves to a clear solution when the documented chemical conditions are met; no residual white upper layer should be invented.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
         }
       ],
       "quantity_review": {
@@ -157,7 +259,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Take a little salt and a few mL distilled water; shake and heat if needed until fully dissolved.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "The original solution must be clear and transparent; its colour depends on the chosen salt. Do not invent a universal white solution.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -214,7 +337,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Boil 1 g salt with about 3 g sodium carbonate and 15 mL water for about 10 minutes; cool and filter.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "Filtrate is a stock extract for separate anion-test aliquots.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -231,8 +375,8 @@
           ],
           "procedure_steps": [
             {
-              "instruction": "Take 1 mL sodium carbonate extract and acidify with dilute nitric acid; the manual also allows a water extract.",
-              "observation": "Use a separate chloride-test aliquot. Initial clarity/colour depend on the specified sample.",
+              "instruction": "Take 1 mL sodium carbonate extract as a separate chloride-test aliquot; the manual also allows a water extract.",
+              "observation": "The separate test aliquot is ready. Initial clarity/colour depend on the specified sample.",
               "quantities": [
                 {
                   "reagent": "carbonate extract",
@@ -240,11 +384,6 @@
                   "qualifier": "exact",
                   "value": 1,
                   "unit": "mL"
-                },
-                {
-                  "reagent": "dilute HNO3",
-                  "role": "addition",
-                  "qualifier": "not_specified"
                 }
               ],
               "sample_id": "reaction",
@@ -258,7 +397,72 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Take 1 mL sodium carbonate extract as a separate chloride-test aliquot; the manual also allows a water extract.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "The separate test aliquot is ready. Initial clarity/colour depend on the specified sample.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
+            },
+            {
+              "instruction": "Acidify this chloride-test aliquot with dilute nitric acid.",
+              "observation": "The same aliquot is acidified; its dose and resulting volume are not specified.",
+              "quantities": [
+                {
+                  "reagent": "dilute HNO3",
+                  "role": "addition",
+                  "qualifier": "not_specified"
+                }
+              ],
+              "sample_id": "reaction",
+              "reaction_scope": "source_defined",
+              "step_id": 2,
+              "source_evidence": [
+                {
+                  "source_id": "ncert_lelm107",
+                  "file": "lelm107.pdf",
+                  "pdf_page": 9,
+                  "experiment": "7.1"
+                }
+              ],
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Acidify this chloride-test aliquot with dilute nitric acid.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "The same aliquot is acidified; its dose and resulting volume are not specified.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             },
             {
               "instruction": "Add silver nitrate solution to this acidified aliquot.",
@@ -272,7 +476,7 @@
               ],
               "sample_id": "reaction",
               "reaction_scope": "whole_contents",
-              "step_id": 2,
+              "step_id": 3,
               "source_evidence": [
                 {
                   "source_id": "ncert_lelm107",
@@ -281,10 +485,31 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Add silver nitrate solution to this acidified aliquot.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "A curdy white silver chloride precipitate forms only when chloride is present.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             },
             {
-              "instruction": "Add ammonium hydroxide to the same precipitate and mix as appropriate for the reviewed procedure.",
+              "instruction": "Add ammonium hydroxide to the same silver chloride precipitate.",
               "observation": "Silver chloride dissolves to a clear solution when the documented chemical conditions are met; no residual white upper layer should be invented.",
               "quantities": [
                 {
@@ -296,7 +521,7 @@
               ],
               "sample_id": "reaction",
               "reaction_scope": "whole_contents",
-              "step_id": 3,
+              "step_id": 4,
               "source_evidence": [
                 {
                   "source_id": "ncert_lelm107",
@@ -305,7 +530,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Add ammonium hydroxide to the same silver chloride precipitate.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "Silver chloride dissolves to a clear solution when the documented chemical conditions are met; no residual white upper layer should be invented.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -351,7 +597,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Use 0.1 g salt with dilute acid; pass evolved gas into limewater.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "Carbon dioxide makes limewater milky; excess CO2 can clear it.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -399,7 +666,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Make 1 mL water extract alkaline with ammonium hydroxide or sodium carbonate; add one drop sodium nitroprusside.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "Purple/violet colour indicates sulphide.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -451,7 +739,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Add barium chloride to 1 mL extract; treat the white precipitate with dilute HCl. Test a separate precipitate portion with a few drops acidified permanganate.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "Barium sulphite dissolves in acid; permanganate decolourises.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -504,7 +813,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Add a few drops each KI and starch to 1 mL water extract and acidify with acetic acid.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "Blue colour indicates a positive nitrite test.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -561,7 +891,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Acidify 1 mL water extract with acetic acid; add 2-3 drops sulphanilic acid followed by 2-3 drops 1-naphthylamine reagent.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "A red colour is a positive test.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -613,7 +964,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Shake 0.1 g salt with 1-2 mL water, filter if needed; add 1-2 mL neutral ferric chloride and boil.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "Deep red colour changes to a brown-red precipitate on boiling.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -663,7 +1035,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Heat 0.1 g salt with 1 mL ethanol and 0.2 mL concentrated sulphuric acid.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "The source reports a fruity odour; this is not a visible colour change or an instruction to inhale.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -717,7 +1110,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Neutralise 1 mL extract with HCl; add 1 mL source-approved organic solvent and excess chlorine water dropwise; shake.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "Brown colour develops in the organic layer; layering is intentional.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -770,7 +1184,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Use 1 mL salt solution neutralised with HCl; add 1 mL source-approved organic solvent and excess chlorine water dropwise; shake.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "Violet colour develops in the organic layer; do not homogenise the final layers.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -818,7 +1253,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "To 1 mL aqueous salt solution add 2 mL concentrated sulphuric acid; mix, cool under the tap, then introduce fresh ferrous sulphate down the wall without shaking.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "A brown ring forms at the interface; a layered endpoint is required.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -874,7 +1330,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Acidify 1 mL extract with acetic acid; add calcium chloride. Isolate the precipitate, dissolve in dilute sulphuric acid, add very dilute permanganate and warm.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "White calcium oxalate forms; subsequent permanganate loses colour and evolved CO2 makes limewater milky.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -920,7 +1397,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Acidify 1 mL water/carbonate extract with dilute HCl and add barium chloride.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "White barium sulphate precipitate is insoluble in concentrated HCl or HNO3.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -964,7 +1462,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Acidify a separate extract aliquot with concentrated nitric acid; add ammonium molybdate and heat to boiling.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "Canary-yellow precipitate indicates phosphate.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -1018,7 +1537,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Heat 0.1 g salt with 1-2 mL NaOH. Hold an HCl-moistened glass rod near the mouth; use a separate gas receiver for a Nessler test if selected.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "HCl rod produces white fumes; Nessler reagent gives brown colour/precipitate in its receiver. Do not colour the parent liquid blue.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -1061,7 +1601,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Heat about 0.1 g dry salt for about one minute; compare hot and cold residue.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "Colour depends on the salt and is preliminary evidence only.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -1103,7 +1664,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Clean the platinum loop; make a small salt paste with 2-3 drops concentrated HCl and introduce the loaded loop into the flame.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "Characteristic flame colour depends on the cation; this is not a solution colour change.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -1154,7 +1736,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Use a fresh charcoal cavity with about 0.2 g salt and about 0.5 g anhydrous sodium carbonate; moisten with 1-2 drops water and heat as prescribed.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "Residue/bead colour depends on the cation and whether hot or cold.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -1191,7 +1794,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "For a white charcoal-test residue add 2-3 drops cobalt nitrate solution and heat as prescribed.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "Zn/Al/Mg residues give distinct colours; do not assert one universal outcome.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -1242,7 +1866,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Acidify a fresh 1 mL extract aliquot with dilute nitric acid, add silver nitrate and examine solubility in ammonium hydroxide.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "Positive precipitate: pale yellow; dissolves with difficulty in ammonia.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -1293,7 +1938,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Acidify a fresh 1 mL extract aliquot with dilute nitric acid, add silver nitrate and examine solubility in ammonium hydroxide.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "Positive precipitate: yellow; insoluble in ammonia.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -1349,7 +2015,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Dissolve the group-I precipitate in hot water; divide into separate portions for KI, potassium chromate, and alcohol/dilute sulphuric acid tests.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "KI and chromate produce yellow precipitates; sulphate is white.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -1395,7 +2082,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Use the reviewed group-IIA copper solution; add excess ammonium hydroxide, then acidify with acetic acid and add potassium ferrocyanide.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "Deep-blue ammonia complex precedes chocolate-brown ferrocyanide precipitate.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -1441,7 +2149,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Use the reviewed group-IIB branch: acidify yellow ammonium-sulphide solution with dilute HCl; dissolve the precipitate in hot concentrated nitric acid and add ammonium molybdate.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "Yellow sulphide and subsequently canary-yellow molybdate support the selected arsenic branch.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -1487,7 +2216,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Dissolve group-III brown precipitate in dilute HCl; split into separate portions for potassium ferrocyanide and potassium thiocyanate.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "Separate tests give Prussian blue and blood-red colours respectively.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -1538,7 +2288,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Dissolve group-III white precipitate in dilute HCl; split for NaOH solubility and litmus/ammonium-hydroxide lake tests.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "NaOH precipitate dissolves in excess; lake test has a blue floating mass in colourless solution.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -1589,7 +2360,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Dissolve the group-IV white precipitate in hot dilute HCl; split for excess NaOH and, separately, NH4OH neutralisation followed by potassium ferrocyanide.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "White hydroxide dissolves in excess NaOH; separate ferrocyanide test gives bluish-white precipitate.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -1630,7 +2422,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Dissolve the group-IV flesh-coloured precipitate in hot dilute HCl and add excess NaOH.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "White hydroxide becomes brown on standing.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -1671,7 +2484,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Use the source-prepared group-IV solution; make alkaline with ammonium hydroxide and add a few drops dimethylglyoxime.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "Bright-red precipitate confirms the selected nickel branch.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -1717,7 +2551,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Use a separate portion of group-IV solution; neutralise with ammonium hydroxide, acidify with dilute acetic acid and add solid potassium nitrite.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "Yellow precipitate confirms the selected cobalt branch.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -1758,7 +2613,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "Dissolve group-V carbonate in hot dilute acetic acid; use a separate portion with potassium chromate.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "Yellow precipitate supports barium; grassy-green flame is a separate confirmation.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -1794,7 +2670,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "With barium absent, add ammonium sulphate to a separate group-V solution portion; heat, scratch and cool.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "White sulphate precipitate supports strontium; crimson flame is separate.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -1830,7 +2727,28 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "With barium and strontium absent, add ammonium oxalate to a separate group-V solution portion and shake.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "White calcium oxalate precipitate forms; brick-red flame is separate.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         },
@@ -1871,12 +2789,51 @@
                   "experiment": "7.1"
                 }
               ],
-              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL."
+              "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+              "science_spec": {
+                "source_reviewed": false,
+                "entities": [],
+                "preconditions": [],
+                "requirements": [
+                  {
+                    "id": "action",
+                    "description": "With group V absent, add disodium hydrogenphosphate to the ammoniacal original-solution aliquot, scratch the tube and warm if delayed.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  },
+                  {
+                    "id": "observation",
+                    "description": "White crystalline magnesium ammonium phosphate precipitates.",
+                    "critical": true,
+                    "evidence_kind": "interval"
+                  }
+                ],
+                "temporal_order": [],
+                "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+              }
             }
           ]
         }
       ],
       "selected_protocol_variant": "chloride_silver",
+      "rendering_contract": {
+        "version": 1,
+        "review_status": "draft",
+        "source_reviewed": false,
+        "quantity_coverage": "partial",
+        "required_source_details": [
+          "reagent identity and concentration",
+          "dose or endpoint for each addition",
+          "initial sample state and volume",
+          "vessel capacity and safe working volume"
+        ],
+        "numeric_values_inferred": false,
+        "continuity_policy": "Preserve the last state of each identified sample/apparatus; allocate a separate reference for a fresh sample or changed setup.",
+        "observation_policy": "Show only the selected source's conditional observation on its named target, after its documented cause.",
+        "pacing_policy": "Split separate actions; retain laboratory waiting/heating times as process conditions, not compressed clip durations.",
+        "physics_status": "not_applicable",
+        "render_mode_policy": "Choose the rendering mode after reviewing the actual setup. Circuit diagrams require explicit validated topology; never infer it from a title."
+      },
       "planning_blocked": false,
       "planning_block_reason": ""
     }
@@ -1886,13 +2843,121 @@
       "experiment_id": "chem_12_301",
       "scene_id": "selected_protocol",
       "step_id": 1,
-      "prompt": "Create a realistic educational science video clip for Class 12 Chemistry experiment 'Detect one cation and one anion in a salt'. Show the scene 'Selected source-backed protocol'. Starting state:  Perform only this procedure step: Take 1 mL sodium carbonate extract and acidify with dilute nitric acid; the manual also allows a water extract. End in this documented state: Use a separate chloride-test aliquot. Initial clarity/colour depend on the specified sample. Source quantity facts: {\"quantities\": [{\"reagent\": \"carbonate extract\", \"role\": \"aliquot\", \"qualifier\": \"exact\", \"value\": 1, \"unit\": \"mL\"}, {\"reagent\": \"dilute HNO3\", \"role\": \"addition\", \"qualifier\": \"not_specified\"}], \"source_evidence\": [{\"source_id\": \"ncert_lelm107\", \"file\": \"lelm107.pdf\", \"pdf_page\": 9, \"experiment\": \"7.1\"}], \"sample_id\": \"reaction\", \"reaction_scope\": \"source_defined\"} Quantity: Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL. Use only apparatus already present in the reference image or explicitly named in this step. Show only this procedure step, acting on its named target; preserve the count and positions of other apparatus. Depict each observation on the correct physical target. Keep named indicators and measuring devices visible: paper or strips change on the paper, while a liquid indicator changes the sample only when the procedure says it does. Follow the manual's order and stated quantities; do not invent an exact amount or ratio when none is documented, and never fill a vessel to the rim. Do not invent a reaction, color change, reagent, or apparatus that the source does not specify. This source has unverified details: depict only explicitly documented actions and results; do not fill gaps by guessing. Keep the camera fixed, the operation slow and clearly visible, and omit labels and watermarks.",
+      "prompt": "Create a realistic educational science video clip for Class 12 Chemistry experiment 'Detect one cation and one anion in a salt'. Show the scene 'Selected source-backed protocol'. Starting state:  Perform only this procedure step: Take 1 mL sodium carbonate extract as a separate chloride-test aliquot; the manual also allows a water extract. End in this documented state: The separate test aliquot is ready. Initial clarity/colour depend on the specified sample. Source quantity facts: {\"quantities\": [{\"reagent\": \"carbonate extract\", \"role\": \"aliquot\", \"qualifier\": \"exact\", \"value\": 1, \"unit\": \"mL\"}], \"source_evidence\": [{\"source_id\": \"ncert_lelm107\", \"file\": \"lelm107.pdf\", \"pdf_page\": 9, \"experiment\": \"7.1\"}], \"sample_id\": \"reaction\", \"reaction_scope\": \"source_defined\", \"science_spec\": {\"source_reviewed\": false, \"entities\": [], \"preconditions\": [], \"requirements\": [{\"id\": \"action\", \"description\": \"Take 1 mL sodium carbonate extract as a separate chloride-test aliquot; the manual also allows a water extract.\", \"critical\": true, \"evidence_kind\": \"interval\"}, {\"id\": \"observation\", \"description\": \"The separate test aliquot is ready. Initial clarity/colour depend on the specified sample.\", \"critical\": true, \"evidence_kind\": \"interval\"}], \"temporal_order\": [], \"review_notes\": \"Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance.\"}} Quantity: Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL. Use only apparatus already present in the reference image or explicitly named in this step. Show only this procedure step, acting on its named target; preserve the count and positions of other apparatus. Depict each observation on the correct physical target. Keep named indicators and measuring devices visible: paper or strips change on the paper, while a liquid indicator changes the sample only when the procedure says it does. Follow the manual's order and stated quantities; do not invent an exact amount or ratio when none is documented, and never fill a vessel to the rim. Do not invent a reaction, color change, reagent, or apparatus that the source does not specify. This source has unverified details: depict only explicitly documented actions and results; do not fill gaps by guessing. Keep the camera fixed, the operation slow and clearly visible, and omit labels and watermarks.",
       "negative_prompt": "blurry, distorted apparatus, incorrect measurements, text artifacts, watermark",
       "starting_image": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
       "image_prompt": "Create one consistent educational science reference image for the starting state: . Show only the apparatus required for this atomic step, with no duplicate vessels, unrelated equipment, labels, handwriting, or collage.",
-      "state_before": "Before: Take 1 mL sodium carbonate extract and acidify with dilute nitric acid; the manual also allows a water extract.",
-      "action": "Take 1 mL sodium carbonate extract and acidify with dilute nitric acid; the manual also allows a water extract.",
-      "state_after": "Use a separate chloride-test aliquot. Initial clarity/colour depend on the specified sample.",
+      "science_spec": {
+        "source_reviewed": false,
+        "entities": [],
+        "preconditions": [],
+        "requirements": [
+          {
+            "id": "action",
+            "description": "Take 1 mL sodium carbonate extract as a separate chloride-test aliquot; the manual also allows a water extract.",
+            "critical": true,
+            "evidence_kind": "interval"
+          },
+          {
+            "id": "observation",
+            "description": "The separate test aliquot is ready. Initial clarity/colour depend on the specified sample.",
+            "critical": true,
+            "evidence_kind": "interval"
+          }
+        ],
+        "temporal_order": [],
+        "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+      },
+      "visibility_targets": [],
+      "handoff_requirements": [],
+      "render_mode": "wan",
+      "diagram_timeline": [],
+      "state_before": "Before: Take 1 mL sodium carbonate extract as a separate chloride-test aliquot; the manual also allows a water extract.",
+      "action": "Take 1 mL sodium carbonate extract as a separate chloride-test aliquot; the manual also allows a water extract.",
+      "state_after": "The separate test aliquot is ready. Initial clarity/colour depend on the specified sample.",
+      "visual_priority": "normal",
+      "continuity_required": false,
+      "reference_policy": "state_keyframe",
+      "reference_clip": "",
+      "reference_mode": "independent",
+      "needs_reference_image": true,
+      "handoff_policy": "none",
+      "handoff_entity": "",
+      "handoff_offset_seconds": null,
+      "duration_seconds": 2.0,
+      "reference_image": "",
+      "target_object": "",
+      "preserve_objects": [],
+      "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+      "observable_target": "",
+      "action_pacing": "slow, single deliberate action",
+      "manual_review_required": true,
+      "manual_review_reasons": [
+        "Experiment source status is source_review.",
+        "Aggregate protocol coverage is partial; review the selected branch and its prerequisites."
+      ],
+      "requires_clip_split": false,
+      "quantities": [
+        {
+          "reagent": "carbonate extract",
+          "role": "aliquot",
+          "qualifier": "exact",
+          "value": 1,
+          "unit": "mL"
+        }
+      ],
+      "source_evidence": [
+        {
+          "source_id": "ncert_lelm107",
+          "file": "lelm107.pdf",
+          "pdf_page": 9,
+          "experiment": "7.1"
+        }
+      ],
+      "sample_id": "reaction",
+      "reaction_scope": "source_defined",
+      "source_ids": [
+        "ncert_lelm107",
+        "manual_01_pdf"
+      ],
+      "source_status": "source_review"
+    },
+    {
+      "experiment_id": "chem_12_301",
+      "scene_id": "selected_protocol",
+      "step_id": 2,
+      "prompt": "Create a realistic educational science video clip for Class 12 Chemistry experiment 'Detect one cation and one anion in a salt'. Show the scene 'Selected source-backed protocol'. Starting state:  Perform only this procedure step: Acidify this chloride-test aliquot with dilute nitric acid. End in this documented state: The same aliquot is acidified; its dose and resulting volume are not specified. Source quantity facts: {\"quantities\": [{\"reagent\": \"dilute HNO3\", \"role\": \"addition\", \"qualifier\": \"not_specified\"}], \"source_evidence\": [{\"source_id\": \"ncert_lelm107\", \"file\": \"lelm107.pdf\", \"pdf_page\": 9, \"experiment\": \"7.1\"}], \"sample_id\": \"reaction\", \"reaction_scope\": \"source_defined\", \"science_spec\": {\"source_reviewed\": false, \"entities\": [], \"preconditions\": [], \"requirements\": [{\"id\": \"action\", \"description\": \"Acidify this chloride-test aliquot with dilute nitric acid.\", \"critical\": true, \"evidence_kind\": \"interval\"}, {\"id\": \"observation\", \"description\": \"The same aliquot is acidified; its dose and resulting volume are not specified.\", \"critical\": true, \"evidence_kind\": \"interval\"}], \"temporal_order\": [], \"review_notes\": \"Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance.\"}} Quantity: Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL. Use only apparatus already present in the reference image or explicitly named in this step. Show only this procedure step, acting on its named target; preserve the count and positions of other apparatus. Depict each observation on the correct physical target. Keep named indicators and measuring devices visible: paper or strips change on the paper, while a liquid indicator changes the sample only when the procedure says it does. Follow the manual's order and stated quantities; do not invent an exact amount or ratio when none is documented, and never fill a vessel to the rim. Do not invent a reaction, color change, reagent, or apparatus that the source does not specify. This source has unverified details: depict only explicitly documented actions and results; do not fill gaps by guessing. Keep the camera fixed, the operation slow and clearly visible, and omit labels and watermarks.",
+      "negative_prompt": "blurry, distorted apparatus, incorrect measurements, text artifacts, watermark",
+      "starting_image": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
+      "image_prompt": "Create one consistent educational science reference image for the starting state: . Show only the apparatus required for this atomic step, with no duplicate vessels, unrelated equipment, labels, handwriting, or collage.",
+      "science_spec": {
+        "source_reviewed": false,
+        "entities": [],
+        "preconditions": [],
+        "requirements": [
+          {
+            "id": "action",
+            "description": "Acidify this chloride-test aliquot with dilute nitric acid.",
+            "critical": true,
+            "evidence_kind": "interval"
+          },
+          {
+            "id": "observation",
+            "description": "The same aliquot is acidified; its dose and resulting volume are not specified.",
+            "critical": true,
+            "evidence_kind": "interval"
+          }
+        ],
+        "temporal_order": [],
+        "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+      },
+      "visibility_targets": [],
+      "handoff_requirements": [],
+      "render_mode": "wan",
+      "diagram_timeline": [],
+      "state_before": "Before: Acidify this chloride-test aliquot with dilute nitric acid.",
+      "action": "Acidify this chloride-test aliquot with dilute nitric acid.",
+      "state_after": "The same aliquot is acidified; its dose and resulting volume are not specified.",
       "visual_priority": "normal",
       "continuity_required": false,
       "reference_policy": "state_keyframe",
@@ -1913,17 +2978,11 @@
       "manual_review_reasons": [
         "Experiment source status is source_review.",
         "Resolve or explicitly approve not_specified quantity for dilute HNO3 before numeric dose planning.",
-        "Aggregate protocol coverage is partial; review the selected branch and its prerequisites."
+        "Aggregate protocol coverage is partial; review the selected branch and its prerequisites.",
+        "The observation text is missing or generic and needs manual verification."
       ],
       "requires_clip_split": false,
       "quantities": [
-        {
-          "reagent": "carbonate extract",
-          "role": "aliquot",
-          "qualifier": "exact",
-          "value": 1,
-          "unit": "mL"
-        },
         {
           "reagent": "dilute HNO3",
           "role": "addition",
@@ -1949,11 +3008,36 @@
     {
       "experiment_id": "chem_12_301",
       "scene_id": "selected_protocol",
-      "step_id": 2,
-      "prompt": "Create a realistic educational science video clip for Class 12 Chemistry experiment 'Detect one cation and one anion in a salt'. Show the scene 'Selected source-backed protocol'. Starting state:  Perform only this procedure step: Add silver nitrate solution to this acidified aliquot. End in this documented state: A curdy white silver chloride precipitate forms only when chloride is present. Source quantity facts: {\"quantities\": [{\"reagent\": \"AgNO3 solution\", \"role\": \"addition\", \"qualifier\": \"not_specified\"}], \"source_evidence\": [{\"source_id\": \"ncert_lelm107\", \"file\": \"lelm107.pdf\", \"pdf_page\": 9, \"experiment\": \"7.1\"}], \"sample_id\": \"reaction\", \"reaction_scope\": \"whole_contents\"} Quantity: Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL. Use only apparatus already present in the reference image or explicitly named in this step. Show only this procedure step, acting on its named target; preserve the count and positions of other apparatus. Depict each observation on the correct physical target. Keep named indicators and measuring devices visible: paper or strips change on the paper, while a liquid indicator changes the sample only when the procedure says it does. Follow the manual's order and stated quantities; do not invent an exact amount or ratio when none is documented, and never fill a vessel to the rim. Do not invent a reaction, color change, reagent, or apparatus that the source does not specify. This source has unverified details: depict only explicitly documented actions and results; do not fill gaps by guessing. Keep the camera fixed, the operation slow and clearly visible, and omit labels and watermarks.",
+      "step_id": 3,
+      "prompt": "Create a realistic educational science video clip for Class 12 Chemistry experiment 'Detect one cation and one anion in a salt'. Show the scene 'Selected source-backed protocol'. Starting state:  Perform only this procedure step: Add silver nitrate solution to this acidified aliquot. End in this documented state: A curdy white silver chloride precipitate forms only when chloride is present. Source quantity facts: {\"quantities\": [{\"reagent\": \"AgNO3 solution\", \"role\": \"addition\", \"qualifier\": \"not_specified\"}], \"source_evidence\": [{\"source_id\": \"ncert_lelm107\", \"file\": \"lelm107.pdf\", \"pdf_page\": 9, \"experiment\": \"7.1\"}], \"sample_id\": \"reaction\", \"reaction_scope\": \"whole_contents\", \"science_spec\": {\"source_reviewed\": false, \"entities\": [], \"preconditions\": [], \"requirements\": [{\"id\": \"action\", \"description\": \"Add silver nitrate solution to this acidified aliquot.\", \"critical\": true, \"evidence_kind\": \"interval\"}, {\"id\": \"observation\", \"description\": \"A curdy white silver chloride precipitate forms only when chloride is present.\", \"critical\": true, \"evidence_kind\": \"interval\"}], \"temporal_order\": [], \"review_notes\": \"Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance.\"}} Quantity: Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL. Use only apparatus already present in the reference image or explicitly named in this step. Show only this procedure step, acting on its named target; preserve the count and positions of other apparatus. Depict each observation on the correct physical target. Keep named indicators and measuring devices visible: paper or strips change on the paper, while a liquid indicator changes the sample only when the procedure says it does. Follow the manual's order and stated quantities; do not invent an exact amount or ratio when none is documented, and never fill a vessel to the rim. Do not invent a reaction, color change, reagent, or apparatus that the source does not specify. This source has unverified details: depict only explicitly documented actions and results; do not fill gaps by guessing. Keep the camera fixed, the operation slow and clearly visible, and omit labels and watermarks.",
       "negative_prompt": "blurry, distorted apparatus, incorrect measurements, text artifacts, watermark",
       "starting_image": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
       "image_prompt": "Create one consistent educational science reference image for the starting state: . Show only the apparatus required for this atomic step, with no duplicate vessels, unrelated equipment, labels, handwriting, or collage.",
+      "science_spec": {
+        "source_reviewed": false,
+        "entities": [],
+        "preconditions": [],
+        "requirements": [
+          {
+            "id": "action",
+            "description": "Add silver nitrate solution to this acidified aliquot.",
+            "critical": true,
+            "evidence_kind": "interval"
+          },
+          {
+            "id": "observation",
+            "description": "A curdy white silver chloride precipitate forms only when chloride is present.",
+            "critical": true,
+            "evidence_kind": "interval"
+          }
+        ],
+        "temporal_order": [],
+        "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+      },
+      "visibility_targets": [],
+      "handoff_requirements": [],
+      "render_mode": "wan",
+      "diagram_timeline": [],
       "state_before": "Before: Add silver nitrate solution to this acidified aliquot.",
       "action": "Add silver nitrate solution to this acidified aliquot.",
       "state_after": "A curdy white silver chloride precipitate forms only when chloride is present.",
@@ -2006,13 +3090,38 @@
     {
       "experiment_id": "chem_12_301",
       "scene_id": "selected_protocol",
-      "step_id": 3,
-      "prompt": "Create a realistic educational science video clip for Class 12 Chemistry experiment 'Detect one cation and one anion in a salt'. Show the scene 'Selected source-backed protocol'. Starting state:  Perform only this procedure step: Add ammonium hydroxide to the same precipitate and mix as appropriate for the reviewed procedure. End in this documented state: Silver chloride dissolves to a clear solution when the documented chemical conditions are met; no residual white upper layer should be invented. Source quantity facts: {\"quantities\": [{\"reagent\": \"NH4OH\", \"role\": \"addition\", \"qualifier\": \"not_specified\", \"note\": \"Exact dose, concentration and capacity are not specified; review required.\"}], \"source_evidence\": [{\"source_id\": \"ncert_lelm107\", \"file\": \"lelm107.pdf\", \"pdf_page\": 10, \"experiment\": \"7.1\"}], \"sample_id\": \"reaction\", \"reaction_scope\": \"whole_contents\"} Quantity: Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL. Use only apparatus already present in the reference image or explicitly named in this step. Show only this procedure step, acting on its named target; preserve the count and positions of other apparatus. Depict each observation on the correct physical target. Keep named indicators and measuring devices visible: paper or strips change on the paper, while a liquid indicator changes the sample only when the procedure says it does. Follow the manual's order and stated quantities; do not invent an exact amount or ratio when none is documented, and never fill a vessel to the rim. Do not invent a reaction, color change, reagent, or apparatus that the source does not specify. This source has unverified details: depict only explicitly documented actions and results; do not fill gaps by guessing. Keep the camera fixed, the operation slow and clearly visible, and omit labels and watermarks.",
+      "step_id": 4,
+      "prompt": "Create a realistic educational science video clip for Class 12 Chemistry experiment 'Detect one cation and one anion in a salt'. Show the scene 'Selected source-backed protocol'. Starting state:  Perform only this procedure step: Add ammonium hydroxide to the same silver chloride precipitate. End in this documented state: Silver chloride dissolves to a clear solution when the documented chemical conditions are met; no residual white upper layer should be invented. Source quantity facts: {\"quantities\": [{\"reagent\": \"NH4OH\", \"role\": \"addition\", \"qualifier\": \"not_specified\", \"note\": \"Exact dose, concentration and capacity are not specified; review required.\"}], \"source_evidence\": [{\"source_id\": \"ncert_lelm107\", \"file\": \"lelm107.pdf\", \"pdf_page\": 10, \"experiment\": \"7.1\"}], \"sample_id\": \"reaction\", \"reaction_scope\": \"whole_contents\", \"science_spec\": {\"source_reviewed\": false, \"entities\": [], \"preconditions\": [], \"requirements\": [{\"id\": \"action\", \"description\": \"Add ammonium hydroxide to the same silver chloride precipitate.\", \"critical\": true, \"evidence_kind\": \"interval\"}, {\"id\": \"observation\", \"description\": \"Silver chloride dissolves to a clear solution when the documented chemical conditions are met; no residual white upper layer should be invented.\", \"critical\": true, \"evidence_kind\": \"interval\"}], \"temporal_order\": [], \"review_notes\": \"Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance.\"}} Quantity: Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL. Use only apparatus already present in the reference image or explicitly named in this step. Show only this procedure step, acting on its named target; preserve the count and positions of other apparatus. Depict each observation on the correct physical target. Keep named indicators and measuring devices visible: paper or strips change on the paper, while a liquid indicator changes the sample only when the procedure says it does. Follow the manual's order and stated quantities; do not invent an exact amount or ratio when none is documented, and never fill a vessel to the rim. Do not invent a reaction, color change, reagent, or apparatus that the source does not specify. This source has unverified details: depict only explicitly documented actions and results; do not fill gaps by guessing. Keep the camera fixed, the operation slow and clearly visible, and omit labels and watermarks.",
       "negative_prompt": "blurry, distorted apparatus, incorrect measurements, text artifacts, watermark",
       "starting_image": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
       "image_prompt": "Create one consistent educational science reference image for the starting state: . Show only the apparatus required for this atomic step, with no duplicate vessels, unrelated equipment, labels, handwriting, or collage.",
-      "state_before": "Before: Add ammonium hydroxide to the same precipitate and mix as appropriate for the reviewed procedure.",
-      "action": "Add ammonium hydroxide to the same precipitate and mix as appropriate for the reviewed procedure.",
+      "science_spec": {
+        "source_reviewed": false,
+        "entities": [],
+        "preconditions": [],
+        "requirements": [
+          {
+            "id": "action",
+            "description": "Add ammonium hydroxide to the same silver chloride precipitate.",
+            "critical": true,
+            "evidence_kind": "interval"
+          },
+          {
+            "id": "observation",
+            "description": "Silver chloride dissolves to a clear solution when the documented chemical conditions are met; no residual white upper layer should be invented.",
+            "critical": true,
+            "evidence_kind": "interval"
+          }
+        ],
+        "temporal_order": [],
+        "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+      },
+      "visibility_targets": [],
+      "handoff_requirements": [],
+      "render_mode": "wan",
+      "diagram_timeline": [],
+      "state_before": "Before: Add ammonium hydroxide to the same silver chloride precipitate.",
+      "action": "Add ammonium hydroxide to the same silver chloride precipitate.",
       "state_after": "Silver chloride dissolves to a clear solution when the documented chemical conditions are met; no residual white upper layer should be invented.",
       "visual_priority": "normal",
       "continuity_required": false,
@@ -2034,10 +3143,9 @@
       "manual_review_reasons": [
         "Experiment source status is source_review.",
         "Resolve or explicitly approve not_specified quantity for NH4OH before numeric dose planning.",
-        "Aggregate protocol coverage is partial; review the selected branch and its prerequisites.",
-        "This step combines multiple visible operations; split it into shorter clips before generation."
+        "Aggregate protocol coverage is partial; review the selected branch and its prerequisites."
       ],
-      "requires_clip_split": true,
+      "requires_clip_split": false,
       "quantities": [
         {
           "reagent": "NH4OH",

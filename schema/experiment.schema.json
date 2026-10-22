@@ -388,6 +388,61 @@
     },
     "legacy_educational_goal": {
       "type": "string"
+    },
+    "rendering_contract": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "version",
+        "review_status",
+        "source_reviewed",
+        "quantity_coverage",
+        "required_source_details",
+        "numeric_values_inferred",
+        "continuity_policy",
+        "observation_policy",
+        "pacing_policy",
+        "physics_status",
+        "render_mode_policy"
+      ],
+      "properties": {
+        "version": {
+          "const": 1
+        },
+        "review_status": {
+          "const": "draft"
+        },
+        "source_reviewed": {
+          "type": "boolean"
+        },
+        "quantity_coverage": {
+          "type": "string"
+        },
+        "required_source_details": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "numeric_values_inferred": {
+          "const": false
+        },
+        "continuity_policy": {
+          "type": "string"
+        },
+        "observation_policy": {
+          "type": "string"
+        },
+        "pacing_policy": {
+          "type": "string"
+        },
+        "physics_status": {
+          "type": "string"
+        },
+        "render_mode_policy": {
+          "type": "string"
+        }
+      }
     }
   },
   "$defs": {
@@ -518,7 +573,8 @@
             "mid",
             "near_end",
             "final",
-            "offset"
+            "offset",
+            "reviewed"
           ]
         },
         "handoff_entity": {
@@ -592,6 +648,165 @@
         },
         "quantity_constraint": {
           "type": "string"
+        },
+        "science_spec": {
+          "$ref": "#/$defs/science_spec"
+        },
+        "visibility_targets": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/visibility_target"
+          }
+        },
+        "handoff_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "render_mode": {
+          "enum": [
+            "wan",
+            "circuit_diagram"
+          ]
+        },
+        "circuit": {
+          "type": "object"
+        },
+        "diagram_timeline": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "target_object": {
+          "type": "string"
+        },
+        "observable_target": {
+          "type": "string"
+        },
+        "action_pacing": {
+          "type": "string"
+        },
+        "preserve_objects": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "science_spec": {
+      "type": "object",
+      "required": [
+        "requirements",
+        "source_reviewed"
+      ],
+      "properties": {
+        "source_reviewed": {
+          "type": "boolean"
+        },
+        "entities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "description"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "preconditions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "temporal_order": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 2,
+            "maxItems": 2
+          }
+        },
+        "requirements": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "description",
+              "critical",
+              "evidence_kind"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "description": {
+                "type": "string",
+                "minLength": 1
+              },
+              "critical": {
+                "type": "boolean"
+              },
+              "evidence_kind": {
+                "enum": [
+                  "interval",
+                  "frame"
+                ]
+              }
+            }
+          }
+        },
+        "review_notes": {
+          "type": "string"
+        }
+      }
+    },
+    "visibility_target": {
+      "type": "object",
+      "required": [
+        "id",
+        "bbox"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "bbox": {
+          "type": "array",
+          "items": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "minItems": 4,
+          "maxItems": 4
+        },
+        "minimum_pixels": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "occluded": {
+          "type": [
+            "boolean",
+            "null"
+          ]
         }
       }
     }

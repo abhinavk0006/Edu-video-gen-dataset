@@ -42,26 +42,136 @@
     ],
     "policy": "Ranges, approximations, stock amounts, final volumes, capacities, ratios and endpoint additions retain their distinct meanings. Unstated amounts remain absent. Transcription is not scientific approval."
   },
+  "rendering_contract": {
+    "version": 1,
+    "review_status": "draft",
+    "source_reviewed": false,
+    "quantity_coverage": "not_covered",
+    "required_source_details": [
+      "apparatus dimensions and ratings",
+      "measurement range and least count",
+      "controlled settings and measured variables",
+      "reviewed physical arrangement or circuit connections"
+    ],
+    "numeric_values_inferred": false,
+    "continuity_policy": "Preserve the last state of each identified sample/apparatus; allocate a separate reference for a fresh sample or changed setup.",
+    "observation_policy": "Show only the selected source's conditional observation on its named target, after its documented cause.",
+    "pacing_policy": "Split separate actions; retain laboratory waiting/heating times as process conditions, not compressed clip durations.",
+    "physics_status": "awaiting_manual_and_validation",
+    "render_mode_policy": "Choose the rendering mode after reviewing the actual setup. Circuit diagrams require explicit validated topology; never infer it from a title."
+  },
   "procedure_steps": [
     {
       "step_id": 1,
       "instruction": "Arrange the apparatus and materials required for Measure resistance and impedance of an inductor with or without an iron core as shown in the manual.",
-      "observation": "The apparatus is aligned and the initial condition is recorded."
+      "observation": "The apparatus is aligned and the initial condition is recorded.",
+      "science_spec": {
+        "source_reviewed": false,
+        "entities": [],
+        "preconditions": [],
+        "requirements": [
+          {
+            "id": "action",
+            "description": "Arrange the apparatus and materials required for Measure resistance and impedance of an inductor with or without an iron core as shown in the manual.",
+            "critical": true,
+            "evidence_kind": "interval"
+          },
+          {
+            "id": "observation",
+            "description": "The apparatus is aligned and the initial condition is recorded.",
+            "critical": true,
+            "evidence_kind": "interval"
+          }
+        ],
+        "temporal_order": [],
+        "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+      },
+      "quantities": [],
+      "render_mode": "wan"
     },
     {
       "step_id": 2,
       "instruction": "Take the prescribed measurements or make the controlled adjustment described in the manual.",
-      "observation": "The relevant physical quantity changes while other conditions are kept controlled."
+      "observation": "The relevant physical quantity changes while other conditions are kept controlled.",
+      "science_spec": {
+        "source_reviewed": false,
+        "entities": [],
+        "preconditions": [],
+        "requirements": [
+          {
+            "id": "action",
+            "description": "Take the prescribed measurements or make the controlled adjustment described in the manual.",
+            "critical": true,
+            "evidence_kind": "interval"
+          },
+          {
+            "id": "observation",
+            "description": "The relevant physical quantity changes while other conditions are kept controlled.",
+            "critical": true,
+            "evidence_kind": "interval"
+          }
+        ],
+        "temporal_order": [],
+        "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+      },
+      "quantities": [],
+      "render_mode": "wan"
     },
     {
       "step_id": 3,
       "instruction": "Repeat the observation for the required readings or settings and record the result in a table.",
-      "observation": "A set of comparable readings is obtained for analysis."
+      "observation": "A set of comparable readings is obtained for analysis.",
+      "science_spec": {
+        "source_reviewed": false,
+        "entities": [],
+        "preconditions": [],
+        "requirements": [
+          {
+            "id": "action",
+            "description": "Repeat the observation for the required readings or settings and record the result in a table.",
+            "critical": true,
+            "evidence_kind": "interval"
+          },
+          {
+            "id": "observation",
+            "description": "A set of comparable readings is obtained for analysis.",
+            "critical": true,
+            "evidence_kind": "interval"
+          }
+        ],
+        "temporal_order": [],
+        "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+      },
+      "quantities": [],
+      "render_mode": "wan"
     },
     {
       "step_id": 4,
       "instruction": "Plot the required graph or apply the stated relation and report the final quantity.",
-      "observation": "The calculated result is compared with the expected physical relationship."
+      "observation": "The calculated result is compared with the expected physical relationship.",
+      "science_spec": {
+        "source_reviewed": false,
+        "entities": [],
+        "preconditions": [],
+        "requirements": [
+          {
+            "id": "action",
+            "description": "Plot the required graph or apply the stated relation and report the final quantity.",
+            "critical": true,
+            "evidence_kind": "interval"
+          },
+          {
+            "id": "observation",
+            "description": "The calculated result is compared with the expected physical relationship.",
+            "critical": true,
+            "evidence_kind": "interval"
+          }
+        ],
+        "temporal_order": [],
+        "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+      },
+      "quantities": [],
+      "render_mode": "wan"
     }
   ],
   "source_experiment_id": "phy_12_103",
@@ -92,7 +202,30 @@
           "prompt_template": "colour_change",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [],
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Arrange the apparatus and materials required for Measure resistance and impedance of an inductor with or without an iron core as shown in the manual.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "The apparatus is aligned and the initial condition is recorded.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          },
+          "render_mode": "wan"
         }
       ]
     },
@@ -122,7 +255,30 @@
           "prompt_template": "mechanical_motion",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [],
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Take the prescribed measurements or make the controlled adjustment described in the manual.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "The relevant physical quantity changes while other conditions are kept controlled.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          },
+          "render_mode": "wan"
         },
         {
           "step_id": "scene_2_step_3",
@@ -141,7 +297,30 @@
           "prompt_template": "colour_change",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [],
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Repeat the observation for the required readings or settings and record the result in a table.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "A set of comparable readings is obtained for analysis.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          },
+          "render_mode": "wan"
         }
       ]
     },
@@ -171,7 +350,30 @@
           "prompt_template": "colour_change",
           "motion_prompt": "",
           "negative_prompt": "camera movement, blurry, distorted apparatus",
-          "generated": false
+          "generated": false,
+          "quantities": [],
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Plot the required graph or apply the stated relation and report the final quantity.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "The calculated result is compared with the expected physical relationship.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          },
+          "render_mode": "wan"
         }
       ]
     }

@@ -104,6 +104,7 @@ to consume this selected protocol before it benefits from these fields.
 
 ```powershell
 python scripts/apply_ncert_quantities.py --source-dir "C:\Users\Abhinav Krishna\Downloads"
+python scripts/enrich_rendering_contracts.py
 python scripts/build_exports.py
 python scripts/build_dataset_directory.py
 python scripts/build_video_inputs.py
