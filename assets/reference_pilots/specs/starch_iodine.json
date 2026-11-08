@@ -1,0 +1,26 @@
+{
+  "pilot_id": "starch_iodine",
+  "experiment_id": "chem_12_403",
+  "protocol_variant": "starch_iodine",
+  "starting_state": "Prepared cooled starch dispersion test portion in one tube before iodine. Volume unspecified; image does not calibrate it.",
+  "scope": "Iodine-test excerpt only. Stock preparation and cooling precede this image; source's stock water quantities are not test-portion additions.",
+  "clips": [
+    {
+      "name": "iodine_delivery",
+      "source_step_id": 1,
+      "action": "Deliver a few drops of iodine to the existing prepared starch test portion with the dispensing tip above the tube rim; stop dispensing.",
+      "state_before": "Faintly opalescent starch dispersion without blue colour.",
+      "state_after": "Blue colour develops in the existing starch-containing dispersion after iodine contact; no separate extra sample appears.",
+      "liquid_state": {
+        "reaction_scope": "whole_contents",
+        "level_change": "increase"
+      },
+      "apply_source_quantities": true,
+      "quantity_reagents": [
+        "iodine"
+      ],
+      "tool_contact_policy": "above_rim"
+    }
+  ],
+  "prompt": "Use case: scientific-educational. Photorealistic landscape 16:9 laboratory starting frame for iodine testing a prepared starch dispersion. Exactly one plain narrow transparent glass test tube upright in a discreet clamp, entire open mouth and round bottom visible, low fill approximately lowest sixth of tube height of faintly opalescent translucent starch dispersion. It is NOT crystal-clear water, NOT opaque milk, no blue colour yet, no sediment chunks. Neutral grey bench/background, soft even light, fixed close camera at eye level, tube 70 percent image height, abundant empty space above rim for future dropwise iodine delivery. No hands, droppers, extra vessels, labels, graduations, writing, watermark or theatrical lighting. This is a prepared cooled test portion BEFORE iodine addition; not a measured-volume illustration or finished result."
+}

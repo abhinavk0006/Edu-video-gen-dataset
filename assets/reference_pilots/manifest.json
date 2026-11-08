@@ -639,6 +639,119 @@
       },
       "review_status": "draft",
       "scientifically_verified": false
+    },
+    "starch_iodine": {
+      "experiment_id": "chem_12_403",
+      "protocol_variant": "starch_iodine",
+      "starting_state": "Prepared cooled starch dispersion test portion in one tube before iodine. Volume unspecified; image does not calibrate it.",
+      "scope": "Iodine-test excerpt only. Stock preparation and cooling precede this image; source's stock water quantities are not test-portion additions.",
+      "clips": [
+        {
+          "name": "iodine_delivery",
+          "source_step_id": 1,
+          "action": "Deliver a few drops of iodine to the existing prepared starch test portion with the dispensing tip above the tube rim; stop dispensing.",
+          "state_before": "Faintly opalescent starch dispersion without blue colour.",
+          "state_after": "Blue colour develops in the existing starch-containing dispersion after iodine contact; no separate extra sample appears.",
+          "liquid_state": {
+            "reaction_scope": "whole_contents",
+            "level_change": "increase"
+          },
+          "apply_source_quantities": true,
+          "quantity_reagents": [
+            "iodine"
+          ],
+          "tool_contact_policy": "above_rim"
+        }
+      ],
+      "source_step_hashes": {
+        "1": "8c0353056c21b75db7adc3128bce4280bec5cc76e16c0cd950250db494935022"
+      },
+      "source_step_snapshots": [
+        {
+          "instruction": "Make a paste of 0.5 g starch with 5 mL water, disperse into 50 mL boiling water, then use a few drops iodine on a test portion.",
+          "observation": "Starch is colloidal; iodine gives blue. Do not assert the starch dispersion is a true clear solution.",
+          "quantities": [
+            {
+              "reagent": "starch",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 0.5,
+              "unit": "g"
+            },
+            {
+              "reagent": "paste water",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "mL"
+            },
+            {
+              "reagent": "boiling water",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 50,
+              "unit": "mL"
+            },
+            {
+              "reagent": "test portion",
+              "role": "addition",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "iodine",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "note": "Few drops."
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm111",
+              "file": "lelm111.pdf",
+              "pdf_page": 7,
+              "experiment": "11.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Make a paste of 0.5 g starch with 5 mL water, disperse into 50 mL boiling water, then use a few drops iodine on a test portion.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Starch is colloidal; iodine gives blue. Do not assert the starch dispersion is a true clear solution.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        }
+      ],
+      "image": {
+        "path": "assets/reference_pilots/starch_iodine.png",
+        "sha256": "47c5875c703d09f2413616da5c167096efeb4e0d907d0aff5f1e9b624b0f21f9",
+        "origin": "built_in_imagegen",
+        "created": "2026-11-09",
+        "scientific_review_status": "pending",
+        "volume_measured": false,
+        "prompt_file": "assets/reference_pilots/generation_prompts.json",
+        "prompt_key": "starch_iodine",
+        "visual_checks": "Assistant inspected count, apparatus, visibility and requested initial appearance. Independent scientific review pending."
+      },
+      "review_status": "draft",
+      "scientifically_verified": false
     }
   }
 }
