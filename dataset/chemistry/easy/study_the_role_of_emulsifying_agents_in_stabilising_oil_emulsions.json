@@ -285,6 +285,9 @@
     "physics_status": "not_applicable",
     "render_mode_policy": "Choose the rendering mode after reviewing the actual setup. Circuit diagrams require explicit validated topology; never infer it from a title."
   },
+  "reference_pilot_ids": [
+    "oil_soap_delivery"
+  ],
   "procedure_steps": [
     {
       "instruction": "Prepare stock A by dissolving 1 g soap/detergent in 10 mL water; warm if needed.",

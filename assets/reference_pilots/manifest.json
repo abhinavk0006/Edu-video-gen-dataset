@@ -958,6 +958,257 @@
       },
       "review_status": "draft",
       "scientifically_verified": false
+    },
+    "oil_soap_delivery": {
+      "experiment_id": "chem_12_803",
+      "protocol_variant": "oil_comparison",
+      "starting_state": "One independent mustard-oil sample after prior preparation, initial prescribed shaking and an unshown separation interval; two visible layers. Planned 5 mL water plus 10 drops oil, not image-calibrated.",
+      "scope": "Source step 4 soap-delivery excerpt for the mustard-oil tube only. Previous five-minute shaking and separation, subsequent shaking, other oil tubes and measured separation times are omitted.",
+      "clips": [
+        {
+          "name": "soap_delivery",
+          "source_step_id": 4,
+          "action": "Deliver exactly two discrete drops of separately prepared stock A soap solution into the existing mustard-oil/water tube, keeping the tip above the open rim; stop after the second drop.",
+          "state_before": "One tube with a clear lower water layer and thin golden oil layer above, before soap addition.",
+          "state_after": "Two soap-stock drops have entered the same tube. The bulk layers remain until subsequent unshown shaking; no immediate complete emulsion or measured stability result is claimed.",
+          "liquid_state": {
+            "level_change": "increase",
+            "volume_model": "source_defined",
+            "reaction_scope": "source_defined"
+          },
+          "apply_source_quantities": true,
+          "quantity_reagents": [
+            "stock A per tube"
+          ],
+          "tool_contact_policy": "above_rim"
+        }
+      ],
+      "source_step_hashes": {
+        "1": "6185949a754ea7bb89c50c8e0fbd7b32ab0559117c0316bc447e1c34d9302174",
+        "2": "3ffae5540484059474e06ae107e50ba3fa3d07903aac519ad5a63071af6e1408",
+        "3": "2f699eba8e6144bfa9a7d3081ca32bbcbffceeaf82da8af4bdf0946dfc727751",
+        "4": "aeb2b9683510a573089aab5bcddb6f69dae6dd104397480df5a29e62ff58ba7a"
+      },
+      "source_step_snapshots": [
+        {
+          "instruction": "Prepare stock A by dissolving 1 g soap/detergent in 10 mL water; warm if needed.",
+          "observation": "Soap stock is prepared separately.",
+          "quantities": [
+            {
+              "reagent": "soap",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "g"
+            },
+            {
+              "reagent": "water",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "stock_A",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 6,
+              "experiment": "1.3"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Prepare stock A by dissolving 1 g soap/detergent in 10 mL water; warm if needed.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Soap stock is prepared separately.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "Prepare separate tubes B-E, each with 5 mL water and 10 drops of its assigned mustard, linseed, castor or machine oil.",
+          "observation": "Each labelled tube is an independent oil sample.",
+          "quantities": [
+            {
+              "reagent": "water per tube",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "mL"
+            },
+            {
+              "reagent": "assigned oil per tube",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "drops"
+            }
+          ],
+          "sample_id": "fresh_B_to_E",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 6,
+              "experiment": "1.3"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Prepare separate tubes B-E, each with 5 mL water and 10 drops of its assigned mustard, linseed, castor or machine oil.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Each labelled tube is an independent oil sample.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "Shake each tube for 5 minutes and record its separation time.",
+          "observation": "Separation times are measured, not invented.",
+          "quantities": [
+            {
+              "reagent": "shaking time",
+              "role": "condition",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "min"
+            }
+          ],
+          "sample_id": "fresh_B_to_E",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 7,
+              "experiment": "1.3"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Shake each tube for 5 minutes and record its separation time.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Separation times are measured, not invented.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "Add 2 drops stock A to each existing tube, shake for 5 minutes and compare separation times.",
+          "observation": "Soap stabilises the emulsions; preserve each tube's prior contents.",
+          "quantities": [
+            {
+              "reagent": "stock A per tube",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "drops"
+            },
+            {
+              "reagent": "shaking time",
+              "role": "condition",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "min"
+            }
+          ],
+          "sample_id": "fresh_B_to_E",
+          "reaction_scope": "source_defined",
+          "step_id": 4,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 7,
+              "experiment": "1.3"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Add 2 drops stock A to each existing tube, shake for 5 minutes and compare separation times.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Soap stabilises the emulsions; preserve each tube's prior contents.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        }
+      ],
+      "image": {
+        "path": "assets/reference_pilots/oil_soap_delivery.png",
+        "sha256": "689e73883d7337f32712be239542b424195f0085774102c46d8b4e3b55fafe12",
+        "origin": "built_in_imagegen",
+        "created": "2026-11-09",
+        "scientific_review_status": "pending",
+        "volume_measured": false,
+        "prompt_file": "assets/reference_pilots/generation_prompts.json",
+        "prompt_key": "oil_soap_delivery",
+        "visual_checks": "Assistant inspected count, apparatus, visibility and requested initial appearance. Independent scientific review pending."
+      },
+      "review_status": "draft",
+      "scientifically_verified": false
     }
   }
 }

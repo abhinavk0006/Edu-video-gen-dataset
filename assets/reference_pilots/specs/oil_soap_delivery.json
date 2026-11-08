@@ -1,0 +1,27 @@
+{
+  "pilot_id": "oil_soap_delivery",
+  "experiment_id": "chem_12_803",
+  "protocol_variant": "oil_comparison",
+  "starting_state": "One independent mustard-oil sample after prior preparation, initial prescribed shaking and an unshown separation interval; two visible layers. Planned 5 mL water plus 10 drops oil, not image-calibrated.",
+  "scope": "Source step 4 soap-delivery excerpt for the mustard-oil tube only. Previous five-minute shaking and separation, subsequent shaking, other oil tubes and measured separation times are omitted.",
+  "clips": [
+    {
+      "name": "soap_delivery",
+      "source_step_id": 4,
+      "action": "Deliver exactly two discrete drops of separately prepared stock A soap solution into the existing mustard-oil/water tube, keeping the tip above the open rim; stop after the second drop.",
+      "state_before": "One tube with a clear lower water layer and thin golden oil layer above, before soap addition.",
+      "state_after": "Two soap-stock drops have entered the same tube. The bulk layers remain until subsequent unshown shaking; no immediate complete emulsion or measured stability result is claimed.",
+      "liquid_state": {
+        "level_change": "increase",
+        "volume_model": "source_defined",
+        "reaction_scope": "source_defined"
+      },
+      "apply_source_quantities": true,
+      "quantity_reagents": [
+        "stock A per tube"
+      ],
+      "tool_contact_policy": "above_rim"
+    }
+  ],
+  "prompt": "Use case: scientific-educational. Photorealistic landscape16:9 starting frame for a single mustard-oil/water emulsion trial before shaking. Exactly one plain transparent round-bottom glass laboratory test tube upright in a minimal discreet clamp. It contains two physically separate liquids well below half the tube height: a larger optically clear colourless lower water layer and a much thinner transparent pale golden-yellow mustard-oil layer floating ON TOP, sharply visible horizontal interface. Oil layer about one tenth of the total liquid height, illustrative only, no calibrated-volume claim. Plenty of empty headspace, entire tube open rim and bottom visible, eye-level fixed close view, tube70 percent image height. Soft neutral grey background and bench, diffuse bright lighting, visibly real glass and modest reflections. No emulsified milky liquid yet, no bubbles or foam, no hands, no stopper, no extra tubes, no labels, text, numbers, scale, logos or watermark. The later action will be gentle shaking of this one independent sample, not pouring."
+}
