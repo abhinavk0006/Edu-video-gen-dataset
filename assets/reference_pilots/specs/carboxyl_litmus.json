@@ -1,0 +1,29 @@
+{
+  "pilot_id": "carboxyl_litmus",
+  "experiment_id": "chem_12_402",
+  "protocol_variant": "carboxyl_litmus",
+  "starting_state": "Moist blue litmus on porcelain tile, one colourless sample drop held on a glass-rod tip immediately before contact. Sample acidity/identity is a positive-test rendering condition requiring review.",
+  "scope": "Source's one-drop blue-litmus test. No new tube or parent-sample colour change; no numerical pH or universal identification from one colour response.",
+  "clips": [
+    {
+      "name": "litmus_contact",
+      "source_step_id": 1,
+      "target_object": "The wetted contact area of the existing blue litmus paper on the white tile.",
+      "preserve_objects": [
+        "one paper strip and tile in the same position",
+        "one existing glass rod and gloved hand",
+        "the paper outside the wetted area"
+      ],
+      "action": "Lower the existing glass rod just enough to place its single sample drop onto the moist blue litmus, then lift the rod away without placing another drop.",
+      "state_before": "Blue moist litmus; one colourless drop on the existing rod tip, immediately before paper contact.",
+      "state_after": "For the source's acidic positive sample, the wetted litmus contact area turns red after contact and spreads only through the wet region. No red liquid, new test tube or premature change before contact.",
+      "liquid_state": {
+        "volume_model": "source_defined",
+        "level_change": "source_defined"
+      },
+      "apply_source_quantities": true,
+      "tool_contact_policy": "source_defined"
+    }
+  ],
+  "prompt": "Use case: scientific-educational. Photorealistic landscape16:9 macro laboratory starting frame for applying one sample drop to moist BLUE litmus paper using a glass rod. One narrow rectangular strip of uniformly BLUE litmus paper lies flat horizontally on one clean white porcelain spotting tile. Paper is slightly moist but not floating in a pool. A single plain transparent thin glass rod held by a cropped nitrile-gloved hand at upper right angles down toward the paper centre; its rounded lower tip holds ONE small clear colourless droplet, suspended a few millimetres ABOVE the blue paper without touching yet. All paper remains blue, no red region yet. Close elevated oblique camera clearly shows the air gap, droplet, paper and tile; sharp focus on rod tip and paper, neutral grey uncluttered laboratory background and soft diffuse light. Exactly one rod, one paper strip, one tile, no test tubes, beakers, extra drops, labels, letters, numbers, logos, watermark or exaggerated glowing effects. Prepared before-contact state only, not proof of pH or chemical identity."
+}

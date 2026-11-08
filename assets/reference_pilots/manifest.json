@@ -3337,6 +3337,97 @@
       },
       "review_status": "draft",
       "scientifically_verified": false
+    },
+    "carboxyl_litmus": {
+      "experiment_id": "chem_12_402",
+      "protocol_variant": "carboxyl_litmus",
+      "starting_state": "Moist blue litmus on porcelain tile, one colourless sample drop held on a glass-rod tip immediately before contact. Sample acidity/identity is a positive-test rendering condition requiring review.",
+      "scope": "Source's one-drop blue-litmus test. No new tube or parent-sample colour change; no numerical pH or universal identification from one colour response.",
+      "clips": [
+        {
+          "name": "litmus_contact",
+          "source_step_id": 1,
+          "target_object": "The wetted contact area of the existing blue litmus paper on the white tile.",
+          "preserve_objects": [
+            "one paper strip and tile in the same position",
+            "one existing glass rod and gloved hand",
+            "the paper outside the wetted area"
+          ],
+          "action": "Lower the existing glass rod just enough to place its single sample drop onto the moist blue litmus, then lift the rod away without placing another drop.",
+          "state_before": "Blue moist litmus; one colourless drop on the existing rod tip, immediately before paper contact.",
+          "state_after": "For the source's acidic positive sample, the wetted litmus contact area turns red after contact and spreads only through the wet region. No red liquid, new test tube or premature change before contact.",
+          "liquid_state": {
+            "volume_model": "source_defined",
+            "level_change": "source_defined"
+          },
+          "apply_source_quantities": true,
+          "tool_contact_policy": "source_defined"
+        }
+      ],
+      "source_step_hashes": {
+        "1": "5bc848b7aa3514378ae86717d3e42646606f5f0ecfc6fd0e0f4b470e23777566"
+      },
+      "source_step_snapshots": [
+        {
+          "instruction": "Use a glass rod to place one drop compound/solution on moist blue litmus paper.",
+          "observation": "The paper turns red; do not turn the parent sample red.",
+          "quantities": [
+            {
+              "reagent": "sample",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "drops"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "localized",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm108",
+              "file": "lelm108.pdf",
+              "pdf_page": 11,
+              "experiment": "8.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Use a glass rod to place one drop compound/solution on moist blue litmus paper.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "The paper turns red; do not turn the parent sample red.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        }
+      ],
+      "image": {
+        "path": "assets/reference_pilots/carboxyl_litmus.png",
+        "sha256": "4fbe18978f0acc818608814816d17fee7834066dca01c604fda4e836a281d279",
+        "origin": "built_in_imagegen",
+        "created": "2026-11-09",
+        "scientific_review_status": "pending",
+        "volume_measured": false,
+        "prompt_file": "assets/reference_pilots/generation_prompts.json",
+        "prompt_key": "carboxyl_litmus",
+        "visual_checks": "Assistant inspected count, apparatus, visibility and requested initial appearance. Independent scientific review pending."
+      },
+      "review_status": "draft",
+      "scientifically_verified": false
     }
   }
 }
