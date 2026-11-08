@@ -819,7 +819,8 @@
   },
   "reference_pilot_ids": [
     "thiosulphate_cross",
-    "thiosulphate_cross_2ml"
+    "thiosulphate_cross_2ml",
+    "thiosulphate_cross_4ml"
   ],
   "procedure_steps": [
     {

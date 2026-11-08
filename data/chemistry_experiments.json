@@ -16973,6 +16973,13 @@
           "url": "assets/reference_pilots/thiosulphate_clear_cross.png",
           "license_status": "needs_review",
           "attribution": "AI-generated draft reference for thiosulphate_cross_2ml; see source-bound pilot manifest. Scientific review pending."
+        },
+        {
+          "image_asset_id": "thiosulphate_cross_4ml_generated_reference",
+          "role": "scene_reference",
+          "url": "assets/reference_pilots/thiosulphate_clear_cross.png",
+          "license_status": "needs_review",
+          "attribution": "AI-generated draft reference for thiosulphate_cross_4ml; see source-bound pilot manifest. Scientific review pending."
         }
       ],
       "tags": [
@@ -17802,7 +17809,8 @@
       },
       "reference_pilot_ids": [
         "thiosulphate_cross",
-        "thiosulphate_cross_2ml"
+        "thiosulphate_cross_2ml",
+        "thiosulphate_cross_4ml"
       ]
     },
     {
