@@ -1,0 +1,37 @@
+{
+  "pilot_id": "nitrate_calorimetry",
+  "experiment_id": "chem_12_1001",
+  "protocol_variant": "potassium_nitrate",
+  "starting_state": "Illustrative open insulated calorimeter with fresh clear water, thermometer and rod, after unshown source calibration and initial-temperature recording. Planned water charge 100 mL, not image-calibrated. Cup design is a rendering choice requiring review.",
+  "scope": "Potassium-nitrate delivery and stirring excerpt. Calibration, measured W1, thermometer readings and enthalpy calculation are not fabricated or represented as experimental data.",
+  "clips": [
+    {
+      "name": "nitrate_transfer",
+      "source_step_id": 3,
+      "action": "Transfer the previously weighed potassium nitrate sample from a small weighing boat into the water in the existing calorimeter; stop transfer and preserve the thermometer and rod.",
+      "state_before": "Fresh clear water in the existing calorimeter, no potassium nitrate yet.",
+      "state_after": "Transferred white crystals enter the existing water; they may remain briefly at the bottom. No opaque white final solution is requested.",
+      "liquid_state": {
+        "before_ml": 100,
+        "level_change": "source_defined",
+        "reaction_scope": "whole_contents"
+      },
+      "apply_source_quantities": true,
+      "tool_contact_policy": "above_rim"
+    },
+    {
+      "name": "nitrate_stirring",
+      "source_step_id": 3,
+      "action": "Gently stir the existing water and potassium nitrate with the existing rod, leaving the thermometer fixed; do not transfer further material.",
+      "state_before": "Same water and transferred potassium nitrate from the preceding clip.",
+      "state_after": "Crystals progressively dissolve and dissolved liquid remains clear. Any unfinished dissolution remains visible; no invented numerical temperature drop or measured enthalpy is displayed.",
+      "liquid_state": {
+        "level_change": "unchanged",
+        "reaction_scope": "whole_contents"
+      },
+      "apply_source_quantities": false,
+      "tool_contact_policy": "source_defined"
+    }
+  ],
+  "prompt": "Use case: scientific-educational. Photorealistic landscape16:9 close starting reference for dissolution calorimetry, before potassium nitrate is transferred. Exactly one plain open white insulated polystyrene calorimeter cup seated securely in a simple shallow support, containing a modest clear colourless water charge, visible through the open top. One slender laboratory thermometer probe held by a small clamp at the side enters the water without touching the cup base or sides, and one slim glass stirring rod rests separately in the cup. Camera elevated three-quarter view sees the water surface and ample empty space above the open cup, the cup fills55percent frame height, neutral grey clean lab bench and background, soft diffuse scientific lighting. No lid hides the water, no salt crystals yet, no spoon or weighing boat yet, no heat source, no steam, no hands or extra cups. No visible numeric readings, graduations, brand labels, text, watermark. Only illustrative apparatus: does not claim a calibrated calorimeter, exact water volume, initial temperature or measured enthalpy."
+}

@@ -1622,6 +1622,213 @@
       },
       "review_status": "draft",
       "scientifically_verified": false
+    },
+    "nitrate_calorimetry": {
+      "experiment_id": "chem_12_1001",
+      "protocol_variant": "potassium_nitrate",
+      "starting_state": "Illustrative open insulated calorimeter with fresh clear water, thermometer and rod, after unshown source calibration and initial-temperature recording. Planned water charge 100 mL, not image-calibrated. Cup design is a rendering choice requiring review.",
+      "scope": "Potassium-nitrate delivery and stirring excerpt. Calibration, measured W1, thermometer readings and enthalpy calculation are not fabricated or represented as experimental data.",
+      "clips": [
+        {
+          "name": "nitrate_transfer",
+          "source_step_id": 3,
+          "action": "Transfer the previously weighed potassium nitrate sample from a small weighing boat into the water in the existing calorimeter; stop transfer and preserve the thermometer and rod.",
+          "state_before": "Fresh clear water in the existing calorimeter, no potassium nitrate yet.",
+          "state_after": "Transferred white crystals enter the existing water; they may remain briefly at the bottom. No opaque white final solution is requested.",
+          "liquid_state": {
+            "before_ml": 100,
+            "level_change": "source_defined",
+            "reaction_scope": "whole_contents"
+          },
+          "apply_source_quantities": true,
+          "tool_contact_policy": "above_rim"
+        },
+        {
+          "name": "nitrate_stirring",
+          "source_step_id": 3,
+          "action": "Gently stir the existing water and potassium nitrate with the existing rod, leaving the thermometer fixed; do not transfer further material.",
+          "state_before": "Same water and transferred potassium nitrate from the preceding clip.",
+          "state_after": "Crystals progressively dissolve and dissolved liquid remains clear. Any unfinished dissolution remains visible; no invented numerical temperature drop or measured enthalpy is displayed.",
+          "liquid_state": {
+            "level_change": "unchanged",
+            "reaction_scope": "whole_contents"
+          },
+          "apply_source_quantities": false,
+          "tool_contact_policy": "source_defined"
+        }
+      ],
+      "source_step_hashes": {
+        "1": "788498eea1dbdfb8f8a187b4658ee2395ca46b97d72faf1386a58a24a17d0669",
+        "2": "13b9e51a3cb9648f5031aaea2447b60f2342bd6ce7ed7f8680d18f44c734d005",
+        "3": "2ec8fd7909f00aadd943bc143df440f33518a73339b5b99663661112320d3da6"
+      },
+      "source_step_snapshots": [
+        {
+          "instruction": "Calibrate the calorimeter separately: measure 100 mL cold water in beaker A and 100 mL hot water at 50-60 degrees C in beaker B; mix and record temperatures.",
+          "observation": "Calibration water is not retained for the dissolution run.",
+          "quantities": [
+            {
+              "reagent": "cold water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            },
+            {
+              "reagent": "hot water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            },
+            {
+              "reagent": "hot-water temperature",
+              "role": "condition",
+              "qualifier": "range",
+              "minimum": 50,
+              "maximum": 60,
+              "unit": "degC"
+            }
+          ],
+          "sample_id": "calibration",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm103",
+              "file": "lelm103.pdf",
+              "pdf_page": 3,
+              "experiment": "3.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Calibrate the calorimeter separately: measure 100 mL cold water in beaker A and 100 mL hot water at 50-60 degrees C in beaker B; mix and record temperatures.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Calibration water is not retained for the dissolution run.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "For the dissolution run place a fresh 100 mL water charge in the calibrated calorimeter and record its temperature.",
+          "observation": "The initial water charge is clear.",
+          "quantities": [
+            {
+              "reagent": "water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm103",
+              "file": "lelm103.pdf",
+              "pdf_page": 4,
+              "experiment": "3.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "For the dissolution run place a fresh 100 mL water charge in the calibrated calorimeter and record its temperature.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "The initial water charge is clear.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "Weigh W1 grams potassium nitrate, record W1, add to the water and stir until fully dissolved; record temperature.",
+          "observation": "A clear solution forms and temperature decreases. W1 is a measured variable, not an invented fixed mass.",
+          "quantities": [
+            {
+              "reagent": "KNO3",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "note": "Procedure uses measured W1; materials inventory lists 2 g but is not a required exact procedural dose."
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "whole_contents",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm103",
+              "file": "lelm103.pdf",
+              "pdf_page": 5,
+              "experiment": "3.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Weigh W1 grams potassium nitrate, record W1, add to the water and stir until fully dissolved; record temperature.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "A clear solution forms and temperature decreases. W1 is a measured variable, not an invented fixed mass.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        }
+      ],
+      "image": {
+        "path": "assets/reference_pilots/nitrate_calorimetry.png",
+        "sha256": "6f61101cc1ab84e6da0bc9bd3552e4443a05463f689119bccb1480dda4a5f9a4",
+        "origin": "built_in_imagegen",
+        "created": "2026-11-09",
+        "scientific_review_status": "pending",
+        "volume_measured": false,
+        "prompt_file": "assets/reference_pilots/generation_prompts.json",
+        "prompt_key": "nitrate_calorimetry",
+        "visual_checks": "Assistant inspected count, apparatus, visibility and requested initial appearance. Independent scientific review pending."
+      },
+      "review_status": "draft",
+      "scientifically_verified": false
     }
   }
 }
