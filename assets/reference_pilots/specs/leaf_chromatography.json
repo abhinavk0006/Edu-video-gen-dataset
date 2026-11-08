@@ -1,0 +1,22 @@
+{
+  "pilot_id": "leaf_chromatography",
+  "experiment_id": "chem_12_501",
+  "protocol_variant": "acetone",
+  "starting_state": "Prepared dried green leaf-extract spot on paper above the mobile-phase surface; lower paper edge immersed. Acetone variant mobile phase prepared separately. Dimensions and volumes are not calibrated by the image.",
+  "scope": "Early ascending-development excerpt only, after extract/spot/mobile-phase preparation. No forced two-thirds endpoint, complete band separation, elapsed development time or Rf value in a two-second clip.",
+  "clips": [
+    {
+      "name": "early_paper_development",
+      "source_step_id": 3,
+      "action": "Hold the covered chromatography chamber stationary and show a short real-time excerpt of capillary wetting advancing slightly up the existing paper from its immersed lower edge.",
+      "state_before": "One paper strip, green sample spot above a shallow mobile-phase pool, upper paper not yet developed.",
+      "state_after": "The wetting front may advance modestly; paper, baseline and solvent remain in place and the sample is not submerged. Do not jump to finished coloured bands or invent Rf measurements.",
+      "liquid_state": {
+        "level_change": "unchanged"
+      },
+      "apply_source_quantities": false,
+      "tool_contact_policy": "source_defined"
+    }
+  ],
+  "prompt": "Use case: scientific-educational. Photorealistic landscape16:9 starting reference for ascending paper chromatography of leaf pigments BEFORE development. One tall transparent glass chromatography jar on neutral grey laboratory bench, covered by a plain glass lid. Inside, exactly one long narrow white chromatography paper strip hangs vertically by a tiny support clip near its top, without touching jar walls. Paper lower edge dips into a very shallow clear colourless mobile-phase pool at bottom. A faint grey pencil baseline across the paper lies WELL ABOVE the solvent surface, at around the lowest fifth of paper length, bearing one tiny dark green dried leaf-extract spot centered on the baseline. The spot is NOT submerged. Paper above the baseline is clean, dry and white; no developed coloured bands or solvent front near top yet. Whole jar, bottom pool and full paper visible; close straight-on camera slightly above solvent level so the separation of baseline and liquid is unambiguous. Soft bright lighting and realistic glass reflections without obscuring the paper. No hands, extra paper strips, text, numbers, letters, labels, scale, logo or watermark. Illustrative dimensions only, not an Rf measurement."
+}
