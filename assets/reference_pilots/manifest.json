@@ -3741,6 +3741,105 @@
       },
       "review_status": "draft",
       "scientifically_verified": false
+    },
+    "fehling_waterbath": {
+      "experiment_id": "chem_12_403",
+      "protocol_variant": "fehling",
+      "starting_state": "Freshly mixed Fehling A/B and a separate reducing-sugar aliquot already combined in one tube, suspended in a heated water bath. No claimed concentration, temperature or reacted endpoint.",
+      "scope": "Short ongoing water-bath heating excerpt after reagent/sample preparation. Not a full heating interval or a fabricated positive response; source also distinguishes negative sucrose before hydrolysis.",
+      "clips": [
+        {
+          "name": "fehling_heating_excerpt",
+          "source_step_id": 1,
+          "target_object": "The blue reaction mixture in the inner test tube, distinct from the clear external water bath.",
+          "action": "Continue steady gentle water-bath heating of the existing prepared Fehling test mixture; keep the clamped inner tube and the clear outer bath separate.",
+          "state_before": "Blue reaction mixture in the inner tube; clear bath outside it; no orange-red precipitate yet.",
+          "state_after": "Only the inner reducing-sugar test mixture may gradually develop the source's orange-red precipitate as heating progresses; the outer bath stays clear. Do not force completion of a long heating period or colour the external bath.",
+          "liquid_state": {
+            "level_change": "unchanged",
+            "volume_model": "source_defined",
+            "reaction_scope": "whole_contents"
+          },
+          "apply_source_quantities": false,
+          "tool_contact_policy": "source_defined"
+        }
+      ],
+      "source_step_hashes": {
+        "1": "6bcae8bd37bd4679b2a81a401add3dbbe0933841c6fb2294ffea960f6f578cc2"
+      },
+      "source_step_snapshots": [
+        {
+          "instruction": "Add freshly mixed 1 mL Fehling A and 1 mL Fehling B to a fresh sugar aliquot and heat on a water bath.",
+          "observation": "Orange-red precipitate is positive for reducing sugars; sucrose is negative before hydrolysis.",
+          "quantities": [
+            {
+              "reagent": "sugar aliquot",
+              "role": "addition",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "Fehling A",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "mL"
+            },
+            {
+              "reagent": "Fehling B",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm111",
+              "file": "lelm111.pdf",
+              "pdf_page": 4,
+              "experiment": "11.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Add freshly mixed 1 mL Fehling A and 1 mL Fehling B to a fresh sugar aliquot and heat on a water bath.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Orange-red precipitate is positive for reducing sugars; sucrose is negative before hydrolysis.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        }
+      ],
+      "image": {
+        "path": "assets/reference_pilots/fehling_waterbath.png",
+        "sha256": "34b49e570f6b7f740df9cb43943ceccb39f4eeb41bd97347e3ffa551dd8d131b",
+        "origin": "built_in_imagegen",
+        "created": "2026-11-09",
+        "scientific_review_status": "pending",
+        "volume_measured": false,
+        "prompt_file": "assets/reference_pilots/generation_prompts.json",
+        "prompt_key": "fehling_waterbath",
+        "visual_checks": "Assistant inspected count, apparatus, visibility and requested initial appearance. Independent scientific review pending."
+      },
+      "review_status": "draft",
+      "scientifically_verified": false
     }
   }
 }

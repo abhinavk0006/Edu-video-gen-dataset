@@ -8625,6 +8625,13 @@
           "url": "assets/reference_pilots/biuret_copper_delivery.png",
           "license_status": "needs_review",
           "attribution": "AI-generated draft reference for biuret_copper_delivery; see source-bound pilot manifest. Scientific review pending."
+        },
+        {
+          "image_asset_id": "fehling_waterbath_generated_reference",
+          "role": "scene_reference",
+          "url": "assets/reference_pilots/fehling_waterbath.png",
+          "license_status": "needs_review",
+          "attribution": "AI-generated draft reference for fehling_waterbath; see source-bound pilot manifest. Scientific review pending."
         }
       ],
       "tags": [
@@ -9730,7 +9737,8 @@
       },
       "reference_pilot_ids": [
         "starch_iodine",
-        "biuret_copper_delivery"
+        "biuret_copper_delivery",
+        "fehling_waterbath"
       ]
     },
     {

@@ -1,0 +1,25 @@
+{
+  "pilot_id": "fehling_waterbath",
+  "experiment_id": "chem_12_403",
+  "protocol_variant": "fehling",
+  "starting_state": "Freshly mixed Fehling A/B and a separate reducing-sugar aliquot already combined in one tube, suspended in a heated water bath. No claimed concentration, temperature or reacted endpoint.",
+  "scope": "Short ongoing water-bath heating excerpt after reagent/sample preparation. Not a full heating interval or a fabricated positive response; source also distinguishes negative sucrose before hydrolysis.",
+  "clips": [
+    {
+      "name": "fehling_heating_excerpt",
+      "source_step_id": 1,
+      "target_object": "The blue reaction mixture in the inner test tube, distinct from the clear external water bath.",
+      "action": "Continue steady gentle water-bath heating of the existing prepared Fehling test mixture; keep the clamped inner tube and the clear outer bath separate.",
+      "state_before": "Blue reaction mixture in the inner tube; clear bath outside it; no orange-red precipitate yet.",
+      "state_after": "Only the inner reducing-sugar test mixture may gradually develop the source's orange-red precipitate as heating progresses; the outer bath stays clear. Do not force completion of a long heating period or colour the external bath.",
+      "liquid_state": {
+        "level_change": "unchanged",
+        "volume_model": "source_defined",
+        "reaction_scope": "whole_contents"
+      },
+      "apply_source_quantities": false,
+      "tool_contact_policy": "source_defined"
+    }
+  ],
+  "prompt": "Use case: scientific-educational. Photorealistic landscape16:9 laboratory starting reference for a Fehling reducing-sugar test during an early water-bath heating excerpt. Exactly one plain transparent tall round-bottom test tube, held securely upright by a clamp, with a modest deep clear blue freshly mixed Fehling-plus-sample liquid charge in the lower quarter; no orange-red precipitate yet. Lower portion of the test tube is immersed in hot clear water inside one larger transparent glass beaker on a simple electric laboratory hotplate. Bath water level is ABOVE the sample level inside the tube but WELL BELOW the tube's open mouth. Test tube rounded bottom is suspended clear of beaker base; no direct contact with heater. Fixed raised three-quarter scientific view, entire outer beaker and inner tube mouth visible, clear physically distinct glass boundaries and liquid levels, neutral grey clean bench and background, even diffuse lighting with at most faint unobscuring vapour. No stirrer, direct flame, hands, extra tubes, labels, numbers, graduation marks, text, logos or watermark. An illustrative prepared early-heating setup, not a completed two-minute reaction, measured temperature or identified sugar."
+}

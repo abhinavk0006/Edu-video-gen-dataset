@@ -1088,7 +1088,8 @@
   },
   "reference_pilot_ids": [
     "starch_iodine",
-    "biuret_copper_delivery"
+    "biuret_copper_delivery",
+    "fehling_waterbath"
   ],
   "procedure_steps": [
     {
