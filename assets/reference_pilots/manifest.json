@@ -1829,6 +1829,211 @@
       },
       "review_status": "draft",
       "scientifically_verified": false
+    },
+    "thiosulphate_cross_2ml": {
+      "experiment_id": "chem_12_901",
+      "starting_state": "Prepared clear 50 mL thiosulphate aliquot in a nominal 100 mL beaker over a visible cross; values are source-plan facts, not image measurements.",
+      "scope": "Visual excerpt after source step 1. Source step 2 is split into delivery and swirling. Timing half-way through transfer must be measured in a real experiment; generated clip duration is not a rate measurement. The short observation need not reach complete cross disappearance. This independent trial uses source variant hcl_2ml, not a top-up of any previous run.",
+      "clips": [
+        {
+          "name": "acid_delivery",
+          "source_step_id": 2,
+          "action": "Deliver the source-defined 2 mL of 1 M hydrochloric acid into the existing fresh beaker aliquot, then stop delivery.",
+          "state_before": "Clear aliquot; the cross below is visible.",
+          "state_after": "Only the delivered dose increases the level; sulphur clouding may begin gradually.",
+          "liquid_state": {
+            "before_ml": 50,
+            "vessel_capacity_ml": 100,
+            "level_change": "increase"
+          },
+          "apply_source_quantities": true,
+          "tool_contact_policy": "above_rim"
+        },
+        {
+          "name": "swirl",
+          "source_step_id": 2,
+          "action": "Gently swirl the existing beaker once while keeping all liquid inside; add no further reagent.",
+          "state_before": "The same just-dosed sample from the preceding frame.",
+          "state_after": "The same sample becomes evenly mixed; no extra dose or sudden emptying.",
+          "liquid_state": {
+            "level_change": "unchanged"
+          },
+          "apply_source_quantities": false
+        },
+        {
+          "name": "observe_cross",
+          "source_step_id": 3,
+          "action": "Hold the camera and beaker stationary and observe the source-described gradual turbidity.",
+          "state_before": "The mixed sample after acid addition; retain the preceding meniscus and cross position.",
+          "state_after": "Visibility of the cross gradually decreases if the source reaction progresses; do not force the endpoint within two seconds or invent a measured time.",
+          "liquid_state": {
+            "level_change": "unchanged",
+            "reaction_scope": "whole_contents"
+          },
+          "apply_source_quantities": false
+        }
+      ],
+      "protocol_variant": "hcl_2ml",
+      "reuse_rationale": "Identical visible pre-acid state: fresh 50 mL 0.1 M clear thiosulphate in the same 100 mL beaker geometry above a visible cross. Acid dose differs only after this image. This is a fresh independent trial, not the previous trial continued. Image does not verify concentration, volume or temperature.",
+      "source_step_hashes": {
+        "1": "4e0d7fae062ddfdf6015ae4b0325df44e8e1c92f49a71a061e6ea2525bcff448",
+        "2": "4b364fdabd7858529697479f9930c99b15da17271d8e0e1bcd24fb297cad34db",
+        "3": "bf041d81788b6be8279faa7293c6dcb95efb5263ba6d98134a7f91ca9e0bc2f1"
+      },
+      "source_step_snapshots": [
+        {
+          "instruction": "Take a fresh 50 mL aliquot of 0.1 M sodium thiosulphate in a 100 mL beaker; keep the temperature constant.",
+          "observation": "The initial aliquot is clear.",
+          "quantities": [
+            {
+              "reagent": "sodium thiosulphate",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 50,
+              "unit": "mL",
+              "concentration": "0.1 M"
+            },
+            {
+              "reagent": "beaker",
+              "role": "vessel_capacity",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 2,
+              "experiment": "2.1(A)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Take a fresh 50 mL aliquot of 0.1 M sodium thiosulphate in a 100 mL beaker; keep the temperature constant.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "The initial aliquot is clear.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "Add 2 mL 1 M HCl, swirl and start timing halfway through this transfer.",
+          "observation": "Sulphur formation gradually obscures the cross below the beaker.",
+          "quantities": [
+            {
+              "reagent": "HCl",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "mL",
+              "concentration": "1 M"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 3,
+              "experiment": "2.1(A)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Add 2 mL 1 M HCl, swirl and start timing halfway through this transfer.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Sulphur formation gradually obscures the cross below the beaker.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "Stop timing when the cross disappears and record the measured elapsed time.",
+          "observation": "Compare this independent trial with the other prescribed acid volumes; do not invent a time.",
+          "quantities": [],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm102",
+              "file": "lelm102.pdf",
+              "pdf_page": 3,
+              "experiment": "2.1(A)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Stop timing when the cross disappears and record the measured elapsed time.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Compare this independent trial with the other prescribed acid volumes; do not invent a time.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        }
+      ],
+      "image": {
+        "path": "assets/reference_pilots/thiosulphate_clear_cross.png",
+        "sha256": "e80a7477f34bc05a5ebb5e66bfa30a87b9951e89ea8370b1f7170e3eb55982fd",
+        "origin": "built_in_imagegen",
+        "created": "2026-11-09",
+        "scientific_review_status": "pending",
+        "volume_measured": false,
+        "prompt_file": "assets/reference_pilots/generation_prompts.json",
+        "prompt_key": "rate",
+        "visual_checks": "Assistant inspected count, apparatus, visibility and requested initial appearance. Independent scientific review pending."
+      },
+      "review_status": "draft",
+      "scientifically_verified": false
     }
   }
 }

@@ -1,0 +1,49 @@
+{
+  "experiment_id": "chem_12_901",
+  "starting_state": "Prepared clear 50 mL thiosulphate aliquot in a nominal 100 mL beaker over a visible cross; values are source-plan facts, not image measurements.",
+  "scope": "Visual excerpt after source step 1. Source step 2 is split into delivery and swirling. Timing half-way through transfer must be measured in a real experiment; generated clip duration is not a rate measurement. The short observation need not reach complete cross disappearance. This independent trial uses source variant hcl_4ml, not a top-up of any previous run.",
+  "clips": [
+    {
+      "name": "acid_delivery",
+      "source_step_id": 2,
+      "action": "Deliver the source-defined 4 mL of 1 M hydrochloric acid into the existing fresh beaker aliquot, then stop delivery.",
+      "state_before": "Clear aliquot; the cross below is visible.",
+      "state_after": "Only the delivered dose increases the level; sulphur clouding may begin gradually.",
+      "liquid_state": {
+        "before_ml": 50,
+        "vessel_capacity_ml": 100,
+        "level_change": "increase"
+      },
+      "apply_source_quantities": true,
+      "tool_contact_policy": "above_rim"
+    },
+    {
+      "name": "swirl",
+      "source_step_id": 2,
+      "action": "Gently swirl the existing beaker once while keeping all liquid inside; add no further reagent.",
+      "state_before": "The same just-dosed sample from the preceding frame.",
+      "state_after": "The same sample becomes evenly mixed; no extra dose or sudden emptying.",
+      "liquid_state": {
+        "level_change": "unchanged"
+      },
+      "apply_source_quantities": false
+    },
+    {
+      "name": "observe_cross",
+      "source_step_id": 3,
+      "action": "Hold the camera and beaker stationary and observe the source-described gradual turbidity.",
+      "state_before": "The mixed sample after acid addition; retain the preceding meniscus and cross position.",
+      "state_after": "Visibility of the cross gradually decreases if the source reaction progresses; do not force the endpoint within two seconds or invent a measured time.",
+      "liquid_state": {
+        "level_change": "unchanged",
+        "reaction_scope": "whole_contents"
+      },
+      "apply_source_quantities": false
+    }
+  ],
+  "pilot_id": "thiosulphate_cross_4ml",
+  "protocol_variant": "hcl_4ml",
+  "reuse_image_path": "assets/reference_pilots/thiosulphate_clear_cross.png",
+  "reuse_prompt_key": "rate",
+  "reuse_rationale": "Identical visible pre-acid state: fresh 50 mL 0.1 M clear thiosulphate in the same 100 mL beaker geometry above a visible cross. Acid dose differs only after this image. This is a fresh independent trial, not the previous trial continued. Image does not verify concentration, volume or temperature."
+}

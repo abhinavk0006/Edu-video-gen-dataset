@@ -818,7 +818,8 @@
     "render_mode_policy": "Choose the rendering mode after reviewing the actual setup. Circuit diagrams require explicit validated topology; never infer it from a title."
   },
   "reference_pilot_ids": [
-    "thiosulphate_cross"
+    "thiosulphate_cross",
+    "thiosulphate_cross_2ml"
   ],
   "procedure_steps": [
     {
