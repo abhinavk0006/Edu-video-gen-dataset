@@ -3922,6 +3922,13 @@
           "url": "assets/reference_pilots/copper_ammonia.png",
           "license_status": "needs_review",
           "attribution": "AI-generated draft reference for copper_ammonia; see source-bound pilot manifest. Scientific review pending."
+        },
+        {
+          "image_asset_id": "iron_thiocyanate_generated_reference",
+          "role": "scene_reference",
+          "url": "assets/reference_pilots/iron_thiocyanate.png",
+          "license_status": "needs_review",
+          "attribution": "AI-generated draft reference for iron_thiocyanate; see source-bound pilot manifest. Scientific review pending."
         }
       ],
       "tags": [
@@ -6602,7 +6609,8 @@
       "reference_pilot_ids": [
         "chloride_confirmation",
         "salt_water_delivery",
-        "copper_ammonia"
+        "copper_ammonia",
+        "iron_thiocyanate"
       ]
     },
     {

@@ -2664,7 +2664,8 @@
   "reference_pilot_ids": [
     "chloride_confirmation",
     "salt_water_delivery",
-    "copper_ammonia"
+    "copper_ammonia",
+    "iron_thiocyanate"
   ],
   "procedure_steps": [
     {

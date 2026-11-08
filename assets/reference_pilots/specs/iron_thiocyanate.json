@@ -1,0 +1,27 @@
+{
+  "pilot_id": "iron_thiocyanate",
+  "experiment_id": "chem_12_301",
+  "protocol_variant": "cation_iron",
+  "starting_state": "One fresh separate portion of dissolved group-III ferric sample in dilute HCl before thiocyanate. Pale straw appearance is a rendering assumption requiring review; volume and concentration unspecified.",
+  "scope": "Thiocyanate confirmation excerpt only, after dissolution and splitting. The separate ferrocyanide test is not chained to this aliquot. Original brown precipitate dissolution and exact dose are not shown.",
+  "clips": [
+    {
+      "name": "thiocyanate_delivery",
+      "source_step_id": 1,
+      "action": "Slowly deliver potassium thiocyanate reagent to the existing fresh ferric test portion with the dispensing tip above the tube rim, then stop.",
+      "state_before": "One transparent pale-yellow fresh ferric test portion, no confirmation reagent yet.",
+      "state_after": "The source-described blood-red response develops in this same ferric portion under the required conditions; do not show the separate Prussian-blue test or duplicate the vessel.",
+      "liquid_state": {
+        "volume_model": "source_defined",
+        "level_change": "increase",
+        "reaction_scope": "whole_contents"
+      },
+      "apply_source_quantities": true,
+      "quantity_reagents": [
+        "potassium thiocyanate"
+      ],
+      "tool_contact_policy": "above_rim"
+    }
+  ],
+  "prompt": "Use case: scientific-educational. Photorealistic landscape16:9 close laboratory starting frame for an iron(III) confirmation test. Exactly one plain narrow transparent round-bottom glass test tube upright in a discreet clamp. Small low charge of optically clear PALE STRAW-YELLOW aqueous acidic ferric sample in the lowest fifth of tube, no brown solid, no cloudiness, no red or blue reaction colour yet. Entire tube from open mouth to rounded bottom visible, tube70percent frame height and ample headspace. Fixed eye-level camera, neutral grey clean bench and uncluttered background, diffuse even lighting and restrained realistic glass reflections, visible meniscus. This is a fresh portion of a prepared dissolved group-III iron sample before either confirmation reagent. No hands, dropper, reagent bottles, extra tubes, text, labels, numbers, scales, logos or watermark. Not a calibrated sample volume, measured concentration or validated identification."
+}
