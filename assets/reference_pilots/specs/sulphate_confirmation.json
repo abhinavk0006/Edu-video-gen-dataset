@@ -1,0 +1,44 @@
+{
+  "pilot_id": "sulphate_confirmation",
+  "experiment_id": "chem_12_301",
+  "protocol_variant": "sulphate",
+  "reuse_image_path": "assets/reference_pilots/chloride_prepared_aliquot.png",
+  "reuse_prompt_key": "chloride",
+  "reuse_rationale": "Same visible pre-reagent state: a fresh low-volume clear colourless 1 mL water-extract aliquot in one upright tube. This pilot assumes a colourless sulphate-positive extract, not the chloride sample's chemical identity or prior acidification. Separate pilot/sample track; no amount, concentration or positive result inferred from pixels.",
+  "starting_state": "Fresh 1 mL colourless sulphate-positive water-extract aliquot before HCl acidification, matching the shared visual geometry. Positive-sample identity is an explicit rendering condition requiring independent review.",
+  "scope": "HCl acidification followed by barium chloride on the same sulphate-test portion. Concentrated-acid insolubility confirmation and full upstream sample preparation are omitted.",
+  "clips": [
+    {
+      "name": "sulphate_acidify",
+      "source_step_id": 1,
+      "action": "Slowly acidify the existing fresh sulphate-test aliquot with dilute hydrochloric acid, keeping the tip above the rim, then stop.",
+      "state_before": "Fresh clear colourless sulphate-test aliquot, no reagent yet.",
+      "state_after": "Same aliquot after dilute HCl acidification; no barium precipitate before barium chloride.",
+      "liquid_state": {
+        "before_ml": 1,
+        "level_change": "increase"
+      },
+      "apply_source_quantities": true,
+      "quantity_reagents": [
+        "dil HCl"
+      ],
+      "tool_contact_policy": "above_rim"
+    },
+    {
+      "name": "barium_delivery",
+      "source_step_id": 1,
+      "action": "Deliver barium chloride to the existing acidified sulphate-test aliquot with the tip above the rim; stop delivery.",
+      "state_before": "The same acidified aliquot, apparatus and meniscus from the preceding final frame.",
+      "state_after": "White barium sulphate precipitate develops in the same sulphate-positive sample under source conditions. Preserve the existing liquid and tube; do not invent acid-insolubility testing in this clip.",
+      "liquid_state": {
+        "level_change": "increase",
+        "reaction_scope": "whole_contents"
+      },
+      "apply_source_quantities": true,
+      "quantity_reagents": [
+        "BaCl2"
+      ],
+      "tool_contact_policy": "above_rim"
+    }
+  ]
+}

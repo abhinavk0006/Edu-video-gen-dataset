@@ -2666,7 +2666,8 @@
     "salt_water_delivery",
     "copper_ammonia",
     "iron_thiocyanate",
-    "iron_ferrocyanide"
+    "iron_ferrocyanide",
+    "sulphate_confirmation"
   ],
   "procedure_steps": [
     {
