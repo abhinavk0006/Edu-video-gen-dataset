@@ -1,0 +1,24 @@
+{
+  "pilot_id": "alum_cooling_excerpt",
+  "experiment_id": "chem_12_601",
+  "protocol_variant": "potash_alum",
+  "starting_state": "Illustrative late point during already-ongoing slow cooling of prepared alum mother liquor, with a few visible crystals. All reagent dissolution and earlier cooling occur before this reference; crystal sizes are illustrative.",
+  "scope": "Short real-time late-cooling observation excerpt only. Not immediate nucleation, time-lapse, full crystal yield, filtration or completion of the entire cooling process.",
+  "clips": [
+    {
+      "name": "alum_cooling",
+      "source_step_id": 2,
+      "action": "Hold the existing beaker stationary at a late point of slow cooling and show a short real-time observation of the existing alum crystals in clear mother liquor.",
+      "state_before": "Clear prepared mother liquor with a few existing colourless faceted crystals, no heater.",
+      "state_after": "Existing crystals remain in the mother liquor; only gradual physically plausible growth is allowed. No sudden pile, boiling, new reagent, bulk-white suspension or invented yield.",
+      "liquid_state": {
+        "volume_model": "source_defined",
+        "level_change": "unchanged",
+        "reaction_scope": "whole_contents"
+      },
+      "apply_source_quantities": false,
+      "tool_contact_policy": "source_defined"
+    }
+  ],
+  "prompt": "Use case: scientific-educational. Photorealistic landscape16:9 close starting frame for a short late-cooling excerpt of potash-alum crystallisation. Exactly one plain SMALL transparent50mL-size laboratory beaker with pouring spout, resting on an unheated neutral grey bench, modest shallow charge of transparent colourless mother liquor in the lowest quarter. At the very bottom are just a few small separate colourless translucent faceted alum seed crystals, visible through the clear liquid, NOT a white powder heap, NOT opaque milky solution, NOT a fully crystallised dry crop. Camera slightly raised three-quarter scientific close view so rim, liquid surface and seed crystals at bottom all visible, beaker occupies60percent frame height. Soft diffuse bright illumination, restrained glass reflections and uncluttered grey background. No hotplate, flame, steam, ice bath, thermometer, stirring rod, hands, labels, numeric graduations, text, logos, watermark or extra vessels. This is an illustrative point during already-ongoing slow cooling, not immediate nucleation at the instant heating stops and not a measured solubility result."
+}
