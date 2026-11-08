@@ -1,0 +1,38 @@
+{
+  "pilot_id": "gum_sol",
+  "experiment_id": "chem_12_801",
+  "protocol_variant": "gum",
+  "starting_state": "Boiling clear water prepared under source step 1 in a 250 mL beaker, rod already present. Planned charge 100 mL; image not calibrated.",
+  "scope": "Excerpt after boiling-water and gum-paste preparation: paste transfer followed by a short ongoing-stirring excerpt. Does not complete the source's ten-minute hold.",
+  "clips": [
+    {
+      "name": "gum_paste_delivery",
+      "source_step_id": 2,
+      "action": "Transfer the separately prepared gum paste into the existing boiling water; preserve the beaker and stirring rod. Stop transfer without filling the beaker to its rim.",
+      "state_before": "Clear boiling water and one glass rod in the existing beaker.",
+      "state_after": "Gum paste is in the existing water and begins dispersing; no new beaker appears.",
+      "liquid_state": {
+        "before_ml": 100,
+        "vessel_capacity_ml": 250,
+        "level_change": "increase",
+        "reaction_scope": "whole_contents"
+      },
+      "apply_source_quantities": true,
+      "tool_contact_policy": "above_rim"
+    },
+    {
+      "name": "gum_stirring_excerpt",
+      "source_step_id": 3,
+      "action": "Gently stir the existing heated gum dispersion with the existing glass rod during a short excerpt of the ongoing source-defined hold.",
+      "state_before": "The preceding gum-containing dispersion, with the same beaker, rod and liquid level.",
+      "state_after": "The same dispersed gum sol continues to be stirred; no claim that ten minutes have elapsed.",
+      "liquid_state": {
+        "level_change": "unchanged",
+        "reaction_scope": "whole_contents"
+      },
+      "apply_source_quantities": true,
+      "tool_contact_policy": "source_defined"
+    }
+  ],
+  "prompt": "Use case: scientific-educational. Photorealistic landscape 16:9 close scientific starting reference for preparing gum sol. Exactly one plain transparent 250mL-size glass beaker with spout, containing clear colourless boiling water approximately two fifths full, on one simple flat electric laboratory hotplate. Modest physically plausible small boiling bubbles rising from base, no thick steam hiding the water. A single slender glass stirring rod rests inside with its handle extending above rim. The water is transparent, not milky or yellow: gum paste has NOT yet been delivered. Entire beaker rim and base in frame, beaker 60 percent frame height, raised three-quarter camera sees liquid and beaker opening, neutral grey laboratory bench and uncluttered background, diffuse lighting. Leave space above rim for future gum-paste transfer. No hands, no paste container or spoon yet, no extra beaker, no text, scales, numbers, logo or watermark. This visual represents the source's prepared 100mL water charge but does not claim calibrated volume."
+}
