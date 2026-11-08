@@ -1,0 +1,27 @@
+{
+  "pilot_id": "copper_ammonia",
+  "experiment_id": "chem_12_301",
+  "protocol_variant": "cation_copper",
+  "starting_state": "Illustrative prepared copper-positive group-IIA aliquot before ammonium hydroxide. Pale blue appearance is a rendering assumption requiring sample/source review; no concentration or volume is claimed.",
+  "scope": "Ammonium-hydroxide stage only. Upstream group separation, later acetic-acid acidification and ferrocyanide confirmation are omitted; do not combine all stages in one shot.",
+  "clips": [
+    {
+      "name": "ammonia_delivery",
+      "source_step_id": 1,
+      "action": "Slowly deliver ammonium hydroxide into the existing pale-blue copper sample with the tip above the rim, following the source's excess-ammonia condition; preserve headspace and stop delivery.",
+      "state_before": "Existing transparent pale-blue copper-containing aliquot.",
+      "state_after": "The source's transparent deep-blue ammonia complex develops when sufficient excess ammonia and mixing are reached. Do not force a completed endpoint into this brief excerpt or show the later brown ferrocyanide precipitate.",
+      "liquid_state": {
+        "volume_model": "source_defined",
+        "level_change": "increase",
+        "reaction_scope": "whole_contents"
+      },
+      "apply_source_quantities": true,
+      "quantity_reagents": [
+        "NH4OH"
+      ],
+      "tool_contact_policy": "above_rim"
+    }
+  ],
+  "prompt": "Use case: scientific-educational. Photorealistic landscape16:9 close laboratory starting frame for a copper(II) qualitative-analysis sample before ammonia addition. Exactly one plain transparent upright round-bottom glass test tube secured in a minimal clamp, holding a modest low charge around the lowest quarter of tube height of transparent PALE SKY-BLUE aqueous copper(II) solution. Blue liquid is dilute, clear enough to see the background through it, not dark royal-blue yet, no turbidity, powder, precipitate or separate upper layer. Entire tube, rounded base and open mouth visible, tube70percent image height, abundant headspace for later dropwise reagent delivery. Fixed eye-level view, neutral grey bench/background, even diffuse lighting and realistic restrained glass reflections. No hands, pipette, bottles, extra vessels, text, labels, scale, logos or watermark. An illustrative prepared copper-positive aliquot, not proof of concentration, volume or completed ammonia-complex formation."
+}

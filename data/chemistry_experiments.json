@@ -3915,6 +3915,13 @@
           "url": "assets/reference_pilots/salt_water_delivery.png",
           "license_status": "needs_review",
           "attribution": "AI-generated draft reference for salt_water_delivery; see source-bound pilot manifest. Scientific review pending."
+        },
+        {
+          "image_asset_id": "copper_ammonia_generated_reference",
+          "role": "scene_reference",
+          "url": "assets/reference_pilots/copper_ammonia.png",
+          "license_status": "needs_review",
+          "attribution": "AI-generated draft reference for copper_ammonia; see source-bound pilot manifest. Scientific review pending."
         }
       ],
       "tags": [
@@ -6594,7 +6601,8 @@
       },
       "reference_pilot_ids": [
         "chloride_confirmation",
-        "salt_water_delivery"
+        "salt_water_delivery",
+        "copper_ammonia"
       ]
     },
     {

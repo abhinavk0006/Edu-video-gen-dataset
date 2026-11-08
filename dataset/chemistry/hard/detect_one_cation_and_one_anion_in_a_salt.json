@@ -2663,7 +2663,8 @@
   },
   "reference_pilot_ids": [
     "chloride_confirmation",
-    "salt_water_delivery"
+    "salt_water_delivery",
+    "copper_ammonia"
   ],
   "procedure_steps": [
     {
