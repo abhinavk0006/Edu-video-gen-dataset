@@ -2630,6 +2630,104 @@
       },
       "review_status": "draft",
       "scientifically_verified": false
+    },
+    "iron_ferrocyanide": {
+      "experiment_id": "chem_12_301",
+      "protocol_variant": "cation_iron",
+      "starting_state": "A separate fresh pale-yellow ferric portion before ferrocyanide, not the thiocyanate-treated sample. Volume and concentration unspecified.",
+      "scope": "Ferrocyanide confirmation excerpt after source dissolution and splitting; thiocyanate is a separate test. No prior red-response sample is reused.",
+      "reuse_rationale": "The two confirmation tests begin with visually matching separate portions of the same prepared acidic ferric solution, before either reagent: one tube, pale-yellow transparent low fill and abundant headspace. Shared raster composition is not shared physical sample identity; each pilot has its own state track. Actual concentration and aliquot volume remain unverified.",
+      "clips": [
+        {
+          "name": "ferrocyanide_delivery",
+          "source_step_id": 1,
+          "action": "Slowly deliver potassium ferrocyanide reagent to the existing fresh ferric portion with the tip above the tube rim; stop delivery.",
+          "state_before": "Fresh pale-yellow ferric portion before either confirmation reagent.",
+          "state_after": "Prussian-blue response develops in the existing ferric portion under the source conditions; do not show the separate blood-red thiocyanate test.",
+          "liquid_state": {
+            "volume_model": "source_defined",
+            "level_change": "increase",
+            "reaction_scope": "whole_contents"
+          },
+          "apply_source_quantities": true,
+          "quantity_reagents": [
+            "potassium ferrocyanide"
+          ],
+          "tool_contact_policy": "above_rim"
+        }
+      ],
+      "source_step_hashes": {
+        "1": "65b040266afbdeb8b27953afd1a0f51009e09206a04d139d899ff9854fd1778f"
+      },
+      "source_step_snapshots": [
+        {
+          "instruction": "Dissolve group-III brown precipitate in dilute HCl; split into separate portions for potassium ferrocyanide and potassium thiocyanate.",
+          "observation": "Separate tests give Prussian blue and blood-red colours respectively.",
+          "quantities": [
+            {
+              "reagent": "dil HCl",
+              "role": "addition",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "potassium ferrocyanide",
+              "role": "addition",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "potassium thiocyanate",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm107",
+              "file": "lelm107.pdf",
+              "pdf_page": 27,
+              "experiment": "7.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Dissolve group-III brown precipitate in dilute HCl; split into separate portions for potassium ferrocyanide and potassium thiocyanate.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Separate tests give Prussian blue and blood-red colours respectively.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        }
+      ],
+      "image": {
+        "path": "assets/reference_pilots/iron_thiocyanate.png",
+        "sha256": "340eeeb178a3bebecc138681de77ed09e98f3fada664ee2bf5ad3e8408af23fb",
+        "origin": "built_in_imagegen",
+        "created": "2026-11-09",
+        "scientific_review_status": "pending",
+        "volume_measured": false,
+        "prompt_file": "assets/reference_pilots/generation_prompts.json",
+        "prompt_key": "iron_thiocyanate",
+        "visual_checks": "Assistant inspected count, apparatus, visibility and requested initial appearance. Independent scientific review pending."
+      },
+      "review_status": "draft",
+      "scientifically_verified": false
     }
   }
 }

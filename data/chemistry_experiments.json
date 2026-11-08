@@ -3929,6 +3929,13 @@
           "url": "assets/reference_pilots/iron_thiocyanate.png",
           "license_status": "needs_review",
           "attribution": "AI-generated draft reference for iron_thiocyanate; see source-bound pilot manifest. Scientific review pending."
+        },
+        {
+          "image_asset_id": "iron_ferrocyanide_generated_reference",
+          "role": "scene_reference",
+          "url": "assets/reference_pilots/iron_thiocyanate.png",
+          "license_status": "needs_review",
+          "attribution": "AI-generated draft reference for iron_ferrocyanide; see source-bound pilot manifest. Scientific review pending."
         }
       ],
       "tags": [
@@ -6610,7 +6617,8 @@
         "chloride_confirmation",
         "salt_water_delivery",
         "copper_ammonia",
-        "iron_thiocyanate"
+        "iron_thiocyanate",
+        "iron_ferrocyanide"
       ]
     },
     {

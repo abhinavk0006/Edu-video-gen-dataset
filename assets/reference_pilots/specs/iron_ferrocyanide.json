@@ -1,0 +1,29 @@
+{
+  "experiment_id": "chem_12_301",
+  "protocol_variant": "cation_iron",
+  "pilot_id": "iron_ferrocyanide",
+  "starting_state": "A separate fresh pale-yellow ferric portion before ferrocyanide, not the thiocyanate-treated sample. Volume and concentration unspecified.",
+  "scope": "Ferrocyanide confirmation excerpt after source dissolution and splitting; thiocyanate is a separate test. No prior red-response sample is reused.",
+  "reuse_image_path": "assets/reference_pilots/iron_thiocyanate.png",
+  "reuse_prompt_key": "iron_thiocyanate",
+  "reuse_rationale": "The two confirmation tests begin with visually matching separate portions of the same prepared acidic ferric solution, before either reagent: one tube, pale-yellow transparent low fill and abundant headspace. Shared raster composition is not shared physical sample identity; each pilot has its own state track. Actual concentration and aliquot volume remain unverified.",
+  "clips": [
+    {
+      "name": "ferrocyanide_delivery",
+      "source_step_id": 1,
+      "action": "Slowly deliver potassium ferrocyanide reagent to the existing fresh ferric portion with the tip above the tube rim; stop delivery.",
+      "state_before": "Fresh pale-yellow ferric portion before either confirmation reagent.",
+      "state_after": "Prussian-blue response develops in the existing ferric portion under the source conditions; do not show the separate blood-red thiocyanate test.",
+      "liquid_state": {
+        "volume_model": "source_defined",
+        "level_change": "increase",
+        "reaction_scope": "whole_contents"
+      },
+      "apply_source_quantities": true,
+      "quantity_reagents": [
+        "potassium ferrocyanide"
+      ],
+      "tool_contact_policy": "above_rim"
+    }
+  ]
+}
