@@ -1,0 +1,27 @@
+{
+  "pilot_id": "salt_water_delivery",
+  "experiment_id": "chem_12_301",
+  "protocol_variant": "original_solution",
+  "starting_state": "Small dry pinch of a selected readily water-soluble salt that produces a colourless solution, before distilled water. Salt identity/mass are rendering assumptions requiring review; not all salts share this appearance.",
+  "scope": "Water-delivery excerpt of original-solution preparation only. Shaking, optional heating and verification of complete dissolution follow outside this short shot. No fixed mass or water dose is invented.",
+  "clips": [
+    {
+      "name": "water_delivery",
+      "source_step_id": 1,
+      "action": "Slowly deliver the source's few mL of distilled water into the existing tube containing the small dry salt sample, keeping the delivery tip above the rim, then stop well below the rim.",
+      "state_before": "A small dry white crystal deposit at the bottom of one tube, no liquid.",
+      "state_after": "The same tube contains water and wet or partly dissolving crystals; for this selected colourless-soluble-salt scenario the liquid is transparent, not an invented opaque white solution. Complete dissolution is not asserted before mixing.",
+      "liquid_state": {
+        "before_ml": 0,
+        "level_change": "increase",
+        "reaction_scope": "whole_contents"
+      },
+      "apply_source_quantities": true,
+      "quantity_reagents": [
+        "water"
+      ],
+      "tool_contact_policy": "above_rim"
+    }
+  ],
+  "prompt": "Use case: scientific-educational. Photorealistic landscape16:9 starting reference for dissolving a small colourless-soluble salt sample in water. Exactly one upright transparent round-bottom laboratory glass test tube secured in a minimal clamp. The tube is DRY and contains only a very small pinch of coarse white salt crystals at its very bottom, a shallow sparse deposit less than one twentieth of tube height; absolutely NO liquid, meniscus, wet shine or cloudy suspension. Entire open mouth and rounded base visible, tube about70percent frame height, eye-level fixed close camera, space above rim for subsequent distilled water transfer, neutral grey uncluttered laboratory bench/background and even diffuse lighting, modest true-to-life reflections. No hands, dropper, bottles, labels, scales, numbers, letters, logos, watermark or extra vessels. No crystals floating in air, no snow-like pile. Dry starting sample only; chemical identity and exact mass cannot be established visually."
+}

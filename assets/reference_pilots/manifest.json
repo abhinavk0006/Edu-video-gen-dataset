@@ -1529,6 +1529,99 @@
       },
       "review_status": "draft",
       "scientifically_verified": false
+    },
+    "salt_water_delivery": {
+      "experiment_id": "chem_12_301",
+      "protocol_variant": "original_solution",
+      "starting_state": "Small dry pinch of a selected readily water-soluble salt that produces a colourless solution, before distilled water. Salt identity/mass are rendering assumptions requiring review; not all salts share this appearance.",
+      "scope": "Water-delivery excerpt of original-solution preparation only. Shaking, optional heating and verification of complete dissolution follow outside this short shot. No fixed mass or water dose is invented.",
+      "clips": [
+        {
+          "name": "water_delivery",
+          "source_step_id": 1,
+          "action": "Slowly deliver the source's few mL of distilled water into the existing tube containing the small dry salt sample, keeping the delivery tip above the rim, then stop well below the rim.",
+          "state_before": "A small dry white crystal deposit at the bottom of one tube, no liquid.",
+          "state_after": "The same tube contains water and wet or partly dissolving crystals; for this selected colourless-soluble-salt scenario the liquid is transparent, not an invented opaque white solution. Complete dissolution is not asserted before mixing.",
+          "liquid_state": {
+            "before_ml": 0,
+            "level_change": "increase",
+            "reaction_scope": "whole_contents"
+          },
+          "apply_source_quantities": true,
+          "quantity_reagents": [
+            "water"
+          ],
+          "tool_contact_policy": "above_rim"
+        }
+      ],
+      "source_step_hashes": {
+        "1": "ef3944c515605b723a957517260a5ee354c8e5ee8862665572e1f38895a4912c"
+      },
+      "source_step_snapshots": [
+        {
+          "instruction": "Take a little salt and a few mL distilled water; shake and heat if needed until fully dissolved.",
+          "observation": "The original solution must be clear and transparent; its colour depends on the chosen salt. Do not invent a universal white solution.",
+          "quantities": [
+            {
+              "reagent": "salt",
+              "role": "addition",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "water",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "note": "A few mL; exact volume absent."
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "whole_contents",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm107",
+              "file": "lelm107.pdf",
+              "pdf_page": 21,
+              "experiment": "7.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Take a little salt and a few mL distilled water; shake and heat if needed until fully dissolved.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "The original solution must be clear and transparent; its colour depends on the chosen salt. Do not invent a universal white solution.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        }
+      ],
+      "image": {
+        "path": "assets/reference_pilots/salt_water_delivery.png",
+        "sha256": "e341f7771fd216e88aea9a2e4865217c83ad3f82387214f215e4f1e95a41ac13",
+        "origin": "built_in_imagegen",
+        "created": "2026-11-09",
+        "scientific_review_status": "pending",
+        "volume_measured": false,
+        "prompt_file": "assets/reference_pilots/generation_prompts.json",
+        "prompt_key": "salt_water_delivery",
+        "visual_checks": "Assistant inspected count, apparatus, visibility and requested initial appearance. Independent scientific review pending."
+      },
+      "review_status": "draft",
+      "scientifically_verified": false
     }
   }
 }

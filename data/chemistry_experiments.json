@@ -3908,6 +3908,13 @@
           "url": "assets/reference_pilots/chloride_prepared_aliquot.png",
           "license_status": "needs_review",
           "attribution": "AI-generated pilot reference for protocol chloride_silver; see assets/reference_pilots/manifest.json for exact step/start state. Scientific review pending."
+        },
+        {
+          "image_asset_id": "salt_water_delivery_generated_reference",
+          "role": "scene_reference",
+          "url": "assets/reference_pilots/salt_water_delivery.png",
+          "license_status": "needs_review",
+          "attribution": "AI-generated draft reference for salt_water_delivery; see source-bound pilot manifest. Scientific review pending."
         }
       ],
       "tags": [
@@ -6586,7 +6593,8 @@
         "render_mode_policy": "Choose the rendering mode after reviewing the actual setup. Circuit diagrams require explicit validated topology; never infer it from a title."
       },
       "reference_pilot_ids": [
-        "chloride_confirmation"
+        "chloride_confirmation",
+        "salt_water_delivery"
       ]
     },
     {
