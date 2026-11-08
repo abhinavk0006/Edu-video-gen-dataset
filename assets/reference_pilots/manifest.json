@@ -3428,6 +3428,204 @@
       },
       "review_status": "draft",
       "scientifically_verified": false
+    },
+    "leaf_chromatography_chloroform": {
+      "experiment_id": "chem_12_501",
+      "starting_state": "Prepared dried green leaf-extract spot on paper above the mobile-phase surface; lower paper edge immersed. Chloroform variant mobile phase prepared separately. Dimensions and volumes are not calibrated by the image.",
+      "scope": "Early ascending-development excerpt only, after extract/spot/mobile-phase preparation. No forced two-thirds endpoint, complete band separation, elapsed development time or Rf value in a two-second clip.",
+      "clips": [
+        {
+          "name": "early_paper_development",
+          "source_step_id": 3,
+          "action": "Hold the covered chromatography chamber stationary and show a short real-time excerpt of capillary wetting advancing slightly up the existing paper from its immersed lower edge.",
+          "state_before": "One paper strip, green sample spot above a shallow mobile-phase pool, upper paper not yet developed.",
+          "state_after": "The wetting front may advance modestly; paper, baseline and solvent remain in place and the sample is not submerged. Do not jump to finished coloured bands or invent Rf measurements.",
+          "liquid_state": {
+            "level_change": "unchanged"
+          },
+          "apply_source_quantities": false,
+          "tool_contact_policy": "source_defined"
+        }
+      ],
+      "protocol_variant": "chloroform",
+      "reuse_rationale": "Same visible paper geometry, dried leaf spot above a shallow clear mobile phase and undeveloped upper paper. The alternative mobile-phase composition changes chemical identity and development behaviour, but no pre-development visible feature in this image. This is an independent preparation, not the acetone run continued; no shared Rf or timing is assumed.",
+      "source_step_hashes": {
+        "1": "d44befa29472b7be9ad55e6582c70d35c5d6978aa9ad6960f93378cb6057875e",
+        "2": "f5c5dd122f25bf08ca4c63ae0ae6c16abe6f967c19eefe3f879d4e00a6918328",
+        "3": "ae68fe918331ac5582e5f09e4a1a0f292181d8f644e1c369009defebedd240a6"
+      },
+      "source_step_snapshots": [
+        {
+          "instruction": "Prepare a leaf/flower extract with a small amount of methanol or acetone; filter.",
+          "observation": "Pigments are extracted; solvent quantity is not stated.",
+          "quantities": [
+            {
+              "reagent": "extraction solvent",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "extract",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm105",
+              "file": "lelm105.pdf",
+              "pdf_page": 2,
+              "experiment": "5.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Prepare a leaf/flower extract with a small amount of methanol or acetone; filter.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Pigments are extracted; solvent quantity is not stated.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "Use 4 by 17 cm paper with a baseline 3 cm above the lower end; apply and dry extract spots.",
+          "observation": "The sample spot remains above the mobile phase.",
+          "quantities": [
+            {
+              "reagent": "paper width",
+              "role": "apparatus_dimension",
+              "qualifier": "exact",
+              "value": 4,
+              "unit": "cm"
+            },
+            {
+              "reagent": "paper length",
+              "role": "apparatus_dimension",
+              "qualifier": "exact",
+              "value": 17,
+              "unit": "cm"
+            },
+            {
+              "reagent": "baseline height",
+              "role": "apparatus_dimension",
+              "qualifier": "exact",
+              "value": 3,
+              "unit": "cm"
+            }
+          ],
+          "sample_id": "paper",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm105",
+              "file": "lelm105.pdf",
+              "pdf_page": 3,
+              "experiment": "5.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Use 4 by 17 cm paper with a baseline 3 cm above the lower end; apply and dry extract spots.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "The sample spot remains above the mobile phase.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "Prepare mobile phase from 19 mL petroleum ether (60-80 degrees C boiling fraction) and 1 mL chloroform; develop to about two-thirds paper length and mark the solvent front.",
+          "observation": "Separate pigment bands permit measured Rf calculation.",
+          "quantities": [
+            {
+              "reagent": "petroleum ether",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 19,
+              "unit": "mL"
+            },
+            {
+              "reagent": "chloroform",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 1,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "chamber",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm105",
+              "file": "lelm105.pdf",
+              "pdf_page": 3,
+              "experiment": "5.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Prepare mobile phase from 19 mL petroleum ether (60-80 degrees C boiling fraction) and 1 mL chloroform; develop to about two-thirds paper length and mark the solvent front.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Separate pigment bands permit measured Rf calculation.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        }
+      ],
+      "image": {
+        "path": "assets/reference_pilots/leaf_chromatography.png",
+        "sha256": "f02e6bb231bd72848b2591732d82e589f6e4f4bda36c7cc56c1fe1a3ca0a9043",
+        "origin": "built_in_imagegen",
+        "created": "2026-11-09",
+        "scientific_review_status": "pending",
+        "volume_measured": false,
+        "prompt_file": "assets/reference_pilots/generation_prompts.json",
+        "prompt_key": "leaf_chromatography",
+        "visual_checks": "Assistant inspected count, apparatus, visibility and requested initial appearance. Independent scientific review pending."
+      },
+      "review_status": "draft",
+      "scientifically_verified": false
     }
   }
 }

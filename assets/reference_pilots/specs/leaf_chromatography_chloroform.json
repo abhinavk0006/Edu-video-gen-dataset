@@ -1,0 +1,24 @@
+{
+  "experiment_id": "chem_12_501",
+  "starting_state": "Prepared dried green leaf-extract spot on paper above the mobile-phase surface; lower paper edge immersed. Chloroform variant mobile phase prepared separately. Dimensions and volumes are not calibrated by the image.",
+  "scope": "Early ascending-development excerpt only, after extract/spot/mobile-phase preparation. No forced two-thirds endpoint, complete band separation, elapsed development time or Rf value in a two-second clip.",
+  "clips": [
+    {
+      "name": "early_paper_development",
+      "source_step_id": 3,
+      "action": "Hold the covered chromatography chamber stationary and show a short real-time excerpt of capillary wetting advancing slightly up the existing paper from its immersed lower edge.",
+      "state_before": "One paper strip, green sample spot above a shallow mobile-phase pool, upper paper not yet developed.",
+      "state_after": "The wetting front may advance modestly; paper, baseline and solvent remain in place and the sample is not submerged. Do not jump to finished coloured bands or invent Rf measurements.",
+      "liquid_state": {
+        "level_change": "unchanged"
+      },
+      "apply_source_quantities": false,
+      "tool_contact_policy": "source_defined"
+    }
+  ],
+  "pilot_id": "leaf_chromatography_chloroform",
+  "protocol_variant": "chloroform",
+  "reuse_image_path": "assets/reference_pilots/leaf_chromatography.png",
+  "reuse_prompt_key": "leaf_chromatography",
+  "reuse_rationale": "Same visible paper geometry, dried leaf spot above a shallow clear mobile phase and undeveloped upper paper. The alternative mobile-phase composition changes chemical identity and development behaviour, but no pre-development visible feature in this image. This is an independent preparation, not the acetone run continued; no shared Rf or timing is assumed."
+}
