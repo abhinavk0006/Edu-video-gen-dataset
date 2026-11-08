@@ -1,0 +1,24 @@
+{
+  "pilot_id": "alum_crystal_washing",
+  "experiment_id": "chem_12_601",
+  "protocol_variant": "potash_alum",
+  "starting_state": "Filtered illustrative alum crystal crop retained in filter paper inside a supported funnel, clear filtrate in the receiver, before cold wash liquid. Upstream crystallisation/filtration are omitted.",
+  "scope": "Cold-wash excerpt of source step 3 only. Wash mixture is source-specified water/alcohol 1:1; volume is unspecified. No invented yield, instant drying or complete loss of crystals.",
+  "clips": [
+    {
+      "name": "cold_crystal_wash",
+      "source_step_id": 3,
+      "target_object": "Existing alum crystals on the filter paper inside the supported funnel; clear wash filtrate collects in the receiving flask.",
+      "action": "Gently deliver a modest source-defined cold 1:1 water/alcohol wash over the existing crystals on the filter paper, keeping the delivery tip above the filter and stopping before overflow.",
+      "state_before": "Alum crystals retained on filter paper; one receiving flask below, funnel stem above collected liquid.",
+      "state_after": "Wash liquid drains through intact paper into the receiver while the crystal crop remains on the filter. Do not move crystals into the receiver, submerge the funnel stem or show instant drying.",
+      "liquid_state": {
+        "volume_model": "source_defined",
+        "level_change": "source_defined"
+      },
+      "apply_source_quantities": true,
+      "tool_contact_policy": "above_rim"
+    }
+  ],
+  "prompt": "Use case: scientific-educational. Photorealistic landscape16:9 laboratory reference for washing filtered potash-alum crystals. One transparent glass filter funnel containing one correctly folded white conical filter paper, supported securely by a ring clamp above a single small transparent conical receiving flask. A modest small crop of white/translucent alum crystals rests INSIDE the filter paper cone, not outside its edges. Funnel stem extends a little into the receiving flask neck, with its tip ABOVE the small clear filtrate pool at flask bottom, never submerged and with room for air. Entire funnel bowl and crystals, stem connection and receiving flask visible, camera raised three-quarter so crystals can be seen. Apparatus centered, neutral grey clean lab bench/background, even diffuse bright lighting, physically plausible glass geometry and continuous single funnel outlet. This is AFTER initial filtration but BEFORE cold wash-liquid delivery. No wash bottle yet, no hands, no overflowing liquid, no crystals in receiver, no extra funnels or flasks, labels, text, numbers, graduation marks, logos or watermark. Illustrative crystal crop only, no measured yield."
+}
