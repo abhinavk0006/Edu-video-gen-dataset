@@ -2934,6 +2934,203 @@
       },
       "review_status": "draft",
       "scientifically_verified": false
+    },
+    "albumin_dialysis": {
+      "experiment_id": "chem_12_802",
+      "protocol_variant": "dialysis",
+      "starting_state": "Prepared albumin sol retained inside an intact suspended cellophane cone, cone opening above external distilled-water level and sealed tip submerged. Volumes and membrane dimensions are illustrative, not measured.",
+      "scope": "Short real-time setup-observation excerpt during dialysis. Source's half-hour wait, water replacement and separate ion-test aliquots are omitted. Molecular diffusion is explanatory content, not visible macroscopic particles.",
+      "clips": [
+        {
+          "name": "dialysis_observation",
+          "source_step_id": 2,
+          "action": "Hold the camera and dialysis apparatus stationary for a short real-time observation of the intact membrane cone and surrounding water.",
+          "state_before": "Albumin sol inside the cone; separate clear external water around the intact submerged membrane.",
+          "state_after": "Colloid remains confined inside the membrane and external water remains visibly clear. No bulk leak, membrane rupture, visible ion particles or completed-purification claim.",
+          "liquid_state": {
+            "level_change": "unchanged",
+            "volume_model": "source_defined"
+          },
+          "apply_source_quantities": false,
+          "tool_contact_policy": "source_defined"
+        }
+      ],
+      "source_step_hashes": {
+        "1": "2f580efba318c1583c2e7dce4f9411338fbee4e429e45e7d0993645081ac9dfd",
+        "2": "f66964f9a0a99a36794e64974a12ddbc7ef68834fd5419fd077d27a561cc1b36",
+        "3": "8c51666825ed7b42ef30632368642a703db882da29669316c3ae2e1bdb06273b"
+      },
+      "source_step_snapshots": [
+        {
+          "instruction": "Prepare a parchment/cellophane cone from a 30 by 30 cm sheet and place albumin sol inside.",
+          "observation": "Sol is retained inside the membrane.",
+          "quantities": [
+            {
+              "reagent": "membrane side",
+              "role": "apparatus_dimension",
+              "qualifier": "exact",
+              "value": 30,
+              "unit": "cm"
+            },
+            {
+              "reagent": "albumin sol",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 4,
+              "experiment": "1.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Prepare a parchment/cellophane cone from a 30 by 30 cm sheet and place albumin sol inside.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Sol is retained inside the membrane.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "Suspend the cone in distilled water and inspect the external water after half an hour; change the external water during dialysis.",
+          "observation": "Small ions diffuse into the external water; the colloid remains inside.",
+          "quantities": [
+            {
+              "reagent": "external water",
+              "role": "addition",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "first inspection",
+              "role": "condition",
+              "qualifier": "exact",
+              "value": 30,
+              "unit": "min"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 5,
+              "experiment": "1.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Suspend the cone in distilled water and inspect the external water after half an hour; change the external water during dialysis.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Small ions diffuse into the external water; the colloid remains inside.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "Use separate external-water aliquots for sodium and chloride tests with uranyl zinc acetate and silver nitrate respectively.",
+          "observation": "Yellow sodium-test and white chloride-test precipitates indicate ions outside the membrane; doses are not stated.",
+          "quantities": [
+            {
+              "reagent": "test aliquots",
+              "role": "addition",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "uranyl zinc acetate",
+              "role": "addition",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "silver nitrate",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "separate_test_aliquots",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 5,
+              "experiment": "1.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Use separate external-water aliquots for sodium and chloride tests with uranyl zinc acetate and silver nitrate respectively.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Yellow sodium-test and white chloride-test precipitates indicate ions outside the membrane; doses are not stated.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        }
+      ],
+      "image": {
+        "path": "assets/reference_pilots/albumin_dialysis.png",
+        "sha256": "19d44e0304d001766bafd435e24c6a8c16efb2956bf588cf410bce9c82040c3e",
+        "origin": "built_in_imagegen",
+        "created": "2026-11-09",
+        "scientific_review_status": "pending",
+        "volume_measured": false,
+        "prompt_file": "assets/reference_pilots/generation_prompts.json",
+        "prompt_key": "albumin_dialysis",
+        "visual_checks": "Assistant inspected count, apparatus, visibility and requested initial appearance. Independent scientific review pending."
+      },
+      "review_status": "draft",
+      "scientifically_verified": false
     }
   }
 }
