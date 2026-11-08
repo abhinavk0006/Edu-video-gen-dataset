@@ -239,6 +239,9 @@
     "physics_status": "not_applicable",
     "render_mode_policy": "Choose the rendering mode after reviewing the actual setup. Circuit diagrams require explicit validated topology; never infer it from a title."
   },
+  "reference_pilot_ids": [
+    "mohr_titration_excerpt"
+  ],
   "procedure_steps": [
     {
       "instruction": "Weigh 4.9000 g Mohr's salt, dissolve and transfer to a 250 mL volumetric flask; add dilute sulphuric acid dropwise until clear, then make up to the mark with water and mix.",

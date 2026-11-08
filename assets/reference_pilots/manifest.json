@@ -1314,6 +1314,221 @@
       },
       "review_status": "draft",
       "scientifically_verified": false
+    },
+    "mohr_titration_excerpt": {
+      "experiment_id": "chem_12_206",
+      "protocol_variant": "mohr_0p05m",
+      "starting_state": "Prepared acidified Mohr's salt aliquot after source steps 1–2, room temperature, permanganate burette ready. Source planned 10 mL stock plus about 5 mL acid; reference is not calibrated.",
+      "scope": "Early titration excerpt with one brief delivery and gentle mixing. Not a full titration, permanent endpoint demonstration, concordant trial set or fabricated burette reading. No heating.",
+      "clips": [
+        {
+          "name": "permanganate_delivery",
+          "source_step_id": 3,
+          "action": "Release a brief slow dropwise delivery of permanganate from the existing burette into the existing flask, then close the stopcock; keep the burette tip above the flask mouth.",
+          "state_before": "Nearly colourless pale green acidified Mohr's salt aliquot, no pink endpoint.",
+          "state_after": "A small transient purple region appears at the entry site while reaction proceeds; no permanent endpoint or consumed volume is asserted.",
+          "liquid_state": {
+            "volume_model": "source_defined",
+            "level_change": "increase",
+            "reaction_scope": "source_defined"
+          },
+          "apply_source_quantities": true,
+          "tool_contact_policy": "above_rim"
+        },
+        {
+          "name": "titration_swirl",
+          "source_step_id": 3,
+          "action": "Gently swirl the existing flask to mix the preceding permanganate delivery; keep the burette closed.",
+          "state_before": "Same sample and liquid amount after the preceding brief delivery.",
+          "state_after": "The preceding permanganate colour fades through the mixed contents before endpoint; flask liquid remains transparent, not white or permanently purple.",
+          "liquid_state": {
+            "level_change": "unchanged",
+            "reaction_scope": "whole_contents"
+          },
+          "apply_source_quantities": false,
+          "tool_contact_policy": "source_defined"
+        }
+      ],
+      "source_step_hashes": {
+        "1": "35edc27ccf64dd2c84972abf3cc75b1f5293f687bc4032508523794f34c06da0",
+        "2": "ac9d87a05d39b3de42ef0ba9482eaf7d4204a28fe84e20cf2f6157ab76ba80e5",
+        "3": "6b8fa4bc61f2ba087a8ec6a195627b5d24b52b946feaaae723a9defc496e38a3"
+      },
+      "source_step_snapshots": [
+        {
+          "instruction": "Weigh 4.9000 g Mohr's salt, dissolve and transfer to a 250 mL volumetric flask; add dilute sulphuric acid dropwise until clear, then make up to the mark with water and mix.",
+          "observation": "Final stock volume is 250 mL, not 250 mL of added water. The stock is clear, potentially pale green.",
+          "quantities": [
+            {
+              "reagent": "Mohr's salt",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 4.9,
+              "unit": "g"
+            },
+            {
+              "reagent": "dilute H2SO4",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "note": "Dropwise until clear; dose not stated."
+            },
+            {
+              "reagent": "prepared stock",
+              "role": "final_solution_volume",
+              "qualifier": "exact",
+              "value": 250,
+              "unit": "mL",
+              "concentration": "0.05 M"
+            }
+          ],
+          "sample_id": "stock",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm106",
+              "file": "lelm106.pdf",
+              "pdf_page": 7,
+              "experiment": "6.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Weigh 4.9000 g Mohr's salt, dissolve and transfer to a 250 mL volumetric flask; add dilute sulphuric acid dropwise until clear, then make up to the mark with water and mix.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Final stock volume is 250 mL, not 250 mL of added water. The stock is clear, potentially pale green.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "Take 10 mL 0.05 M stock in a conical flask and add about 5 mL 1 M sulphuric acid.",
+          "observation": "A clear acidified aliquot is ready for titration.",
+          "quantities": [
+            {
+              "reagent": "Mohr stock",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "mL",
+              "concentration": "0.05 M"
+            },
+            {
+              "reagent": "H2SO4",
+              "role": "addition",
+              "qualifier": "approximate",
+              "value": 5,
+              "unit": "mL",
+              "concentration": "1 M"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm106",
+              "file": "lelm106.pdf",
+              "pdf_page": 7,
+              "experiment": "6.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Take 10 mL 0.05 M stock in a conical flask and add about 5 mL 1 M sulphuric acid.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "A clear acidified aliquot is ready for titration.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "Titrate at room temperature with permanganate while swirling to permanent pale pink; repeat on fresh aliquots for concordant readings. Do not heat.",
+          "observation": "Endpoint is pale pink; volume consumed is measured.",
+          "quantities": [
+            {
+              "reagent": "KMnO4",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "note": "Endpoint-controlled; volume not predetermined."
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "whole_contents",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm106",
+              "file": "lelm106.pdf",
+              "pdf_page": 7,
+              "experiment": "6.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Titrate at room temperature with permanganate while swirling to permanent pale pink; repeat on fresh aliquots for concordant readings. Do not heat.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Endpoint is pale pink; volume consumed is measured.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        }
+      ],
+      "image": {
+        "path": "assets/reference_pilots/mohr_titration_excerpt.png",
+        "sha256": "2ac4df58e3d5b0afa6ace1b437d0816b68c07f8f9564e58f97fb0f82c4e84f8d",
+        "origin": "built_in_imagegen",
+        "created": "2026-11-09",
+        "scientific_review_status": "pending",
+        "volume_measured": false,
+        "prompt_file": "assets/reference_pilots/generation_prompts.json",
+        "prompt_key": "mohr_titration_excerpt",
+        "visual_checks": "Assistant inspected count, apparatus, visibility and requested initial appearance. Independent scientific review pending."
+      },
+      "review_status": "draft",
+      "scientifically_verified": false
     }
   }
 }

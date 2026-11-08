@@ -1,0 +1,37 @@
+{
+  "pilot_id": "mohr_titration_excerpt",
+  "experiment_id": "chem_12_206",
+  "protocol_variant": "mohr_0p05m",
+  "starting_state": "Prepared acidified Mohr's salt aliquot after source steps 1–2, room temperature, permanganate burette ready. Source planned 10 mL stock plus about 5 mL acid; reference is not calibrated.",
+  "scope": "Early titration excerpt with one brief delivery and gentle mixing. Not a full titration, permanent endpoint demonstration, concordant trial set or fabricated burette reading. No heating.",
+  "clips": [
+    {
+      "name": "permanganate_delivery",
+      "source_step_id": 3,
+      "action": "Release a brief slow dropwise delivery of permanganate from the existing burette into the existing flask, then close the stopcock; keep the burette tip above the flask mouth.",
+      "state_before": "Nearly colourless pale green acidified Mohr's salt aliquot, no pink endpoint.",
+      "state_after": "A small transient purple region appears at the entry site while reaction proceeds; no permanent endpoint or consumed volume is asserted.",
+      "liquid_state": {
+        "volume_model": "source_defined",
+        "level_change": "increase",
+        "reaction_scope": "source_defined"
+      },
+      "apply_source_quantities": true,
+      "tool_contact_policy": "above_rim"
+    },
+    {
+      "name": "titration_swirl",
+      "source_step_id": 3,
+      "action": "Gently swirl the existing flask to mix the preceding permanganate delivery; keep the burette closed.",
+      "state_before": "Same sample and liquid amount after the preceding brief delivery.",
+      "state_after": "The preceding permanganate colour fades through the mixed contents before endpoint; flask liquid remains transparent, not white or permanently purple.",
+      "liquid_state": {
+        "level_change": "unchanged",
+        "reaction_scope": "whole_contents"
+      },
+      "apply_source_quantities": false,
+      "tool_contact_policy": "source_defined"
+    }
+  ],
+  "prompt": "Use case: scientific-educational. Photorealistic landscape16:9 scientific close starting frame for room-temperature permanganate titration of acidified Mohr's salt. Exactly one small transparent conical Erlenmeyer flask resting upright on a white tile, shallow charge of clear almost-colourless very pale green aqueous solution at bottom, abundant headspace, no pink endpoint. A single vertical glass burette clamped securely to one stand enters from upper frame and terminates in a plausible stopcock and narrow delivery tip centered above the flask mouth, clearly separated from the liquid by an air gap; visible column inside burette is deep purple permanganate. Burette top may be cropped but flask and delivery tip must be completely visible. No liquid currently falling, no hands. Camera slightly elevated three-quarter view with flask dominant and solution meniscus visible, even neutral laboratory lighting, uncluttered grey backdrop. No heater, flame, other flasks, extra glass tubes, labels, legible numbers, text, logos or watermark. Realistic physically connected glass stopcock geometry, delivery must lead into the single flask, not behind it. Illustrative starting charge, no claimed titration reading or measured volume."
+}
