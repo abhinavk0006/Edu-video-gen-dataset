@@ -443,6 +443,14 @@
           "type": "string"
         }
       }
+    },
+    "reference_pilot_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
     }
   },
   "$defs": {

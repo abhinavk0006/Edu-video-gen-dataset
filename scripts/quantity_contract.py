@@ -1,7 +1,7 @@
 """Shared export contract for source-transcribed quantity protocols."""
 import json
 
-FIELDS = ("quantity_review", "protocol_variants", "selected_protocol_variant", "rendering_contract")
+FIELDS = ("quantity_review", "protocol_variants", "selected_protocol_variant", "rendering_contract", "reference_pilot_ids")
 STEP_FIELDS = ("quantities", "source_evidence", "sample_id", "reaction_scope", "science_spec", "render_mode", "visibility_targets", "handoff_requirements", "circuit", "diagram_timeline")
 
 

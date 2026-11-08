@@ -3891,6 +3891,13 @@
           "role": "starting_image",
           "url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
           "license_status": "placeholder"
+        },
+        {
+          "image_asset_id": "chloride_confirmation_generated_reference",
+          "role": "scene_reference",
+          "url": "assets/reference_pilots/chloride_prepared_aliquot.png",
+          "license_status": "needs_review",
+          "attribution": "AI-generated pilot reference for protocol chloride_silver; see assets/reference_pilots/manifest.json for exact step/start state. Scientific review pending."
         }
       ],
       "tags": [
@@ -6567,7 +6574,10 @@
         "pacing_policy": "Split separate actions; retain laboratory waiting/heating times as process conditions, not compressed clip durations.",
         "physics_status": "not_applicable",
         "render_mode_policy": "Choose the rendering mode after reviewing the actual setup. Circuit diagrams require explicit validated topology; never infer it from a title."
-      }
+      },
+      "reference_pilot_ids": [
+        "chloride_confirmation"
+      ]
     },
     {
       "experiment_id": "chem_12_401",
@@ -14764,6 +14774,13 @@
           "role": "starting_image",
           "url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
           "license_status": "placeholder"
+        },
+        {
+          "image_asset_id": "starch_heating_excerpt_generated_reference",
+          "role": "scene_reference",
+          "url": "assets/reference_pilots/starch_sol_heating.png",
+          "license_status": "needs_review",
+          "attribution": "AI-generated pilot reference for protocol starch; see assets/reference_pilots/manifest.json for exact step/start state. Scientific review pending."
         }
       ],
       "tags": [
@@ -15716,7 +15733,10 @@
         "pacing_policy": "Split separate actions; retain laboratory waiting/heating times as process conditions, not compressed clip durations.",
         "physics_status": "not_applicable",
         "render_mode_policy": "Choose the rendering mode after reviewing the actual setup. Circuit diagrams require explicit validated topology; never infer it from a title."
-      }
+      },
+      "reference_pilot_ids": [
+        "starch_heating_excerpt"
+      ]
     },
     {
       "experiment_id": "chem_12_802",
@@ -16885,6 +16905,13 @@
           "role": "starting_image",
           "url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
           "license_status": "placeholder"
+        },
+        {
+          "image_asset_id": "thiosulphate_cross_generated_reference",
+          "role": "scene_reference",
+          "url": "assets/reference_pilots/thiosulphate_clear_cross.png",
+          "license_status": "needs_review",
+          "attribution": "AI-generated pilot reference for protocol hcl_1ml; see assets/reference_pilots/manifest.json for exact step/start state. Scientific review pending."
         }
       ],
       "tags": [
@@ -17711,7 +17738,10 @@
         "pacing_policy": "Split separate actions; retain laboratory waiting/heating times as process conditions, not compressed clip durations.",
         "physics_status": "not_applicable",
         "render_mode_policy": "Choose the rendering mode after reviewing the actual setup. Circuit diagrams require explicit validated topology; never infer it from a title."
-      }
+      },
+      "reference_pilot_ids": [
+        "thiosulphate_cross"
+      ]
     },
     {
       "experiment_id": "chem_12_902",
