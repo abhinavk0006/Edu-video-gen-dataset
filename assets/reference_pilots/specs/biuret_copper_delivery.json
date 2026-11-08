@@ -1,0 +1,27 @@
+{
+  "pilot_id": "biuret_copper_delivery",
+  "experiment_id": "chem_12_403",
+  "protocol_variant": "biuret",
+  "starting_state": "Prepared dilute albumin aliquot after the source's NaOH addition, before copper reagent. Source aliquot is 2–3 mL plus about 2 mL NaOH; no image-calibrated exact total.",
+  "scope": "Copper-reagent delivery excerpt only. Protein stock/aliquot/alkali preparation and the subsequent roughly five-minute warming stage are omitted. Violet endpoint remains a later source observation to review.",
+  "clips": [
+    {
+      "name": "copper_delivery",
+      "source_step_id": 1,
+      "action": "Deliver a few drops of the source-specified copper reagent into the existing prepared alkaline albumin sample, holding the tip above the rim; stop delivery.",
+      "state_before": "The existing nearly colourless dilute alkaline albumin sample, before copper reagent.",
+      "state_after": "Copper reagent has entered the same sample; no extra protein aliquot or alkali dose is delivered. Do not force a completed violet endpoint before the unshown warming stage.",
+      "liquid_state": {
+        "volume_model": "source_defined",
+        "level_change": "increase",
+        "reaction_scope": "whole_contents"
+      },
+      "apply_source_quantities": true,
+      "quantity_reagents": [
+        "copper reagent"
+      ],
+      "tool_contact_policy": "above_rim"
+    }
+  ],
+  "prompt": "Use case: scientific-educational. Photorealistic landscape16:9 laboratory starting frame for the copper-reagent delivery stage of a Biuret protein test. Exactly one plain tall transparent narrow round-bottom test tube, upright in a discreet clamp. Contents are a previously prepared alkaline dilute albumin sample, visually almost colourless and transparent with at most faint natural opalescence, modest liquid level around the lowest third of tube height and abundant headspace. This is BEFORE copper reagent so no violet, blue or pink colour, no curds or precipitate. Entire tube including open rim and rounded bottom visible, tube occupies70percent frame height. Fixed eye-level scientific close view, neutral grey bench/background, diffuse lighting, modest realistic glass reflections and visible meniscus. Empty space above rim for dropwise delivery. No hands, pipettes, reagent bottles, labels, graduations, letters, logos, watermarks, extra vessels, heating flame, thermometer, steam or decorative props. Not a calibrated volume or confirmed scientific result."
+}

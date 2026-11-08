@@ -8558,6 +8558,13 @@
           "url": "assets/reference_pilots/starch_iodine.png",
           "license_status": "needs_review",
           "attribution": "AI-generated draft reference for starch_iodine; see source-bound pilot manifest. Scientific review pending."
+        },
+        {
+          "image_asset_id": "biuret_copper_delivery_generated_reference",
+          "role": "scene_reference",
+          "url": "assets/reference_pilots/biuret_copper_delivery.png",
+          "license_status": "needs_review",
+          "attribution": "AI-generated draft reference for biuret_copper_delivery; see source-bound pilot manifest. Scientific review pending."
         }
       ],
       "tags": [
@@ -9662,7 +9669,8 @@
         "render_mode_policy": "Choose the rendering mode after reviewing the actual setup. Circuit diagrams require explicit validated topology; never infer it from a title."
       },
       "reference_pilot_ids": [
-        "starch_iodine"
+        "starch_iodine",
+        "biuret_copper_delivery"
       ]
     },
     {
