@@ -236,6 +236,9 @@
     "physics_status": "not_applicable",
     "render_mode_policy": "Choose the rendering mode after reviewing the actual setup. Circuit diagrams require explicit validated topology; never infer it from a title."
   },
+  "reference_pilot_ids": [
+    "ferrioxalate_cooling"
+  ],
   "procedure_steps": [
     {
       "instruction": "Dissolve 3 g oxalic acid in 12.5 mL hot water in a 50 mL beaker.",

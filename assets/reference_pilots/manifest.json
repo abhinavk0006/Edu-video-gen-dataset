@@ -4138,6 +4138,205 @@
       },
       "review_status": "draft",
       "scientifically_verified": false
+    },
+    "ferrioxalate_cooling": {
+      "experiment_id": "chem_12_602",
+      "protocol_variant": "ferrioxalate",
+      "starting_state": "Illustrative late point in slow cooling of prepared, filtered and concentrated green ferrioxalate mother liquor, with a few existing green crystals. All previous preparation is omitted; exact volume and crystal yield are not measured.",
+      "scope": "Late-cooling observation excerpt of source step 3, not immediate crystallisation, complete workup, drying or a quantitative yield.",
+      "clips": [
+        {
+          "name": "green_crystal_cooling",
+          "source_step_id": 3,
+          "target_object": "Existing green crystals in the transparent green mother liquor in the single beaker.",
+          "action": "Observe the existing green crystals during a short real-time excerpt of ongoing slow cooling; keep the beaker stationary.",
+          "state_before": "A few green crystals in green clear mother liquor after earlier concentration and cooling.",
+          "state_after": "Green crystals and mother liquor remain; only gradual physically plausible change is allowed, without sudden complete crystallisation, new reagents or an unexplained liquid reset.",
+          "liquid_state": {
+            "volume_model": "source_defined",
+            "level_change": "unchanged"
+          },
+          "apply_source_quantities": false,
+          "tool_contact_policy": "source_defined"
+        }
+      ],
+      "source_step_hashes": {
+        "1": "3a3bd2b79c1ed713ac6f59ed01842a2e14f09244ab4c28dbe4ad91a6f2f5ccb8",
+        "2": "09e05b041e8dfc328e78281bf0b8e66337cd8f45cc830564e4a78e0a11beb77d",
+        "3": "1fe0adfaa712513612f36791561efb46c0dc4be55536d737f909ac6e83f8daf8"
+      },
+      "source_step_snapshots": [
+        {
+          "instruction": "Dissolve 3 g oxalic acid in 12.5 mL hot water in a 50 mL beaker.",
+          "observation": "The starting solution is homogeneous.",
+          "quantities": [
+            {
+              "reagent": "oxalic acid",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 3,
+              "unit": "g"
+            },
+            {
+              "reagent": "water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 12.5,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm109",
+              "file": "lelm109.pdf",
+              "pdf_page": 3,
+              "experiment": "9.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Dissolve 3 g oxalic acid in 12.5 mL hot water in a 50 mL beaker.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "The starting solution is homogeneous.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "Add 3.8 g potassium hydroxide gradually with stirring, then 2.5 g ferric chloride and stir until fully dissolved.",
+          "observation": "A green solution forms throughout the mixed contents.",
+          "quantities": [
+            {
+              "reagent": "KOH",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 3.8,
+              "unit": "g"
+            },
+            {
+              "reagent": "FeCl3",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2.5,
+              "unit": "g"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "whole_contents",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm109",
+              "file": "lelm109.pdf",
+              "pdf_page": 3,
+              "experiment": "9.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Add 3.8 g potassium hydroxide gradually with stirring, then 2.5 g ferric chloride and stir until fully dissolved.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "A green solution forms throughout the mixed contents.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "Filter, concentrate the green filtrate on a water bath, cool slowly, wash crystals with 1:1 water/alcohol and dry.",
+          "observation": "Green crystals are isolated; wash amount is unstated.",
+          "quantities": [
+            {
+              "reagent": "water : alcohol",
+              "role": "mixture_ratio",
+              "qualifier": "exact",
+              "value": "1:1",
+              "unit": "volume_ratio"
+            },
+            {
+              "reagent": "wash mixture",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm109",
+              "file": "lelm109.pdf",
+              "pdf_page": 3,
+              "experiment": "9.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Filter, concentrate the green filtrate on a water bath, cool slowly, wash crystals with 1:1 water/alcohol and dry.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Green crystals are isolated; wash amount is unstated.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        }
+      ],
+      "image": {
+        "path": "assets/reference_pilots/ferrioxalate_cooling.png",
+        "sha256": "4cc913a8a1268205857089a2643c0063a74d105aa974bcbba61cc86482eb87aa",
+        "origin": "built_in_imagegen",
+        "created": "2026-11-13",
+        "scientific_review_status": "pending",
+        "volume_measured": false,
+        "prompt_file": "assets/reference_pilots/generation_prompts.json",
+        "prompt_key": "ferrioxalate_cooling",
+        "visual_checks": "Assistant inspected count, apparatus, visibility and requested initial appearance. Independent scientific review pending."
+      },
+      "review_status": "draft",
+      "scientifically_verified": false
     }
   }
 }

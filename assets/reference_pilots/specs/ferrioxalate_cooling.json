@@ -1,0 +1,24 @@
+{
+  "pilot_id": "ferrioxalate_cooling",
+  "experiment_id": "chem_12_602",
+  "protocol_variant": "ferrioxalate",
+  "starting_state": "Illustrative late point in slow cooling of prepared, filtered and concentrated green ferrioxalate mother liquor, with a few existing green crystals. All previous preparation is omitted; exact volume and crystal yield are not measured.",
+  "scope": "Late-cooling observation excerpt of source step 3, not immediate crystallisation, complete workup, drying or a quantitative yield.",
+  "clips": [
+    {
+      "name": "green_crystal_cooling",
+      "source_step_id": 3,
+      "target_object": "Existing green crystals in the transparent green mother liquor in the single beaker.",
+      "action": "Observe the existing green crystals during a short real-time excerpt of ongoing slow cooling; keep the beaker stationary.",
+      "state_before": "A few green crystals in green clear mother liquor after earlier concentration and cooling.",
+      "state_after": "Green crystals and mother liquor remain; only gradual physically plausible change is allowed, without sudden complete crystallisation, new reagents or an unexplained liquid reset.",
+      "liquid_state": {
+        "volume_model": "source_defined",
+        "level_change": "unchanged"
+      },
+      "apply_source_quantities": false,
+      "tool_contact_policy": "source_defined"
+    }
+  ],
+  "prompt": "Use case: scientific-educational. Photorealistic landscape16:9 close laboratory starting reference for late cooling of potassium trioxalatoferrate(III). Exactly one small plain transparent 50mL-size glass beaker with spout on a cool neutral grey bench. A shallow modest charge around lowest quarter of beaker of transparent emerald-green mother liquor, optically transparent not opaque, with just a few small separate translucent GREEN faceted crystals at the bottom. This is an illustrative late point during ongoing slow cooling AFTER preparation, filtration and concentration, not instant formation or a dry final crop. Whole beaker rim/base and green liquid meniscus visible, slightly raised three-quarter scientific view, beaker60percent frame height, soft diffuse lighting with restrained glass reflections. No heater, ice, steam, stirring rod, hands, reagent delivery, extra vessels, label, graduations, numbers, text, logo or watermark. No white crystals, white milk, huge crystal pile, glowing liquid or exaggerated saturation. Chemical identity and exact volume cannot be verified from this generated image."
+}
