@@ -4541,6 +4541,262 @@
       },
       "review_status": "draft",
       "scientifically_verified": false
+    },
+    "dibenzalacetone_first_transfer": {
+      "experiment_id": "chem_12_604",
+      "protocol_variant": "dibenzalacetone",
+      "starting_state": "Prepared cooled alkaline ethanol/water mixture in source's 250 mL beaker with a rod, before first carbonyl-mixture transfer. Temperature and actual mixed volume are not measured from image.",
+      "scope": "First-half transfer followed by a short stirring excerpt. Carbonyl stock preparation, full 15-minute hold, remaining-half addition and workup are omitted; no forced 1–2-minute precipitation endpoint in two seconds.",
+      "clips": [
+        {
+          "name": "first_half_transfer",
+          "source_step_id": 2,
+          "target_object": "Existing clear cooled alkaline mixture in the single beaker.",
+          "action": "Slowly transfer only the first half of the separately prepared benzaldehyde/acetone stock into the existing alkaline mixture, then stop; retain the unused half separately.",
+          "state_before": "Clear cooled alkaline mixture before carbonyl transfer, glass rod already present.",
+          "state_after": "The first source-defined half has entered the existing beaker. The other half is not added; no instant complete yellow precipitation or overfilling.",
+          "liquid_state": {
+            "volume_model": "source_defined",
+            "level_change": "increase",
+            "vessel_capacity_ml": 250
+          },
+          "apply_source_quantities": true,
+          "quantity_reagents": [
+            "carbonyl mixture"
+          ],
+          "tool_contact_policy": "above_rim"
+        },
+        {
+          "name": "first_stirring_excerpt",
+          "source_step_id": 2,
+          "action": "Stir the existing mixture with the existing glass rod during a short real-time excerpt of the source-defined stirring hold.",
+          "state_before": "Same mixture and meniscus after the first-half transfer.",
+          "state_after": "Mixture continues stirring with no further stock transfer. Precipitation onset depends on the source's longer reaction time; do not claim fifteen minutes elapsed or show immediate completed product.",
+          "liquid_state": {
+            "volume_model": "source_defined",
+            "level_change": "unchanged",
+            "reaction_scope": "whole_contents"
+          },
+          "apply_source_quantities": true,
+          "quantity_reagents": [
+            "stirring time"
+          ],
+          "tool_contact_policy": "source_defined"
+        }
+      ],
+      "source_step_hashes": {
+        "1": "cc66d7dc409ee9f9fc8486601417a0c6ddd5f935ac96e466e42cd82075bd878a",
+        "2": "cf020e18c49bab04abdaab9619857bd1b081e8948c8fc3118ce22243602f1c4a",
+        "3": "e8705eaed00438dcf7c8946ca86e8fbe8ab1ee625770b9f9d47930d68dfedfed"
+      },
+      "source_step_snapshots": [
+        {
+          "instruction": "Dissolve 3.15 g NaOH in 25 mL ethanol and 30 mL water in a 250 mL beaker; cool to 20-25 degrees C.",
+          "observation": "The alkaline mixture is prepared before carbonyl addition.",
+          "quantities": [
+            {
+              "reagent": "NaOH",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 3.15,
+              "unit": "g"
+            },
+            {
+              "reagent": "ethanol",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 25,
+              "unit": "mL"
+            },
+            {
+              "reagent": "water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 30,
+              "unit": "mL"
+            },
+            {
+              "reagent": "temperature",
+              "role": "condition",
+              "qualifier": "range",
+              "minimum": 20,
+              "maximum": 25,
+              "unit": "degC"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 4,
+              "experiment": "10.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Dissolve 3.15 g NaOH in 25 mL ethanol and 30 mL water in a 250 mL beaker; cool to 20-25 degrees C.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "The alkaline mixture is prepared before carbonyl addition.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "Separately mix 3.2 mL benzaldehyde and 2.3 mL acetone; add half this mixture slowly with vigorous stirring, then stir 15 minutes.",
+          "observation": "Fluffy precipitate begins in 1-2 minutes; preserve the unused half separately.",
+          "quantities": [
+            {
+              "reagent": "benzaldehyde",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 3.2,
+              "unit": "mL"
+            },
+            {
+              "reagent": "acetone",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 2.3,
+              "unit": "mL"
+            },
+            {
+              "reagent": "carbonyl mixture",
+              "role": "transfer",
+              "qualifier": "exact",
+              "value": 0.5,
+              "unit": "fraction_of_prepared_stock"
+            },
+            {
+              "reagent": "stirring time",
+              "role": "condition",
+              "qualifier": "exact",
+              "value": 15,
+              "unit": "min"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 4,
+              "experiment": "10.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Separately mix 3.2 mL benzaldehyde and 2.3 mL acetone; add half this mixture slowly with vigorous stirring, then stir 15 minutes.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Fluffy precipitate begins in 1-2 minutes; preserve the unused half separately.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "Add the remaining half and stir 30 minutes; filter, wash cold and recrystallise from a small solvent portion.",
+          "observation": "Pale-yellow dibenzalacetone is isolated.",
+          "quantities": [
+            {
+              "reagent": "remaining stock",
+              "role": "transfer",
+              "qualifier": "exact",
+              "value": 0.5,
+              "unit": "fraction_of_prepared_stock"
+            },
+            {
+              "reagent": "stirring time",
+              "role": "condition",
+              "qualifier": "exact",
+              "value": 30,
+              "unit": "min"
+            },
+            {
+              "reagent": "recrystallisation solvent",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 4,
+              "experiment": "10.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Add the remaining half and stir 30 minutes; filter, wash cold and recrystallise from a small solvent portion.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Pale-yellow dibenzalacetone is isolated.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        }
+      ],
+      "image": {
+        "path": "assets/reference_pilots/dibenzalacetone_first_transfer.png",
+        "sha256": "fb62926e854e46774a16eb371da75a3c5418dbabb705a223e31cc57288f5df58",
+        "origin": "built_in_imagegen",
+        "created": "2026-11-13",
+        "scientific_review_status": "pending",
+        "volume_measured": false,
+        "prompt_file": "assets/reference_pilots/generation_prompts.json",
+        "prompt_key": "dibenzalacetone_first_transfer",
+        "visual_checks": "Assistant inspected count, apparatus, visibility and requested initial appearance. Independent scientific review pending."
+      },
+      "review_status": "draft",
+      "scientifically_verified": false
     }
   }
 }

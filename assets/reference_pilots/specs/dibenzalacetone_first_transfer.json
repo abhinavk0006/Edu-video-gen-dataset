@@ -1,0 +1,45 @@
+{
+  "pilot_id": "dibenzalacetone_first_transfer",
+  "experiment_id": "chem_12_604",
+  "protocol_variant": "dibenzalacetone",
+  "starting_state": "Prepared cooled alkaline ethanol/water mixture in source's 250 mL beaker with a rod, before first carbonyl-mixture transfer. Temperature and actual mixed volume are not measured from image.",
+  "scope": "First-half transfer followed by a short stirring excerpt. Carbonyl stock preparation, full 15-minute hold, remaining-half addition and workup are omitted; no forced 1–2-minute precipitation endpoint in two seconds.",
+  "clips": [
+    {
+      "name": "first_half_transfer",
+      "source_step_id": 2,
+      "target_object": "Existing clear cooled alkaline mixture in the single beaker.",
+      "action": "Slowly transfer only the first half of the separately prepared benzaldehyde/acetone stock into the existing alkaline mixture, then stop; retain the unused half separately.",
+      "state_before": "Clear cooled alkaline mixture before carbonyl transfer, glass rod already present.",
+      "state_after": "The first source-defined half has entered the existing beaker. The other half is not added; no instant complete yellow precipitation or overfilling.",
+      "liquid_state": {
+        "volume_model": "source_defined",
+        "level_change": "increase",
+        "vessel_capacity_ml": 250
+      },
+      "apply_source_quantities": true,
+      "quantity_reagents": [
+        "carbonyl mixture"
+      ],
+      "tool_contact_policy": "above_rim"
+    },
+    {
+      "name": "first_stirring_excerpt",
+      "source_step_id": 2,
+      "action": "Stir the existing mixture with the existing glass rod during a short real-time excerpt of the source-defined stirring hold.",
+      "state_before": "Same mixture and meniscus after the first-half transfer.",
+      "state_after": "Mixture continues stirring with no further stock transfer. Precipitation onset depends on the source's longer reaction time; do not claim fifteen minutes elapsed or show immediate completed product.",
+      "liquid_state": {
+        "volume_model": "source_defined",
+        "level_change": "unchanged",
+        "reaction_scope": "whole_contents"
+      },
+      "apply_source_quantities": true,
+      "quantity_reagents": [
+        "stirring time"
+      ],
+      "tool_contact_policy": "source_defined"
+    }
+  ],
+  "prompt": "Use case: scientific-educational. Photorealistic landscape16:9 laboratory starting reference for dibenzalacetone preparation BEFORE carbonyl-mixture delivery. Exactly one plain transparent250mL-size glass beaker with spout, containing a modest clear colourless homogeneous prepared alkaline ethanol/water mixture around its lower quarter. One thin glass stirring rod rests diagonally inside the beaker, handle above rim. Beaker stands on an unheated neutral grey bench, NO hotplate or flame because this is the prepared cooled room-temperature mixture. Whole rim/base, liquid meniscus and rod visible, raised three-quarter close scientific view, beaker60percent frame height, empty space above rim for future liquid transfer. Soft even diffuse illumination and restrained realistic glass reflections, uncluttered grey background. No yellow precipitate yet, no solid, milky liquid, bubbles, steam, hands, delivery bottle, extra vessels, labels, graduations, text, numbers, logos or watermark. An illustrative starting state after source preparation, not verification of volume, concentration or20-25degreesC."
+}

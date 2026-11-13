@@ -12847,6 +12847,13 @@
           "role": "starting_image",
           "url": "PLACEHOLDER: add a license-reviewed real laboratory setup image",
           "license_status": "placeholder"
+        },
+        {
+          "image_asset_id": "dibenzalacetone_first_transfer_generated_reference",
+          "role": "scene_reference",
+          "url": "assets/reference_pilots/dibenzalacetone_first_transfer.png",
+          "license_status": "needs_review",
+          "attribution": "AI-generated draft reference for dibenzalacetone_first_transfer; see source-bound pilot manifest. Scientific review pending."
         }
       ],
       "tags": [
@@ -13127,7 +13134,10 @@
         "pacing_policy": "Split separate actions; retain laboratory waiting/heating times as process conditions, not compressed clip durations.",
         "physics_status": "not_applicable",
         "render_mode_policy": "Choose the rendering mode after reviewing the actual setup. Circuit diagrams require explicit validated topology; never infer it from a title."
-      }
+      },
+      "reference_pilot_ids": [
+        "dibenzalacetone_first_transfer"
+      ]
     },
     {
       "experiment_id": "chem_12_605",
