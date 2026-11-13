@@ -1,0 +1,50 @@
+{
+  "pilot_id": "acetanilide_precipitation_transfer",
+  "experiment_id": "chem_12_603",
+  "protocol_variant": "anhydride",
+  "starting_state": "Cooled reaction mixture in source's 100 mL round-bottom donor flask, separate 250 mL receiving beaker with source-planned 150–200 mL ice-cold water and a glass rod. Image is not temperature/volume calibration.",
+  "scope": "Beginning of source-directed reaction-mixture transfer into receiving water, then brief stirring. Reflux, complete transfer, filtration, washing and recrystallisation are omitted; this does not reverse the pouring direction.",
+  "clips": [
+    {
+      "name": "begin_precipitation_transfer",
+      "source_step_id": 3,
+      "target_object": "Reaction mixture moves from the existing small round-bottom flask into the existing larger receiving water beaker.",
+      "preserve_objects": [
+        "one donor flask, one receiver beaker and the existing rod",
+        "receiver and cork support remain on the bench",
+        "donor identity persists while the flask is tilted"
+      ],
+      "action": "Lift and tilt the existing small donor flask to begin a slow controlled transfer of cooled reaction mixture into the larger receiving water beaker; then pause delivery.",
+      "state_before": "Separate cooled donor mixture and clear receiving water; no transferred mixture yet.",
+      "state_after": "Transferred reaction mixture enters the receiving water and white acetanilide precipitation may begin there. Donor amount decreases as receiver contents increase; no reverse pour, overflow or claim of complete transfer.",
+      "liquid_state": {
+        "volume_model": "source_defined",
+        "level_change": "source_defined",
+        "vessel_capacity_ml": 250
+      },
+      "apply_source_quantities": false,
+      "tool_contact_policy": "above_rim"
+    },
+    {
+      "name": "precipitation_stirring",
+      "source_step_id": 3,
+      "target_object": "The material already delivered into the receiving beaker, not the donor flask.",
+      "preserve_objects": [
+        "same donor and receiver identities",
+        "one existing glass rod",
+        "receiver remains on the bench"
+      ],
+      "action": "Stir the previously delivered material in the receiving water with the existing rod, with the donor no longer pouring.",
+      "state_before": "Same receiving mixture after the preceding partial transfer; preserve the donor's remaining contents.",
+      "state_after": "Precipitate disperses through the receiving mixture as it is stirred. No further dose, invented yield, complete workup or liquid reset.",
+      "liquid_state": {
+        "volume_model": "source_defined",
+        "level_change": "unchanged",
+        "reaction_scope": "whole_contents"
+      },
+      "apply_source_quantities": false,
+      "tool_contact_policy": "source_defined"
+    }
+  ],
+  "prompt": "Use case: scientific-educational. Photorealistic landscape16:9 laboratory image-to-video starting reference for acetanilide precipitation by transferring a COOLED reaction mixture into ice-cold water. Exactly TWO vessels: on right a transparent250mL-size glass beaker about two-thirds full of clear colourless water with one glass stirring rod resting inside; on left a much smaller100mL-size round-bottom flask supported upright on one simple cork ring, containing only a shallow small clear almost-colourless reaction-liquid charge well below a quarter of its bulb. Both vessels are unstoppered and stationary before transfer, donor flask NOT yet tilted. Beaker has evident headspace and completely clear water with no precipitate yet. A fixed moderately raised three-quarter close view includes both vessel mouths, receiver meniscus, donor bulb and ring, neutral grey uncluttered bench/background and soft diffuse light. No heater, flame, steam, solid ice in the beaker, hands, other bottles, extra vessels, labels, numeric graduations, writing, logos or watermark. Actual temperatures, volumes and chemical identity require source-linked review; not calibrated from pixels."
+}

@@ -4797,6 +4797,241 @@
       },
       "review_status": "draft",
       "scientifically_verified": false
+    },
+    "acetanilide_precipitation_transfer": {
+      "experiment_id": "chem_12_603",
+      "protocol_variant": "anhydride",
+      "starting_state": "Cooled reaction mixture in source's 100 mL round-bottom donor flask, separate 250 mL receiving beaker with source-planned 150–200 mL ice-cold water and a glass rod. Image is not temperature/volume calibration.",
+      "scope": "Beginning of source-directed reaction-mixture transfer into receiving water, then brief stirring. Reflux, complete transfer, filtration, washing and recrystallisation are omitted; this does not reverse the pouring direction.",
+      "clips": [
+        {
+          "name": "begin_precipitation_transfer",
+          "source_step_id": 3,
+          "target_object": "Reaction mixture moves from the existing small round-bottom flask into the existing larger receiving water beaker.",
+          "preserve_objects": [
+            "one donor flask, one receiver beaker and the existing rod",
+            "receiver and cork support remain on the bench",
+            "donor identity persists while the flask is tilted"
+          ],
+          "action": "Lift and tilt the existing small donor flask to begin a slow controlled transfer of cooled reaction mixture into the larger receiving water beaker; then pause delivery.",
+          "state_before": "Separate cooled donor mixture and clear receiving water; no transferred mixture yet.",
+          "state_after": "Transferred reaction mixture enters the receiving water and white acetanilide precipitation may begin there. Donor amount decreases as receiver contents increase; no reverse pour, overflow or claim of complete transfer.",
+          "liquid_state": {
+            "volume_model": "source_defined",
+            "level_change": "source_defined",
+            "vessel_capacity_ml": 250
+          },
+          "apply_source_quantities": false,
+          "tool_contact_policy": "above_rim"
+        },
+        {
+          "name": "precipitation_stirring",
+          "source_step_id": 3,
+          "target_object": "The material already delivered into the receiving beaker, not the donor flask.",
+          "preserve_objects": [
+            "same donor and receiver identities",
+            "one existing glass rod",
+            "receiver remains on the bench"
+          ],
+          "action": "Stir the previously delivered material in the receiving water with the existing rod, with the donor no longer pouring.",
+          "state_before": "Same receiving mixture after the preceding partial transfer; preserve the donor's remaining contents.",
+          "state_after": "Precipitate disperses through the receiving mixture as it is stirred. No further dose, invented yield, complete workup or liquid reset.",
+          "liquid_state": {
+            "volume_model": "source_defined",
+            "level_change": "unchanged",
+            "reaction_scope": "whole_contents"
+          },
+          "apply_source_quantities": false,
+          "tool_contact_policy": "source_defined"
+        }
+      ],
+      "source_step_hashes": {
+        "1": "74ea79cf5c9f9ab020ee16dca501dbab7fac19807853f3fb3492b6fc0d2162c5",
+        "2": "db11040449fb4b2ff65d5bf2b2e17f3ac39ae95e90ed333198b240883c17a995",
+        "3": "e3fd871051b456408ab5043aabfdb86be9c59212f3a880b11ea538eecc152f3f"
+      },
+      "source_step_snapshots": [
+        {
+          "instruction": "Place 5 mL aniline in a 100 mL round-bottom flask; add 5 mL acetic anhydride and 5 mL glacial acetic acid.",
+          "observation": "This selects the anhydride method, not the acetyl-chloride alternative.",
+          "quantities": [
+            {
+              "reagent": "aniline",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "mL"
+            },
+            {
+              "reagent": "acetic anhydride",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "mL"
+            },
+            {
+              "reagent": "glacial acetic acid",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 5,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 2,
+              "experiment": "10.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Place 5 mL aniline in a 100 mL round-bottom flask; add 5 mL acetic anhydride and 5 mL glacial acetic acid.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "This selects the anhydride method, not the acetyl-chloride alternative.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "Add pumice, fit air condenser and reflux on a sand bath for 10-15 minutes; cool.",
+          "observation": "Reaction time is a process condition, not the generated clip duration.",
+          "quantities": [
+            {
+              "reagent": "reflux time",
+              "role": "condition",
+              "qualifier": "range",
+              "minimum": 10,
+              "maximum": 15,
+              "unit": "min"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 2,
+              "experiment": "10.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Add pumice, fit air condenser and reflux on a sand bath for 10-15 minutes; cool.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Reaction time is a process condition, not the generated clip duration.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "Pour the cooled reaction mixture into 150-200 mL ice-cold water in a 250 mL beaker while stirring; filter, wash and recrystallise.",
+          "observation": "White acetanilide precipitates in the receiving beaker; do not add 200 mL water to the 100 mL flask.",
+          "quantities": [
+            {
+              "reagent": "receiving water",
+              "role": "addition",
+              "qualifier": "range",
+              "minimum": 150,
+              "maximum": 200,
+              "unit": "mL"
+            },
+            {
+              "reagent": "receiving beaker",
+              "role": "vessel_capacity",
+              "qualifier": "exact",
+              "value": 250,
+              "unit": "mL"
+            },
+            {
+              "reagent": "recrystallisation solvent",
+              "role": "addition",
+              "qualifier": "not_specified",
+              "note": "Small hot-water portion plus few drops alcohol."
+            }
+          ],
+          "sample_id": "receiving_beaker",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm110",
+              "file": "lelm110.pdf",
+              "pdf_page": 2,
+              "experiment": "10.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Pour the cooled reaction mixture into 150-200 mL ice-cold water in a 250 mL beaker while stirring; filter, wash and recrystallise.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "White acetanilide precipitates in the receiving beaker; do not add 200 mL water to the 100 mL flask.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        }
+      ],
+      "image": {
+        "path": "assets/reference_pilots/acetanilide_precipitation_transfer.png",
+        "sha256": "abb7515f9b0475dac267424bec35ff8c681576f2752796691768f92ec3463371",
+        "origin": "built_in_imagegen",
+        "created": "2026-11-13",
+        "scientific_review_status": "pending",
+        "volume_measured": false,
+        "prompt_file": "assets/reference_pilots/generation_prompts.json",
+        "prompt_key": "acetanilide_precipitation_transfer",
+        "visual_checks": "Assistant inspected count, apparatus, visibility and requested initial appearance. Independent scientific review pending."
+      },
+      "review_status": "draft",
+      "scientifically_verified": false
     }
   }
 }
