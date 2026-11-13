@@ -6945,6 +6945,27 @@
           "url": "assets/reference_pilots/carboxyl_litmus.png",
           "license_status": "needs_review",
           "attribution": "AI-generated draft reference for carboxyl_litmus; see source-bound pilot manifest. Scientific review pending."
+        },
+        {
+          "image_asset_id": "phenol_ferric_delivery_generated_reference",
+          "role": "scene_reference",
+          "url": "assets/reference_pilots/phenol_ferric_delivery.png",
+          "license_status": "needs_review",
+          "attribution": "AI-generated draft reference for phenol_ferric_delivery; see source-bound pilot manifest. Scientific review pending."
+        },
+        {
+          "image_asset_id": "carbonyl_dnp_delivery_generated_reference",
+          "role": "scene_reference",
+          "url": "assets/reference_pilots/phenol_ferric_delivery.png",
+          "license_status": "needs_review",
+          "attribution": "AI-generated draft reference for carbonyl_dnp_delivery; see source-bound pilot manifest. Scientific review pending."
+        },
+        {
+          "image_asset_id": "bicarbonate_acid_delivery_generated_reference",
+          "role": "scene_reference",
+          "url": "assets/reference_pilots/phenol_ferric_delivery.png",
+          "license_status": "needs_review",
+          "attribution": "AI-generated draft reference for bicarbonate_acid_delivery; see source-bound pilot manifest. Scientific review pending."
         }
       ],
       "tags": [
@@ -8468,7 +8489,10 @@
         "render_mode_policy": "Choose the rendering mode after reviewing the actual setup. Circuit diagrams require explicit validated topology; never infer it from a title."
       },
       "reference_pilot_ids": [
-        "carboxyl_litmus"
+        "carboxyl_litmus",
+        "phenol_ferric_delivery",
+        "carbonyl_dnp_delivery",
+        "bicarbonate_acid_delivery"
       ]
     },
     {

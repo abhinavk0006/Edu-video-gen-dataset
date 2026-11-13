@@ -1,0 +1,29 @@
+{
+  "pilot_id": "bicarbonate_acid_delivery",
+  "experiment_id": "chem_12_402",
+  "protocol_variant": "bicarbonate",
+  "starting_state": "Fresh 2 mL clear saturated sodium-bicarbonate solution before the source's chosen liquid-compound alternative is introduced.",
+  "scope": "Sample delivery and possible initial effervescence only. Positive acid identity requires review; no pH, gas quantity or complete conversion is inferred.",
+  "clips": [
+    {
+      "name": "sample_delivery",
+      "source_step_id": 1,
+      "action": "Deliver a few drops of the selected liquid compound into the existing sodium-bicarbonate solution with the tip above rim, then stop.",
+      "state_before": "Clear saturated sodium-bicarbonate solution in one fresh tube, no sample added yet.",
+      "state_after": "For a source-responsive acidic sample, CO2 effervescence begins in the existing tube. Preserve headspace; no new vessel, opaque white bulk liquid or overflowing foam.",
+      "liquid_state": {
+        "before_ml": 2,
+        "level_change": "increase",
+        "reaction_scope": "whole_contents"
+      },
+      "apply_source_quantities": true,
+      "quantity_reagents": [
+        "sample"
+      ],
+      "tool_contact_policy": "above_rim"
+    }
+  ],
+  "reuse_image_path": "assets/reference_pilots/phenol_ferric_delivery.png",
+  "reuse_prompt_key": "phenol_ferric_delivery",
+  "reuse_rationale": "Same visible pre-addition state: 2 mL clear colourless aqueous solution, one tube and ample headspace. Sodium-bicarbonate identity is specified separately, not inferred from pixels. This is a fresh independent sample, not the phenol or DNP aliquot."
+}

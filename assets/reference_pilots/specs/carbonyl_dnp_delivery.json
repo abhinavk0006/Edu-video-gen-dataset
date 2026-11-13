@@ -1,0 +1,29 @@
+{
+  "pilot_id": "carbonyl_dnp_delivery",
+  "experiment_id": "chem_12_402",
+  "protocol_variant": "dnp",
+  "starting_state": "Prepared colourless alcoholic sample using the source's liquid-sample alternative before DNP delivery; planned alcohol range 2–3 mL, not image-calibrated.",
+  "scope": "DNP reagent delivery only; sample dissolution and any subsequent source-required warming/cooling are omitted. No immediate completed precipitate is forced.",
+  "clips": [
+    {
+      "name": "dnp_delivery",
+      "source_step_id": 1,
+      "action": "Deliver a few drops of the source's alcoholic DNP reagent into the existing prepared alcoholic sample, with tip above rim, then stop.",
+      "state_before": "Fresh colourless prepared alcoholic sample before DNP, not a phenol-tested sample.",
+      "state_after": "Reagent enters the existing sample. A yellow/orange/orange-red precipitate is conditional on sample and source conditions, including later warming/cooling if needed; do not force an instant endpoint.",
+      "liquid_state": {
+        "volume_model": "source_defined",
+        "level_change": "increase",
+        "reaction_scope": "whole_contents"
+      },
+      "apply_source_quantities": true,
+      "quantity_reagents": [
+        "DNP reagent"
+      ],
+      "tool_contact_policy": "above_rim"
+    }
+  ],
+  "reuse_image_path": "assets/reference_pilots/phenol_ferric_delivery.png",
+  "reuse_prompt_key": "phenol_ferric_delivery",
+  "reuse_rationale": "Same visible low colourless transparent charge and apparatus before reagent delivery. The 2–3 mL alcoholic preparation is an independent fresh sample; the image carries no identity, solvent or measured-volume proof. No phenol reaction state is reused."
+}

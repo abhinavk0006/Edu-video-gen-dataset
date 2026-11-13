@@ -1,0 +1,27 @@
+{
+  "pilot_id": "phenol_ferric_delivery",
+  "experiment_id": "chem_12_402",
+  "protocol_variant": "phenol_ferric",
+  "starting_state": "Prepared 2 mL colourless aqueous sample portion before neutral ferric chloride. Illustrative prepared low clear portion in one tube. The generated image does not establish identity, concentration or calibrated mL.",
+  "scope": "Ferric-chloride delivery excerpt only. Phenol identity and its documented response colour require review; no universal violet response is asserted.",
+  "clips": [
+    {
+      "name": "ferric_delivery",
+      "source_step_id": 1,
+      "action": "Deliver neutral ferric chloride dropwise into the existing prepared sample, keeping the tip above the rim, then stop.",
+      "state_before": "Clear colourless prepared aqueous sample, before ferric chloride.",
+      "state_after": "Any response is specific to the selected phenol and source conditions; do not assert one universal blue, green, violet or red colour without a reviewed sample identity.",
+      "liquid_state": {
+        "before_ml": 2,
+        "level_change": "increase",
+        "reaction_scope": "whole_contents"
+      },
+      "apply_source_quantities": true,
+      "quantity_reagents": [
+        "neutral FeCl3"
+      ],
+      "tool_contact_policy": "above_rim"
+    }
+  ],
+  "prompt": "Use case: scientific-educational. Photorealistic landscape16:9 laboratory image-to-video starting reference for the neutral ferric-chloride phenol test, BEFORE reagent delivery. Exactly one plain transparent tall round-bottom glass test tube upright in a minimal discreet clamp. A modest low prepared charge of optically clear colourless aqueous sample occupies around the lowest fifth to quarter of the tube; illustration of a planned 2mL portion, not calibrated by the image. Entire open mouth and rounded bottom visible, abundant headspace, tube70percent frame height. Fixed eye-level scientific close view, neutral grey clean bench and uncluttered background, soft even diffuse lighting and restrained realistic glass reflections. The liquid is fully transparent, no violet, blue, green or red test response yet, no particles, powder, sediment, bubbles or white cloudiness. Empty space above rim for future reagent delivery. No hands, pipette, reagent bottle, extra vessels, labels, numbers, writing, graduations, logos or watermark. Chemical identity, volume and concentration cannot be verified from this generated image."
+}

@@ -3840,6 +3840,304 @@
       },
       "review_status": "draft",
       "scientifically_verified": false
+    },
+    "phenol_ferric_delivery": {
+      "experiment_id": "chem_12_402",
+      "protocol_variant": "phenol_ferric",
+      "starting_state": "Prepared 2 mL colourless aqueous sample portion before neutral ferric chloride. Illustrative prepared low clear portion in one tube. The generated image does not establish identity, concentration or calibrated mL.",
+      "scope": "Ferric-chloride delivery excerpt only. Phenol identity and its documented response colour require review; no universal violet response is asserted.",
+      "clips": [
+        {
+          "name": "ferric_delivery",
+          "source_step_id": 1,
+          "action": "Deliver neutral ferric chloride dropwise into the existing prepared sample, keeping the tip above the rim, then stop.",
+          "state_before": "Clear colourless prepared aqueous sample, before ferric chloride.",
+          "state_after": "Any response is specific to the selected phenol and source conditions; do not assert one universal blue, green, violet or red colour without a reviewed sample identity.",
+          "liquid_state": {
+            "before_ml": 2,
+            "level_change": "increase",
+            "reaction_scope": "whole_contents"
+          },
+          "apply_source_quantities": true,
+          "quantity_reagents": [
+            "neutral FeCl3"
+          ],
+          "tool_contact_policy": "above_rim"
+        }
+      ],
+      "source_step_hashes": {
+        "1": "0ae33c9174754cea7057761563fae57c935a7f63168b37918823c02f414ab3b4"
+      },
+      "source_step_snapshots": [
+        {
+          "instruction": "Add neutral ferric chloride dropwise to 2 mL aqueous or alcoholic sample solution.",
+          "observation": "Blue, green, violet or red depends on the phenol; do not hard-code one universal colour.",
+          "quantities": [
+            {
+              "reagent": "sample solution",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "mL"
+            },
+            {
+              "reagent": "neutral FeCl3",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm108",
+              "file": "lelm108.pdf",
+              "pdf_page": 6,
+              "experiment": "8.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Add neutral ferric chloride dropwise to 2 mL aqueous or alcoholic sample solution.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Blue, green, violet or red depends on the phenol; do not hard-code one universal colour.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        }
+      ],
+      "image": {
+        "path": "assets/reference_pilots/phenol_ferric_delivery.png",
+        "sha256": "eade14d72fc52f682955c32ed5775da6d44660bf5190eb76b821745121d27a00",
+        "origin": "built_in_imagegen",
+        "created": "2026-11-13",
+        "scientific_review_status": "pending",
+        "volume_measured": false,
+        "prompt_file": "assets/reference_pilots/generation_prompts.json",
+        "prompt_key": "phenol_ferric_delivery",
+        "visual_checks": "Assistant inspected count, apparatus, visibility and requested initial appearance. Independent scientific review pending."
+      },
+      "review_status": "draft",
+      "scientifically_verified": false
+    },
+    "carbonyl_dnp_delivery": {
+      "experiment_id": "chem_12_402",
+      "protocol_variant": "dnp",
+      "starting_state": "Prepared colourless alcoholic sample using the source's liquid-sample alternative before DNP delivery; planned alcohol range 2–3 mL, not image-calibrated.",
+      "scope": "DNP reagent delivery only; sample dissolution and any subsequent source-required warming/cooling are omitted. No immediate completed precipitate is forced.",
+      "clips": [
+        {
+          "name": "dnp_delivery",
+          "source_step_id": 1,
+          "action": "Deliver a few drops of the source's alcoholic DNP reagent into the existing prepared alcoholic sample, with tip above rim, then stop.",
+          "state_before": "Fresh colourless prepared alcoholic sample before DNP, not a phenol-tested sample.",
+          "state_after": "Reagent enters the existing sample. A yellow/orange/orange-red precipitate is conditional on sample and source conditions, including later warming/cooling if needed; do not force an instant endpoint.",
+          "liquid_state": {
+            "volume_model": "source_defined",
+            "level_change": "increase",
+            "reaction_scope": "whole_contents"
+          },
+          "apply_source_quantities": true,
+          "quantity_reagents": [
+            "DNP reagent"
+          ],
+          "tool_contact_policy": "above_rim"
+        }
+      ],
+      "reuse_rationale": "Same visible low colourless transparent charge and apparatus before reagent delivery. The 2–3 mL alcoholic preparation is an independent fresh sample; the image carries no identity, solvent or measured-volume proof. No phenol reaction state is reused.",
+      "source_step_hashes": {
+        "1": "f5156fd989ab6074607cf29b4d5e7b4796fadf3498d68948ab8de76b4b7704b6"
+      },
+      "source_step_snapshots": [
+        {
+          "instruction": "Dissolve 2-3 drops liquid OR a few crystals solid in 2-3 mL alcohol; add a few drops alcoholic DNP reagent. If needed warm on a water bath and cool.",
+          "observation": "Yellow/orange/orange-red precipitate supports carbonyl; result depends on sample.",
+          "quantities": [
+            {
+              "reagent": "liquid sample",
+              "role": "alternative",
+              "qualifier": "range",
+              "minimum": 2,
+              "maximum": 3,
+              "unit": "drops"
+            },
+            {
+              "reagent": "solid sample",
+              "role": "alternative",
+              "qualifier": "not_specified"
+            },
+            {
+              "reagent": "alcohol",
+              "role": "addition",
+              "qualifier": "range",
+              "minimum": 2,
+              "maximum": 3,
+              "unit": "mL"
+            },
+            {
+              "reagent": "DNP reagent",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm108",
+              "file": "lelm108.pdf",
+              "pdf_page": 9,
+              "experiment": "8.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Dissolve 2-3 drops liquid OR a few crystals solid in 2-3 mL alcohol; add a few drops alcoholic DNP reagent. If needed warm on a water bath and cool.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Yellow/orange/orange-red precipitate supports carbonyl; result depends on sample.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        }
+      ],
+      "image": {
+        "path": "assets/reference_pilots/phenol_ferric_delivery.png",
+        "sha256": "eade14d72fc52f682955c32ed5775da6d44660bf5190eb76b821745121d27a00",
+        "origin": "built_in_imagegen",
+        "created": "2026-11-13",
+        "scientific_review_status": "pending",
+        "volume_measured": false,
+        "prompt_file": "assets/reference_pilots/generation_prompts.json",
+        "prompt_key": "phenol_ferric_delivery",
+        "visual_checks": "Assistant inspected count, apparatus, visibility and requested initial appearance. Independent scientific review pending."
+      },
+      "review_status": "draft",
+      "scientifically_verified": false
+    },
+    "bicarbonate_acid_delivery": {
+      "experiment_id": "chem_12_402",
+      "protocol_variant": "bicarbonate",
+      "starting_state": "Fresh 2 mL clear saturated sodium-bicarbonate solution before the source's chosen liquid-compound alternative is introduced.",
+      "scope": "Sample delivery and possible initial effervescence only. Positive acid identity requires review; no pH, gas quantity or complete conversion is inferred.",
+      "clips": [
+        {
+          "name": "sample_delivery",
+          "source_step_id": 1,
+          "action": "Deliver a few drops of the selected liquid compound into the existing sodium-bicarbonate solution with the tip above rim, then stop.",
+          "state_before": "Clear saturated sodium-bicarbonate solution in one fresh tube, no sample added yet.",
+          "state_after": "For a source-responsive acidic sample, CO2 effervescence begins in the existing tube. Preserve headspace; no new vessel, opaque white bulk liquid or overflowing foam.",
+          "liquid_state": {
+            "before_ml": 2,
+            "level_change": "increase",
+            "reaction_scope": "whole_contents"
+          },
+          "apply_source_quantities": true,
+          "quantity_reagents": [
+            "sample"
+          ],
+          "tool_contact_policy": "above_rim"
+        }
+      ],
+      "reuse_rationale": "Same visible pre-addition state: 2 mL clear colourless aqueous solution, one tube and ample headspace. Sodium-bicarbonate identity is specified separately, not inferred from pixels. This is a fresh independent sample, not the phenol or DNP aliquot.",
+      "source_step_hashes": {
+        "1": "a6275670464956185fe23df836622ef7af955bb65c77cda9aca3a0859f911662"
+      },
+      "source_step_snapshots": [
+        {
+          "instruction": "Add a few drops liquid compound OR a few solid crystals to 2 mL saturated sodium bicarbonate.",
+          "observation": "Effervescence indicates CO2 release for a responsive acid.",
+          "quantities": [
+            {
+              "reagent": "saturated NaHCO3",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "mL"
+            },
+            {
+              "reagent": "sample",
+              "role": "addition",
+              "qualifier": "not_specified"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm108",
+              "file": "lelm108.pdf",
+              "pdf_page": 11,
+              "experiment": "8.1"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Add a few drops liquid compound OR a few solid crystals to 2 mL saturated sodium bicarbonate.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Effervescence indicates CO2 release for a responsive acid.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        }
+      ],
+      "image": {
+        "path": "assets/reference_pilots/phenol_ferric_delivery.png",
+        "sha256": "eade14d72fc52f682955c32ed5775da6d44660bf5190eb76b821745121d27a00",
+        "origin": "built_in_imagegen",
+        "created": "2026-11-13",
+        "scientific_review_status": "pending",
+        "volume_measured": false,
+        "prompt_file": "assets/reference_pilots/generation_prompts.json",
+        "prompt_key": "phenol_ferric_delivery",
+        "visual_checks": "Assistant inspected count, apparatus, visibility and requested initial appearance. Independent scientific review pending."
+      },
+      "review_status": "draft",
+      "scientifically_verified": false
     }
   }
 }

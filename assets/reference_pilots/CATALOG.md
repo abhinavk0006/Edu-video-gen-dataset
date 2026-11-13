@@ -1,6 +1,6 @@
 # Source-linked image pilot catalog
 
-23 pilot configurations use 18 distinct reference images. All are drafts pending independent scientific review and real GPU generation tests.
+26 pilot configurations use 19 distinct reference images. All are drafts pending independent scientific review and real GPU generation tests.
 
 Use the persistent-worker Continuous State Styled Cards notebook. Set `PILOT_ID` in its first configuration cell, then run setup and inspect the starting reference, source scope, material plan and cards before GPU generation. No separate image upload is needed.
 
@@ -31,6 +31,9 @@ Start tomorrow with `carboxyl_litmus`, `salt_water_delivery` and `starch_iodine`
 | `leaf_chromatography_chloroform` | chem_12_501 / chloroform | 1 | [image](leaf_chromatography.png) |
 | `sulphate_confirmation` | chem_12_301 / sulphate | 2 | [image](chloride_prepared_aliquot.png) |
 | `fehling_waterbath` | chem_12_403 / fehling | 1 | [image](fehling_waterbath.png) |
+| `phenol_ferric_delivery` | chem_12_402 / phenol_ferric | 1 | [image](phenol_ferric_delivery.png) |
+| `carbonyl_dnp_delivery` | chem_12_402 / dnp | 1 | [image](phenol_ferric_delivery.png) |
+| `bicarbonate_acid_delivery` | chem_12_402 / bicarbonate | 1 | [image](phenol_ferric_delivery.png) |
 
 ## Reuse decisions
 
@@ -41,6 +44,8 @@ Reuse requires a matching visible starting state: apparatus and capacity class, 
 - **iron_ferrocyanide:** The two confirmation tests begin with visually matching separate portions of the same prepared acidic ferric solution, before either reagent: one tube, pale-yellow transparent low fill and abundant headspace. Shared raster composition is not shared physical sample identity; each pilot has its own state track. Actual concentration and aliquot volume remain unverified.
 - **leaf_chromatography_chloroform:** Same visible paper geometry, dried leaf spot above a shallow clear mobile phase and undeveloped upper paper. The alternative mobile-phase composition changes chemical identity and development behaviour, but no pre-development visible feature in this image. This is an independent preparation, not the acetone run continued; no shared Rf or timing is assumed.
 - **sulphate_confirmation:** Same visible pre-reagent state: a fresh low-volume clear colourless 1 mL water-extract aliquot in one upright tube. This pilot assumes a colourless sulphate-positive extract, not the chloride sample's chemical identity or prior acidification. Separate pilot/sample track; no amount, concentration or positive result inferred from pixels.
+- **carbonyl_dnp_delivery:** Same visible low colourless transparent charge and apparatus before reagent delivery. The 2–3 mL alcoholic preparation is an independent fresh sample; the image carries no identity, solvent or measured-volume proof. No phenol reaction state is reused.
+- **bicarbonate_acid_delivery:** Same visible pre-addition state: 2 mL clear colourless aqueous solution, one tube and ample headspace. Sodium-bicarbonate identity is specified separately, not inferred from pixels. This is a fresh independent sample, not the phenol or DNP aliquot.
 
 ## Scope and remaining review
 

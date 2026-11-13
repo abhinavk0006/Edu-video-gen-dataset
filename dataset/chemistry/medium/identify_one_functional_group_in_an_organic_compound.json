@@ -1510,7 +1510,10 @@
     "render_mode_policy": "Choose the rendering mode after reviewing the actual setup. Circuit diagrams require explicit validated topology; never infer it from a title."
   },
   "reference_pilot_ids": [
-    "carboxyl_litmus"
+    "carboxyl_litmus",
+    "phenol_ferric_delivery",
+    "carbonyl_dnp_delivery",
+    "bicarbonate_acid_delivery"
   ],
   "procedure_steps": [
     {
