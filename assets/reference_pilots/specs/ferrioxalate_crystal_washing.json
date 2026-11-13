@@ -1,0 +1,29 @@
+{
+  "pilot_id": "ferrioxalate_crystal_washing",
+  "experiment_id": "chem_12_602",
+  "protocol_variant": "ferrioxalate",
+  "starting_state": "Filtered illustrative green ferrioxalate crystal crop in white filter paper, supported funnel and receiving flask, before washing. Cooling and filtration occur before this image; crop size and yield are not measured.",
+  "scope": "Crystal-wash excerpt of source step 3. Earlier concentration/cooling and later drying are omitted; no invented wash volume or exact yield.",
+  "derived_from": {
+    "path": "assets/reference_pilots/alum_crystal_washing.png",
+    "edit": "Same apparatus layout; distinct green crystal sample and faintly green filtrate. Not the original alum sample.",
+    "sha256": "91f51fc96d364a8f8f863db01b53ccc294945a1d67cac85dc816d079953db993"
+  },
+  "clips": [
+    {
+      "name": "green_crystal_wash",
+      "source_step_id": 3,
+      "target_object": "Green crystals retained on filter paper in the funnel; pale clear wash filtrate drains into the receiver.",
+      "action": "Gently deliver the source's 1:1 water/alcohol wash over the existing green crystals on the filter paper, with tip above the filter, then stop before overflow.",
+      "state_before": "Green crystal crop on intact white filter paper with funnel stem above collected filtrate.",
+      "state_after": "Wash drains into the receiver while green crystals remain on the filter. No crystals appear in the receiver, no submerged funnel stem and no instant drying.",
+      "liquid_state": {
+        "volume_model": "source_defined",
+        "level_change": "source_defined"
+      },
+      "apply_source_quantities": true,
+      "tool_contact_policy": "above_rim"
+    }
+  ],
+  "prompt": "Use case: scientific-educational. Edit this reference photograph to create a distinct potassium trioxalatoferrate(III) crystal-washing starting image. Preserve precisely the same glass funnel, white folded filter paper, support ring/stand, receiving conical flask, camera, lighting, backdrop, apparatus positions and realistic funnel-stem geometry. Change only the sample: replace the white/translucent alum crystals retained on the filter with a modest crop of translucent emerald GREEN ferrioxalate crystals, and tint the tiny existing filtrate pool at the receiver bottom very faint pale green. Filter paper remains white; glass and background stay neutral. No crystals in the receiver, no new vessels, no pouring hands, no wash bottle yet, no additional text, labels or numbers. The funnel stem stays above the filtrate pool. Illustration before cold source-defined water/alcohol wash, not proof of chemical identity or measured yield."
+}
