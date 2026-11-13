@@ -1,6 +1,6 @@
 # Source-linked image pilot catalog
 
-26 pilot configurations use 19 distinct reference images. All are drafts pending independent scientific review and real GPU generation tests.
+30 pilot configurations use 23 distinct reference images. All are drafts pending independent scientific review and real GPU generation tests.
 
 Use the persistent-worker Continuous State Styled Cards notebook. Set `PILOT_ID` in its first configuration cell, then run setup and inspect the starting reference, source scope, material plan and cards before GPU generation. No separate image upload is needed.
 
@@ -34,6 +34,10 @@ Start tomorrow with `carboxyl_litmus`, `salt_water_delivery` and `starch_iodine`
 | `phenol_ferric_delivery` | chem_12_402 / phenol_ferric | 1 | [image](phenol_ferric_delivery.png) |
 | `carbonyl_dnp_delivery` | chem_12_402 / dnp | 1 | [image](phenol_ferric_delivery.png) |
 | `bicarbonate_acid_delivery` | chem_12_402 / bicarbonate | 1 | [image](phenol_ferric_delivery.png) |
+| `ferrioxalate_cooling` | chem_12_602 / ferrioxalate | 1 | [image](ferrioxalate_cooling.png) |
+| `ferrioxalate_crystal_washing` | chem_12_602 / ferrioxalate | 1 | [image](ferrioxalate_crystal_washing.png) |
+| `dibenzalacetone_first_transfer` | chem_12_604 / dibenzalacetone | 2 | [image](dibenzalacetone_first_transfer.png) |
+| `acetanilide_precipitation_transfer` | chem_12_603 / anhydride | 2 | [image](acetanilide_precipitation_transfer.png) |
 
 ## Reuse decisions
 
