@@ -14972,6 +14972,13 @@
           "url": "assets/reference_pilots/gum_sol.png",
           "license_status": "needs_review",
           "attribution": "AI-generated draft reference for gum_sol; see source-bound pilot manifest. Scientific review pending."
+        },
+        {
+          "image_asset_id": "aluminium_sol_delivery_excerpt_generated_reference",
+          "role": "scene_reference",
+          "url": "assets/reference_pilots/aluminium_sol_delivery_excerpt.png",
+          "license_status": "needs_review",
+          "attribution": "AI-generated draft reference for aluminium_sol_delivery_excerpt; see source-bound pilot manifest. Scientific review pending."
         }
       ],
       "tags": [
@@ -15927,7 +15934,8 @@
       },
       "reference_pilot_ids": [
         "starch_heating_excerpt",
-        "gum_sol"
+        "gum_sol",
+        "aluminium_sol_delivery_excerpt"
       ]
     },
     {

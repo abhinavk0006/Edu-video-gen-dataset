@@ -939,7 +939,8 @@
   },
   "reference_pilot_ids": [
     "starch_heating_excerpt",
-    "gum_sol"
+    "gum_sol",
+    "aluminium_sol_delivery_excerpt"
   ],
   "procedure_steps": [
     {
