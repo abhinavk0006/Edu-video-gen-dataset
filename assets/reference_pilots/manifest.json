@@ -5242,6 +5242,217 @@
       },
       "review_status": "draft",
       "scientifically_verified": false
+    },
+    "ferric_sol_delivery_excerpt": {
+      "experiment_id": "chem_12_801",
+      "protocol_variant": "ferric_chloride",
+      "starting_state": "Prepared clear receiving-water charge on heat in a 250 mL beaker, with a glass stirring rod; source starting water is 100 mL, not measured from the image.",
+      "scope": "A short first-drops delivery and stirring excerpt from source step 3. Stock preparation and most of the source's 10 mL total aliquot are outside this excerpt. Do not depict the entire 10 mL delivery in two seconds. Per-excerpt dose is unknown and intentionally unbound; full source quantities remain in the linked step snapshot.",
+      "clips": [
+        {
+          "name": "first_stock_drops",
+          "source_step_id": 3,
+          "action": "Begin slow dropwise delivery of the separately prepared ferric chloride stock into the existing heated clear receiving water. Show only the first few drops from the source's total 10 mL aliquot, then stop this brief delivery excerpt. Keep the delivery tip above the rim; do not empty the whole aliquot in this clip.",
+          "state_before": "Existing clear colourless receiving water remains on heat with the same glass rod; no hydroxide sol has formed yet.",
+          "state_after": "The same beaker receives only a small unmeasured portion of stock, with a small level increase. Any developing brown ferric hydroxide sol belongs in the mixed contents; do not invent a separate floating brown layer, huge dose, overfill or completed full-dose reaction.",
+          "liquid_state": {
+            "before_ml": 100,
+            "level_change": "increase",
+            "volume_model": "source_defined",
+            "vessel_capacity_ml": 250,
+            "reaction_scope": "whole_contents"
+          },
+          "apply_source_quantities": false,
+          "tool_contact_policy": "above_rim"
+        },
+        {
+          "name": "stirring_excerpt",
+          "source_step_id": 3,
+          "action": "Gently stir the same heated receiving contents with the existing glass rod during a short continuation. Do not add more stock in this clip.",
+          "state_before": "Same beaker, rod and meniscus after the small first-drops excerpt.",
+          "state_after": "Same liquid amount and apparatus continue mixing; any developing sol disperses through the contents. This is not proof that the full 10 mL aliquot or the full preparation is complete.",
+          "liquid_state": {
+            "level_change": "unchanged",
+            "volume_model": "source_defined",
+            "reaction_scope": "whole_contents"
+          },
+          "apply_source_quantities": false,
+          "tool_contact_policy": "source_defined"
+        }
+      ],
+      "reuse_rationale": "Both source variants begin with a separate 100 mL charge of clear boiling water in a 250 mL beaker. Neither stock is present in the image, so their different stock colours and different brown/white hydroxide outcomes do not conflict with this shared BEFORE-addition scene. No prepared-sol or final-state image is reused.",
+      "source_step_hashes": {
+        "1": "2fdf80663ed4938c05f4b7ff00bd27db363177eeac36bb508541bbabe56657c2",
+        "2": "9d820862746eb209cea1cb35d733ee47a4bfadc8f3aa2340e3328d17ca38fdc3",
+        "3": "fa8e8e585d5b996bfb115d4ea970e555708f49aa2f3fa703f0c0f46672ac2b60"
+      },
+      "source_step_snapshots": [
+        {
+          "instruction": "Dissolve 2 g ferric chloride in 100 mL boiling water in a 250 mL beaker (water preparation begins on PDF p2).",
+          "observation": "This is a stock preparation, not an addition to the final vessel.",
+          "quantities": [
+            {
+              "reagent": "ferric chloride",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 2,
+              "unit": "g"
+            },
+            {
+              "reagent": "water",
+              "role": "stock_preparation",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "stock",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 3,
+              "experiment": "1.1(b)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Dissolve 2 g ferric chloride in 100 mL boiling water in a 250 mL beaker (water preparation begins on PDF p2).",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "This is a stock preparation, not an addition to the final vessel.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "Boil another 100 mL water in a separate 250 mL beaker.",
+          "observation": "The receiving beaker contains its own water charge.",
+          "quantities": [
+            {
+              "reagent": "water",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            },
+            {
+              "reagent": "beaker",
+              "role": "vessel_capacity",
+              "qualifier": "exact",
+              "value": 250,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 3,
+              "experiment": "1.1(b)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Boil another 100 mL water in a separate 250 mL beaker.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "The receiving beaker contains its own water charge.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "Add 10 mL of the prepared stock drop by drop with stirring; continue boiling.",
+          "observation": "A brown hydroxide sol forms; this is not a clear dissolved salt solution.",
+          "quantities": [
+            {
+              "reagent": "stock aliquot",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 10,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm101",
+              "file": "lelm101.pdf",
+              "pdf_page": 3,
+              "experiment": "1.1(b)"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Add 10 mL of the prepared stock drop by drop with stirring; continue boiling.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "A brown hydroxide sol forms; this is not a clear dissolved salt solution.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        }
+      ],
+      "image": {
+        "path": "assets/reference_pilots/aluminium_sol_delivery_excerpt.png",
+        "sha256": "72cf3d9fe53ccce49c1067c83df1b3c17df2fd11c6a171e0d8e5ec1799e6f656",
+        "origin": "built_in_imagegen",
+        "created": "2026-11-14",
+        "scientific_review_status": "pending",
+        "volume_measured": false,
+        "prompt_file": "assets/reference_pilots/generation_prompts.json",
+        "prompt_key": "aluminium_sol_delivery_excerpt",
+        "visual_checks": "Assistant inspected count, apparatus, visibility and requested initial appearance. Independent scientific review pending."
+      },
+      "review_status": "draft",
+      "scientifically_verified": false
     }
   }
 }
