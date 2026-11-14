@@ -5453,6 +5453,204 @@
       },
       "review_status": "draft",
       "scientifically_verified": false
+    },
+    "neutralisation_first_transfer_excerpt": {
+      "experiment_id": "chem_12_1002",
+      "protocol_variant": "neutralisation",
+      "reuse_rationale": "The pre-addition scene has an open insulated cup, a clear colourless starting liquid, a fixed thermometer and a separate stirring rod, with no solid or transfer tool present. This is visually compatible with a fresh prepared acid charge as well as the separate nitrate pilot's water charge. Acid identity, the source's 100 mL 1 M charge, calibration and starting temperature are protocol claims, not inferred from reused pixels. A fresh sample track is used; no nitrate or previous-trial material carries over. Calorimeter design and capacity still require manual review.",
+      "starting_state": "Fresh separately calibrated calorimeter containing the source's prepared 100 mL 1 M HCl charge, clear and colourless, before adding base. Source calibration and measured initial temperatures are not demonstrated by this image.",
+      "scope": "Brief beginning of source step 3 transfer, followed by stirring. Source steps 1-2 preparation and initial temperature recording are outside the excerpt. The separate base charge totals 100 mL 1 M NaOH in the full procedure; this two-second excerpt must not depict complete transfer. Per-excerpt dose and calorimeter capacity remain unknown. No measured temperature or enthalpy is claimed.",
+      "clips": [
+        {
+          "name": "begin_base_transfer",
+          "source_step_id": 3,
+          "action": "Begin slowly pouring a small initial portion of the separately measured 100 mL 1 M NaOH charge from its separate 250 mL beaker into the existing acid calorimeter, then stop the brief transfer excerpt. Preserve the existing thermometer and rod; keep the source beaker lip above and clear of the calorimeter. Do not complete the full 100 mL transfer in this short clip.",
+          "state_before": "The existing open calorimeter holds clear colourless prepared acid; thermometer and rod stay in place. The separate base has been measured off-screen.",
+          "state_after": "Same clear colourless mixed liquid has a small increase in level from an unmeasured first portion of base. No white solid, turbidity, colour change, foam, overflow or invented temperature reading. Full neutralisation and total-charge transfer are not claimed.",
+          "liquid_state": {
+            "before_ml": 100,
+            "level_change": "increase",
+            "volume_model": "source_defined",
+            "reaction_scope": "whole_contents"
+          },
+          "apply_source_quantities": false,
+          "tool_contact_policy": "above_rim"
+        },
+        {
+          "name": "mixing_excerpt",
+          "source_step_id": 3,
+          "action": "Gently stir the existing calorimeter contents with the existing glass rod; keep the thermometer fixed and do not add any further liquid.",
+          "state_before": "Same clear mixture and meniscus after the initial small base portion.",
+          "state_after": "Same clear liquid and amount continue mixing without spills. Do not display a numerical temperature rise or calculated enthalpy; actual thermal measurement remains outside this generated excerpt.",
+          "liquid_state": {
+            "level_change": "unchanged",
+            "volume_model": "source_defined",
+            "reaction_scope": "whole_contents"
+          },
+          "apply_source_quantities": false,
+          "tool_contact_policy": "source_defined"
+        }
+      ],
+      "source_step_hashes": {
+        "1": "66d11253d9bffd8bdb9b4ba4170677035321777e05be25499f1fdfc6d768c0bf",
+        "2": "e03bc6468a7e5e726ebfd574348af87ff679a3f891b6cd4c2c45365466b9215a",
+        "3": "dee4b54f3ec6f1433f6f75d3c253768d7b2d19564935e6c9dc8e6038a82904b5"
+      },
+      "source_step_snapshots": [
+        {
+          "instruction": "Use the separately calibrated calorimeter; place 100 mL 1 M HCl inside and record temperature.",
+          "observation": "The acid is a clear solution.",
+          "quantities": [
+            {
+              "reagent": "HCl",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL",
+              "concentration": "1 M"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "source_defined",
+          "step_id": 1,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm103",
+              "file": "lelm103.pdf",
+              "pdf_page": 7,
+              "experiment": "3.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Use the separately calibrated calorimeter; place 100 mL 1 M HCl inside and record temperature.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "The acid is a clear solution.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "Measure 100 mL 1 M NaOH in a separate 250 mL beaker and record temperature.",
+          "observation": "Base is measured separately before transfer.",
+          "quantities": [
+            {
+              "reagent": "NaOH",
+              "role": "addition",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL",
+              "concentration": "1 M"
+            }
+          ],
+          "sample_id": "base_beaker",
+          "reaction_scope": "source_defined",
+          "step_id": 2,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm103",
+              "file": "lelm103.pdf",
+              "pdf_page": 7,
+              "experiment": "3.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Measure 100 mL 1 M NaOH in a separate 250 mL beaker and record temperature.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "Base is measured separately before transfer.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        },
+        {
+          "instruction": "Pour the measured base into the acid, stir and record temperature rise.",
+          "observation": "The mixed liquid stays clear; measured temperature rises.",
+          "quantities": [
+            {
+              "reagent": "prepared NaOH charge",
+              "role": "transfer",
+              "qualifier": "exact",
+              "value": 100,
+              "unit": "mL"
+            }
+          ],
+          "sample_id": "reaction",
+          "reaction_scope": "whole_contents",
+          "step_id": 3,
+          "source_evidence": [
+            {
+              "source_id": "ncert_lelm103",
+              "file": "lelm103.pdf",
+              "pdf_page": 7,
+              "experiment": "3.2"
+            }
+          ],
+          "quantity_constraint": "Use only the stated dose for this sample. Unknown doses remain unset; do not substitute equal additions or convert drops to mL.",
+          "science_spec": {
+            "source_reviewed": false,
+            "entities": [],
+            "preconditions": [],
+            "requirements": [
+              {
+                "id": "action",
+                "description": "Pour the measured base into the acid, stir and record temperature rise.",
+                "critical": true,
+                "evidence_kind": "interval"
+              },
+              {
+                "id": "observation",
+                "description": "The mixed liquid stays clear; measured temperature rises.",
+                "critical": true,
+                "evidence_kind": "interval"
+              }
+            ],
+            "temporal_order": [],
+            "review_notes": "Draft requirements transcribed from source text. Review event boundaries, observation target, persistent entity IDs and source pages before acceptance."
+          }
+        }
+      ],
+      "image": {
+        "path": "assets/reference_pilots/nitrate_calorimetry.png",
+        "sha256": "6f61101cc1ab84e6da0bc9bd3552e4443a05463f689119bccb1480dda4a5f9a4",
+        "origin": "built_in_imagegen",
+        "created": "2026-11-14",
+        "scientific_review_status": "pending",
+        "volume_measured": false,
+        "prompt_file": "assets/reference_pilots/generation_prompts.json",
+        "prompt_key": "nitrate_calorimetry",
+        "visual_checks": "Assistant inspected count, apparatus, visibility and requested initial appearance. Independent scientific review pending."
+      },
+      "review_status": "draft",
+      "scientifically_verified": false
     }
   }
 }
