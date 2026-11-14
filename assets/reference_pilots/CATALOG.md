@@ -1,6 +1,6 @@
 # Source-linked image pilot catalog
 
-30 pilot configurations use 23 distinct reference images. All are drafts pending independent scientific review and real GPU generation tests.
+33 pilot configurations use 24 distinct reference images. All are drafts pending independent scientific review and real GPU generation tests.
 
 Use the persistent-worker Continuous State Styled Cards notebook. Set `PILOT_ID` in its first configuration cell, then run setup and inspect the starting reference, source scope, material plan and cards before GPU generation. No separate image upload is needed.
 
@@ -38,6 +38,9 @@ Start tomorrow with `carboxyl_litmus`, `salt_water_delivery` and `starch_iodine`
 | `ferrioxalate_crystal_washing` | chem_12_602 / ferrioxalate | 1 | [image](ferrioxalate_crystal_washing.png) |
 | `dibenzalacetone_first_transfer` | chem_12_604 / dibenzalacetone | 2 | [image](dibenzalacetone_first_transfer.png) |
 | `acetanilide_precipitation_transfer` | chem_12_603 / anhydride | 2 | [image](acetanilide_precipitation_transfer.png) |
+| `aluminium_sol_delivery_excerpt` | chem_12_801 / aluminium_chloride | 2 | [image](aluminium_sol_delivery_excerpt.png) |
+| `ferric_sol_delivery_excerpt` | chem_12_801 / ferric_chloride | 2 | [image](aluminium_sol_delivery_excerpt.png) |
+| `neutralisation_first_transfer_excerpt` | chem_12_1002 / neutralisation | 2 | [image](nitrate_calorimetry.png) |
 
 ## Reuse decisions
 
@@ -50,6 +53,8 @@ Reuse requires a matching visible starting state: apparatus and capacity class, 
 - **sulphate_confirmation:** Same visible pre-reagent state: a fresh low-volume clear colourless 1 mL water-extract aliquot in one upright tube. This pilot assumes a colourless sulphate-positive extract, not the chloride sample's chemical identity or prior acidification. Separate pilot/sample track; no amount, concentration or positive result inferred from pixels.
 - **carbonyl_dnp_delivery:** Same visible low colourless transparent charge and apparatus before reagent delivery. The 2–3 mL alcoholic preparation is an independent fresh sample; the image carries no identity, solvent or measured-volume proof. No phenol reaction state is reused.
 - **bicarbonate_acid_delivery:** Same visible pre-addition state: 2 mL clear colourless aqueous solution, one tube and ample headspace. Sodium-bicarbonate identity is specified separately, not inferred from pixels. This is a fresh independent sample, not the phenol or DNP aliquot.
+- **ferric_sol_delivery_excerpt:** Both source variants begin with a separate 100 mL charge of clear boiling water in a 250 mL beaker. Neither stock is present in the image, so their different stock colours and different brown/white hydroxide outcomes do not conflict with this shared BEFORE-addition scene. No prepared-sol or final-state image is reused.
+- **neutralisation_first_transfer_excerpt:** The pre-addition scene has an open insulated cup, a clear colourless starting liquid, a fixed thermometer and a separate stirring rod, with no solid or transfer tool present. This is visually compatible with a fresh prepared acid charge as well as the separate nitrate pilot's water charge. Acid identity, the source's 100 mL 1 M charge, calibration and starting temperature are protocol claims, not inferred from reused pixels. A fresh sample track is used; no nitrate or previous-trial material carries over. Calorimeter design and capacity still require manual review.
 
 ## Scope and remaining review
 
